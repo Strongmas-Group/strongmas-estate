@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button";
 const Footer = () => {
   return (
     <footer id="contact" className="bg-primary text-primary-foreground">
-      <div className="container py-12 md:py-24">
+      <div className="container py-12 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex flex-col">
             <Link href="/" className="mb-4">
                 <span className="text-3xl font-bold tracking-wider">STRONGMAS</span>
                 <div className="flex items-center">
-                    <div className="h-0.5 w-8 bg-[#C59D5F] mr-2"></div>
-                    <span className="text-sm tracking-[0.2em]">RESIDENCE</span>
+                    <div className="h-0.5 w-8 bg-accent mr-2"></div>
+                    <span className="text-sm tracking-[0.2em] text-accent">RESIDENCE</span>
                 </div>
             </Link>
             <p className="text-muted-foreground mb-4 text-sm max-w-xs">
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 font-headline">Useful Link</h4>
+            <h4 className="font-semibold mb-4 font-headline text-accent">Useful Link</h4>
             <nav className="flex flex-col gap-2">
               <Link href="#" className="text-muted-foreground hover:text-primary-foreground">Carrier</Link>
               <Link href="#" className="text-muted-foreground hover:text-primary-foreground">FAQ</Link>
@@ -44,7 +44,7 @@ const Footer = () => {
             </nav>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 font-headline">Address & Contact Info</h4>
+            <h4 className="font-semibold mb-4 font-headline text-accent">Address & Contact Info</h4>
             <address className="space-y-2 text-muted-foreground not-italic text-sm">
               <p>
                 Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside
@@ -55,7 +55,7 @@ const Footer = () => {
             </address>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 font-headline">
+            <h4 className="font-semibold mb-4 font-headline text-accent">
               Sign Up For Our Exclusive Newsletter
             </h4>
             <form className="flex flex-col gap-2">
@@ -68,7 +68,7 @@ const Footer = () => {
                 <Button
                   type="submit"
                   variant="default"
-                  className="absolute right-1 top-1/2 -translate-y-1/2 h-8 rounded-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                  className="absolute right-1 top-1/2 -translate-y-1/2 h-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90"
                 >
                   SUBMIT
                 </Button>
