@@ -1,81 +1,97 @@
 import Link from "next/link";
-import { Building2, Facebook, Twitter, Instagram } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-secondary text-secondary-foreground">
+    <footer id="contact" className="bg-primary text-primary-foreground">
       <div className="container py-12 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <Building2 className="h-6 w-6 text-accent" />
-              <span className="font-bold text-lg font-headline">StrongHome</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div className="flex flex-col">
+            <Link href="/" className="mb-4">
+                <span className="text-3xl font-bold tracking-wider">STRONGMAS</span>
+                <div className="flex items-center">
+                    <div className="h-0.5 w-8 bg-[#C59D5F] mr-2"></div>
+                    <span className="text-sm tracking-[0.2em]">RESIDENCE</span>
+                </div>
             </Link>
-            <p className="text-muted-foreground">
-              Building dreams, one home at a time. Your trusted partner in real
-              estate.
+            <p className="text-muted-foreground mb-4 text-sm max-w-xs">
+              With over 30 satisfied clients and the delivery of 50+
+              state-of-the-art apartments and duplexes, we proudly showcase our
+              commitment to excellence.
             </p>
-            <div className="flex gap-4 mt-4">
-              <Link href="#" className="text-muted-foreground hover:text-accent">
-                <Facebook />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-accent">
-                <Twitter />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-accent">
-                <Instagram />
-              </Link>
+            <div className="flex gap-2 mt-auto">
+              {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
+                <Link
+                  key={index}
+                  href="#"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                >
+                  <Icon className="h-4 w-4" />
+                </Link>
+              ))}
             </div>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 font-headline">Quick Links</h4>
+            <h4 className="font-semibold mb-4 font-headline">Useful Link</h4>
             <nav className="flex flex-col gap-2">
-              <Link href="#" className="text-muted-foreground hover:text-accent">
-                About Us
-              </Link>
-              <Link href="#featured" className="text-muted-foreground hover:text-accent">
-                Properties
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-accent">
-                Agents
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-accent">
-                Blog
-              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">Carrier</Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">FAQ</Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">Blog</Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">Contact</Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">About us</Link>
             </nav>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 font-headline">Contact</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>123 Luxury Lane, Suite 100</li>
-              <li>Beverly Hills, CA 90210</li>
-              <li>(123) 456-7890</li>
-              <li>contact@stronghome.com</li>
-            </ul>
+            <h4 className="font-semibold mb-4 font-headline">Address & Contact Info</h4>
+            <address className="space-y-2 text-muted-foreground not-italic text-sm">
+              <p>
+                Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside
+                Petrocam Filling Station, Ajah, Lagos - Nigeria.
+              </p>
+              <p>Phone: <a href="tel:+2349010777777" className="hover:text-primary-foreground">+234 901 077 7777</a></p>
+              <p>Email: <a href="mailto:hello@strongmasng.com" className="hover:text-primary-foreground">hello@strongmasng.com</a></p>
+            </address>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 font-headline">Newsletter</h4>
-            <p className="text-muted-foreground mb-4">
-              Stay updated with our latest properties.
-            </p>
-            <div className="flex w-full max-w-sm items-center space-x-2">
-              <Input
-                type="email"
-                placeholder="Email"
-                className="bg-background"
-              />
-              <Button type="submit" variant="default">
-                Subscribe
-              </Button>
-            </div>
+            <h4 className="font-semibold mb-4 font-headline">
+              Sign Up For Our Exclusive Newsletter
+            </h4>
+            <form className="flex flex-col gap-2">
+              <div className="relative">
+                <Input
+                  type="email"
+                  placeholder="Email"
+                  className="bg-primary-foreground/10 border-muted-foreground/50 rounded-full pr-28 text-primary-foreground placeholder:text-muted-foreground"
+                />
+                <Button
+                  type="submit"
+                  variant="default"
+                  className="absolute right-1 top-1/2 -translate-y-1/2 h-8 rounded-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                >
+                  SUBMIT
+                </Button>
+              </div>
+              <p className="text-xs text-muted-foreground">
+                By signing up you accept our{" "}
+                <Link href="#" className="underline hover:text-primary-foreground">
+                  terms and conditions
+                </Link>
+              </p>
+            </form>
           </div>
         </div>
       </div>
-      <div className="border-t border-border/20">
-        <div className="container py-4 text-center text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} StrongHome. All rights reserved.
+      <div className="border-t border-primary-foreground/10">
+        <div className="container py-4 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
+           <div className="flex gap-4 mb-4 sm:mb-0">
+               <Link href="#" className="hover:text-primary-foreground">Terms and Conditions</Link>
+               <Link href="#" className="hover:text-primary-foreground">Cookie Policy</Link>
+               <Link href="#" className="hover:text-primary-foreground">Privacy Policy</Link>
+               <Link href="#" className="hover:text-primary-foreground">Corporate Communications Policy</Link>
+           </div>
+          <p>&copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
