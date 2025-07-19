@@ -70,7 +70,7 @@ const FeaturedProperties = () => {
             >
               <CardHeader className="p-0 relative">
                 <Badge
-                  variant="destructive"
+                  variant="default"
                   className="absolute top-4 right-4 z-10 bg-accent text-accent-foreground"
                 >
                   {prop.badge}
