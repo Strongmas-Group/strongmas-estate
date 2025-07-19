@@ -66,7 +66,7 @@ const FeaturedProperties = () => {
           {properties.map((prop) => (
             <Card
               key={prop.id}
-              className="overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hover:shadow-2xl hover:shadow-accent/10"
+              className="overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hover:shadow-2xl hover:shadow-accent/10"
             >
               <CardHeader className="p-0 relative">
                 <Badge
@@ -80,16 +80,16 @@ const FeaturedProperties = () => {
                   alt={prop.title}
                   width={600}
                   height={400}
-                  className="w-full object-cover"
+                  className="w-full h-64 object-cover"
                   data-ai-hint={prop.hint}
                 />
               </CardHeader>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex-grow">
                 <CardTitle className="font-headline text-2xl mb-2">
                   {prop.title}
                 </CardTitle>
                 <p className="text-muted-foreground mb-4">{prop.location}</p>
-                <div className="flex items-center gap-4 text-muted-foreground">
+                <div className="flex items-center gap-4 text-muted-foreground border-t pt-4">
                   <span className="flex items-center gap-2">
                     <Bed className="w-5 h-5 text-accent" /> {prop.beds} Beds
                   </span>
@@ -102,7 +102,7 @@ const FeaturedProperties = () => {
                   </span>
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between items-center p-6 bg-card-foreground/5">
+              <CardFooter className="flex justify-between items-center p-6 bg-card-foreground/5 mt-auto">
                 <p className="text-2xl font-bold text-accent font-headline">
                   ${prop.price}
                 </p>
