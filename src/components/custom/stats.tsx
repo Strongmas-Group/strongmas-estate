@@ -18,16 +18,16 @@ const stats: Stat[] = [
 
 const Stats = () => {
   return (
-    <section className="py-12 sm:py-16">
+    <section className="py-6 sm:py-8">
       <div className="container mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-8">
           {stats.map((stat) => (
             <div
               key={stat.label}
               className="text-center flex flex-col items-center"
             >
               <stat.icon
-                className="w-12 h-12 text-primary mb-4"
+                className="w-8 h-8 text-primary mb-4"
                 strokeWidth={1}
               />
               <p className="text-4xl md:text-5xl font-bold text-primary font-headline">
