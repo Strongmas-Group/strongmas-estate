@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="absolute top-0 z-50 w-full bg-black/20 backdrop-blur-sm">
       <div className="container flex h-20 items-center px-4 sm:px-6 lg:px-8 text-white">
-        <Link href="/" className="mr-auto">
+        <Link href="/" className="mr-auto flex-shrink-0">
           <span className="text-3xl font-bold tracking-wider">
             STRONGMAS
           </span>
@@ -16,7 +16,7 @@ const Header = () => {
             </span>
           </div>
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium whitespace-nowrap">
           <Link
             href="/"
             className="transition-colors hover:text-white/80"
@@ -54,7 +54,7 @@ const Header = () => {
             Contact
           </Link>
         </nav>
-        <Button asChild variant="outline" className="ml-6 hidden md:inline-flex bg-transparent border-white text-white hover:bg-white hover:text-primary">
+        <Button asChild variant="outline" className="ml-6 hidden md:inline-flex bg-transparent border-white text-white hover:bg-white hover:text-primary flex-shrink-0">
           <Link href="#">Book an Inspection</Link>
         </Button>
       </div>
