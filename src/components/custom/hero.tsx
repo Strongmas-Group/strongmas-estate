@@ -17,7 +17,7 @@ const Hero = () => {
           title="Background Video"
         ></iframe>
       </div>
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
         <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">
           Find Your Dream Home
@@ -26,7 +26,7 @@ const Hero = () => {
           Discover the finest properties in the most desirable locations.
         </p>
       </div>
-      <div className="absolute -bottom-16 md:-bottom-12 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-20">
+      <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-20">
         <PropertySearchFilter />
       </div>
     </section>

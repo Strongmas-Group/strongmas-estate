@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Select,
   SelectContent,
@@ -9,87 +8,96 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { MapPin, Home, BedDouble, DollarSign, Search } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const FilterItem = ({
+  label,
+  children,
+  className,
+}: {
+  label: string;
+  children: React.ReactNode;
+  className?: string;
+}) => (
+  <div className={cn("flex flex-col gap-2 p-4 md:p-6", className)}>
+    <label className="text-xs text-white/70">{label}</label>
+    {children}
+  </div>
+);
 
 const PropertySearchFilter = () => {
   return (
-    <Card className="bg-background/80 backdrop-blur-sm border-accent/20 shadow-lg">
-      <CardContent className="p-4 md:p-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
-          <div className="lg:col-span-1">
-            <label className="text-sm font-medium text-muted-foreground flex items-center mb-2">
-              <MapPin className="w-4 h-4 mr-2 text-accent" /> Location
-            </label>
-            <Select>
-              <SelectTrigger>
-                <SelectValue placeholder="All Locations" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Locations</SelectItem>
-                <SelectItem value="new-york">New York</SelectItem>
-                <SelectItem value="los-angeles">Los Angeles</SelectItem>
-                <SelectItem value="miami">Miami</SelectItem>
-                <SelectItem value="chicago">Chicago</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <div>
-            <label className="text-sm font-medium text-muted-foreground flex items-center mb-2">
-              <Home className="w-4 h-4 mr-2 text-accent" /> Property Type
-            </label>
-            <Select>
-              <SelectTrigger>
-                <SelectValue placeholder="Any" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="any">Any</SelectItem>
-                <SelectItem value="apartment">Apartment</SelectItem>
-                <SelectItem value="house">House</SelectItem>
-                <SelectItem value="villa">Villa</SelectItem>
-                <SelectItem value="condo">Condo</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <div>
-            <label className="text-sm font-medium text-muted-foreground flex items-center mb-2">
-              <BedDouble className="w-4 h-4 mr-2 text-accent" /> Bedrooms
-            </label>
-            <Select>
-              <SelectTrigger>
-                <SelectValue placeholder="Any" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="any">Any</SelectItem>
-                <SelectItem value="1">1</SelectItem>
-                <SelectItem value="2">2</SelectItem>
-                <SelectItem value="3">3</SelectItem>
-                <SelectItem value="4+">4+</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <div>
-            <label className="text-sm font-medium text-muted-foreground flex items-center mb-2">
-              <DollarSign className="w-4 h-4 mr-2 text-accent" /> Price
-            </label>
-            <Select>
-              <SelectTrigger>
-                <SelectValue placeholder="Any" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="any">Any</SelectItem>
-                <SelectItem value="<2m">&lt; $2,000,000</SelectItem>
-                <SelectItem value="2m-5m">$2,000,000 - $5,000,000</SelectItem>
-                <SelectItem value=">5m">&gt; $5,000,000</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          <Button className="w-full lg:w-auto flex items-center gap-2">
-            <Search className="w-4 h-4" />
-            Show Result
+    <div className="bg-black/40 backdrop-blur-md rounded-lg border border-white/20">
+      <div className="grid grid-cols-1 md:grid-cols-5 items-center">
+        <FilterItem label="Search by Location">
+          <Select defaultValue="all">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All Locations</SelectItem>
+              <SelectItem value="new-york">New York</SelectItem>
+              <SelectItem value="los-angeles">Los Angeles</SelectItem>
+              <SelectItem value="miami">Miami</SelectItem>
+              <SelectItem value="chicago">Chicago</SelectItem>
+            </SelectContent>
+          </Select>
+        </FilterItem>
+
+        <FilterItem label="Property Type" className="border-l border-white/20">
+          <Select defaultValue="any">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="any">Any</SelectItem>
+              <SelectItem value="apartment">Apartment</SelectItem>
+              <SelectItem value="house">House</SelectItem>
+              <SelectItem value="villa">Villa</SelectItem>
+              <SelectItem value="condo">Condo</SelectItem>
+            </SelectContent>
+          </Select>
+        </FilterItem>
+
+        <FilterItem label="Bedrooms" className="border-l border-white/20">
+          <Select defaultValue="any">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="any">Any</SelectItem>
+              <SelectItem value="1">1</SelectItem>
+              <SelectItem value="2">2</SelectItem>
+              <SelectItem value="3">3</SelectItem>
+              <SelectItem value="4+">4+</SelectItem>
+            </SelectContent>
+          </Select>
+        </FilterItem>
+
+        <FilterItem label="Price" className="border-l border-white/20">
+          <Select defaultValue="any">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="any">Any</SelectItem>
+              <SelectItem value="<2m">&lt; $2,000,000</SelectItem>
+              <SelectItem value="2m-5m">$2,000,000 - $5,000,000</SelectItem>
+              <SelectItem value=">5m">&gt; $5,000,000</SelectItem>
+            </SelectContent>
+          </Select>
+        </FilterItem>
+
+        <div className="p-4 md:p-6 md:border-l border-t md:border-t-0 border-white/20">
+          <Button
+            size="lg"
+            className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm"
+          >
+            SHOW ALL RESULTS
           </Button>
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 };
 
