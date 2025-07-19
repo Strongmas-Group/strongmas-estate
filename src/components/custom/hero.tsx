@@ -26,7 +26,7 @@ const Hero = () => {
           Discover the finest properties in the most desirable locations.
         </p>
       </div>
-      <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-30">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-30">
         <PropertySearchFilter />
       </div>
     </section>
