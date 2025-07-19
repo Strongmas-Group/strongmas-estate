@@ -13,7 +13,9 @@ export default function Home() {
           <Header />
           <Hero />
         </div>
-        <Stats />
+        <div className="bg-white">
+          <Stats />
+        </div>
         <FeaturedProperties />
         <Locations />
       </div>
