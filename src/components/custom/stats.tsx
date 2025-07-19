@@ -18,10 +18,10 @@ const stats: Stat[] = [
 
 const Stats = () => {
   return (
-    <section className="py-24 sm:py-32 mt-20 bg-card">
+    <section className="py-12 sm:py-16 mt-20 bg-white">
       <div className="container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8">
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <div
               key={stat.label}
               className="text-center flex flex-col items-center"
@@ -30,10 +30,10 @@ const Stats = () => {
                 className="w-16 h-16 text-accent mb-4"
                 strokeWidth={1}
               />
-              <p className="text-4xl md:text-5xl font-bold text-foreground font-headline">
+              <p className="text-4xl md:text-5xl font-bold text-primary font-headline">
                 {stat.value}
               </p>
-              <p className="mt-2 text-muted-foreground">{stat.label}</p>
+              <p className="mt-2 text-primary/70">{stat.label}</p>
             </div>
           ))}
         </div>
