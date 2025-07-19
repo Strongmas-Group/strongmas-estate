@@ -13,7 +13,7 @@ export default function Home() {
           <Header />
           <Hero />
         </div>
-        <div className="bg-white">
+        <div className="w-screen -translate-x-1/2 left-1/2 relative bg-white">
           <Stats />
         </div>
         <FeaturedProperties />

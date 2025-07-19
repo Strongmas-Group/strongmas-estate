@@ -27,7 +27,7 @@ const Stats = () => {
               className="text-center flex flex-col items-center"
             >
               <stat.icon
-                className="w-16 h-16 text-accent mb-4"
+                className="w-12 h-12 text-accent mb-4"
                 strokeWidth={1}
               />
               <p className="text-4xl md:text-5xl font-bold text-primary font-headline">
