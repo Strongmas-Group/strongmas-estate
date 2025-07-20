@@ -94,7 +94,7 @@ export default function ContactPage() {
 
         <section className="w-full h-[500px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.544598285521!2d3.590555574992257!3d6.451864193536838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf75a5448f027%3A0x808a786ab6488340!2sStrongmas%20Residence%20and%20Development%20Limited!5e0!3m2!1sen!2sng!4v1753023241517!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63435.789871376786!2d3.4902400631003414!3d6.427842004237196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKm%2049%2C%20Olokonla%20Bus%20Stop%2C%20Lekki%20-%20Epe%20Expressway%2C%20Beside%20Petrocam%20Filling%20Station%2C%20Ajah%2C%20Lagos%20-%20Nigeria.!5e0!3m2!1sen!2sng!4v1753022482341!5m2!1sen!2sng"
             width="100%"
             height="100%"
             style={{ border: 0 }}
