@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="absolute top-0 z-50 w-full bg-black/20 backdrop-blur-sm">
+    <header className="absolute top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline">
       <div className="container flex h-20 items-center px-4 sm:px-6 lg:px-8 text-white">
         <Link href="/" className="mr-auto flex-shrink-0">
           <span className="text-3xl font-bold tracking-wider">
