@@ -7,7 +7,7 @@ const DiscoverProperties = () => {
     <section className="relative w-full py-20 sm:py-28">
       <div className="absolute inset-0">
         <Image
-          src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753011985/oo7sgcctyzypoor0ey3c.jpg"
+          src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753017068/hciwh8gaajm8y9zk5dnh.png"
           alt="Cityscape"
           layout="fill"
           objectFit="cover"
