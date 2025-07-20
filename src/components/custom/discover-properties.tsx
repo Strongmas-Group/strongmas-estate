@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const DiscoverProperties = () => {
   return (
-    <section className="relative w-full py-20 sm:py-28">
+    <section className="relative w-full h-[360px] flex items-center justify-center">
       <div className="absolute inset-0">
         <Image
           src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753017068/hciwh8gaajm8y9zk5dnh.png"
@@ -14,7 +14,7 @@ const DiscoverProperties = () => {
           className="brightness-50"
           data-ai-hint="city building sunset"
         />
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#000000] to-[#272727e0]"></div>
       </div>
       <div className="relative z-10 text-center text-white">
         <p className="text-sm tracking-widest text-white/80 mb-2">
