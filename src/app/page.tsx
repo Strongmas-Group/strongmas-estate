@@ -5,6 +5,7 @@ import FeaturedProperties from "@/components/custom/featured-properties";
 import AboutUs from "@/components/custom/about-us";
 import Locations from "@/components/custom/locations";
 import Footer from "@/components/custom/footer";
+import DiscoverProperties from "@/components/custom/discover-properties";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Locations />
       </div>
        <div className="w-screen -translate-x-1/2 left-1/2 relative">
+        <DiscoverProperties />
         <Footer />
       </div>
     </div>

@@ -1,0 +1,34 @@
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+const DiscoverProperties = () => {
+  return (
+    <section className="relative w-full py-20 sm:py-28">
+      <div className="absolute inset-0">
+        <Image
+          src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753011985/oo7sgcctyzypoor0ey3c.jpg"
+          alt="Cityscape"
+          layout="fill"
+          objectFit="cover"
+          className="brightness-50"
+          data-ai-hint="city building sunset"
+        />
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+      <div className="relative z-10 text-center text-white">
+        <p className="text-sm tracking-widest text-white/80 mb-2">
+          Powered By STRONGMAS GROUP
+        </p>
+        <h2 className="text-3xl md:text-5xl font-bold font-headline mb-8 max-w-4xl mx-auto px-4">
+          DISCOVER THE FINEST MODERN PROPERTIES
+        </h2>
+        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-sm font-bold px-10 py-6">
+          <Link href="#">BOOK AN INSPECTION</Link>
+        </Button>
+      </div>
+    </section>
+  );
+};
+
+export default DiscoverProperties;
