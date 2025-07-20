@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-primary text-primary-foreground">
+    <footer id="contact" className="bg-background text-foreground">
       <div className="container py-12 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex flex-col">
@@ -26,7 +26,7 @@ const Footer = () => {
                 <Link
                   key={index}
                   href="#"
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 >
                   <Icon className="h-4 w-4" />
                 </Link>
@@ -36,11 +36,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 font-headline text-accent">Useful Link</h4>
             <nav className="flex flex-col gap-2">
-              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">Carrier</Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">FAQ</Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">Blog</Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">Contact</Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary-foreground">About us</Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">Carrier</Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">FAQ</Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">Blog</Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">Contact</Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">About us</Link>
             </nav>
           </div>
           <div>
@@ -50,8 +50,8 @@ const Footer = () => {
                 Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside
                 Petrocam Filling Station, Ajah, Lagos - Nigeria.
               </p>
-              <p>Phone: <a href="tel:+2349010777777" className="hover:text-primary-foreground">+234 901 077 7777</a></p>
-              <p>Email: <a href="mailto:hello@strongmasng.com" className="hover:text-primary-foreground">hello@strongmasng.com</a></p>
+              <p>Phone: <a href="tel:+2349010777777" className="hover:text-foreground">+234 901 077 7777</a></p>
+              <p>Email: <a href="mailto:hello@strongmasng.com" className="hover:text-foreground">hello@strongmasng.com</a></p>
             </address>
           </div>
           <div>
@@ -63,7 +63,7 @@ const Footer = () => {
                 <Input
                   type="email"
                   placeholder="Email"
-                  className="bg-primary-foreground/10 border-muted-foreground/50 rounded-full pr-28 text-primary-foreground placeholder:text-muted-foreground"
+                  className="bg-secondary border-muted-foreground/50 rounded-full pr-28 text-foreground placeholder:text-muted-foreground"
                 />
                 <Button
                   type="submit"
@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
               <p className="text-xs text-muted-foreground">
                 By signing up you accept our{" "}
-                <Link href="#" className="underline hover:text-primary-foreground">
+                <Link href="#" className="underline hover:text-foreground">
                   terms and conditions
                 </Link>
               </p>
@@ -83,13 +83,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-primary-foreground/10">
+      <div className="border-t border-border">
         <div className="container py-4 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
            <div className="flex gap-4 mb-4 sm:mb-0">
-               <Link href="#" className="hover:text-primary-foreground">Terms and Conditions</Link>
-               <Link href="#" className="hover:text-primary-foreground">Cookie Policy</Link>
-               <Link href="#" className="hover:text-primary-foreground">Privacy Policy</Link>
-               <Link href="#" className="hover:text-primary-foreground">Corporate Communications Policy</Link>
+               <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
+               <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
+               <Link href="#" className="hover:text-foreground">Privacy Policy</Link>
+               <Link href="#" className="hover:text-foreground">Corporate Communications Policy</Link>
            </div>
           <p>&copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.</p>
         </div>
