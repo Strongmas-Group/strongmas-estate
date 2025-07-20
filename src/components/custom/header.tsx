@@ -54,7 +54,7 @@ const Header = () => {
             Contact
           </Link>
         </nav>
-        <Button asChild variant="outline" className="ml-6 hidden md:inline-flex bg-transparent border-white text-white hover:bg-white hover:text-primary flex-shrink-0">
+        <Button asChild className="ml-6 hidden md:inline-flex bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0">
           <Link href="#">Book an Inspection</Link>
         </Button>
       </div>
