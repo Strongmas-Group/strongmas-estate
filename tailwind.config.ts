@@ -13,6 +13,7 @@ export default {
         body: ['Literata', 'serif'],
         headline: ['Cero Pro', 'Literata', 'sans-serif'],
         code: ['monospace'],
+        sans: ['Montserrat', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

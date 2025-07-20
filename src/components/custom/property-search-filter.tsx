@@ -31,7 +31,7 @@ const PropertySearchFilter = () => {
       <div className="grid grid-cols-1 md:grid-cols-5 items-center">
         <FilterItem label="Search by Location">
           <Select defaultValue="all">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -46,7 +46,7 @@ const PropertySearchFilter = () => {
 
         <FilterItem label="Property Type" className="border-l border-white/20">
           <Select defaultValue="any">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -61,7 +61,7 @@ const PropertySearchFilter = () => {
 
         <FilterItem label="Bedrooms" className="border-l border-white/20">
           <Select defaultValue="any">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -76,7 +76,7 @@ const PropertySearchFilter = () => {
 
         <FilterItem label="Price" className="border-l border-white/20">
           <Select defaultValue="any">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-medium text-base focus:ring-0 focus:ring-offset-0">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
