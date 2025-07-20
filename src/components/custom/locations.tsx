@@ -1,65 +1,102 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 const locations = [
   {
-    name: "New York",
-    image: "https://placehold.co/800x1000",
-    hint: "New York skyline",
+    name: "The Waterfront",
+    location: "Eko Atlantic",
+    image:
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753009587/uryulfytil4hpo3pejcr.jpg",
+    hint: "illuminated building night",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
   },
   {
-    name: "Los Angeles",
-    image: "https://placehold.co/800x1000",
-    hint: "Los Angeles palms",
+    name: "Seaside Villas",
+    location: "Maldives",
+    image:
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753012221/tocfpjgjat38vzte7lur.jpg",
+    hint: "overwater bungalows",
+    colSpan: "col-span-1 md:col-span-2",
+    rowSpan: "row-span-1",
   },
   {
-    name: "Miami",
-    image: "https://placehold.co/800x1000",
-    hint: "Miami beach",
+    name: "The Skyline",
+    location: "Ikoyi, Lagos",
+    image:
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753011867/gctmnstdokedcnqwnuwp.jpg",
+    hint: "modern skyscraper lake",
+    colSpan: "col-span-1 md:col-span-2",
+    rowSpan: "row-span-1",
   },
   {
-    name: "Chicago",
-    image: "https://placehold.co/800x1000",
-    hint: "Chicago architecture",
+    name: "Glass Box",
+    location: "Victoria Island",
+    image:
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753012131/ofcaeq2aw6i5cxdoicbn.jpg",
+    hint: "glass building cityscape",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    name: "The Twin Towers",
+    location: "Dubai Marina",
+    image:
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753011925/r1leiwqx8p25xzmekkjh.jpg",
+    hint: "twin skyscrapers clouds",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+   {
+    name: "Azure Heights",
+    location: "Lekki Coast",
+    image:
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753012168/t28649vdwsyxwqklvilk.jpg",
+    hint: "modern building sunset",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    name: "Sunset Point",
+    location: "Abuja Hills",
+    image:
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753011985/oo7sgcctyzypoor0ey3c.jpg",
+    hint: "city building sunset",
+    colSpan: "col-span-1 md:col-span-2",
+    rowSpan: "row-span-1",
   },
 ];
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-24 sm:py-32">
+    <section id="locations" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold font-headline">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-widest text-foreground">
             Our Locations
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            We have a strong presence in the world's most vibrant cities.
-          </p>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[24rem]">
           {locations.map((loc) => (
             <Link
-              href={`/locations/${loc.name.toLowerCase()}`}
+              href={`/locations/${loc.location.toLowerCase()}`}
               key={loc.name}
-              className="group relative block overflow-hidden rounded-lg"
+              className={`group relative overflow-hidden rounded-lg ${loc.colSpan} ${loc.rowSpan}`}
             >
               <Image
                 src={loc.image}
                 alt={loc.name}
                 width={800}
                 height={1000}
-                className="w-full h-96 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                 data-ai-hint={loc.hint}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-6">
-                <h3 className="text-2xl font-bold text-white font-headline">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-4 md:p-6 text-white">
+                <h3 className="text-xl font-bold font-headline">
                   {loc.name}
                 </h3>
-                <p className="mt-2 text-white flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Explore properties <ArrowRight className="ml-2 h-4 w-4" />
-                </p>
+                <p className="mt-1 text-sm text-white/80">{loc.location}</p>
               </div>
             </Link>
           ))}
