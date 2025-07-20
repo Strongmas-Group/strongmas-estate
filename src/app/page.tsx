@@ -17,8 +17,8 @@ export default function Home() {
         <div className="w-screen -translate-x-1/2 left-1/2 relative bg-white">
           <Stats />
         </div>
-        <FeaturedProperties />
         <AboutUs />
+        <FeaturedProperties />
         <Locations />
       </div>
        <div className="w-screen -translate-x-1/2 left-1/2 relative">
