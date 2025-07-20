@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-background text-foreground">
-      <div className="container py-12 md:py-24 px-4 sm:px-6 lg:px-8">
+    <footer id="contact" className="bg-[#151515] text-foreground">
+      <div className="container py-24 px-4 sm:px-6 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex flex-col">
             <Link href="/" className="mb-4">
