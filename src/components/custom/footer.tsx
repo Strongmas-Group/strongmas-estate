@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container py-4 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
+        <div className="container py-8 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
            <div className="flex gap-4 mb-4 sm:mb-0">
                <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
                <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
