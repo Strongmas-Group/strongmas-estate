@@ -43,21 +43,21 @@ export default function ContactPage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Visit Our Office</h3>
+                  <h3 className="font-bold font-headline text-lg mb-2">Visit Our Office</h3>
                   <p className="text-muted-foreground">
                     Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside Petrocam Filling Station, Ajah, Lagos - Nigeria.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Send Email</h3>
+                  <h3 className="font-bold font-headline text-lg mb-2">Send Email</h3>
                   <p className="text-muted-foreground">hello@strongmasng.com</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Contact/WhatsApp</h3>
+                  <h3 className="font-bold font-headline text-lg mb-2">Contact/WhatsApp</h3>
                   <p className="text-muted-foreground">+234 901 077 7777</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Find us on Social Media:</h3>
+                  <h3 className="font-bold font-headline text-lg mb-2">Find us on Social Media:</h3>
                   <div className="flex gap-4">
                     <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">
                       <Facebook className="h-5 w-5" />
@@ -83,7 +83,7 @@ export default function ContactPage() {
                   <Input placeholder="Phone Number" className="bg-white" />
                   <Input placeholder="Subject" className="bg-white" />
                   <Textarea placeholder="Write Message" rows={5} className="bg-white" />
-                  <Button type="submit" size="lg" className="w-full bg-[#142B54] text-white hover:bg-[#142B54]/90">
+                  <Button type="submit" size="lg" className="w-full bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline">
                     CONTACT US
                   </Button>
                 </form>

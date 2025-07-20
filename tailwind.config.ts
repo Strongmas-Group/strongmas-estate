@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Literata', 'serif'],
+        body: ['Cero Pro', 'Literata', 'sans-serif'],
         headline: ['Cero Pro', 'Literata', 'sans-serif'],
         code: ['monospace'],
         sans: ['Montserrat', 'sans-serif'],
