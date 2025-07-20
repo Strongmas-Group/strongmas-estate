@@ -13,7 +13,6 @@ const DiscoverProperties = () => {
         className="absolute inset-0 brightness-50"
         data-ai-hint="city building sunset"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#000000] to-[#272727e0]"></div>
       <div className="relative z-10 text-center text-white container mx-auto px-4">
         <p className="text-sm tracking-widest text-white/80 mb-2">
           Powered By STRONGMAS GROUP
