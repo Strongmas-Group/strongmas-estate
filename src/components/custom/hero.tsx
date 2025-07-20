@@ -6,7 +6,7 @@ const Hero = () => {
   const videoId = "wLbH-dzf-JE";
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
+    <section className="relative w-full h-[80vh] md:h-[90vh] overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <iframe
           className="absolute top-1/2 left-1/2 w-full h-full min-w-[177.77vh] min-h-[100vh] -translate-x-1/2 -translate-y-1/2"
@@ -26,7 +26,7 @@ const Hero = () => {
           Discover the finest properties in the most desirable locations.
         </p>
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 z-30">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-sm md:max-w-5xl px-4 z-30">
         <PropertySearchFilter />
       </div>
     </section>

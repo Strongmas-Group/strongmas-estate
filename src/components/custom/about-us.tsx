@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="py-24 sm:py-32 bg-background">
+    <section id="about" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto">
-        <div className="bg-card p-8 md:p-12 rounded-lg">
+        <div className="bg-card p-6 md:p-12 rounded-lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">

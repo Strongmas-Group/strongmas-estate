@@ -18,9 +18,9 @@ const stats: Stat[] = [
 
 const Stats = () => {
   return (
-    <section className="py-6 sm:py-8">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-8">
+    <section className="py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4">
           {stats.map((stat) => (
             <div
               key={stat.label}
@@ -30,10 +30,10 @@ const Stats = () => {
                 className="w-8 h-8 text-primary mb-4"
                 strokeWidth={1}
               />
-              <p className="text-4xl md:text-5xl font-bold text-primary font-headline">
+              <p className="text-3xl md:text-5xl font-bold text-primary font-headline">
                 {stat.value}
               </p>
-              <p className="mt-2 text-primary/70">{stat.label}</p>
+              <p className="mt-2 text-sm text-primary/70 text-center">{stat.label}</p>
             </div>
           ))}
         </div>

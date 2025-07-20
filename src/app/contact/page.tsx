@@ -12,7 +12,7 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="relative h-[50vh] bg-black">
+        <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
             src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
             alt="Contact us background"
@@ -23,7 +23,7 @@ export default function ContactPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
           <div className="relative z-10 h-full flex flex-col justify-center items-start text-white container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline">
+            <h1 className="text-3xl md:text-5xl font-bold font-headline">
               CONTACT US
             </h1>
             <p className="mt-2 text-sm font-sans">
@@ -32,7 +32,7 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="py-24 sm:py-32 bg-white text-black font-sans">
+        <section className="py-16 sm:py-24 bg-white text-black font-sans">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="flex flex-col gap-8">
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gray-50 p-8 rounded-lg">
+              <div className="bg-gray-50 p-6 md:p-8 rounded-lg">
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <Input placeholder="Full Name" className="bg-white" />
@@ -92,7 +92,7 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="w-full h-[500px]">
+        <section className="w-full h-[300px] md:h-[500px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63435.789871376786!2d3.4902400631003414!3d6.427842004237196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKm%2049%2C%20Olokonla%20Bus%20Stop%2C%20Lekki%20-%20Epe%20Expressway%2C%20Beside%20Petrocam%20Filling%20Station%2C%20Ajah%2C%20Lagos%20-%20Nigeria.!5e0!3m2!1sen!2sng!4v1753022482341!5m2!1sen!2sng"
             width="100%"

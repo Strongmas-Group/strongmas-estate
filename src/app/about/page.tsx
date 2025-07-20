@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="relative h-[50vh] bg-black">
+        <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
             src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
             alt="About us background"
@@ -21,7 +21,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
           <div className="relative z-10 h-full flex flex-col justify-center items-start text-white container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline">
+            <h1 className="text-3xl md:text-5xl font-bold font-headline">
               ABOUT US
             </h1>
             <p className="mt-2 text-sm font-sans">
@@ -30,10 +30,10 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-24 sm:py-32 bg-background font-sans">
+        <section className="py-16 sm:py-24 bg-background font-sans">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative h-96 md:h-[550px] w-full">
+              <div className="relative h-80 md:h-[550px] w-full order-last lg:order-first">
                 <Image
                   src="https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png"
                   alt="Business handshake"
@@ -43,7 +43,7 @@ export default function AboutPage() {
                   data-ai-hint="business handshake"
                 />
               </div>
-              <div className="text-white">
+              <div className="text-white order-first lg:order-last">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">
                   GET TO KNOW US!
                 </h2>
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-24 sm:py-32 bg-white text-black font-sans">
+        <section className="py-16 sm:py-24 bg-white text-black font-sans">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">
@@ -84,9 +84,9 @@ export default function AboutPage() {
 
         <Separator className="bg-accent h-[2px]" />
 
-        <section className="py-24 sm:py-32 bg-white text-black font-sans">
+        <section className="py-16 sm:py-24 bg-white text-black font-sans">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
                 MEET OUR LEADERSHIP TEAM
               </h2>
@@ -99,7 +99,7 @@ export default function AboutPage() {
                   Micheal Shobukola, Founder and Managing Director of Strongmas Group, has over a decade of experience in building successful enterprises in Nigeria. He holds a B.Sc. in Computer and Information Science from Lead City University and a master's degree from the University of East Anglia. His leadership in developing world-class properties and expertise in fundraising have driven Strongmas' growth in housing estates and gated communities.
                 </p>
               </div>
-              <div className="relative h-[550px] w-full">
+              <div className="relative h-96 md:h-[550px] w-full">
                 <Image
                   src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753020241/lwiwgwhy2eqyo04xtfgn.png"
                   alt="Micheal Shobukola"
@@ -110,7 +110,6 @@ export default function AboutPage() {
                 />
               </div>
             </div>
-            {/* Carousel dots can be added here if needed */}
           </div>
         </section>
       </main>

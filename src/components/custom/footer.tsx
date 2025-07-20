@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 const Footer = () => {
   return (
     <footer id="contact" className="bg-[#151515] text-foreground font-sans">
-      <div className="container py-24 px-4 sm:px-6 lg:px-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div className="container py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8">
           <div className="flex flex-col">
             <Link href="/" className="mb-4">
                 <span className="text-3xl font-bold tracking-wider">STRONGMAS</span>
@@ -84,14 +84,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container py-12 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
-           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-4 sm:mb-0">
+        <div className="container py-6 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
+           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-4 sm:mb-0 text-center">
                <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
                <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
                <Link href="#" className="hover:text-foreground">Privacy Policy</Link>
                <Link href="#" className="hover:text-foreground">Corporate Communications Policy</Link>
            </div>
-          <p>&copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.</p>
+          <p className="text-center sm:text-right">&copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -66,7 +66,7 @@ export default function ServicesPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="relative h-[50vh] bg-black">
+        <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
             src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
             alt="Services background"
@@ -77,7 +77,7 @@ export default function ServicesPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
           <div className="relative z-10 h-full flex flex-col justify-center items-start text-white container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline">
+            <h1 className="text-3xl md:text-5xl font-bold font-headline">
               OUR SERVICES
             </h1>
             <p className="mt-2 text-sm font-sans">
@@ -86,18 +86,18 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section className="py-24 sm:py-32 bg-background text-foreground">
+        <section className="py-16 sm:py-24 bg-background text-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
                 SERVICES WE OFFER
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
-                <div key={index} className="bg-card p-8 rounded-lg text-left flex flex-col items-start">
+                <div key={index} className="bg-card p-6 md:p-8 rounded-lg text-left flex flex-col items-start">
                   <div className="mb-6">
-                    <service.icon className="h-16 w-16 text-accent" strokeWidth={1} />
+                    <service.icon className="h-12 w-12 md:h-16 md:w-16 text-accent" strokeWidth={1} />
                   </div>
                   <h3 className="text-xl font-bold font-headline mb-4 text-white">
                     {service.title}
@@ -111,9 +111,9 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section className="py-24 sm:py-32 bg-white text-black font-sans">
+        <section className="py-16 sm:py-24 bg-white text-black font-sans">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto mb-16">
+            <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
                 WHAT OUR CLIENTS SAY
               </h2>

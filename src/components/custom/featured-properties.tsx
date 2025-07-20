@@ -66,13 +66,13 @@ const FeaturedProperties = () => {
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
                         <p className="text-sm tracking-[0.2em] mb-4 text-accent">FEATURED PROPERTIES</p>
-                        <h2 className="text-5xl md:text-7xl font-bold font-headline mb-4">
+                        <h2 className="text-4xl md:text-7xl font-bold font-headline mb-4">
                         {property.name}
                         </h2>
-                        <p className="text-lg max-w-2xl mb-8">
+                        <p className="text-lg text-center max-w-md md:max-w-2xl mb-8">
                         {property.location}
                         </p>
-                        <div className="flex gap-4">
+                        <div className="flex flex-col sm:flex-row gap-4">
                         <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                             VIEW PROPERTY
                         </Button>
