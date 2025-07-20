@@ -84,8 +84,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container py-24 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-           <div className="flex gap-4 mb-4 sm:mb-0">
+        <div className="container py-12 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
+           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-4 sm:mb-0">
                <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
                <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
                <Link href="#" className="hover:text-foreground">Privacy Policy</Link>
