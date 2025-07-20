@@ -48,7 +48,7 @@ const Header = () => {
             About us
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="transition-colors hover:text-white/80"
           >
             Contact
