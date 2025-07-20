@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="font-semibold mb-4 font-headline text-accent">Useful Link</h4>
-            <nav className="flex flex-col gap-2">
+            <nav className="flex flex-col gap-2 text-sm">
               <Link href="#" className="text-muted-foreground hover:text-foreground">Carrier</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground">FAQ</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground">Blog</Link>
@@ -73,7 +73,7 @@ const Footer = () => {
                   SUBMIT
                 </Button>
               </div>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 By signing up you accept our{" "}
                 <Link href="#" className="underline hover:text-foreground">
                   terms and conditions
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container py-24 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
+        <div className="container py-24 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
            <div className="flex gap-4 mb-4 sm:mb-0">
                <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
                <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
