@@ -19,7 +19,7 @@ const FilterItem = ({
   children: React.ReactNode;
   className?: string;
 }) => (
-  <div className={cn("flex flex-col gap-2 p-4 md:p-6", className)}>
+  <div className={cn("flex flex-col gap-1 p-4", className)}>
     <label className="text-xs text-white/70">{label}</label>
     {children}
   </div>
@@ -27,7 +27,7 @@ const FilterItem = ({
 
 const PropertySearchFilter = () => {
   return (
-    <div className="bg-black/40 backdrop-blur-md rounded-lg border border-white/20">
+    <div className="bg-black/40 backdrop-blur-md rounded-full border border-white/20">
       <div className="grid grid-cols-1 md:grid-cols-5 items-center">
         <FilterItem label="Search by Location">
           <Select defaultValue="all">
@@ -88,10 +88,10 @@ const PropertySearchFilter = () => {
           </Select>
         </FilterItem>
 
-        <div className="p-4 md:p-6 md:border-l border-t md:border-t-0 border-white/20">
+        <div className="p-2 md:border-l border-t md:border-t-0 border-white/20">
           <Button
             size="lg"
-            className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm"
+            className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-12"
           >
             SHOW ALL RESULTS
           </Button>
