@@ -30,7 +30,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-24 sm:py-32 bg-background">
+        <section className="py-24 sm:py-32 bg-background font-sans">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-96 md:h-[550px] w-full">
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-24 sm:py-32 bg-white text-black">
+        <section className="py-24 sm:py-32 bg-white text-black font-sans">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">
@@ -84,7 +84,7 @@ export default function AboutPage() {
 
         <Separator className="bg-accent h-[2px]" />
 
-        <section className="py-24 sm:py-32 bg-white text-black">
+        <section className="py-24 sm:py-32 bg-white text-black font-sans">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
