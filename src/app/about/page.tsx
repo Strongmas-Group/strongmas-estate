@@ -3,6 +3,7 @@ import Footer from "@/components/custom/footer";
 import DiscoverProperties from "@/components/custom/discover-properties";
 import Image from "next/image";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
 
 export default function AboutPage() {
   return (
@@ -65,6 +66,51 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="py-24 sm:py-32 bg-white text-black">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">
+                WHAT WE OFFER
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Whether for living or investment, explore our current projects and discover the finest in modern residential and commercial properties, designed to meet your highest standards. At Strongmas, we offer a wide range of residential and commercial properties designed to meet your highest standards.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Separator className="bg-accent h-[2px]" />
+
+        <section className="py-24 sm:py-32 bg-white text-black">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">
+                MEET OUR LEADERSHIP TEAM
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="text-left">
+                <h3 className="text-3xl font-bold font-headline">Micheal Shobukola</h3>
+                <p className="text-accent font-bold mb-6">Managing Director</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Micheal Shobukola, Founder and Managing Director of Strongmas Group, has over a decade of experience in building successful enterprises in Nigeria. He holds a B.Sc. in Computer and Information Science from Lead City University and a master's degree from the University of East Anglia. His leadership in developing world-class properties and expertise in fundraising have driven Strongmas' growth in housing estates and gated communities.
+                </p>
+              </div>
+              <div className="relative h-[550px] w-full">
+                <Image
+                  src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753020241/lwiwgwhy2eqyo04xtfgn.png"
+                  alt="Micheal Shobukola"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-lg"
+                  data-ai-hint="man smiling suit"
+                />
+              </div>
+            </div>
+            {/* Carousel dots can be added here if needed */}
           </div>
         </section>
       </main>
