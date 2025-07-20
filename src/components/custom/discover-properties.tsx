@@ -17,7 +17,7 @@ const DiscoverProperties = () => {
         <p className="text-sm tracking-widest text-white/80 mb-2">
           Powered By STRONGMAS GROUP
         </p>
-        <h2 className="text-3xl md:text-5xl font-bold font-headline mb-8 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold font-headline mb-8 max-w-4xl mx-auto">
           DISCOVER THE FINEST MODERN PROPERTIES
         </h2>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-sm font-bold px-10 py-6">
