@@ -5,22 +5,20 @@ import Link from "next/link";
 const DiscoverProperties = () => {
   return (
     <section className="relative w-full h-[360px] flex items-center justify-center">
-      <div className="absolute inset-0">
-        <Image
-          src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753017068/hciwh8gaajm8y9zk5dnh.png"
-          alt="Cityscape"
-          layout="fill"
-          objectFit="cover"
-          className="brightness-50"
-          data-ai-hint="city building sunset"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#000000] to-[#272727e0]"></div>
-      </div>
-      <div className="relative z-10 text-center text-white">
+      <Image
+        src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753017068/hciwh8gaajm8y9zk5dnh.png"
+        alt="Cityscape"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 brightness-50"
+        data-ai-hint="city building sunset"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#000000] to-[#272727e0]"></div>
+      <div className="relative z-10 text-center text-white container mx-auto px-4">
         <p className="text-sm tracking-widest text-white/80 mb-2">
           Powered By STRONGMAS GROUP
         </p>
-        <h2 className="text-3xl md:text-5xl font-bold font-headline mb-8 max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl md:text-5xl font-bold font-headline mb-8 max-w-4xl mx-auto">
           DISCOVER THE FINEST MODERN PROPERTIES
         </h2>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-sm font-bold px-10 py-6">

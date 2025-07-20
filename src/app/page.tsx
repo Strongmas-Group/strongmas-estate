@@ -11,18 +11,18 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex-grow">
-        <div className="w-screen -translate-x-1/2 left-1/2 relative">
+        <div className="w-full">
           <Header />
           <Hero />
         </div>
-        <div className="w-screen -translate-x-1/2 left-1/2 relative bg-white">
+        <div className="w-full bg-white">
           <Stats />
         </div>
         <AboutUs />
         <FeaturedProperties />
         <Locations />
       </div>
-       <div className="w-screen -translate-x-1/2 left-1/2 relative">
+       <div className="w-full">
         <DiscoverProperties />
         <Footer />
       </div>

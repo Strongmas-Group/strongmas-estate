@@ -18,12 +18,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-        {/* Assuming Cero Pro is loaded separately or installed locally */}
       </head>
       <body className="font-body antialiased bg-background text-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {children}
-        </div>
+        {children}
         <Toaster />
       </body>
     </html>
