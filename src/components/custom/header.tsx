@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
@@ -28,9 +28,9 @@ const Header = () => {
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium whitespace-nowrap">
                     <NavLink href="/">Home</NavLink>
-                    <NavLink href="#featured">Browse</NavLink>
+                    <NavLink href="/#featured">Browse</NavLink>
                     <NavLink href="/services">Services</NavLink>
-                    <NavLink href="#insight">In sight</NavLink>
+                    <NavLink href="/#locations">In sight</NavLink>
                     <NavLink href="/about">About us</NavLink>
                     <NavLink href="/contact">Contact</NavLink>
                 </nav>
@@ -41,19 +41,22 @@ const Header = () => {
 
                 {/* Mobile Navigation */}
                 <Sheet>
-                    <SheetTrigger asChild className="md:hidden ml-4">
-                        <Button variant="ghost" size="icon">
+                    <SheetTrigger asChild>
+                        <Button variant="ghost" size="icon" className="md:hidden ml-4">
                             <Menu className="h-6 w-6" />
                             <span className="sr-only">Open menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="bg-background text-white w-[250px] sm:w-[300px]">
-                        <div className="flex flex-col h-full p-6">
-                            <nav className="flex flex-col gap-4 text-lg mt-8">
+                    <SheetContent side="right" className="bg-background text-white w-[250px] sm:w-[300px] p-0">
+                        <SheetHeader className="p-6">
+                            <SheetTitle className="sr-only">Menu</SheetTitle>
+                        </SheetHeader>
+                        <div className="flex flex-col h-full px-6 pb-6">
+                            <nav className="flex flex-col gap-4 text-lg mt-2">
                                 <NavLink href="/">Home</NavLink>
-                                <NavLink href="#featured">Browse</NavLink>
+                                <NavLink href="/#featured">Browse</NavLink>
                                 <NavLink href="/services">Services</NavLink>
-                                <NavLink href="#insight">In sight</NavLink>
+                                <NavLink href="/#locations">In sight</NavLink>
                                 <NavLink href="/about">About us</NavLink>
                                 <NavLink href="/contact">Contact</NavLink>
                             </nav>
