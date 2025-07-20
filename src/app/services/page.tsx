@@ -2,7 +2,7 @@ import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import Image from "next/image";
 import Link from "next/link";
-import { Briefcase, Building2, Cog, Handshake, ShieldCheck, Trowel } from "lucide-react";
+import { Briefcase, Building2, Cog, Hammer, Handshake, ShieldCheck } from "lucide-react";
 
 const services = [
   {
@@ -16,7 +16,7 @@ const services = [
     description: "At Strongmas Residence and Development, we have a rich history of creating exceptional real estate properties and delivering top-tier construction projects.",
   },
   {
-    icon: Trowel,
+    icon: Hammer,
     title: "Design & Build",
     description: "We specialize in the comprehensive design and construction of real estate properties, encompassing every facet of your project.",
   },
