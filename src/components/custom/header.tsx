@@ -21,13 +21,13 @@ const Header = () => {
             href="/"
             className="transition-colors hover:text-white/80"
           >
-            Homepage
+            Home
           </Link>
           <Link
             href="#featured"
             className="transition-colors hover:text-white/80"
           >
-            Browse property
+            Browse
           </Link>
           <Link
             href="#services"
