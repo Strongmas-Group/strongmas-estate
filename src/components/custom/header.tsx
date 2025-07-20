@@ -42,7 +42,7 @@ const Header = () => {
             In sight
           </Link>
            <Link
-            href="#about"
+            href="/about"
             className="transition-colors hover:text-white/80"
           >
             About us

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
@@ -21,8 +22,8 @@ const AboutUs = () => {
                 elegant designs with the latest technology and uphold the
                 highest quality standards.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                LEARN MORE
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <Link href="/about">LEARN MORE</Link>
               </Button>
             </div>
             <div className="relative h-80 md:h-[450px] w-full">
