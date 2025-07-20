@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-[#151515] text-foreground">
+    <footer id="contact" className="bg-[#151515] text-foreground font-sans">
       <div className="container py-24 px-4 sm:px-6 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex flex-col">
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container py-8 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
+        <div className="container py-24 px-4 sm:px-6 lg:px-24 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
            <div className="flex gap-4 mb-4 sm:mb-0">
                <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
                <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
