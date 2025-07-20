@@ -30,7 +30,7 @@ const Header = () => {
             Browse
           </Link>
           <Link
-            href="#services"
+            href="/services"
             className="transition-colors hover:text-white/80"
           >
             Services
