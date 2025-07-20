@@ -69,19 +69,21 @@ const locations = [
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-24 sm:py-32 bg-background">
+    <section id="locations" className="py-24 sm:py-32 bg-white text-black">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-widest text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-widest">
             Our Locations
           </h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[24rem]">
+      </div>
+      <div className="w-full">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-1 auto-rows-[24rem]">
           {locations.map((loc) => (
             <Link
               href={`/locations/${loc.location.toLowerCase()}`}
               key={loc.name}
-              className={`group relative overflow-hidden rounded-lg ${loc.colSpan} ${loc.rowSpan}`}
+              className={`group relative overflow-hidden ${loc.colSpan} ${loc.rowSpan}`}
             >
               <Image
                 src={loc.image}
