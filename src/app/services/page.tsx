@@ -1,8 +1,17 @@
+
+"use client";
+
 import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import Image from "next/image";
 import Link from "next/link";
 import { Briefcase, Building2, Cog, Hammer, Handshake, ShieldCheck } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselDots,
+} from "@/components/ui/carousel";
 
 const services = [
   {
@@ -36,6 +45,21 @@ const services = [
     description: "Our success is built on a foundation of collaboration and synergy. We seamlessly blend creativity and technical competence through direct cooperation among our team.",
   },
 ];
+
+const testimonials = [
+  {
+    name: "Mrs. Fred",
+    quote: "So far so good, Strongmas services are really fantastic and the area of their property is fantastic. The quality of work is also fantastic and i look forward to more beneficial relationship. Strongmas equals fantastic to me.",
+  },
+  {
+    name: "Mr. Kunle",
+    quote: "After inspecting your property, I was 101% convinced to own a property with Strongmas Residence and decided to be a part of the company by purchasing a unit of thier new project site THE OMINI.",
+  },
+  {
+    name: "Mr. Ade",
+    quote: "The team at Strongmas is professional, attentive, and incredibly skilled. They transformed our vision into a reality that exceeded all our expectations. Highly recommended!",
+  }
+]
 
 export default function ServicesPage() {
   return (
@@ -84,6 +108,39 @@ export default function ServicesPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="py-24 sm:py-32 bg-white text-black font-sans">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-4xl mx-auto mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">
+                WHAT OUR CLIENTS SAY
+              </h2>
+            </div>
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full max-w-5xl mx-auto"
+            >
+              <CarouselContent>
+                {testimonials.map((testimonial, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2">
+                    <div className="p-4 h-full">
+                       <blockquote className="text-lg text-muted-foreground italic mb-6 text-center leading-relaxed">
+                          "{testimonial.quote}"
+                        </blockquote>
+                        <p className="font-bold text-center font-headline text-lg">
+                          - {testimonial.name}
+                        </p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselDots className="mt-8 justify-center" />
+            </Carousel>
           </div>
         </section>
       </main>
