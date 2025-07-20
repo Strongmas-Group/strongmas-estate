@@ -11,15 +11,15 @@ export default function AboutPage() {
       <main className="flex-grow">
         <section className="relative h-[40vh] bg-black">
           <Image
-            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753011867/gctmnstdokedcnqwnuwp.jpg"
+            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
             alt="About us background"
             layout="fill"
             objectFit="cover"
             className="opacity-40"
-            data-ai-hint="cityscape night"
+            data-ai-hint="office building interior"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
-          <div className="relative z-10 h-full flex flex-col justify-center items-center text-white text-center">
+          <div className="relative z-10 h-full flex flex-col justify-center items-start text-white container mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-5xl md:text-6xl font-bold font-headline">
               ABOUT US
             </h1>
