@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
       </div>
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-full max-w-sm md:max-w-7xl px-4 z-30">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-full max-w-sm md:max-w-7xl px-2 z-30">
         <PropertySearchFilter />
       </div>
     </section>
