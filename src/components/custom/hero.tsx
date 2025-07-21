@@ -1,3 +1,4 @@
+
 "use client";
 
 import PropertySearchFilter from "./property-search-filter";
@@ -19,14 +20,8 @@ const Hero = () => {
       </div>
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-        <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4">
-          Find Your Dream Home
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl">
-          Discover the finest properties in the most desirable locations.
-        </p>
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-sm md:max-w-5xl px-4 z-30">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-sm md:max-w-7xl px-4 z-30">
         <PropertySearchFilter />
       </div>
     </section>

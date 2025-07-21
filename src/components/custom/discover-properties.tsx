@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -21,7 +22,7 @@ const DiscoverProperties = () => {
           DISCOVER THE FINEST MODERN PROPERTIES
         </h2>
         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-sm font-bold px-8 md:px-10 py-5 md:py-6">
-          <Link href="#">BOOK AN INSPECTION</Link>
+          <Link href="#">BOOK A TOUR</Link>
         </Button>
       </div>
     </section>

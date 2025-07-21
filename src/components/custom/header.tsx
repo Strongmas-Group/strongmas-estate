@@ -91,7 +91,7 @@ const Header = () => {
 
                 <div className="hidden md:flex items-center">
                     <Button asChild className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0">
-                        <Link href="#">Book an Inspection</Link>
+                        <Link href="#">Book A Tour</Link>
                     </Button>
                 </div>
 
@@ -109,7 +109,7 @@ const Header = () => {
                                 <SheetTitle className="sr-only">Menu</SheetTitle>
                                 <Link href="/" className="flex-shrink-0">
                                     <Image
-                                        src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
+                                        src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqpqpq20asthbcthx4b.png"
                                         alt="Strongmas Residence Logo"
                                         width={180}
                                         height={40}
@@ -127,7 +127,7 @@ const Header = () => {
                                     <NavLink href="/contact">Contact</NavLink>
                                 </nav>
                                 <Button asChild className="mt-auto bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px]">
-                                    <Link href="#">Book an Inspection</Link>
+                                    <Link href="#">Book A Tour</Link>
                                 </Button>
                             </div>
                         </SheetContent>
