@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <div className="w-full bg-white">
+        <div className="w-full bg-white h-[200px] flex items-center justify-center">
           <Stats />
         </div>
         <AboutUs />
