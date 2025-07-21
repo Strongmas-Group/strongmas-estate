@@ -39,9 +39,8 @@ const Locations = () => {
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                 data-ai-hint="modern building exterior"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-4 md:p-6 text-white">
-                <h3 className="text-xl font-bold font-headline">
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/40 backdrop-blur-sm">
+                <h3 className="text-xl font-bold font-headline text-white">
                   {property.name}
                 </h3>
                 <p className="mt-1 text-sm text-white/80">{property.location}</p>
