@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-[#151515] text-foreground font-sans">
       <div className="container py-12 md:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8">
-          <div className="text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8 text-left">
+          <div className="flex flex-col items-start">
             <Link href="/" className="mb-4 inline-block">
                 <span className="text-3xl font-bold tracking-wider">STRONGMAS</span>
                 <div className="flex items-center">
@@ -16,7 +16,7 @@ const Footer = () => {
                     <span className="text-sm tracking-[0.2em] text-accent">RESIDENCE</span>
                 </div>
             </Link>
-            <p className="text-muted-foreground mb-4 text-sm max-w-xs mx-auto md:mx-0">
+            <p className="text-muted-foreground mb-4 text-sm max-w-xs">
               With over 30 satisfied clients and the delivery of 50+
               state-of-the-art apartments and duplexes, we proudly showcase our
               commitment to excellence.
@@ -58,7 +58,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 font-headline text-accent">
               Sign Up For Our Exclusive Newsletter
             </h4>
-            <form className="flex flex-col gap-2 w-full max-w-xs mx-auto md:mx-0">
+            <form className="flex flex-col gap-2 w-full max-w-xs">
               <div className="relative">
                 <Input
                   type="email"
