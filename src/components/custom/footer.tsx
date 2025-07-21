@@ -84,14 +84,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container py-6 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-xs text-muted-foreground">
-           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-4 sm:mb-0 text-center">
+        <div className="container py-3 px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-xs text-muted-foreground">
+           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-2">
                <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
                <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
                <Link href="#" className="hover:text-foreground">Privacy Policy</Link>
                <Link href="#" className="hover:text-foreground">Corporate Communications Policy</Link>
            </div>
-          <p className="text-center sm:text-right">&copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.</p>
+          <p className="text-center">&copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

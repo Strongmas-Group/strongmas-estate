@@ -35,8 +35,6 @@ export default function PropertyPage() {
     setMainImage(image);
   };
 
-  const featureImages = property.images.slice(1, 5);
-
   return (
     <div className="flex flex-col min-h-screen bg-white text-black font-sans">
       <Header />
@@ -128,24 +126,9 @@ export default function PropertyPage() {
                 <TabsTrigger value="location">Location</TabsTrigger>
               </TabsList>
               <TabsContent value="description" className="pt-8">
-                <p className="text-gray-600 leading-relaxed max-w-4xl mb-12">
+                <p className="text-gray-600 leading-relaxed max-w-4xl">
                   {property.description}
                 </p>
-                <h3 className="text-3xl font-bold font-headline mb-8 text-black">Features</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {featureImages.map((img, index) => (
-                        <div key={index} className="relative h-56 w-full rounded-lg overflow-hidden">
-                             <Image
-                                src={img}
-                                alt={`Feature image ${index + 1}`}
-                                layout="fill"
-                                objectFit="cover"
-                                className="transition-transform duration-300 ease-in-out hover:scale-105"
-                                data-ai-hint="modern interior design"
-                             />
-                        </div>
-                    ))}
-                </div>
               </TabsContent>
               <TabsContent value="video" className="pt-8">
                 <p className="text-gray-600">Video content coming soon.</p>
