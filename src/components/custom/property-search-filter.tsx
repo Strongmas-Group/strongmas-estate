@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -97,7 +98,7 @@ const PropertySearchFilter = () => {
       <div className="md:hidden">
          <Sheet>
             <SheetTrigger asChild>
-                <Button size="lg" className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-12">
+                <Button size="lg" className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-[58px]">
                     <Filter className="mr-2 h-4 w-4" />
                     Filters
                 </Button>
@@ -127,7 +128,7 @@ const PropertySearchFilter = () => {
           <div className="p-2 md:border-l border-t md:border-t-0 border-white/20">
             <Button
               size="lg"
-              className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-12"
+              className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-[58px]"
             >
               SHOW ALL RESULTS
             </Button>
