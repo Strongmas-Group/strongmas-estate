@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -14,15 +15,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const propertyNames = [
-    "STRONGMAS RESIDENCE",
-    "THE OMINI",
-    "KESBEL COURT",
-    "AVION COURT 1",
-    "AVION COURT 2",
-    "THE ELYSIAN RISE"
-];
+import { properties } from "@/lib/properties";
 
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
     <Link href={href} className="transition-colors hover:text-white/80 block py-2">
@@ -35,9 +28,9 @@ const BrowseDropdown = () => (
         <DropdownMenuItem asChild>
             <Link href="/#featured">All Properties</Link>
         </DropdownMenuItem>
-        {propertyNames.map(name => (
-             <DropdownMenuItem key={name} asChild>
-                <Link href="/#featured">{name}</Link>
+        {properties.map(property => (
+             <DropdownMenuItem key={property.name} asChild>
+                <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>{property.name}</Link>
             </DropdownMenuItem>
         ))}
     </>
@@ -52,8 +45,8 @@ const BrowseAccordion = () => (
             <AccordionContent className="pl-4">
                 <div className="flex flex-col gap-2">
                     <NavLink href="/#featured">All Properties</NavLink>
-                    {propertyNames.map(name => (
-                        <NavLink key={name} href="/#featured">{name}</NavLink>
+                    {properties.map(property => (
+                        <NavLink key={property.name} href={`/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>{property.name}</NavLink>
                     ))}
                 </div>
             </AccordionContent>

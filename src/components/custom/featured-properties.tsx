@@ -1,7 +1,9 @@
+
 "use client";
 
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 
 import {
@@ -75,11 +77,11 @@ const FeaturedProperties = () => {
                         {property.description}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                        <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                            VIEW PROPERTY
+                        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                            <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>VIEW PROPERTY</Link>
                         </Button>
-                        <Button size="lg" variant="secondary" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                            VIEW ALL
+                        <Button asChild size="lg" variant="secondary" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                             <Link href="/#featured">VIEW ALL</Link>
                         </Button>
                         </div>
                     </div>
