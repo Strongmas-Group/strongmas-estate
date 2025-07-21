@@ -9,11 +9,14 @@ import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 
-export default function PropertyPage({ params }: { params: { slug: string } }) {
+export default function PropertyPage() {
+  const params = useParams();
+  const slug = params.slug;
+
   const property = properties.find(
-    (p) => p.name.toLowerCase().replace(/\s+/g, "-") === params.slug
+    (p) => p.name.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
   const [mainImage, setMainImage] = React.useState(property?.images[0] || "");
