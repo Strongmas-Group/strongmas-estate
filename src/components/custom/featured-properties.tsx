@@ -69,7 +69,7 @@ const FeaturedProperties = () => {
                         data-ai-hint={property.hint}
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-                        <p className="text-sm tracking-[0.2em] mb-4 text-accent">FEATURED PROPERTIES</p>
+                        <p className="text-3xl font-sans mb-4 text-white uppercase">FEATURED PROPERTIES</p>
                         <h2 className="text-4xl md:text-7xl font-bold font-headline mb-4">
                         {property.name}
                         </h2>
