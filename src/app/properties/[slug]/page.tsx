@@ -38,7 +38,7 @@ export default function PropertyPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-black font-sans">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow pt-20">
         <section className="relative h-[50vh] bg-black text-white">
             <Image
                 src={mainImage}

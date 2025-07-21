@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow pt-20">
         <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
             src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
@@ -43,7 +43,7 @@ export default function AboutPage() {
                   data-ai-hint="business handshake"
                 />
               </div>
-              <div className="text-white order-first lg:order-last">
+              <div className="text-white order-first lg:order-last px-4 sm:px-0">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">
                   GET TO KNOW US!
                 </h2>
@@ -112,11 +112,9 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-      </main>
-      <div className="w-full">
         <DiscoverProperties />
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
