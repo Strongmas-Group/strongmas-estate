@@ -38,18 +38,28 @@ export default function PropertyPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-black font-sans">
       <Header />
-      <main className="flex-grow pt-24 md:pt-32">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <p className="text-sm text-gray-500">
-              <Link href="/" className="hover:underline text-gray-700">Home</Link> /{" "}
-              <Link href="/#featured" className="hover:underline text-gray-700">Browse Properties</Link> / {" "}
-              <span className="font-medium text-black">Property Details</span>
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold font-headline mt-2 text-black">{property.name}</h1>
-            <p className="text-gray-600 mt-2">{property.location}</p>
-          </div>
+      <main className="flex-grow">
+        <section className="relative h-[50vh] bg-black text-white">
+            <Image
+                src={mainImage}
+                alt={property.name}
+                layout="fill"
+                objectFit="cover"
+                className="opacity-60"
+            />
+            <div className="absolute inset-0 bg-black/20" />
+            <div className="relative z-10 h-full flex flex-col justify-end container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+                <p className="text-sm text-gray-300">
+                    <Link href="/" className="hover:underline">Home</Link> /{" "}
+                    <Link href="/#featured" className="hover:underline">Browse Properties</Link> / {" "}
+                    <span className="font-medium text-white">Property Details</span>
+                </p>
+                <h1 className="text-4xl md:text-5xl font-bold font-headline mt-2">{property.name}</h1>
+                <p className="text-gray-300 mt-2">{property.location}</p>
+            </div>
+        </section>
 
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
             <div className="lg:col-span-2">
               <div className="relative w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden mb-4">
