@@ -41,7 +41,7 @@ const BrowseAccordion = () => (
      <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1" className="border-none">
             <AccordionTrigger className="hover:no-underline py-2 text-white hover:text-white/80">
-                Browse
+                Our Properties
             </AccordionTrigger>
             <AccordionContent className="pl-4">
                 <div className="flex flex-col gap-2">
@@ -78,7 +78,7 @@ const Header = () => {
                         <NavLink href="/">Home</NavLink>
                         <DropdownMenu>
                             <DropdownMenuTrigger className="flex items-center gap-1 transition-colors hover:text-white/80 outline-none">
-                                Browse <ChevronDown className="h-4 w-4" />
+                                Our Properties <ChevronDown className="h-4 w-4" />
                             </DropdownMenuTrigger>
                             <DropdownMenuContent className="bg-background text-white border-border">
                                 <BrowseDropdown />
@@ -135,7 +135,7 @@ const Header = () => {
                  </div>
             </div>
             
-            <div className="hidden md:block absolute right-[30px]">
+            <div className="hidden md:block absolute right-[30px] top-1/2 -translate-y-1/2">
                 <Button asChild className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0">
                     <Link href="#">Book A Tour</Link>
                 </Button>

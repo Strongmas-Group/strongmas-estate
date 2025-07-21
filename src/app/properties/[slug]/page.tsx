@@ -51,7 +51,7 @@ export default function PropertyPage() {
             <div className="relative z-10 h-full flex flex-col justify-end container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
                 <p className="text-sm text-gray-300">
                     <Link href="/" className="hover:underline">Home</Link> /{" "}
-                    <Link href="/#featured" className="hover:underline">Browse Properties</Link> / {" "}
+                    <Link href="/#featured" className="hover:underline">Our Properties</Link> / {" "}
                     <span className="font-medium text-white">Property Details</span>
                 </p>
                 <h1 className="text-4xl md:text-5xl font-bold font-headline mt-2">{property.name}</h1>
