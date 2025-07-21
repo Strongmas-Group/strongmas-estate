@@ -2,19 +2,22 @@ import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer id="contact" className="bg-[#151515] text-foreground font-sans">
       <div className="container py-12 md:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8 text-left">
-          <div className="flex flex-col items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8">
+          <div className="flex flex-col items-start md:items-start text-left md:text-left">
             <Link href="/" className="mb-4 inline-block">
-                <span className="text-3xl font-bold tracking-wider">STRONGMAS</span>
-                <div className="flex items-center">
-                    <div className="h-0.5 w-8 bg-accent mr-2"></div>
-                    <span className="text-sm tracking-[0.2em] text-accent">RESIDENCE</span>
-                </div>
+                <Image
+                    src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
+                    alt="Strongmas Residence Logo"
+                    width={200}
+                    height={44}
+                    className="h-auto w-auto"
+                />
             </Link>
             <p className="text-muted-foreground mb-4 text-sm max-w-xs">
               With over 30 satisfied clients and the delivery of 50+
@@ -39,8 +42,8 @@ const Footer = () => {
               <Link href="#" className="text-muted-foreground hover:text-foreground">Carrier</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground">FAQ</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground">Blog</Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">Contact</Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">About us</Link>
+              <Link href="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link>
+              <Link href="/about" className="text-muted-foreground hover:text-foreground">About us</Link>
             </nav>
           </div>
           <div className="text-left">
