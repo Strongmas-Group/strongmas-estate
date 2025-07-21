@@ -43,13 +43,13 @@ export default function PropertyPage() {
       <main className="flex-grow pt-24 md:pt-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <p className="text-sm text-muted-foreground">
-              <Link href="/" className="hover:underline">Home</Link> /{" "}
-              <Link href="/#featured" className="hover:underline">Browse Properties</Link> / {" "}
+            <p className="text-sm text-gray-500">
+              <Link href="/" className="hover:underline text-gray-700">Home</Link> /{" "}
+              <Link href="/#featured" className="hover:underline text-gray-700">Browse Properties</Link> / {" "}
               <span className="font-medium text-black">Property Details</span>
             </p>
             <h1 className="text-4xl md:text-5xl font-bold font-headline mt-2 text-black">{property.name}</h1>
-            <p className="text-muted-foreground mt-2">{property.location}</p>
+            <p className="text-gray-600 mt-2">{property.location}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
@@ -67,7 +67,7 @@ export default function PropertyPage() {
                 {property.images.slice(0, 5).map((img, index) => (
                   <div
                     key={index}
-                    className={`relative w-full h-16 md:h-24 rounded-md overflow-hidden cursor-pointer border-2 ${mainImage === img ? 'border-primary' : 'border-transparent'}`}
+                    className={`relative w-full h-16 md:h-24 rounded-md overflow-hidden cursor-pointer border-2 ${mainImage === img ? 'border-[#142B54]' : 'border-transparent'}`}
                     onClick={() => handleThumbnailClick(img)}
                   >
                     <Image
@@ -86,31 +86,31 @@ export default function PropertyPage() {
               <div className="space-y-4 text-sm">
                 <div className="flex justify-between">
                   <span className="font-medium text-black">Location:</span>
-                  <span className="text-muted-foreground text-right">{property.location}</span>
+                  <span className="text-gray-600 text-right">{property.location}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-black">Property Type:</span>
-                  <span className="text-muted-foreground text-right">{property.property_type}</span>
+                  <span className="text-gray-600 text-right">{property.property_type}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-black">Status:</span>
-                  <span className="text-muted-foreground text-right">For Sale</span>
+                  <span className="text-gray-600 text-right">For Sale</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-black">Beds:</span>
-                  <span className="text-muted-foreground text-right">4</span>
+                  <span className="text-gray-600 text-right">4</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-black">Bathroom:</span>
-                  <span className="text-muted-foreground text-right">4.5</span>
+                  <span className="text-gray-600 text-right">4.5</span>
                 </div>
                  <div className="flex justify-between">
                   <span className="font-medium text-black">Car Space Per Unit:</span>
-                  <span className="text-muted-foreground text-right">2</span>
+                  <span className="text-gray-600 text-right">2</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-black">Available Units:</span>
-                  <span className="text-muted-foreground text-right">4</span>
+                  <span className="text-gray-600 text-right">4</span>
                 </div>
               </div>
               <Button size="lg" className="w-full mt-8 bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline">
@@ -128,7 +128,7 @@ export default function PropertyPage() {
                 <TabsTrigger value="location">Location</TabsTrigger>
               </TabsList>
               <TabsContent value="description" className="pt-8">
-                <p className="text-muted-foreground leading-relaxed max-w-4xl mb-12">
+                <p className="text-gray-600 leading-relaxed max-w-4xl mb-12">
                   {property.description}
                 </p>
                 <h3 className="text-3xl font-bold font-headline mb-8 text-black">Features</h3>
@@ -148,13 +148,13 @@ export default function PropertyPage() {
                 </div>
               </TabsContent>
               <TabsContent value="video" className="pt-8">
-                <p className="text-muted-foreground">Video content coming soon.</p>
+                <p className="text-gray-600">Video content coming soon.</p>
               </TabsContent>
               <TabsContent value="floor-plans" className="pt-8">
-                 <p className="text-muted-foreground">Floor plans coming soon.</p>
+                 <p className="text-gray-600">Floor plans coming soon.</p>
               </TabsContent>
               <TabsContent value="location" className="pt-8">
-                 <p className="text-muted-foreground">Location details coming soon.</p>
+                 <p className="text-gray-600">Location details coming soon.</p>
               </TabsContent>
             </Tabs>
           </div>
