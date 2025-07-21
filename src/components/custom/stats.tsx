@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -33,8 +34,7 @@ const stats: Stat[] = [
 
 const Stats = () => {
   return (
-    <section className="py-12 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4">
           {stats.map((stat) => (
             <div
@@ -55,7 +55,6 @@ const Stats = () => {
             </div>
           ))}
         </div>
-      </div>
     </section>
   );
 };
