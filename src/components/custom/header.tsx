@@ -57,18 +57,20 @@ const BrowseAccordion = () => (
 
 const Header = () => {
     return (
-        <header className="fixed top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline">
-            <div className="container flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8 text-white">
-                <Link href="/" className="flex-shrink-0">
-                     <Image
-                        src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
-                        alt="Strongmas Residence Logo"
-                        width={200}
-                        height={44}
-                        className="h-auto w-auto"
-                        priority
-                     />
-                </Link>
+        <header className="fixed top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline h-20 flex items-center">
+            <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8 text-white">
+                <div className="flex-1 flex justify-start">
+                    <Link href="/" className="flex-shrink-0">
+                        <Image
+                            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
+                            alt="Strongmas Residence Logo"
+                            width={200}
+                            height={44}
+                            className="h-auto w-auto"
+                            priority
+                        />
+                    </Link>
+                </div>
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex flex-1 justify-center">
@@ -88,15 +90,13 @@ const Header = () => {
                         <NavLink href="/contact">Contact</NavLink>
                     </nav>
                 </div>
-
-                <div className="hidden md:flex items-center">
-                    <Button asChild className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0 mr-[30px]">
-                        <Link href="#">Book A Tour</Link>
-                    </Button>
+                
+                <div className="hidden md:flex flex-1 justify-end">
+                     {/* Placeholder for alignment */}
                 </div>
 
                 {/* Mobile Navigation */}
-                 <div className="md:hidden">
+                 <div className="md:hidden flex-1 flex justify-end">
                     <Sheet>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon">
@@ -133,6 +133,12 @@ const Header = () => {
                         </SheetContent>
                     </Sheet>
                  </div>
+            </div>
+            
+            <div className="hidden md:block absolute right-[30px]">
+                <Button asChild className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0">
+                    <Link href="#">Book A Tour</Link>
+                </Button>
             </div>
         </header>
     );
