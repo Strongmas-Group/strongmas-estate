@@ -14,25 +14,27 @@ import {
 import { Button } from "@/components/ui/button";
 
 const properties = [
-  {
-    name: "The Omini",
-    location: "Akin Leigh Crescent, Off Admiralty Way, Lekki Phase 1",
-    image:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753008086/qtvlqhhyfv6fin01pkpa.jpg",
-    hint: "modern living room",
-  },
-  {
-    name: "The Monarch",
-    location: "Banana Island, Ikoyi, Lagos",
-    image: "https://placehold.co/1920x1080",
-    hint: "luxury apartment balcony",
-  },
-  {
-    name: "The Imperial",
-    location: "Eko Atlantic City, Lagos",
-    image: "https://placehold.co/1920x1080",
-    hint: "penthouse city view",
-  },
+    {
+      name: "The Elysian Rise",
+      location: "Musa Ya’dua Street, Victoria Island",
+      description: "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture.",
+      image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056625/zjuiauvxp1yuwp8swhfx.jpg",
+      hint: "luxury high-rise building"
+    },
+    {
+      name: "Kesbel Court",
+      location: "Lekki Phase 1",
+      description: "Nestled in the heart of Lekki Phase 1, Kesbel Court is a refined multi-family apartment development that reimagines urban living through timeless architecture, luxurious comfort, and breathtaking views.",
+      image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055780/dxefvuod4v8mmwb0qe94.jpg",
+      hint: "modern apartment exterior"
+    },
+    {
+      name: "Avion Court 2",
+      location: "Ikota G.R.A.",
+      description: "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
+      image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056390/y6gmtpbfh9oioc44ke4y.jpg",
+      hint: "gated residential estate"
+    }
 ];
 
 const FeaturedProperties = () => {
@@ -70,7 +72,7 @@ const FeaturedProperties = () => {
                         {property.name}
                         </h2>
                         <p className="text-lg text-center max-w-md md:max-w-2xl mb-8">
-                        {property.location}
+                        {property.description}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                         <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">

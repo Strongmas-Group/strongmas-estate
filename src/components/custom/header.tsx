@@ -15,6 +15,15 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 
+const propertyNames = [
+    "STRONGMAS RESIDENCE",
+    "THE OMINI",
+    "KESBEL COURT",
+    "AVION COURT 1",
+    "AVION COURT 2",
+    "THE ELYSIAN RISE"
+];
+
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
     <Link href={href} className="transition-colors hover:text-white/80 block py-2">
         {children}
@@ -26,18 +35,11 @@ const BrowseDropdown = () => (
         <DropdownMenuItem asChild>
             <Link href="/#featured">All Properties</Link>
         </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-            <Link href="#">Apartments</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-            <Link href="#">Houses</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-            <Link href="#">Villas</Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-            <Link href="#">Condos</Link>
-        </DropdownMenuItem>
+        {propertyNames.map(name => (
+             <DropdownMenuItem key={name} asChild>
+                <Link href="/#featured">{name}</Link>
+            </DropdownMenuItem>
+        ))}
     </>
 );
 
@@ -50,10 +52,9 @@ const BrowseAccordion = () => (
             <AccordionContent className="pl-4">
                 <div className="flex flex-col gap-2">
                     <NavLink href="/#featured">All Properties</NavLink>
-                    <NavLink href="#">Apartments</NavLink>
-                    <NavLink href="#">Houses</NavLink>
-                    <NavLink href="#">Villas</NavLink>
-                    <NavLink href="#">Condos</NavLink>
+                    {propertyNames.map(name => (
+                        <NavLink key={name} href="/#featured">{name}</NavLink>
+                    ))}
                 </div>
             </AccordionContent>
         </AccordionItem>
