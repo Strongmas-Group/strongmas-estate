@@ -1,19 +1,34 @@
 "use client";
 
-import { Users, Building2, Home, MapPin } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import Image from "next/image";
 
 interface Stat {
-  icon: LucideIcon;
+  iconUrl: string;
   value: string;
   label: string;
 }
 
 const stats: Stat[] = [
-  { icon: Users, value: "30+", label: "Satisfied Clients" },
-  { icon: Building2, value: "1,256+", label: "In planning and progress" },
-  { icon: Home, value: "50+", label: "Homes delivered" },
-  { icon: MapPin, value: "10", label: "Locations" },
+  { 
+    iconUrl: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753103996/qilugt8bymxotpslbblk.svg", 
+    value: "30+", 
+    label: "Satisfied Clients" 
+  },
+  { 
+    iconUrl: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753103897/npdy2kxd72udjpy2iymq.svg", 
+    value: "1,256+", 
+    label: "In planning and progress" 
+  },
+  { 
+    iconUrl: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753104027/ip1mbz2ubonfanldrm1v.svg", 
+    value: "50+", 
+    label: "Homes delivered" 
+  },
+  { 
+    iconUrl: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753104048/rj5xfstdhejdjjhz9ouy.svg", 
+    value: "10", 
+    label: "Locations" 
+  },
 ];
 
 const Stats = () => {
@@ -26,9 +41,12 @@ const Stats = () => {
               key={stat.label}
               className="text-center flex flex-col items-center"
             >
-              <stat.icon
+              <Image
+                src={stat.iconUrl}
+                alt={`${stat.label} icon`}
+                width={32}
+                height={32}
                 className="w-8 h-8 text-primary mb-4"
-                strokeWidth={1}
               />
               <p className="text-3xl md:text-5xl font-bold text-primary font-headline">
                 {stat.value}
