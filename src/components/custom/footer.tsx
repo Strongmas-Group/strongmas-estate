@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-[#151515] text-foreground font-sans">
       <div className="container py-12 md:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8 text-center">
-          <div className="flex flex-col items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start">
             <Link href="/" className="mb-4">
                 <span className="text-3xl font-bold tracking-wider">STRONGMAS</span>
                 <div className="flex items-center">
@@ -33,7 +33,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-semibold mb-4 font-headline text-accent">Useful Link</h4>
             <nav className="flex flex-col gap-2 text-sm">
               <Link href="#" className="text-muted-foreground hover:text-foreground">Carrier</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
               <Link href="#" className="text-muted-foreground hover:text-foreground">About us</Link>
             </nav>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-semibold mb-4 font-headline text-accent">Address & Contact Info</h4>
             <address className="space-y-2 text-muted-foreground not-italic text-sm">
               <p>
@@ -54,7 +54,7 @@ const Footer = () => {
               <p>Email: <a href="mailto:hello@strongmasng.com" className="hover:text-foreground">hello@strongmasng.com</a></p>
             </address>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center md:items-start">
             <h4 className="font-semibold mb-4 font-headline text-accent">
               Sign Up For Our Exclusive Newsletter
             </h4>
