@@ -46,9 +46,9 @@ export default function PropertyPage() {
             <p className="text-sm text-muted-foreground">
               <Link href="/" className="hover:underline">Home</Link> /{" "}
               <Link href="/#featured" className="hover:underline">Browse Properties</Link> / {" "}
-              <span className="font-medium">Property Details</span>
+              <span className="font-medium text-black">Property Details</span>
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold font-headline mt-2">{property.name}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline mt-2 text-black">{property.name}</h1>
             <p className="text-muted-foreground mt-2">{property.location}</p>
           </div>
 
@@ -82,34 +82,34 @@ export default function PropertyPage() {
             </div>
 
             <div className="bg-gray-50 p-6 md:p-8 rounded-lg h-fit">
-              <h2 className="text-2xl font-bold font-headline mb-6">Property Summary</h2>
+              <h2 className="text-2xl font-bold font-headline mb-6 text-black">Property Summary</h2>
               <div className="space-y-4 text-sm">
                 <div className="flex justify-between">
-                  <span className="font-medium">Location:</span>
+                  <span className="font-medium text-black">Location:</span>
                   <span className="text-muted-foreground text-right">{property.location}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium">Property Type:</span>
+                  <span className="font-medium text-black">Property Type:</span>
                   <span className="text-muted-foreground text-right">{property.property_type}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium">Status:</span>
+                  <span className="font-medium text-black">Status:</span>
                   <span className="text-muted-foreground text-right">For Sale</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium">Beds:</span>
+                  <span className="font-medium text-black">Beds:</span>
                   <span className="text-muted-foreground text-right">4</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium">Bathroom:</span>
+                  <span className="font-medium text-black">Bathroom:</span>
                   <span className="text-muted-foreground text-right">4.5</span>
                 </div>
                  <div className="flex justify-between">
-                  <span className="font-medium">Car Space Per Unit:</span>
+                  <span className="font-medium text-black">Car Space Per Unit:</span>
                   <span className="text-muted-foreground text-right">2</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="font-medium">Available Units:</span>
+                  <span className="font-medium text-black">Available Units:</span>
                   <span className="text-muted-foreground text-right">4</span>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function PropertyPage() {
 
           <div className="py-12 md:py-16">
             <Tabs defaultValue="description" className="w-full">
-              <TabsList className="border-b border-gray-200">
+              <TabsList className="bg-gray-100 text-black">
                 <TabsTrigger value="description">Description</TabsTrigger>
                 <TabsTrigger value="video">Video</TabsTrigger>
                 <TabsTrigger value="floor-plans">Floor Plans</TabsTrigger>
@@ -131,7 +131,7 @@ export default function PropertyPage() {
                 <p className="text-muted-foreground leading-relaxed max-w-4xl mb-12">
                   {property.description}
                 </p>
-                <h3 className="text-3xl font-bold font-headline mb-8">Features</h3>
+                <h3 className="text-3xl font-bold font-headline mb-8 text-black">Features</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {featureImages.map((img, index) => (
                         <div key={index} className="relative h-56 w-full rounded-lg overflow-hidden">
@@ -148,13 +148,13 @@ export default function PropertyPage() {
                 </div>
               </TabsContent>
               <TabsContent value="video" className="pt-8">
-                <p>Video content coming soon.</p>
+                <p className="text-muted-foreground">Video content coming soon.</p>
               </TabsContent>
               <TabsContent value="floor-plans" className="pt-8">
-                 <p>Floor plans coming soon.</p>
+                 <p className="text-muted-foreground">Floor plans coming soon.</p>
               </TabsContent>
               <TabsContent value="location" className="pt-8">
-                 <p>Location details coming soon.</p>
+                 <p className="text-muted-foreground">Location details coming soon.</p>
               </TabsContent>
             </Tabs>
           </div>
