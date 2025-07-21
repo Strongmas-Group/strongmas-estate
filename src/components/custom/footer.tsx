@@ -7,21 +7,21 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-[#151515] text-foreground font-sans">
       <div className="container py-12 md:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8 justify-center">
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <Link href="/" className="mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-8">
+          <div className="text-center md:text-left">
+            <Link href="/" className="mb-4 inline-block">
                 <span className="text-3xl font-bold tracking-wider">STRONGMAS</span>
                 <div className="flex items-center">
                     <div className="h-0.5 w-8 bg-accent mr-2"></div>
                     <span className="text-sm tracking-[0.2em] text-accent">RESIDENCE</span>
                 </div>
             </Link>
-            <p className="text-muted-foreground mb-4 text-sm max-w-xs">
+            <p className="text-muted-foreground mb-4 text-sm max-w-xs mx-auto md:mx-0">
               With over 30 satisfied clients and the delivery of 50+
               state-of-the-art apartments and duplexes, we proudly showcase our
               commitment to excellence.
             </p>
-            <div className="flex gap-2 mt-auto">
+            <div className="flex gap-2 justify-center md:justify-start">
               {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
                 <Link
                   key={index}
@@ -33,7 +33,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="text-center md:text-left">
             <h4 className="font-semibold mb-4 font-headline text-accent">Useful Link</h4>
             <nav className="flex flex-col gap-2 text-sm">
               <Link href="#" className="text-muted-foreground hover:text-foreground">Carrier</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
               <Link href="#" className="text-muted-foreground hover:text-foreground">About us</Link>
             </nav>
           </div>
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="text-center md:text-left">
             <h4 className="font-semibold mb-4 font-headline text-accent">Address & Contact Info</h4>
             <address className="space-y-2 text-muted-foreground not-italic text-sm">
               <p>
@@ -54,11 +54,11 @@ const Footer = () => {
               <p>Email: <a href="mailto:hello@strongmasng.com" className="hover:text-foreground">hello@strongmasng.com</a></p>
             </address>
           </div>
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="text-center md:text-left">
             <h4 className="font-semibold mb-4 font-headline text-accent">
               Sign Up For Our Exclusive Newsletter
             </h4>
-            <form className="flex flex-col gap-2 w-full max-w-xs">
+            <form className="flex flex-col gap-2 w-full max-w-xs mx-auto md:mx-0">
               <div className="relative">
                 <Input
                   type="email"
