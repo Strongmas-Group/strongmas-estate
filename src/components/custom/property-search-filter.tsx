@@ -32,7 +32,7 @@ const SearchFilters = () => (
     <>
         <FilterItem label="Search by Location">
           <Select defaultValue="all">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-sm focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -47,7 +47,7 @@ const SearchFilters = () => (
 
         <FilterItem label="Property Type" className="md:border-l border-t md:border-t-0 border-white/20">
           <Select defaultValue="any">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-sm focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -62,7 +62,7 @@ const SearchFilters = () => (
 
         <FilterItem label="Bedrooms" className="md:border-l border-t md:border-t-0 border-white/20">
           <Select defaultValue="any">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-sm focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -77,7 +77,7 @@ const SearchFilters = () => (
 
         <FilterItem label="Price" className="md:border-l border-t md:border-t-0 border-white/20">
           <Select defaultValue="any">
-            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-base focus:ring-0 focus:ring-offset-0 font-sans">
+            <SelectTrigger className="border-none p-0 h-auto bg-transparent text-white font-bold text-sm focus:ring-0 focus:ring-offset-0 font-sans">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -98,7 +98,7 @@ const PropertySearchFilter = () => {
       <div className="md:hidden">
          <Sheet>
             <SheetTrigger asChild>
-                <Button size="lg" className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-[58px]">
+                <Button size="lg" className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-xs h-12">
                     <Filter className="mr-2 h-4 w-4" />
                     Filters
                 </Button>
@@ -111,7 +111,7 @@ const PropertySearchFilter = () => {
                      <div className="flex flex-col">
                         <SearchFilters />
                         <div className="p-4 border-t border-white/20">
-                            <Button size="lg" className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-12">
+                            <Button size="lg" className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-xs h-12">
                                 SHOW ALL RESULTS
                             </Button>
                         </div>
@@ -128,7 +128,7 @@ const PropertySearchFilter = () => {
           <div className="p-2 md:border-l border-t md:border-t-0 border-white/20">
             <Button
               size="lg"
-              className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-sm h-[58px]"
+              className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold tracking-wider text-xs h-12"
             >
               SHOW ALL RESULTS
             </Button>
