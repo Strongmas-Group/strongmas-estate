@@ -34,71 +34,79 @@ const PropertySearchFilter = () => {
 
   return (
     <div className="p-2 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-[758px] lg:max-w-[1440px] mx-auto border border-white/20">
-      <div className="grid grid-cols-1 md:grid-cols-5 items-center">
+      <div className="flex items-center justify-between w-full">
         
-        <FilterSelectItem label="Search by Location">
-            <Select onValueChange={setLocation} defaultValue="All locations">
-                <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
-                    <SelectValue />
-                </SelectTrigger>
-                <SelectContent className="bg-background border-border text-white">
-                    <SelectItem value="All locations">All locations</SelectItem>
-                    {locations.map(loc => (
-                    <SelectItem key={loc} value={loc}>{loc}</SelectItem>
-                    ))}
-                </SelectContent>
-            </Select>
-        </FilterSelectItem>
+        <div className="flex-1">
+            <FilterSelectItem label="Search by Location">
+                <Select onValueChange={setLocation} defaultValue="All locations">
+                    <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="bg-background border-border text-white">
+                        <SelectItem value="All locations">All locations</SelectItem>
+                        {locations.map(loc => (
+                        <SelectItem key={loc} value={loc}>{loc}</SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+            </FilterSelectItem>
+        </div>
 
-        <Separator orientation="vertical" className="h-6 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-6 bg-white/20" />
 
-        <FilterSelectItem label="Property Type">
-            <Select onValueChange={setPropertyType} defaultValue="Any">
-                <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
-                    <SelectValue />
-                </SelectTrigger>
-                <SelectContent className="bg-background border-border text-white">
-                    <SelectItem value="Any">Any</SelectItem>
-                    {propertyTypes.map(type => (
-                    <SelectItem key={type} value={type}>{type}</SelectItem>
-                    ))}
-                </SelectContent>
-            </Select>
-        </FilterSelectItem>
+        <div className="flex-1">
+            <FilterSelectItem label="Property Type">
+                <Select onValueChange={setPropertyType} defaultValue="Any">
+                    <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="bg-background border-border text-white">
+                        <SelectItem value="Any">Any</SelectItem>
+                        {propertyTypes.map(type => (
+                        <SelectItem key={type} value={type}>{type}</SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+            </FilterSelectItem>
+        </div>
 
-        <Separator orientation="vertical" className="h-6 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-6 bg-white/20" />
         
-        <FilterSelectItem label="Bedrooms">
-            <Select onValueChange={setBedrooms} defaultValue="Any">
-                <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
-                    <SelectValue />
-                </SelectTrigger>
-                <SelectContent className="bg-background border-border text-white">
-                    {bedroomOptions.map(opt => (
-                        <SelectItem key={opt} value={opt}>{opt}</SelectItem>
-                    ))}
-                </SelectContent>
-            </Select>
-        </FilterSelectItem>
+        <div className="flex-1">
+            <FilterSelectItem label="Bedrooms">
+                <Select onValueChange={setBedrooms} defaultValue="Any">
+                    <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="bg-background border-border text-white">
+                        {bedroomOptions.map(opt => (
+                            <SelectItem key={opt} value={opt}>{opt}</SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+            </FilterSelectItem>
+        </div>
         
-        <Separator orientation="vertical" className="h-6 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-6 bg-white/20" />
         
-        <FilterSelectItem label="Price">
-            <Select onValueChange={setPrice} defaultValue="Any">
-                <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
-                    <SelectValue />
-                </SelectTrigger>
-                <SelectContent className="bg-background border-border text-white">
-                    {priceOptions.map(opt => (
-                        <SelectItem key={opt} value={opt}>{opt}</SelectItem>
-                    ))}
-                </SelectContent>
-            </Select>
-        </FilterSelectItem>
+        <div className="flex-1">
+            <FilterSelectItem label="Price">
+                <Select onValueChange={setPrice} defaultValue="Any">
+                    <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="bg-background border-border text-white">
+                        {priceOptions.map(opt => (
+                            <SelectItem key={opt} value={opt}>{opt}</SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+            </FilterSelectItem>
+        </div>
         
-        <Separator orientation="vertical" className="h-6 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-6 bg-white/20" />
         
-        <div className="px-2">
+        <div className="flex-1 px-2">
             <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-2 h-auto">
                 SHOW ALL RESULTS
             </Button>
