@@ -3,17 +3,6 @@ import Link from "next/link";
 import { properties } from "@/lib/properties";
 
 const Locations = () => {
-  // Define a static grid layout configuration.
-  const gridConfig = [
-    { colSpan: "col-span-1", rowSpan: "row-span-1" },
-    { colSpan: "col-span-1 md:col-span-2", rowSpan: "row-span-1" },
-    { colSpan: "col-span-1 md:col-span-2", rowSpan: "row-span-1" },
-    { colSpan: "col-span-1", rowSpan: "row-span-1" },
-    { colSpan: "col-span-1", rowSpan: "row-span-1" },
-    { colSpan: "col-span-1", rowSpan: "row-span-1" },
-    { colSpan: "col-span-1 md:col-span-2", rowSpan: "row-span-1" },
-  ];
-
   return (
     <section id="locations" className="py-16 sm:py-24 bg-white text-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,11 +14,11 @@ const Locations = () => {
       </div>
       <div className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-1">
-          {properties.slice(0, 7).map((property, index) => (
+          {properties.slice(0, 7).map((property) => (
             <Link
               href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}
               key={property.name}
-              className={`group relative overflow-hidden ${gridConfig[index % gridConfig.length].colSpan} ${gridConfig[index % gridConfig.length].rowSpan}`}
+              className="group relative overflow-hidden col-span-1 row-span-1"
             >
               <Image
                 src={property.images[0]}
