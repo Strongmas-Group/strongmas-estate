@@ -43,7 +43,7 @@ export const properties = [
       ],
       amenities: null,
       images: [
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027369/pyshlxit58u1q2plgecl.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218706/blpm4hgkijma5ywj611f.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027395/ke9fjj8qi7xs0vp5kvzz.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027544/fidzpkzef7eoigoonzc1.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027728/lpffnelemh8hfbr1b3ei.jpg"
@@ -66,7 +66,7 @@ export const properties = [
       ],
       amenities: null,
       images: [
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055780/dxefvuod4v8mmwb0qe94.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218667/xrejwu3vdhtmo3zy5gdj.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055801/w25u6veyaj3l0laxdt4c.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055829/nmhclllutnwnghxem3xj.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055852/lozzbmgnajaasahct71s.jpg",
@@ -118,7 +118,7 @@ export const properties = [
       ],
       amenities: null,
       images: [
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056390/y6gmtpbfh9oioc44ke4y.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218426/meknlmuj93frd5d54pys.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056439/snjplfembn14nspgaqme.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056457/tuq5iwb686tmdqgdn8to.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056478/efstkkzjreakhg9j72ga.jpg",
@@ -154,7 +154,7 @@ export const properties = [
         "A curated community for elite living"
       ],
       images: [
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056625/zjuiauvxp1yuwp8swhfx.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg",
