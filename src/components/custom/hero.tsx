@@ -1,8 +1,6 @@
 
 "use client";
 
-import PropertySearchFilter from "./property-search-filter";
-
 const Hero = () => {
   const videoId = "wLbH-dzf-JE";
 
@@ -20,9 +18,12 @@ const Hero = () => {
       </div>
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-      </div>
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-full max-w-sm md:max-w-7xl px-2 z-30">
-        <PropertySearchFilter />
+         <h1 className="text-4xl md:text-6xl font-bold font-headline max-w-4xl leading-tight">
+            Find Your Dream Home With Strongmas
+        </h1>
+        <p className="mt-4 text-lg md:text-xl max-w-2xl">
+            Discover the finest selection of luxury properties. Your new home is just a click away.
+        </p>
       </div>
     </section>
   );
