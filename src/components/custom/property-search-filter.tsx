@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import { Separator } from '@/components/ui/separator';
 
 const FilterSelectItem = ({ label, children }: { label: string, children: React.ReactNode }) => (
-    <div className="flex flex-col items-start gap-1 p-4 h-full justify-center">
+    <div className="flex flex-col items-start gap-1 p-2 h-full justify-center">
       <span className="text-xs text-gray-400">{label}</span>
       {children}
     </div>
@@ -50,7 +50,7 @@ const PropertySearchFilter = () => {
             </Select>
         </FilterSelectItem>
 
-        <Separator orientation="vertical" className="h-10 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-8 bg-white/20 mx-auto" />
 
         <FilterSelectItem label="Property Type">
             <Select onValueChange={setPropertyType} defaultValue="Any">
@@ -66,7 +66,7 @@ const PropertySearchFilter = () => {
             </Select>
         </FilterSelectItem>
 
-        <Separator orientation="vertical" className="h-10 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-8 bg-white/20 mx-auto" />
         
         <div className="grid grid-cols-2">
             <FilterSelectItem label="Bedrooms">
@@ -96,10 +96,10 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
 
-        <Separator orientation="vertical" className="h-10 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-8 bg-white/20 mx-auto" />
         
         <div className="px-4">
-            <Button onClick={handleSearch} size="lg" className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold">
+            <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold">
             SHOW ALL RESULTS
             </Button>
         </div>
