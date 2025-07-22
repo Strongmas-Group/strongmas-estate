@@ -38,7 +38,7 @@ const PropertySearchFilter = () => {
         
         <FilterSelectItem label="Search by Location">
             <Select onValueChange={setLocation} defaultValue="All locations">
-                <SelectTrigger className="w-full bg-transparent border-none text-white text-base font-bold p-0 h-auto focus:ring-0">
+                <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
                     <SelectValue />
                 </SelectTrigger>
                 <SelectContent className="bg-background border-border text-white">
@@ -50,11 +50,11 @@ const PropertySearchFilter = () => {
             </Select>
         </FilterSelectItem>
 
-        <Separator orientation="vertical" className="h-8 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-6 bg-white/20 mx-auto" />
 
         <FilterSelectItem label="Property Type">
             <Select onValueChange={setPropertyType} defaultValue="Any">
-                <SelectTrigger className="w-full bg-transparent border-none text-white text-base font-bold p-0 h-auto focus:ring-0">
+                <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
                     <SelectValue />
                 </SelectTrigger>
                 <SelectContent className="bg-background border-border text-white">
@@ -66,12 +66,12 @@ const PropertySearchFilter = () => {
             </Select>
         </FilterSelectItem>
 
-        <Separator orientation="vertical" className="h-8 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-6 bg-white/20 mx-auto" />
         
         <div className="grid grid-cols-2">
             <FilterSelectItem label="Bedrooms">
                 <Select onValueChange={setBedrooms} defaultValue="Any">
-                    <SelectTrigger className="w-full bg-transparent border-none text-white text-base font-bold p-0 h-auto focus:ring-0">
+                    <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
                         <SelectValue />
                     </SelectTrigger>
                     <SelectContent className="bg-background border-border text-white">
@@ -84,7 +84,7 @@ const PropertySearchFilter = () => {
             
             <FilterSelectItem label="Price">
                 <Select onValueChange={setPrice} defaultValue="Any">
-                    <SelectTrigger className="w-full bg-transparent border-none text-white text-base font-bold p-0 h-auto focus:ring-0">
+                    <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
                         <SelectValue />
                     </SelectTrigger>
                     <SelectContent className="bg-background border-border text-white">
@@ -96,11 +96,11 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
 
-        <Separator orientation="vertical" className="h-8 bg-white/20 mx-auto" />
+        <Separator orientation="vertical" className="h-6 bg-white/20 mx-auto" />
         
-        <div className="px-4">
-            <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold">
-            SHOW ALL RESULTS
+        <div className="px-2">
+            <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-2 h-auto">
+                SHOW ALL RESULTS
             </Button>
         </div>
 
