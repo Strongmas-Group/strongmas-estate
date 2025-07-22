@@ -33,7 +33,7 @@ const PropertySearchFilter = () => {
   };
 
   return (
-    <div className="p-2 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-5xl mx-auto border border-white/20">
+    <div className="p-2 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-[758px] xl:max-w-[1440px] mx-auto border border-white/20">
       <div className="grid grid-cols-1 md:grid-cols-5 items-center">
         
         <FilterSelectItem label="Search by Location">
