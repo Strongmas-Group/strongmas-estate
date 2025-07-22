@@ -1,6 +1,8 @@
 
 "use client";
 
+import PropertySearchFilter from "./property-search-filter";
+
 const Hero = () => {
   const videoId = "wLbH-dzf-JE";
 
@@ -24,6 +26,7 @@ const Hero = () => {
         <p className="mt-4 text-lg md:text-xl max-w-2xl">
             Discover the finest selection of luxury properties. Your new home is just a click away.
         </p>
+        <PropertySearchFilter />
       </div>
     </section>
   );
