@@ -11,6 +11,34 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { notFound, useParams } from "next/navigation";
 
+const features = [
+  {
+    title: "24 Hours Power",
+    description: "Uninterrupted electricity supply, day and night.",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124462/haayhbmjsiw1kmlkh4sf.png",
+    hint: "street light",
+  },
+  {
+    title: "Treated Water",
+    description: "Clean, filtered water for everyday use.",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124309/h9mrgo6iamzb5ebwsu5p.png",
+    hint: "kitchen sink",
+  },
+  {
+    title: "Integrated Sound System",
+    description: "Built-in audio system for immersive sound.",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124779/plelo3mr7ibqqk5eefwv.png",
+    hint: "modern bedroom",
+  },
+  {
+    title: "Service Quarters",
+    description: "Dedicated living space for domestic staff.",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124831/ifjoxdvb3vx8tuujdice.png",
+    hint: "service bell",
+  },
+];
+
+
 export default function PropertyPage() {
   const params = useParams();
   const slug = params.slug;
@@ -131,6 +159,7 @@ export default function PropertyPage() {
             <Tabs defaultValue="description" className="w-full">
               <TabsList className="bg-gray-100 text-black">
                 <TabsTrigger value="description">Description</TabsTrigger>
+                <TabsTrigger value="features">Features</TabsTrigger>
                 <TabsTrigger value="video">Video</TabsTrigger>
                 <TabsTrigger value="floor-plans">Floor Plans</TabsTrigger>
                 <TabsTrigger value="location">Location</TabsTrigger>
@@ -139,6 +168,25 @@ export default function PropertyPage() {
                 <p className="text-gray-600 leading-relaxed max-w-4xl">
                   {property.description}
                 </p>
+              </TabsContent>
+               <TabsContent value="features" className="pt-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                  {features.map((feature, index) => (
+                    <div key={index} className="flex flex-col">
+                      <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
+                        <Image
+                          src={feature.image}
+                          alt={feature.title}
+                          layout="fill"
+                          objectFit="cover"
+                          data-ai-hint={feature.hint}
+                        />
+                      </div>
+                      <h3 className="font-bold font-headline text-lg">{feature.title}</h3>
+                      <p className="text-gray-600 text-sm">{feature.description}</p>
+                    </div>
+                  ))}
+                </div>
               </TabsContent>
               <TabsContent value="video" className="pt-8">
                 <p className="text-gray-600">Video content coming soon.</p>
