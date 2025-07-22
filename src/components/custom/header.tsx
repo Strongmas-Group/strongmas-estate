@@ -85,7 +85,7 @@ const Header = () => {
                             </DropdownMenuContent>
                         </DropdownMenu>
                         <NavLink href="/services">Services</NavLink>
-                        <NavLink href="/#locations">In sight</NavLink>
+                        <NavLink href="/#locations">Insight</NavLink>
                         <NavLink href="/about">About us</NavLink>
                         <NavLink href="/contact">Contact</NavLink>
                     </nav>
@@ -122,7 +122,7 @@ const Header = () => {
                                     <NavLink href="/">Home</NavLink>
                                     <BrowseAccordion />
                                     <NavLink href="/services">Services</NavLink>
-                                    <NavLink href="/#locations">In sight</NavLink>
+                                    <NavLink href="/#locations">Insight</NavLink>
                                     <NavLink href="/about">About us</NavLink>
                                     <NavLink href="/contact">Contact</NavLink>
                                 </nav>
