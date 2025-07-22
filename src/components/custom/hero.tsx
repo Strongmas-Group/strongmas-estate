@@ -19,15 +19,7 @@ const Hero = () => {
         ></iframe>
       </div>
       <div className="absolute inset-0 bg-black/50"></div>
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-        <div className="flex-grow flex flex-col items-center justify-center">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline max-w-4xl leading-tight">
-                Find Your Dream Home With Strongmas
-            </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-2xl">
-                Discover the finest selection of luxury properties. Your new home is just a click away.
-            </p>
-        </div>
+      <div className="relative z-10 flex flex-col items-center justify-end h-full text-center text-white p-4">
         <div className="w-full pb-8">
             <PropertySearchFilter />
         </div>
