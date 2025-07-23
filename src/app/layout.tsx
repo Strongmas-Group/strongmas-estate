@@ -3,7 +3,6 @@
 
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import { ModalProvider } from "@/hooks/use-modal";
 import BookInspectionModal from "@/components/custom/book-inspection-modal";
 
 export default function RootLayout({
@@ -21,11 +20,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
-        <ModalProvider>
-            {children}
-            <BookInspectionModal />
-            <Toaster />
-        </ModalProvider>
+        {children}
+        <BookInspectionModal />
+        <Toaster />
       </body>
     </html>
   );
