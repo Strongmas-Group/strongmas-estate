@@ -65,9 +65,6 @@ export default function PropertyPage() {
                 </p>
                 <div className="flex items-center gap-4 mt-2">
                     <h1 className="text-4xl md:text-5xl font-bold font-headline">{property.name}</h1>
-                    <Badge variant={property.status.includes("ONGOING") ? "default" : "secondary"} className="text-sm">
-                        {property.status}
-                    </Badge>
                 </div>
                 <p className="text-gray-300 mt-2">{property.summary?.address}</p>
             </div>
