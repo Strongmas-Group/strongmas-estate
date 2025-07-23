@@ -1,9 +1,22 @@
+
+
+"use client";
+
+import * as React from "react";
 import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import DiscoverProperties from "@/components/custom/discover-properties";
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselDots,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
 
 const leadershipTeam = [
   {
@@ -37,6 +50,11 @@ const leadershipTeam = [
 ];
 
 export default function AboutPage() {
+
+   const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -122,29 +140,43 @@ export default function AboutPage() {
                 MEET OUR LEADERSHIP TEAM
               </h2>
             </div>
-            <div className="space-y-16 md:space-y-24">
-              {leadershipTeam.map((member, index) => (
-                <div key={member.name} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className={`text-left ${index % 2 !== 0 ? 'lg:order-last' : ''}`}>
-                    <h3 className="text-3xl font-bold font-headline">{member.name}</h3>
-                    <p className="text-accent font-bold mb-6">{member.role}</p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {member.description}
-                    </p>
-                  </div>
-                  <div className={`relative h-96 md:h-[550px] w-full ${index % 2 !== 0 ? 'lg:order-first' : ''}`}>
-                    <Image
-                      src={member.imageUrl}
-                      alt={member.name}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-lg"
-                      data-ai-hint={member.hint}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+             <Carousel
+              plugins={[plugin.current]}
+              onMouseEnter={() => plugin.current.stop()}
+              onMouseLeave={() => plugin.current.play()}
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {leadershipTeam.map((member, index) => (
+                  <CarouselItem key={index}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-4">
+                      <div className="text-left">
+                        <h3 className="text-3xl font-bold font-headline">{member.name}</h3>
+                        <p className="text-accent font-bold mb-6">{member.role}</p>
+                        <p className="text-muted-foreground leading-relaxed text-black/60">
+                          {member.description}
+                        </p>
+                      </div>
+                      <div className="relative h-96 md:h-[550px] w-full">
+                        <Image
+                          src={member.imageUrl}
+                          alt={member.name}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-lg"
+                          data-ai-hint={member.hint}
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselDots className="mt-8 justify-center" />
+            </Carousel>
           </div>
         </section>
         <DiscoverProperties />
@@ -153,3 +185,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+    
