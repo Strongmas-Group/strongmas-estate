@@ -1,4 +1,6 @@
 
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -17,6 +19,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { properties } from "@/lib/properties";
+import { useModal } from "@/hooks/use-modal";
 
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
     <Link href={href} className="transition-colors hover:text-white/80 block py-2">
@@ -56,6 +59,7 @@ const BrowseAccordion = () => (
 );
 
 const Header = () => {
+    const { onOpen } = useModal();
     return (
         <header className="fixed top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline h-20 flex items-center">
             <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8 text-white">
@@ -126,8 +130,8 @@ const Header = () => {
                                     <NavLink href="/about">About us</NavLink>
                                     <NavLink href="/contact">Contact</NavLink>
                                 </nav>
-                                <Button asChild className="mt-auto bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px]">
-                                    <Link href="#">Book A Tour</Link>
+                                <Button onClick={onOpen} className="mt-auto bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px]">
+                                    Book A Tour
                                 </Button>
                             </div>
                         </SheetContent>
@@ -136,8 +140,8 @@ const Header = () => {
             </div>
             
             <div className="hidden md:block absolute right-[30px] top-1/2 -translate-y-1/2">
-                <Button asChild className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0">
-                    <Link href="#">Book A Tour</Link>
+                <Button onClick={onOpen} className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0">
+                    Book A Tour
                 </Button>
             </div>
         </header>

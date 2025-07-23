@@ -1,9 +1,12 @@
 
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { useModal } from "@/hooks/use-modal";
 
 const DiscoverProperties = () => {
+  const { onOpen } = useModal();
   return (
     <section className="relative w-full h-[360px] flex items-center justify-center">
       <Image
@@ -21,8 +24,8 @@ const DiscoverProperties = () => {
         <h2 className="text-3xl md:text-4xl font-bold font-headline mb-8 max-w-4xl mx-auto">
           DISCOVER THE FINEST MODERN PROPERTIES
         </h2>
-        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-sm font-bold px-8 md:px-10 py-5 md:py-6">
-          <Link href="#">BOOK A TOUR</Link>
+        <Button onClick={onOpen} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-sm font-bold px-8 md:px-10 py-5 md:py-6">
+          BOOK A TOUR
         </Button>
       </div>
     </section>

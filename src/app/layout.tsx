@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
+
+"use client";
+
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-
-export const metadata: Metadata = {
-  title: "Strongmas Residence",
-  description: "Luxury Real Estate",
-};
+import { ModalProvider } from "@/hooks/use-modal";
+import BookInspectionModal from "@/components/custom/book-inspection-modal";
 
 export default function RootLayout({
   children,
@@ -15,13 +14,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Strongmas Residence</title>
+        <meta name="description" content="Luxury Real Estate" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
-        {children}
-        <Toaster />
+        <ModalProvider>
+            {children}
+            <BookInspectionModal />
+            <Toaster />
+        </ModalProvider>
       </body>
     </html>
   );
