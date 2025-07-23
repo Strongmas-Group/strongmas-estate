@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import { Separator } from '@/components/ui/separator';
 
 const FilterSelectItem = ({ label, children }: { label: string, children: React.ReactNode }) => (
-    <div className="flex flex-col items-start gap-1 p-2 h-full justify-center">
+    <div className="flex flex-col items-start gap-1 p-2 h-full justify-center w-full">
       <span className="text-xs text-gray-400">{label}</span>
       {children}
     </div>
@@ -33,10 +33,10 @@ const PropertySearchFilter = () => {
   };
 
   return (
-    <div className="p-2 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-[758px] lg:max-w-[1440px] mx-auto border border-white/20">
-      <div className="flex items-center justify-between w-full">
+    <div className="p-4 md:p-2 bg-black/60 backdrop-blur-sm rounded-2xl md:rounded-full w-full max-w-md md:max-w-4xl lg:max-w-7xl mx-auto border border-white/20">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4 md:gap-0">
         
-        <div className="flex-1">
+        <div className="w-full md:flex-1">
             <FilterSelectItem label="Search by Location">
                 <Select onValueChange={setLocation} defaultValue="All locations">
                     <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
@@ -52,9 +52,9 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
 
-        <Separator orientation="vertical" className="h-6 bg-white/20" />
+        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
 
-        <div className="flex-1">
+        <div className="w-full md:flex-1">
             <FilterSelectItem label="Property Type">
                 <Select onValueChange={setPropertyType} defaultValue="Any">
                     <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
@@ -70,11 +70,11 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
 
-        <Separator orientation="vertical" className="h-6 bg-white/20" />
+        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
         
-        <div className="flex-1">
+        <div className="w-full md:flex-1">
             <FilterSelectItem label="Bedrooms">
-                <Select onValueChange={setBedrooms} defaultValue="Any">
+                <Select onValuechange={setBedrooms} defaultValue="Any">
                     <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
                         <SelectValue />
                     </SelectTrigger>
@@ -87,9 +87,9 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
         
-        <Separator orientation="vertical" className="h-6 bg-white/20" />
+        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
         
-        <div className="flex-1">
+        <div className="w-full md:flex-1">
             <FilterSelectItem label="Price">
                 <Select onValueChange={setPrice} defaultValue="Any">
                     <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
@@ -104,10 +104,10 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
         
-        <Separator orientation="vertical" className="h-6 bg-white/20" />
+        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
         
-        <div className="flex-1 px-2">
-            <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-2 h-auto">
+        <div className="w-full md:flex-1 px-2">
+            <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-3 h-auto">
                 SHOW ALL RESULTS
             </Button>
         </div>
