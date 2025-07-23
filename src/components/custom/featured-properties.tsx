@@ -17,16 +17,40 @@ import { Button } from "@/components/ui/button";
 
 const properties = [
   {
+    name: "STRONGMAS RESIDENCE",
+    "location": "Lekki Phase 1",
+    tag: "SOLD OUT & DELIVERED",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026386/rvhuegrcdi6lvcaynjcn.jpg",
+    description: "A bespoke 4-bedroom smart terrace duplexes, sculpted for the refined homeowner. This property offers timeless architectural design, eco-friendly materials, and smart home automation.",
+    hint: "Modern Private resident",
+  },
+  {
+    name: "THE OMINI",
+    location: "Lekki Phase 1",
+    tag: "SOLD OUT & DELIVERED",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027544/fidzpkzef7eoigoonzc1.jpg",
+    description: "A 5-story multifamily premium apartments complex that embodies elegance and contemporary design. It features smart home automations with artificial intelligence and oversized west-facing windows.",
+    hint:"Fully Serviced Smart Apartments",
+  },
+  {
+    name: "AVION COURT 1",
+    location: "Abraham Adesanya",
+    tag: "SOLD OUT & DELIVERED",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg",
+    description: "It’s a refined collection of contemporary terrace duplexes, thoughtfully built within a sustainable estate in the serene heart of Abraham Adesanya, Ajah.",
+    hint: "Gated Estate Environment",
+  },
+  {
     name: "Kesbel Court",
     tag: "SOLD OUT, Roofing in Progress",
     location: "Lekki Phase 1",
     description: "Nestled in the heart of Lekki Phase 1, Kesbel Court is a refined multi-family apartment development that reimagines urban living through timeless architecture, luxurious comfort, and breathtaking views.",
-    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055780/dxefvuod4v8mmwb0qe94.jpg",
+    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055829/nmhclllutnwnghxem3xj.jpg",
     hint: "modern apartment exterior"
   },
   {
     name: "Avion Court 2",
-    "tag": "SOLD OUT, 90% Completed",
+    tag: "SOLD OUT, 90% Completed",
     location: "Ikota G.R.A.",
     description: "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
     image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056390/y6gmtpbfh9oioc44ke4y.jpg",
