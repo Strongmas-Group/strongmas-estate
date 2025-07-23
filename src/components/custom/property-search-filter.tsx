@@ -106,7 +106,7 @@ const PropertySearchFilter = () => {
         
         <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
         
-        <div className="w-full md:flex-1 px-2">
+        <div className="w-full md:flex-1 md:px-2">
             <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-3 h-auto">
                 SHOW ALL RESULTS
             </Button>
