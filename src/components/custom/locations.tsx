@@ -4,7 +4,7 @@ import { properties } from "@/lib/properties";
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-16 sm:py-24 bg-white text-black">
+    <section id="locations" className="py-16 sm:py-24 bg-white text-black px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-widest">
@@ -18,7 +18,7 @@ const Locations = () => {
             <Link
               href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}
               key={property.name}
-              className="group relative overflow-hidden col-span-1 row-span-1"
+              className="group relative overflow-hidden col-span-1 row-span-1 rounded-md"
             >
               <Image
                 src={property.images[0]}
