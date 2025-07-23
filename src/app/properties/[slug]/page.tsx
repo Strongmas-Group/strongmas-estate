@@ -10,34 +10,8 @@ import Footer from "@/components/custom/footer";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { notFound, useParams } from "next/navigation";
-
-const features = [
-  {
-    title: "24 Hours Power",
-    description: "Uninterrupted electricity supply, day and night.",
-    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124462/haayhbmjsiw1kmlkh4sf.png",
-    hint: "light",
-  },
-  {
-    title: "Treated Water",
-    description: "Clean, filtered water for everyday use.",
-    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124309/h9mrgo6iamzb5ebwsu5p.png",
-    hint: "Water",
-  },
-  {
-    title: "Integrated Sound System",
-    description: "Built-in audio system for immersive sound.",
-    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124779/plelo3mr7ibqqk5eefwv.png",
-    hint: "integrated sound",
-  },
-  {
-    title: "Service Quarters",
-    description: "Dedicated living space for domestic staff.",
-    image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753124831/ifjoxdvb3vx8tuujdice.png",
-    hint: "service quarter",
-  },
-];
-
+import { Badge } from "@/components/ui/badge";
+import { CheckCircle2 } from "lucide-react";
 
 export default function PropertyPage() {
   const params = useParams();
@@ -47,10 +21,10 @@ export default function PropertyPage() {
     (p) => p.name.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
-  const [mainImage, setMainImage] = React.useState(property?.images[0] || "");
+  const [mainImage, setMainImage] = React.useState(property?.images?.[0] || "");
 
   React.useEffect(() => {
-    if (property) {
+    if (property?.images) {
       setMainImage(property.images[0]);
     }
   }, [property]);
@@ -62,6 +36,13 @@ export default function PropertyPage() {
   const handleThumbnailClick = (image: string) => {
     setMainImage(image);
   };
+  
+  const allFeatures = [
+      ...(property.signatureAmenities || []),
+      ...(property.keyFeatures || []),
+      ...(property.features || []),
+      ...(property.safetyAndSecurity || [])
+    ].filter(Boolean);
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-black font-sans">
@@ -82,8 +63,13 @@ export default function PropertyPage() {
                     <Link href="/#featured" className="hover:underline">Our Properties</Link> / {" "}
                     <span className="font-medium text-white">Property Details</span>
                 </p>
-                <h1 className="text-4xl md:text-5xl font-bold font-headline mt-2">{property.name}</h1>
-                <p className="text-gray-300 mt-2">{property.location}</p>
+                <div className="flex items-center gap-4 mt-2">
+                    <h1 className="text-4xl md:text-5xl font-bold font-headline">{property.name}</h1>
+                    <Badge variant={property.status.includes("ONGOING") ? "default" : "secondary"} className="text-sm">
+                        {property.status}
+                    </Badge>
+                </div>
+                <p className="text-gray-300 mt-2">{property.summary?.address}</p>
             </div>
         </section>
 
@@ -99,55 +85,38 @@ export default function PropertyPage() {
                   className="transition-transform duration-300 ease-in-out"
                 />
               </div>
-              <div className="grid grid-cols-5 gap-2 md:gap-4">
-                {property.images.slice(0, 5).map((img, index) => (
-                  <div
-                    key={index}
-                    className={`relative w-full h-16 md:h-24 rounded-md overflow-hidden cursor-pointer border-2 ${mainImage === img ? 'border-[#142B54]' : 'border-transparent'}`}
-                    onClick={() => handleThumbnailClick(img)}
-                  >
-                    <Image
-                      src={img}
-                      alt={`${property.name} thumbnail ${index + 1}`}
-                      layout="fill"
-                      objectFit="cover"
-                    />
-                  </div>
-                ))}
-              </div>
+               {property.images && property.images.length > 1 && (
+                    <div className="grid grid-cols-5 gap-2 md:gap-4">
+                        {property.images.slice(0, 5).map((img, index) => (
+                        <div
+                            key={index}
+                            className={`relative w-full h-16 md:h-24 rounded-md overflow-hidden cursor-pointer border-2 ${mainImage === img ? 'border-[#142B54]' : 'border-transparent'}`}
+                            onClick={() => handleThumbnailClick(img)}
+                        >
+                            <Image
+                            src={img}
+                            alt={`${property.name} thumbnail ${index + 1}`}
+                            layout="fill"
+                            objectFit="cover"
+                            />
+                        </div>
+                        ))}
+                    </div>
+               )}
             </div>
 
             <div className="bg-gray-50 p-6 md:p-8 rounded-lg h-fit">
               <h2 className="text-2xl font-bold font-headline mb-6 text-black">Property Summary</h2>
               <div className="space-y-4 text-sm">
-                <div className="flex justify-between">
-                  <span className="font-medium text-black">Location:</span>
-                  <span className="text-gray-600 text-right">{property.location}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium text-black">Property Type:</span>
-                  <span className="text-gray-600 text-right">{property.property_type}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium text-black">Status:</span>
-                  <span className="text-gray-600 text-right">For Sale</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium text-black">Beds:</span>
-                  <span className="text-gray-600 text-right">4</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium text-black">Bathroom:</span>
-                  <span className="text-gray-600 text-right">4.5</span>
-                </div>
-                 <div className="flex justify-between">
-                  <span className="font-medium text-black">Car Space Per Unit:</span>
-                  <span className="text-gray-600 text-right">2</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium text-black">Available Units:</span>
-                  <span className="text-gray-600 text-right">4</span>
-                </div>
+                 {Object.entries(property.summary).map(([key, value]) => {
+                     const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+                     return (
+                        <div className="flex justify-between" key={key}>
+                            <span className="font-medium text-black">{formattedKey}:</span>
+                            <span className="text-gray-600 text-right">{String(value)}</span>
+                        </div>
+                     )
+                 })}
               </div>
               <Button size="lg" className="w-full mt-8 bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline">
                 DOWNLOAD BROCHURE
@@ -159,52 +128,78 @@ export default function PropertyPage() {
             <Tabs defaultValue="description" className="w-full">
               <TabsList className="bg-gray-100 text-black">
                 <TabsTrigger value="description">Description</TabsTrigger>
-                <TabsTrigger value="video">Video</TabsTrigger>
-                <TabsTrigger value="floor-plans">Floor Plans</TabsTrigger>
-                <TabsTrigger value="location">Location</TabsTrigger>
+                {property.availableUnits && <TabsTrigger value="units">Available Units</TabsTrigger>}
+                {property.proximities && <TabsTrigger value="proximities">Proximities</TabsTrigger>}
+                {property.floorPlan && <TabsTrigger value="floor-plan">Floor Plan</TabsTrigger>}
               </TabsList>
               <TabsContent value="description" className="pt-8">
                 <p className="text-gray-600 leading-relaxed max-w-4xl">
                   {property.description}
                 </p>
               </TabsContent>
-              <TabsContent value="video" className="pt-8">
-                <p className="text-gray-600">Video content coming soon.</p>
-              </TabsContent>
-              <TabsContent value="floor-plans" className="pt-8">
-                 <p className="text-gray-600">Floor plans coming soon.</p>
-              </TabsContent>
-              <TabsContent value="location" className="pt-8">
-                 <p className="text-gray-600">Location details coming soon.</p>
-              </TabsContent>
+               {property.availableUnits && (
+                 <TabsContent value="units" className="pt-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {property.availableUnits.map((unit, index) => (
+                            <div key={index} className="p-4 border rounded-lg">
+                                <h4 className="font-bold text-lg">{unit.type}</h4>
+                                {Object.entries(unit).filter(([key]) => key !== 'type').map(([key, value]) => (
+                                     <div className="flex justify-between text-sm mt-2" key={key}>
+                                        <span className="font-medium text-black">{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}:</span>
+                                        <span className="text-gray-600">{String(value)}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </TabsContent>
+               )}
+                {property.proximities && (
+                    <TabsContent value="proximities" className="pt-8">
+                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            {property.proximities.map((item, index) => (
+                                <div key={index} className="flex items-center gap-2">
+                                    <CheckCircle2 className="h-5 w-5 text-green-600" />
+                                    <span className="text-gray-700">{item}</span>
+                                </div>
+                            ))}
+                         </div>
+                    </TabsContent>
+                )}
+                 {property.floorPlan && (
+                    <TabsContent value="floor-plan" className="pt-8">
+                         <div className="space-y-4">
+                            {property.floorPlan.map((item, index) => (
+                                <div key={index} className="p-4 border rounded-lg">
+                                    <h4 className="font-bold text-lg">{item.floor}</h4>
+                                    <p className="text-gray-600">{item.use}</p>
+                                </div>
+                            ))}
+                         </div>
+                    </TabsContent>
+                )}
             </Tabs>
           </div>
         </div>
 
-        <section className="py-16 sm:py-24 bg-gray-50 font-sans">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold font-headline">Features</h2>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {features.map((feature, index) => (
-                    <div key={index} className="flex flex-col">
-                        <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
-                        <Image
-                            src={feature.image}
-                            alt={feature.title}
-                            layout="fill"
-                            objectFit="cover"
-                            data-ai-hint={feature.hint}
-                        />
-                        </div>
-                        <h3 className="font-bold font-headline text-lg">{feature.title}</h3>
-                        <p className="text-gray-600 text-sm">{feature.description}</p>
+        {allFeatures.length > 0 && (
+            <section className="py-16 sm:py-24 bg-gray-50 font-sans">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold font-headline">Features</h2>
                     </div>
-                    ))}
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        {allFeatures.map((feature, index) => (
+                            <div key={index} className="flex items-center gap-3">
+                                <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0" />
+                                <p className="text-gray-700">{typeof feature === 'string' ? feature : feature.feature}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        )}
+
 
       </main>
       <Footer />
