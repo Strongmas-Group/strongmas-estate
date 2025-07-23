@@ -38,7 +38,7 @@ const commercialProjects = properties.filter(p => p.status === "COMMERCIAL");
 const BrowseDropdown = () => (
     <div className="grid grid-cols-2 gap-4">
         <div>
-            <DropdownMenuLabel className="font-bold text-white">Ongoing Projects</DropdownMenuLabel>
+            <DropdownMenuLabel className="font-bold text-[#151515]">Ongoing Projects</DropdownMenuLabel>
             <DropdownMenuGroup>
                 {ongoingProjects.map(property => (
                     <DropdownMenuItem key={property.name} asChild>
@@ -48,7 +48,7 @@ const BrowseDropdown = () => (
             </DropdownMenuGroup>
         </div>
         <div>
-            <DropdownMenuLabel className="font-bold text-white">Completed Projects</DropdownMenuLabel>
+            <DropdownMenuLabel className="font-bold text-[#151515]">Completed Projects</DropdownMenuLabel>
              <DropdownMenuGroup>
                 {completedProjects.map(property => (
                     <DropdownMenuItem key={property.name} asChild>
@@ -108,7 +108,7 @@ const Header = () => {
                             <DropdownMenuTrigger className="flex items-center gap-1 transition-colors hover:text-white/80 outline-none">
                                 Our Properties <ChevronDown className="h-4 w-4" />
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent className="bg-background text-white border-border w-[400px] p-4">
+                            <DropdownMenuContent className="bg-white text-[#151515] border-border w-[400px] p-4">
                                 <BrowseDropdown />
                             </DropdownMenuContent>
                         </DropdownMenu>
