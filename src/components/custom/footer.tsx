@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-left">
-            <h4 className="font-semibold mb-4 font-headline text-accent">Useful Link</h4>
+            <h4 className="font-semibold mb-4 font-headline text-[#A24212]">Useful Link</h4>
             <nav className="flex flex-col gap-2 text-sm">
               <Link href="#" className="text-muted-foreground hover:text-foreground">Carrier</Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground">FAQ</Link>
@@ -47,7 +47,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="text-left">
-            <h4 className="font-semibold mb-4 font-headline text-accent">Address & Contact Info</h4>
+            <h4 className="font-semibold mb-4 font-headline text-[#A24212]">Address & Contact Info</h4>
             <address className="space-y-2 text-muted-foreground not-italic text-sm">
               <p>
                 Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside
