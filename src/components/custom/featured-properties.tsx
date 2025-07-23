@@ -83,11 +83,11 @@ const FeaturedProperties = () => {
                         {property.description}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                            <Link href={property.name === 'OLIVE MALL' ? '/contact' : `/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>VIEW PROPERTY</Link>
+                        <Button asChild size="lg" variant="secondary" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
+                            <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>VIEW PROPERTY</Link>
                         </Button>
-                        <Button asChild size="lg" variant="secondary" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                             <Link href="/#locations">VIEW ALL</Link>
+                        <Button asChild size="lg" variant="secondary" className="bg-[#EFC59D] hover:bg-accent/90 text-accent-foreground font-bold">
+                             <Link href="/#featured">VIEW ALL</Link>
                         </Button>
                         </div>
                     </div>

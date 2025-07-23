@@ -33,8 +33,8 @@ const PropertySearchFilter = () => {
   };
 
   return (
-    <div className="p-4 md:p-2 bg-black/60 backdrop-blur-sm rounded-2xl md:rounded-full w-full max-w-md md:max-w-4xl lg:max-w-7xl mx-auto border border-white/20">
-      <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4 md:gap-0">
+    <div className="p-1 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-[758px] lg:max-w-[1440px] mx-auto border border-white/20">
+      <div className="flex items-center justify-between w-full">
         
         <div className="w-full md:flex-1">
             <FilterSelectItem label="Search by Location">
@@ -52,7 +52,7 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
 
-        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
+        <Separator orientation="vertical" className="h-12 bg-white/20" />
 
         <div className="w-full md:flex-1">
             <FilterSelectItem label="Property Type">
@@ -70,7 +70,7 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
 
-        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
+        <Separator orientation="vertical" className="h-12 bg-white/20" />
         
         <div className="w-full md:flex-1">
             <FilterSelectItem label="Bedrooms">
@@ -87,7 +87,7 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
         
-        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
+        <Separator orientation="vertical" className="h-12 bg-white/20" />
         
         <div className="w-full md:flex-1">
             <FilterSelectItem label="Price">
@@ -104,10 +104,9 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
         </div>
         
-        <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
         
-        <div className="w-full md:flex-1 md:px-0">
-            <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-3 h-auto">
+        <div className="flex-1 px-1">
+            <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-4 h-auto">
                 SHOW ALL RESULTS
             </Button>
         </div>

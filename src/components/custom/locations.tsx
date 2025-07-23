@@ -1,43 +1,93 @@
+// components/Locations.tsx
+
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { properties } from "@/lib/properties";
+import { motion, Variants } from "framer-motion";
+
+const fadeInUp = (index: number): Variants => ({
+  hidden: {
+    opacity: 0,
+    y: 50,
+    x: index % 2 === 0 ? -30 : 30,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    x: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+});
+
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-16 sm:py-24 bg-white text-black px-4 sm:px-6 lg:px-8">
+    <section
+      id="locations"
+      className="py-10 sm:py-14 bg-white text-black px-4 sm:px-6 lg:px-8"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-widest">
             Our Locations
           </h2>
         </div>
       </div>
-      <div className="w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-8">
-          {properties.slice(0, 7).map((property) => (
-            <Link
-              href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}
-              key={property.name}
-              className="group relative overflow-hidden col-span-1 row-span-1 rounded-md"
-            >
-              <Image
-                src={property.images?.[0] || "https://placehold.co/800x1000.png"}
-                alt={property.name}
-                width={800}
-                height={1000}
-                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                data-ai-hint="modern building exterior"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/40 backdrop-blur-sm">
-                <h3 className="text-xl font-bold font-headline text-white">
-                  {property.name}
-                </h3>
-                <p className="mt-1 text-sm text-white/80">{property.location || property.summary?.address}</p>
-              </div>
-            </Link>
+
+      <motion.div
+        className="w-full"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+        variants={containerVariants}
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
+          {properties.slice(0, 7).map((property, index) => (
+            <motion.div key={property.name} variants={fadeInUp(index)}>
+              <Link
+                href={`/properties/${property.name
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")}`}
+                className="group relative overflow-hidden col-span-1 row-span-1 rounded-md"
+              >
+                <div className="relative w-full h-full rounded-md overflow-hidden">
+                  <Image
+                    src={property.images[0]}
+                    alt={property.name}
+                    width={800}
+                    height={1000}
+                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 brightness-90 rounded-md"
+                    data-ai-hint="modern building exterior"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/50 backdrop-blur-sm rounded-b-md">
+                    <h3 className="text-xl font-bold font-headline text-white">
+                      {property.name}
+                    </h3>
+                    <p className="mt-1 text-sm text-white/80">
+                      {property.location}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
