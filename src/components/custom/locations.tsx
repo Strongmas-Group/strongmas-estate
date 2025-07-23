@@ -13,7 +13,7 @@ const Locations = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-8">
           {properties.slice(0, 7).map((property) => (
             <Link
               href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}
@@ -21,7 +21,7 @@ const Locations = () => {
               className="group relative overflow-hidden col-span-1 row-span-1 rounded-md"
             >
               <Image
-                src={property.images[0]}
+                src={property.images?.[0] || "https://placehold.co/800x1000.png"}
                 alt={property.name}
                 width={800}
                 height={1000}
@@ -32,7 +32,7 @@ const Locations = () => {
                 <h3 className="text-xl font-bold font-headline text-white">
                   {property.name}
                 </h3>
-                <p className="mt-1 text-sm text-white/80">{property.location}</p>
+                <p className="mt-1 text-sm text-white/80">{property.location || property.summary?.address}</p>
               </div>
             </Link>
           ))}
