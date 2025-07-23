@@ -74,7 +74,7 @@ const PropertySearchFilter = () => {
         
         <div className="w-full md:flex-1">
             <FilterSelectItem label="Bedrooms">
-                <Select onValuechange={setBedrooms} defaultValue="Any">
+                <Select onValueChange={setBedrooms} defaultValue="Any">
                     <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
                         <SelectValue />
                     </SelectTrigger>
@@ -106,7 +106,7 @@ const PropertySearchFilter = () => {
         
         <Separator orientation="vertical" className="h-6 bg-white/20 hidden md:block" />
         
-        <div className="w-full md:flex-1 md:px-2">
+        <div className="w-full md:flex-1 md:px-0">
             <Button onClick={handleSearch} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-3 h-auto">
                 SHOW ALL RESULTS
             </Button>
