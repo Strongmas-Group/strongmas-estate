@@ -5,6 +5,37 @@ import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
+const leadershipTeam = [
+  {
+    "name": "MICHEAL SHOBUKOLA",
+    "role": "Founder & Managing Director",
+    "imageUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280071/umjzpb7cx3msnnemrltz.png",
+    "description": "Micheal Shobukola is the visionary Founder and Managing Director of Strongmas Group — a dynamic entrepreneur whose influence spans over a decade of building impactful, future-forward businesses in Nigeria’s evolving real estate landscape. With a B.Sc. in Computer and Information Science from Lead City University and a Master’s degree from the University of East Anglia, Micheal combines technical insight with business acumen to lead Strongmas with precision, innovation, and purpose. He has been the architect of the company’s transformation — from a single idea into a diversified group — overseeing the conceptualization, development, construction, and management of some of the most sophisticated premium housing estates and smart gated communities in Nigeria. His strategic leadership and exceptional ability to mobilize capital have been instrumental to the exponential growth of Strongmas. Today, the company stands as a symbol of modern living, innovation, and lifestyle excellence — a vision Micheal continues to expand with bold thinking and an unrelenting drive for quality. Micheal is widely travelled and highly respected in the real estate and business sector.",
+    "hint": "man smiling suit"
+  },
+  {
+    "name": "KIKELOMO WILLIAMS",
+    "role": "Executive Director",
+    "imageUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280272/nln9cxrfh1zva14ix4eu.jpg",
+    "description": "Kikelomo Williams is a seasoned strategic leader whose professional journey spans over a decade across both local and multinational environments. Prior to joining Strongmas, she successfully led several revenue transformation initiatives — building high-performing sales teams, driving consistent year-on-year profit growth, and repositioning brands for long-term success. Her impact has been particularly strong in the real estate sector, where she implemented innovative sales and marketing systems that delivered measurable results to the bottom line. She holds a degree in History and International Relations from Lagos State University, as well as a diploma in Mass Communication from the University of Lagos. Kikelomo also holds certifications from Curtin University and PRCAN and is a proud member of the International Management Consultants (IMC). Now at Strongmas, Kikelomo brings her results-driven leadership to the Executive Team — with a clear focus on increasing revenue through strategic sales execution, brand strategy, market positioning, and operational growth. Her role is central to scaling the company’s influence, optimizing customer experience, and unlocking new revenue channels through strategic partnerships, corporate communications, and team development — all reinforcing Strongmas’ vision of becoming a household name in luxury real estate.",
+    "hint": "woman professional headshot"
+  },
+  {
+    "name": "DOHARE PAUL",
+    "role": "Chief Financial Controller",
+    "imageUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280434/xxzpxto1gcdcrbycvas1.jpg",
+    "description": "Dohare Paul is an accomplished finance executive with over 11 years of cross-industry experience in accounting, financial reporting, data analytics, treasury, and business advisory. Since joining Strongmas in 2023, he has significantly strengthened the company’s financial architecture and operational controls. Known for his integrity and attention to detail, Dohare champions sound financial governance, strict compliance, and ethical conduct. His expertise ensures that Strongmas maintains fiscal discipline while scaling its portfolio of luxury developments with confidence and credibility.",
+    "hint": "man professional headshot"
+  },
+  {
+    "name": "IBRAHIM SULE OMOYEMI",
+    "role": "Senior Project Manager",
+    "imageUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280511/oebojjok8bb0gdxri0nc.jpg",
+    "description": "Ibrahim Sule Omoyemi is a seasoned civil engineering professional with a distinguished track record in delivering high-impact infrastructure and real estate developments across Nigeria. A registered member of the Council for the Regulation of Engineering in Nigeria (COREN), Ibrahim combines technical expertise with strong project leadership. He holds an HND in Civil Engineering Technology from the Federal Polytechnic, Auchi, and both a Postgraduate Diploma (PGD) and an MBA from Ladoke Akintola University of Technology (LAUTECH), Ogbomoso. Over the years, Ibrahim has led and contributed to the successful execution of numerous landmark projects, including: Federal Ministry of Finance Complex, Central District, Abuja (2014); Sunrise Hills Estate, Abuja (2014); Bayelsa International Airport (2018); and Niger Delta University Senate Building, Amassoma, Bayelsa (2019). Now serving as Senior Project Manager at Strongmas Residence, Ibrahim brings extensive experience in substructure and superstructure concrete works, structural analysis, quantity estimation, and full-cycle project delivery. His attention to detail, results-driven mindset, and unwavering commitment to quality continue to shape the delivery of Strongmas’ luxury estates — ensuring every structure meets the highest standards in design, safety, and functionality.",
+    "hint": "man construction hardhat"
+  }
+];
+
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -91,24 +122,28 @@ export default function AboutPage() {
                 MEET OUR LEADERSHIP TEAM
               </h2>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="text-left">
-                <h3 className="text-3xl font-bold font-headline">Micheal Shobukola</h3>
-                <p className="text-accent font-bold mb-6">Managing Director</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Micheal Shobukola, Founder and Managing Director of Strongmas Group, has over a decade of experience in building successful enterprises in Nigeria. He holds a B.Sc. in Computer and Information Science from Lead City University and a master's degree from the University of East Anglia. His leadership in developing world-class properties and expertise in fundraising have driven Strongmas' growth in housing estates and gated communities.
-                </p>
-              </div>
-              <div className="relative h-96 md:h-[550px] w-full">
-                <Image
-                  src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753020241/lwiwgwhy2eqyo04xtfgn.png"
-                  alt="Micheal Shobukola"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                  data-ai-hint="man smiling suit"
-                />
-              </div>
+            <div className="space-y-16 md:space-y-24">
+              {leadershipTeam.map((member, index) => (
+                <div key={member.name} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div className={`text-left ${index % 2 !== 0 ? 'lg:order-last' : ''}`}>
+                    <h3 className="text-3xl font-bold font-headline">{member.name}</h3>
+                    <p className="text-accent font-bold mb-6">{member.role}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {member.description}
+                    </p>
+                  </div>
+                  <div className={`relative h-96 md:h-[550px] w-full ${index % 2 !== 0 ? 'lg:order-first' : ''}`}>
+                    <Image
+                      src={member.imageUrl}
+                      alt={member.name}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
+                      data-ai-hint={member.hint}
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
