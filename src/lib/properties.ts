@@ -3,6 +3,7 @@ export const properties = [
     {
       "name": "THE ELYSIAN RISE",
       "status": "ONGOING",
+      "location": "Victoria Island",
       "images": [
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg",
@@ -69,6 +70,7 @@ export const properties = [
     {
       "name": "STRONGMAS RESIDENCE",
       "status": "COMPLETED /SOLD OUT",
+      "location": "Lekki Phase 1",
       "images": [
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026216/pvmg9daexhbr6bp6bsvv.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026275/etfedgsz0kzyboyomgk1.jpg",
@@ -78,6 +80,7 @@ export const properties = [
       ],
       "summary": {
         "address": "Dele Adedeji, Lekki Phase 1, Lagos",
+        "propertyType": "Terrace Duplex",
         "typology": "4 Bedroom Terrace Duplex",
         "garage": 2,
         "totalUnits": 5,
@@ -96,6 +99,7 @@ export const properties = [
     {
       "name": "THE OMINI",
       "status": "COMPLETED /SOLD OUT",
+      "location": "Lekki Phase 1",
        "images": [
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218706/blpm4hgkijma5ywj611f.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027395/ke9fjj8qi7xs0vp5kvzz.jpg",
@@ -104,6 +108,7 @@ export const properties = [
       ],
       "summary": {
         "project": "Residential",
+        "propertyType": "Apartment",
         "address": "Dele Adedeji, Lekki Phase 1, Lagos",
         "typology": "Apartments (1-Bed, 2-Bed & 3-Bed Penthouse)",
         "units": 17
@@ -155,6 +160,7 @@ export const properties = [
     {
       "name": "AVION COURT 1",
       "status": "COMPLETED /SOLD OUT",
+      "location": "Abraham Adesanya",
       "images": [
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056216/iuoevz8kfmhn4hosx9i0.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056247/n0nz8lf2pkgnhrvk96r7.jpg",
@@ -167,6 +173,7 @@ export const properties = [
       ],
       "summary": {
         "project": "Residential",
+        "propertyType": "Terrace Duplex",
         "address": "Urban Prime 2, Abraham Adesanya, Ajah, Lagos",
         "typology": "3-Bedroom Terrace Duplex",
         "carSpacePerUnit": 2,
@@ -187,6 +194,7 @@ export const properties = [
     {
       "name": "KESBEL COURT",
       "status": "SOLD OUT",
+      "location": "Lekki Phase 1",
       "description": "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse — a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
       "images": [
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218667/xrejwu3vdhtmo3zy5gdj.jpg",
@@ -197,6 +205,7 @@ export const properties = [
       ],
       "summary": {
         "project": "Residential",
+        "propertyType": "Apartment",
         "address": "Fatai Idowu, Admiralty Road, Lekki phase 1",
         "typology": "Luxury Apartments & Penthouse",
         "units": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
@@ -250,6 +259,7 @@ export const properties = [
     {
       "name": "AVION COURT 2",
       "status": "ONGOING",
+      "location": "Ikota G.R.A.",
       "images": [
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218426/meknlmuj93frd5d54pys.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056439/snjplfembn14nspgaqme.jpg",
@@ -259,6 +269,7 @@ export const properties = [
       ],
       "summary": {
         "project": "Residential",
+        "propertyType": "Mixed-use",
         "address": "Block 16, Plot 7 & 8, Ikota GRA, Lagos",
         "typology": "Terrace Duplexes, Semi-Detached Units, Pent Apartments",
         "carSpacePerUnit": 2,
@@ -286,12 +297,14 @@ export const properties = [
     {
       "name": "OLIVE MALL",
       "status": "COMMERCIAL",
+      "location": "Lagos Island",
       "images": [
          "https://res.cloudinary.com/dbczzmftw/image/upload/v1753289052/placeholder.png"
       ],
       "description": "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
       "summary": {
           "address": "Adeniji Road, opposite Massey Children's Hospital",
+          "propertyType": "Commercial",
           "typology": "Commercial Mall"
       },
       "floorPlan": [
@@ -318,11 +331,13 @@ export const properties = [
     {
       "name": "Pinnock Beach House",
       "status": "COMPLETED /SOLD OUT",
+      "location": "Lekki",
       "images": [
           "https://res.cloudinary.com/dbczzmftw/image/upload/v1753289052/placeholder.png"
       ],
       "summary": {
         "address": "Pinnock Beach Estate, Lekki",
+        "propertyType": "Duplex",
         "typology": "5-Bedroom Fully-Detached Duplex"
       },
        "description": "An exquisite 5-bedroom fully-detached duplex located in the prestigious Pinnock Beach Estate."

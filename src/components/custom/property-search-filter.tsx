@@ -22,8 +22,8 @@ const PropertySearchFilter = () => {
   const [bedrooms, setBedrooms] = useState('');
   const [price, setPrice] = useState('');
 
-  const locations = [...new Set(properties.map(p => p.location))];
-  const propertyTypes = [...new Set(properties.map(p => p.property_type))];
+  const locations = [...new Set(properties.map(p => p.location).filter(Boolean))];
+  const propertyTypes = [...new Set(properties.map(p => p.summary.propertyType).filter(Boolean))];
   const bedroomOptions = ["Any", "1", "2", "3", "4", "5+"];
   const priceOptions = ["Any", "Under ₦50M", "₦50M - ₦100M", "₦100M - ₦200M", "Over ₦200M"];
 
