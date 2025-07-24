@@ -97,7 +97,7 @@ export default function ServicesPage() {
               {services.map((service, index) => (
                 <div key={index} className="bg-card p-6 md:p-8 rounded-lg text-left flex flex-col items-start h-full">
                     <div className="w-full mb-6 pb-6">
-                        <div className="w-full flex justify-start items-center p-4 border border-dotted border-accent/30 rounded-md bg-[#FFF6ED]">
+                        <div className="w-full flex justify-start items-center p-4 border border-dotted border-accent/30 rounded-md">
                             <service.icon className="h-16 w-16 md:h-20 md:w-20 text-accent" strokeWidth={1} />
                         </div>
                     </div>
