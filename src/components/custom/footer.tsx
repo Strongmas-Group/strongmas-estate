@@ -19,7 +19,7 @@ const Footer = () => {
                     className="h-auto w-auto"
                 />
             </Link>
-            <p className="text-muted-foreground mb-4 text-sm max-w-xs">
+            <p className="text-foreground mb-4 text-sm max-w-xs">
               With over 30 satisfied clients and the delivery of 50+
               state-of-the-art apartments and duplexes, we proudly showcase our
               commitment to excellence.
@@ -39,22 +39,22 @@ const Footer = () => {
           <div className="text-left">
             <h4 className="font-semibold mb-4 font-headline text-white">Useful Link</h4>
             <nav className="flex flex-col gap-2 text-sm">
-              <Link href="#" className="text-muted-foreground hover:text-foreground">Carrier</Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">FAQ</Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground">Blog</Link>
-              <Link href="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link>
-              <Link href="/about" className="text-muted-foreground hover:text-foreground">About us</Link>
+              <Link href="#" className="text-foreground hover:text-foreground/80">Carrier</Link>
+              <Link href="#" className="text-foreground hover:text-foreground/80">FAQ</Link>
+              <Link href="#" className="text-foreground hover:text-foreground/80">Blog</Link>
+              <Link href="/contact" className="text-foreground hover:text-foreground/80">Contact</Link>
+              <Link href="/about" className="text-foreground hover:text-foreground/80">About us</Link>
             </nav>
           </div>
           <div className="text-left">
             <h4 className="font-semibold mb-4 font-headline text-white">Address & Contact Info</h4>
-            <address className="space-y-2 text-muted-foreground not-italic text-sm">
+            <address className="space-y-2 text-foreground not-italic text-sm">
               <p>
                 Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside
                 Petrocam Filling Station, Ajah, Lagos - Nigeria.
               </p>
-              <p>Phone: <a href="tel:+2349010777777" className="hover:text-foreground">+234 901 077 7777</a></p>
-              <p>Email: <a href="mailto:hello@strongmasng.com" className="hover:text-foreground">hello@strongmasng.com</a></p>
+              <p>Phone: <a href="tel:+2349010777777" className="hover:text-foreground/80">+234 901 077 7777</a></p>
+              <p>Email: <a href="mailto:hello@strongmasng.com" className="hover:text-foreground/80">hello@strongmasng.com</a></p>
             </address>
           </div>
           <div className="text-left">
@@ -76,9 +76,9 @@ const Footer = () => {
                   SUBMIT
                 </Button>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-foreground">
                 By signing up you accept our{" "}
-                <Link href="#" className="underline hover:text-foreground">
+                <Link href="#" className="underline hover:text-foreground/80">
                   terms and conditions
                 </Link>
               </p>
@@ -87,12 +87,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="container py-3 px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-xs text-muted-foreground">
+        <div className="container py-3 px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-xs text-foreground">
            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-2">
-               <Link href="#" className="hover:text-foreground">Terms and Conditions</Link>
-               <Link href="#" className="hover:text-foreground">Cookie Policy</Link>
-               <Link href="#" className="hover:text-foreground">Privacy Policy</Link>
-               <Link href="#" className="hover:text-foreground">Corporate Communications Policy</Link>
+               <Link href="#" className="hover:text-foreground/80">Terms and Conditions</Link>
+               <Link href="#" className="hover:text-foreground/80">Cookie Policy</Link>
+               <Link href="#" className="hover:text-foreground/80">Privacy Policy</Link>
+               <Link href="#" className="hover:text-foreground/80">Corporate Communications Policy</Link>
            </div>
           <p className="text-center">&copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.</p>
         </div>

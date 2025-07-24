@@ -14,7 +14,7 @@ export default function ContactPage() {
       <main className="flex-grow pt-20">
         <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
-            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
+            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753380962/nvojeyyxcnracxrw1zyb.png"
             alt="Contact us background"
             fill
             className="object-cover opacity-40"
@@ -93,7 +93,7 @@ export default function ContactPage() {
 
         <section className="w-full h-[300px] md:h-[500px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63435.789871376786!2d3.4902400631003414!3d6.427842004237196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKm%2049%2C%20Olokonla%20Bus%20Stop%2C%20Lekki%20-%20Epe%20Expressway%2C%20Beside%20Petrocam%20Filling%20Station%2C%20Ajah%2C%20Lagos%20-%20Nigeria.!5e0!3m2!1sen!2sng!4v1753022482341!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m16!m12!1m3!1d63435.789871376786!2d3.4902400631003414!3d6.427842004237196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKm%2049%2C%20Olokonla%20Bus%20Stop%2C%20Lekki%20-%20Epe%20Expressway%2C%20Beside%20Petrocam%20Filling%20Station%2C%20Ajah%2C%20Lagos%20-%20Nigeria.!5e0!3m2!1sen!2sng!4v1753022482341!5m2!1sen!2sng"
             width="100%"
             height="100%"
             style={{ border: 0 }}

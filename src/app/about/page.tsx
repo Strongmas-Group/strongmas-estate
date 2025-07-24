@@ -60,7 +60,7 @@ export default function AboutPage() {
       <main className="flex-grow pt-20">
         <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
-            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
+            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753380962/nvojeyyxcnracxrw1zyb.png"
             alt="About us background"
             fill
             className="object-cover opacity-40"
