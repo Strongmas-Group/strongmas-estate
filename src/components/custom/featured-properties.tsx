@@ -36,6 +36,13 @@ const properties = [
       description: "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
       image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056390/y6gmtpbfh9oioc44ke4y.jpg",
       hint: "gated residential estate"
+    },
+    {
+      name: "OLIVE MALL",
+      location: "Lagos Island",
+      description: "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital.",
+      image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753289052/placeholder.png",
+      hint: "modern shopping mall"
     }
 ];
 
@@ -78,10 +85,10 @@ const FeaturedProperties = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                         <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                            <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>VIEW PROPERTY</Link>
+                            <Link href={property.name === 'OLIVE MALL' ? '/contact' : `/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>VIEW PROPERTY</Link>
                         </Button>
                         <Button asChild size="lg" variant="secondary" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                             <Link href="/#featured">VIEW ALL</Link>
+                             <Link href="/#locations">VIEW ALL</Link>
                         </Button>
                         </div>
                     </div>
