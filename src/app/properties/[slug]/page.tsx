@@ -21,7 +21,7 @@ export default function PropertyPage() {
     (p) => p.name.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
-  const [mainImage, setMainImage] = React.useState(property?.images?.[0] || "");
+  const [mainImage, setMainImage] = React.useState("");
 
   React.useEffect(() => {
     if (property?.images) {
