@@ -62,9 +62,8 @@ export default function AboutPage() {
           <Image
             src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
             alt="About us background"
-            layout="fill"
-            objectFit="cover"
-            className="opacity-40"
+            fill
+            className="object-cover opacity-40"
             data-ai-hint="office building interior"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
@@ -85,9 +84,8 @@ export default function AboutPage() {
                 <Image
                   src="https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png"
                   alt="Business handshake"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  fill
+                  className="object-cover rounded-lg"
                   data-ai-hint="business handshake"
                 />
               </div>
@@ -164,9 +162,8 @@ export default function AboutPage() {
                         <Image
                           src={member.imageUrl}
                           alt={member.name}
-                          layout="fill"
-                          objectFit="contain"
-                          className="rounded-lg"
+                          fill
+                          className="object-contain rounded-lg"
                           data-ai-hint={member.hint}
                         />
                       </div>

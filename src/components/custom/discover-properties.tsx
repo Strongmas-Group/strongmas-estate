@@ -12,9 +12,8 @@ const DiscoverProperties = () => {
       <Image
         src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753017068/hciwh8gaajm8y9zk5dnh.png"
         alt="Cityscape"
-        layout="fill"
-        objectFit="cover"
-        className="absolute inset-0 brightness-50"
+        fill
+        className="absolute inset-0 object-cover brightness-50"
         data-ai-hint="city building sunset"
       />
       <div className="relative z-10 text-center text-white container mx-auto px-4">

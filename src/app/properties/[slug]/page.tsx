@@ -52,9 +52,8 @@ export default function PropertyPage() {
             <Image
                 src={mainImage}
                 alt={property.name}
-                layout="fill"
-                objectFit="cover"
-                className="opacity-60"
+                fill
+                className="object-cover opacity-60"
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10 h-full flex flex-col justify-end container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
@@ -77,9 +76,8 @@ export default function PropertyPage() {
                 <Image
                   src={mainImage}
                   alt={property.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-300 ease-in-out"
+                  fill
+                  className="object-cover transition-transform duration-300 ease-in-out"
                 />
               </div>
                {property.images && property.images.length > 1 && (
@@ -93,8 +91,8 @@ export default function PropertyPage() {
                             <Image
                             src={img}
                             alt={`${property.name} thumbnail ${index + 1}`}
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            className="object-cover"
                             />
                         </div>
                         ))}

@@ -69,9 +69,8 @@ export default function ServicesPage() {
           <Image
             src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753019980/kttuzjqesi4zf3ipmkti.png"
             alt="Services background"
-            layout="fill"
-            objectFit="cover"
-            className="opacity-40"
+            fill
+            className="object-cover opacity-40"
             data-ai-hint="office building interior"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />

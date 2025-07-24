@@ -70,9 +70,8 @@ const FeaturedProperties = () => {
                     <Image
                         src={property.image}
                         alt={property.name}
-                        layout="fill"
-                        objectFit="cover"
-                        className="brightness-50"
+                        fill
+                        className="object-cover brightness-50"
                         data-ai-hint={property.hint}
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">

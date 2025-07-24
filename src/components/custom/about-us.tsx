@@ -30,9 +30,8 @@ const AboutUs = () => {
               <Image
                 src="https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png"
                 alt="Business handshake"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
+                fill
+                className="object-cover rounded-lg"
                 data-ai-hint="business handshake"
               />
             </div>
