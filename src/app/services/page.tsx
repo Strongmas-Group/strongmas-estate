@@ -5,7 +5,6 @@ import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import Image from "next/image";
 import Link from "next/link";
-import { Briefcase, Building2, Cog, Hammer, Handshake, ShieldCheck } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -15,32 +14,32 @@ import {
 
 const services = [
   {
-    icon: Building2,
+    icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375523/f3z6fxzik21xfrtbx922.svg",
     title: "Residential & Commercial Development",
     description: "Strongmas Residence and Development is your premier destination for exceptional real estate solutions in the world of luxury.",
   },
   {
-    icon: Handshake,
+    icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375592/o9zvskm3etdloupfxnxd.svg",
     title: "Joint Venture Partnership",
     description: "At Strongmas Residence and Development, we have a rich history of creating exceptional real estate properties and delivering top-tier construction projects.",
   },
   {
-    icon: Hammer,
+    icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375624/oszxfytad4qndbqthn5k.svg",
     title: "Design & Build",
     description: "We specialize in the comprehensive design and construction of real estate properties, encompassing every facet of your project.",
   },
   {
-    icon: Cog,
+    icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375852/qqtjiyaawpw0xm52u8k4.svg",
     title: "Facility Management",
     description: "We offer a comprehensive range of tools and services that are specifically designed to enhance the functionality, safety, and sustainability of your real estate assets.",
   },
   {
-    icon: Briefcase,
+    icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375878/lclkkocsj2eolcarvcn8.svg",
     title: "Consulting Service",
     description: "As industry leaders, we are committed to providing you with a comprehensive spectrum of solutions that empowers you to navigate the real estate landscape with confidence.",
   },
   {
-    icon: ShieldCheck,
+    icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375904/mjvxtztzdhv7icb36nf6.svg",
     title: "Our Approach",
     description: "Our success is built on a foundation of collaboration and synergy. We seamlessly blend creativity and technical competence through direct cooperation among our team.",
   },
@@ -98,7 +97,7 @@ export default function ServicesPage() {
                 <div key={index} className="bg-white/5 p-6 md:p-8 rounded-lg text-left flex flex-col items-start h-full">
                     <div className="w-full mb-6 pb-6">
                         <div className="w-full flex justify-start items-center p-4 border border-dotted border-accent/30 rounded-md">
-                            <service.icon className="h-16 w-16 md:h-20 md:w-20 text-accent" strokeWidth={1} />
+                            <Image src={service.icon} alt={service.title} width={80} height={80} className="text-accent" />
                         </div>
                     </div>
                     <h3 className="text-xl font-bold font-headline mb-4 text-white">
