@@ -86,10 +86,10 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section className="py-16 sm:py-24 bg-background text-foreground">
+        <section className="py-16 sm:py-24 bg-[#FFF6ED] text-black font-sans">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">
+              <h2 className="text-3xl md:text-4xl font-bold font-headline text-black">
                 SERVICES WE OFFER
               </h2>
             </div>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
               {services.map((service, index) => (
                 <div key={index} className="bg-card p-6 md:p-8 rounded-lg text-left flex flex-col items-start h-full">
                     <div className="w-full mb-6 pb-6">
-                        <div className="w-full flex justify-start items-center p-4 border border-dotted border-accent/30 rounded-md">
+                        <div className="w-full flex justify-start items-center p-4 border border-dotted border-accent/30 rounded-md bg-[#FFF6ED]">
                             <service.icon className="h-16 w-16 md:h-20 md:w-20 text-accent" strokeWidth={1} />
                         </div>
                     </div>
