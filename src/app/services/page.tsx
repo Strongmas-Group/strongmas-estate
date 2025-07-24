@@ -95,16 +95,18 @@ export default function ServicesPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
-                <div key={index} className="bg-card p-6 md:p-8 rounded-lg text-left flex flex-col items-start">
-                  <div className="mb-6">
-                    <service.icon className="h-12 w-12 md:h-16 md:w-16 text-accent" strokeWidth={1} />
-                  </div>
-                  <h3 className="text-xl font-bold font-headline mb-4 text-white">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    {service.description}
-                  </p>
+                <div key={index} className="p-4 border border-dotted border-accent/30 rounded-lg">
+                    <div className="bg-card p-6 md:p-8 rounded-lg text-left flex flex-col items-start h-full">
+                        <div className="mb-6">
+                            <service.icon className="h-12 w-12 md:h-16 md:w-16 text-accent" strokeWidth={1} />
+                        </div>
+                        <h3 className="text-xl font-bold font-headline mb-4 text-white">
+                            {service.title}
+                        </h3>
+                        <p className="text-muted-foreground leading-relaxed text-sm">
+                            {service.description}
+                        </p>
+                    </div>
                 </div>
               ))}
             </div>
