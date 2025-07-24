@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import * as React from "react";
@@ -161,7 +160,7 @@ export default function AboutPage() {
                           {member.description}
                         </p>
                       </div>
-                      <div className="relative h-96 md:h-[550px] w-full rounded-lg overflow-hidden">
+                      <div className="relative h-[550px] md:h-[650px] w-full rounded-lg overflow-hidden">
                         <Image
                           src={member.imageUrl}
                           alt={member.name}
