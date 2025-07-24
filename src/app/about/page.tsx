@@ -165,7 +165,7 @@ export default function AboutPage() {
                           src={member.imageUrl}
                           alt={member.name}
                           layout="fill"
-                          objectFit="cover"
+                          objectFit="contain"
                           className="rounded-lg"
                           data-ai-hint={member.hint}
                         />
