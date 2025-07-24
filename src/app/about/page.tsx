@@ -161,13 +161,13 @@ export default function AboutPage() {
                           {member.description}
                         </p>
                       </div>
-                      <div className="relative h-96 md:h-[550px] w-full">
+                      <div className="relative h-96 md:h-[550px] w-full bg-gray-100 rounded-lg">
                         <Image
                           src={member.imageUrl}
                           alt={member.name}
                           layout="fill"
-                          objectFit="cover"
-                          className="rounded-lg"
+                          objectFit="contain"
+                          className="rounded-lg p-4"
                           data-ai-hint={member.hint}
                         />
                       </div>
@@ -185,5 +185,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-    
