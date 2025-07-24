@@ -18,6 +18,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+        <style>
+          {`
+            @font-face {
+              font-family: 'Cero Pro';
+              src: url('/fonts/CeroPro-Regular.woff2') format('woff2'),
+                   url('/fonts/CeroPro-Regular.woff') format('woff');
+              font-weight: 400;
+              font-style: normal;
+            }
+          `}
+        </style>
       </head>
       <body className="font-body antialiased bg-background text-foreground">
         {children}

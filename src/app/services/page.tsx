@@ -101,7 +101,7 @@ export default function ServicesPage() {
                     <h3 className="text-xl font-bold font-headline mb-4 text-[#EFC59D]">
                         {service.title}
                     </h3>
-                    <p className="leading-relaxed text-sm text-[#F8F8FA]">
+                    <p className="font-body font-normal text-lg leading-relaxed text-[#F8F8FA]">
                         {service.description}
                     </p>
                   </div>

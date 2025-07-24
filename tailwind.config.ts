@@ -10,10 +10,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Cero Pro', 'sans-serif'],
-        headline: ['Cero Pro', 'sans-serif'],
+        body: ['"Cero Pro"', 'sans-serif'],
+        headline: ['"Cero Pro"', 'sans-serif'],
         code: ['monospace'],
-        sans: ['Cero Pro', 'sans-serif'],
+        sans: ['"Cero Pro"', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
