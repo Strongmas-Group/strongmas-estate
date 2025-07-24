@@ -97,7 +97,7 @@ export default function ServicesPage() {
                   <div className="w-full h-[220px] bg-white/10 flex items-center justify-center p-6">
                     <Image src={service.icon} alt={service.title} width={100} height={100} />
                   </div>
-                  <div className="p-6 md:p-8 text-left pl-0">
+                  <div className="p-6 md:p-8 text-left pl-0 p-unset">
                     <h3 className="text-xl font-bold font-headline mb-4 text-[#EFC59D]">
                         {service.title}
                     </h3>

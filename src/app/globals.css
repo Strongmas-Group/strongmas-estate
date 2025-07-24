@@ -67,3 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+p-unse {
+  padding-left: unset;
+}
