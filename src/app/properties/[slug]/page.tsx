@@ -21,13 +21,15 @@ export default function PropertyPage() {
     (p) => p.name.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
-  const [mainImage, setMainImage] = React.useState("");
+  const [mainImage, setMainImage] = React.useState(
+    property?.images?.[0] || ""
+  );
 
   React.useEffect(() => {
-    if (property?.images) {
+    if (property?.images && mainImage === "") {
       setMainImage(property.images[0]);
     }
-  }, [property]);
+  }, [property, mainImage]);
 
   if (!property) {
     return notFound();
@@ -49,12 +51,14 @@ export default function PropertyPage() {
       <Header />
       <main className="flex-grow pt-20">
         <section className="relative h-[50vh] bg-black text-white">
-            <Image
-                src={mainImage}
-                alt={property.name}
-                fill
-                className="object-cover opacity-60"
-            />
+            {mainImage && (
+                <Image
+                    src={mainImage}
+                    alt={property.name}
+                    fill
+                    className="object-cover opacity-60"
+                />
+            )}
             <div className="absolute inset-0 bg-black/20" />
             <div className="relative z-10 h-full flex flex-col justify-end container mx-auto px-4 sm:px-6 lg:px-8 pb-12">
                 <p className="text-sm text-gray-300">
@@ -72,14 +76,16 @@ export default function PropertyPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
             <div className="lg:col-span-2">
-              <div className="relative w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden mb-4">
-                <Image
-                  src={mainImage}
-                  alt={property.name}
-                  fill
-                  className="object-cover transition-transform duration-300 ease-in-out"
-                />
-              </div>
+                {mainImage && (
+                    <div className="relative w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden mb-4">
+                        <Image
+                        src={mainImage}
+                        alt={property.name}
+                        fill
+                        className="object-cover transition-transform duration-300 ease-in-out"
+                        />
+                    </div>
+                )}
                {property.images && property.images.length > 1 && (
                     <div className="grid grid-cols-5 gap-2 md:gap-4">
                         {property.images.slice(0, 5).map((img, index) => (
