@@ -160,12 +160,12 @@ export default function AboutPage() {
                           {member.description}
                         </p>
                       </div>
-                      <div className="relative h-[550px] md:h-[650px] w-full rounded-lg overflow-hidden">
+                      <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden bg-gray-100">
                         <Image
                           src={member.imageUrl}
                           alt={member.name}
                           layout="fill"
-                          objectFit="cover"
+                          objectFit="contain"
                           className="rounded-lg"
                           data-ai-hint={member.hint}
                         />
