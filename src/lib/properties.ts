@@ -166,7 +166,6 @@ export const properties = [
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056247/n0nz8lf2pkgnhrvk96r7.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056265/n39hafncv0hvahjzvz.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056216/iuoevz8kfmhn4hosx9i0.jpg",
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056247/n0nz8lf2pkgnhrvk96r7.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056265/n39hafncv0hvahjzvz.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg"
