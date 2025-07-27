@@ -2,8 +2,9 @@
 export const properties = [
   {
     "name": "STRONGMAS RESIDENCE",
-    "status": "COMPLETED /SOLD OUT",
+    "status": "COMPLETED",
     "location": "Lekki Phase 1",
+    "tag": "SOLD OUT & DELIVERED",
     "images": [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026216/pvmg9daexhbr6bp6bsvv.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026275/etfedgsz0kzyboyomgk1.jpg",
@@ -31,8 +32,9 @@ export const properties = [
   },
   {
     "name": "THE OMINI",
-    "status": "COMPLETED /SOLD OUT",
+    "status": "COMPLETED",
     "location": "Lekki Phase 1",
+    "tag": "SOLD OUT & DELIVERED",
     "images": [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218706/blpm4hgkijma5ywj611f.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027395/ke9fjj8qi7xs0vp5kvzz.jpg",
@@ -92,8 +94,9 @@ export const properties = [
   },
   {
     "name": "AVION COURT 1",
-    "status": "COMPLETED /SOLD OUT",
+    "status": "COMPLETED",
     "location": "Abraham Adesanya",
+    "tag": "SOLD OUT & DELIVERED",
     "images": [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056216/iuoevz8kfmhn4hosx9i0.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056247/n0nz8lf2pkgnhrvk96r7.jpg",
@@ -124,7 +127,8 @@ export const properties = [
   },
   {
     "name": "KESBEL COURT",
-    "status": "SOLD OUT",
+    "status": "Ongoing",
+    "tag": "SOLD OUT, Roofing in Progress",
     "location": "Lekki Phase 1",
     "description": "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse — a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
     "images": [
@@ -191,6 +195,7 @@ export const properties = [
     "name": "AVION COURT 2",
     "status": "ONGOING",
     "location": "Ikota G.R.A.",
+    "tag": "SOLD OUT, 90% Completed",
     "images": [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218426/meknlmuj93frd5d54pys.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056439/snjplfembn14nspgaqme.jpg",
@@ -229,6 +234,7 @@ export const properties = [
   //   "name": "OLIVE MALL",
   //   "status": "COMMERCIAL",
   //   "location": "Lagos Island",
+  //    "tag": "DONE, to be Handed Over",
   //   "images": [
   //     "https://res.cloudinary.com/dbczzmftw/image/upload/v1753289052/placeholder.png"
   //   ],
@@ -263,6 +269,7 @@ export const properties = [
     "name": "THE ELYSIAN RISE",
     "status": "ONGOING",
     "location": "Victoria Island",
+    "tag": "Piling In Progress",
     "images": [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg",

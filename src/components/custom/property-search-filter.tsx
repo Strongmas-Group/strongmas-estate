@@ -33,7 +33,7 @@ const PropertySearchFilter = () => {
   };
 
   return (
-    <div className="p-1 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-[758px] lg:max-w-[1440px] mx-auto border border-white/20">
+    <div className="pl-1 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-[758px] lg:max-w-[1440px] mx-auto border border-white/20">
       <div className="flex items-center justify-between w-full">
         
         <div className="w-full md:flex-1">

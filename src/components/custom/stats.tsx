@@ -34,7 +34,7 @@ const stats: Stat[] = [
 
 const Stats = () => {
   return (
-    <section className="w-full py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-8 sm:py-4 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4">
           {stats.map((stat) => (
             <div
@@ -48,7 +48,7 @@ const Stats = () => {
                 height={32}
                 className="w-8 h-8 text-primary mb-4"
               />
-              <p className="text-3xl md:text-5xl font-bold text-primary font-headline">
+              <p className="text-3xl md:text-3xl font-bold text-primary font-headline">
                 {stat.value}
               </p>
               <p className="mt-2 text-sm text-primary/70 text-center">{stat.label}</p>

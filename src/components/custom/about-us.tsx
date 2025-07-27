@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="py-6 sm:py-10 bg-background">
+    <section id="about" className="py-4 sm:py-6 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           className="bg-card p-6 md:p-12 rounded-lg"
