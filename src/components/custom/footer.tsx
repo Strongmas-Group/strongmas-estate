@@ -71,7 +71,7 @@ const Footer = () => {
                 <Button
                   type="submit"
                   variant="default"
-                  className="absolute right-1 top-1/2 -translate-y-1/2 h-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90"
+                  className="absolute right-1 top-1/2 -translate-y-1/2 h-8 rounded-full bg-[#EFC59D] text-accent-foreground hover:bg-accent/90"
                 >
                   SUBMIT
                 </Button>

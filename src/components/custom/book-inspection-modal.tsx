@@ -40,17 +40,17 @@ const BookInspectionModal = () => {
       <DialogContent className="bg-white text-black p-8 max-w-lg">
         <DialogHeader className="text-left">
           <DialogTitle className="text-3xl font-bold font-headline">
-            BOOK INSPECTION
+            BOOK A TOUR
           </DialogTitle>
           <DialogDescription className="text-muted-foreground text-base font-sans">
             Schedule An Appointment With Us
           </DialogDescription>
         </DialogHeader>
         <form className="space-y-6 mt-4">
-          <Input placeholder="Full Name" className="bg-gray-100 border-none h-12" />
+          <Input placeholder="Full Name" className="bg-gray-100 border-none outline-none h-12" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Input type="email" placeholder="Email Address" className="bg-gray-100 border-none h-12" />
-            <Input type="tel" placeholder="Phone Number" className="bg-gray-100 border-none h-12" />
+            <Input type="email" placeholder="Email Address" className="bg-gray-100 outline-none border-none h-12" />
+            <Input type="tel" placeholder="Phone Number" className="bg-gray-100 outline-none border-none h-12" />
           </div>
           <Select>
             <SelectTrigger className="w-full bg-gray-100 border-none h-12">
@@ -98,7 +98,7 @@ const BookInspectionModal = () => {
               </SelectContent>
             </Select>
           </div>
-          <Button type="submit" size="lg" className="w-full bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline h-12">
+          <Button type="submit" size="lg" className="w-full bg-primary text-white hover:bg-primary/90 font-headline h-12">
             SUBMIT APPOINTMENT
           </Button>
         </form>
