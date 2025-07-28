@@ -44,7 +44,7 @@ const Locations = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-widest">
-            Our Locations
+            Our Properties
           </h2>
         </div>
       </div>
@@ -56,7 +56,7 @@ const Locations = () => {
         viewport={{ once: false, amount: 0.3 }}
         variants={containerVariants}
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
           {properties.slice(0, 7).map((property, index) => (
             <motion.div key={property.name} variants={fadeInUp(index)}>
               <Link
@@ -75,9 +75,22 @@ const Locations = () => {
                     data-ai-hint="modern building exterior"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/50 backdrop-blur-sm rounded-b-md">
-                    <h3 className="text-xl font-bold font-headline text-white">
-                      {property.name}
-                    </h3>
+                    <div className="flex justify-between">
+                      <h3 className="text-xl font-bold font-headline text-white">
+                        {property.name}
+                      </h3>
+                      {property.summary?.saleStatus && (
+                        <div
+                          className={`px-2 py-2 my-auto items-center text-center rounded-full text-xs font-medium ${
+                            property.summary.saleStatus.toLowerCase().includes("sold out")
+                              ? "bg-red-100 text-red-800"
+                              : "bg-green-100 text-green-800"
+                          }`}
+                        >
+                          {property.summary.saleStatus}
+                        </div>
+                      )}
+                    </div>
                     <p className="mt-1 text-sm text-white/80">
                       {property.location}
                     </p>

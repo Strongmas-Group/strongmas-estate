@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   return (
     <section id="about" className="py-4 sm:py-6 bg-background">
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         <motion.div
           className="bg-card p-6 md:p-12 rounded-lg"
           initial={{ opacity: 0, y: 40 }}
@@ -27,20 +27,26 @@ const AboutUs = () => {
               <h2 className="text-3xl md:text-4xl font-bold font-headline">
                 WHAT IS STRONGMAS?
               </h2>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                STRONGMAS is more than just a collection of luxury
+                properties—it's a vision of sustainable, tech-enabled living
+                refined. With over a decade of experience in real estate
+                development, we’ve set new benchmarks for modern,
+                high-performance housing in Lagos, Nigeria, and beyond.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                We at Strongmas Residence and Development Limited, a subsidiary
-                of Strongmas Group, are a trusted leader in smart building
-                development in Nigeria. Since delivering our first set of
-                beautifully crafted projects, we've made a significant impact on
-                both residential and commercial architecture. Renowned for
-                offering "luxurious yet comfortable" properties, we combine
-                elegant designs with the latest technology and uphold the
-                highest quality standards.
+                Our zero-energy consumption homes blend architectural excellence
+                with cutting-edge smart technologies and eco-conscious design.
+                STRONGMAS delivers livable spaces that transform lives, create
+                lasting value, and build legacies for a discerning global
+                clientele. With an expansion focus across Africa, we are
+                committed to redefining how luxury and sustainability coexist in
+                the built environment.
               </p>
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary/90"
+                className="bg-primary hover:bg-primary/90 cursor-pointer"
               >
                 <Link href="/about">LEARN MORE</Link>
               </Button>

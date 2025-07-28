@@ -14,10 +14,10 @@ export default function ContactPage() {
       <main className="flex-grow pt-20">
         <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
-            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753380962/nvojeyyxcnracxrw1zyb.png"
+            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg"
             alt="Contact us background"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-70"
             data-ai-hint="office building interior"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />

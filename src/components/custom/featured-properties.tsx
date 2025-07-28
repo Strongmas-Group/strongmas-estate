@@ -33,7 +33,7 @@ const properties = [
     hint:"Fully Serviced Smart Apartments",
   },
   {
-    name: "AVION COURT 1",
+    name: "AVIONS COURT 1",
     location: "Abraham Adesanya",
     tag: "SOLD OUT & DELIVERED",
     image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg",
@@ -41,7 +41,7 @@ const properties = [
     hint: "Gated Estate Environment",
   },
   {
-    name: "Kesbel Court",
+    name: "KESBEL COURT",
     tag: "SOLD OUT, Roofing in Progress",
     location: "Lekki Phase 1",
     description: "Nestled in the heart of Lekki Phase 1, Kesbel Court is a refined multi-family apartment development that reimagines urban living through timeless architecture, luxurious comfort, and breathtaking views.",
@@ -49,7 +49,7 @@ const properties = [
     hint: "modern apartment exterior"
   },
   {
-    name: "Avion Court 2",
+    name: "AVIONS COURT 2",
     tag: "SOLD OUT, 90% Completed",
     location: "Ikota G.R.A.",
     description: "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
@@ -57,7 +57,7 @@ const properties = [
     hint: "gated residential estate"
   },
   {
-    name: "The Elysian Rise",
+    name: "THE ELYSIAN RISE",
     tag: "Piling In Progress",
     location: "Musa Ya’dua Street, Victoria Island",
     description: "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture.",
@@ -87,7 +87,7 @@ const FeaturedProperties = () => {
           <CarouselContent>
             {properties.map((property, index) => (
               <CarouselItem key={index}>
-                <div className="relative w-full h-[80vh]">
+                <div className="relative w-full h-[90vh] border-t border-t-2 border-white">
                   <Image
                     src={property.image}
                     alt={property.name}

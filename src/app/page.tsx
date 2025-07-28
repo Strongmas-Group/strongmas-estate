@@ -13,12 +13,12 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <FeaturedProperties />
+        <AboutUs />
+        <Locations />
         <div className="w-full bg-white h-[145px] border-b border-border flex items-center justify-center">
           <Stats />
         </div>
-        <Locations />
-        <AboutUs />
-        <FeaturedProperties />
         <DiscoverProperties />
       </main>
       <Footer />
