@@ -242,7 +242,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <Separator className="bg-accent h-[2px]" />
+        {/* <Separator className="bg-accent h-[2px]" /> */}
 
         <section className="py-16 sm:py-24 bg-white text-black font-sans">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
