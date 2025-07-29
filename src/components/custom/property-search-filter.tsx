@@ -1,15 +1,14 @@
 "use client";
 
-import { useState } from 'react'; // No need for useEffect here with manual trigger
+import { useState } from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
-import { properties } from '@/lib/properties'; // Your properties data
-import { Separator } from '@/components/ui/separator';
+import { properties } from '@/lib/properties';
 import Image from 'next/image';
 import Link from 'next/link';
-import { XCircle } from 'lucide-react'; // Import an icon for clearing, e.g., XCircle
+import { XCircle } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
 
-// Define a type for your property structure for better type safety
 interface Property {
   name: string;
   status: string;
@@ -54,7 +53,6 @@ const FilterSelectItem = ({ label, children }: { label: string, children: React.
 );
 
 const PropertySearchFilter = () => {
-  // Filter states
   const [location, setLocation] = useState('All locations');
   const [propertyType, setPropertyType] = useState('Any');
   const [bedrooms, setBedrooms] = useState('Any');
@@ -65,16 +63,16 @@ const PropertySearchFilter = () => {
 
   const locations = [...new Set(properties.map(p => p.location).filter(Boolean))];
   const propertyTypes = [...new Set(properties.map(p => p.summary.propertyType).filter(Boolean))];
-
   const bedroomOptions = ["Any", "1", "2", "3", "4", "5+"];
   const priceOptions = ["Any", "Under ₦50M", "₦50M - ₦100M", "₦100M - ₦200M", "Over ₦200M"];
+
 
   const applyFilters = () => {
     setSearchInitiated(true); 
 
     const isDefaultState = location === 'All locations' && propertyType === 'Any' && bedrooms === 'Any' && price === 'Any';
     if (isDefaultState) {
-        setFilteredResults([]);
+        setFilteredResults([]); 
         return; 
     }
 
@@ -129,7 +127,8 @@ const PropertySearchFilter = () => {
         const unitPrices = p.availableUnits
           .map(unit => {
             if (unit.price && unit.price !== "Not Available") {
-              return parseInt(unit.price.replace(/,/g, ''), 10);
+              const cleanedPrice = unit.price.replace(/[₦,]/g, '');
+              return parseInt(cleanedPrice, 10);
             }
             return null;
           })
@@ -144,10 +143,8 @@ const PropertySearchFilter = () => {
             return unitPrices.some(unitPrice => unitPrice >= 50_000_000 && unitPrice <= 100_000_000);
           case "₦100M - ₦200M":
             return unitPrices.some(unitPrice => unitPrice >= 100_000_000 && unitPrice <= 200_000_000);
-          case "Over ₦200M":
-            return unitPrices.some(unitPrice => unitPrice > 200_000_000);
           default:
-            return true;
+            return unitPrices.some(unitPrice => unitPrice > 200_000_000);
         }
       });
     }
@@ -165,13 +162,13 @@ const PropertySearchFilter = () => {
   };
 
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-2 py-0">
-      <div className="mx-auto pl-1 bg-black/60 backdrop-blur-sm rounded-full w-full max-w-[758px] lg:max-w-[1440px] border border-white/20 relative mb-0">
-        <div className="flex items-center justify-between w-full">
-            <div className="w-full md:flex-1">
+    <div className="mx-auto px-4 sm:px-6 lg:px-2 py-0 sticky top-20 z-40"> {/* Added sticky positioning here */}
+      <div className="mx-auto pl-1 bg-black/60 backdrop-blur-sm rounded-lg md:rounded-full w-full max-w-[758px] lg:max-w-[1440px] border border-white/20 relative mb-0">
+        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between w-full p-2 md:p-0">
+            <div className="w-full md:flex-1 py-1 md:py-0">
                 <FilterSelectItem label="Search by Location">
                     <Select onValueChange={setLocation} value={location}>
-                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0 focus:ring-offset-0">
                             <SelectValue placeholder="All locations" />
                         </SelectTrigger>
                         <SelectContent className="bg-background border-border text-white">
@@ -184,12 +181,13 @@ const PropertySearchFilter = () => {
                 </FilterSelectItem>
             </div>
 
-            <Separator orientation="vertical" className="h-12 bg-white/20" />
+            <Separator orientation="vertical" className="hidden md:block h-12 bg-white/20" />
+            <Separator orientation="horizontal" className="w-full h-[1px] bg-white/20 md:hidden" />
 
-            <div className="w-full md:flex-1">
+            <div className="hidden md:flex md:flex-1 py-1 md:py-0">
                 <FilterSelectItem label="Property Type">
                     <Select onValueChange={setPropertyType} value={propertyType}>
-                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0 focus:ring-offset-0">
                             <SelectValue placeholder="Any" />
                         </SelectTrigger>
                         <SelectContent className="bg-background border-border text-white">
@@ -202,12 +200,13 @@ const PropertySearchFilter = () => {
                 </FilterSelectItem>
             </div>
 
-            <Separator orientation="vertical" className="h-12 bg-white/20" />
+            <Separator orientation="vertical" className="hidden md:block h-12 bg-white/20" />
+            <Separator orientation="horizontal" className="w-full h-[1px] bg-white/20 md:hidden" />
             
-            <div className="w-full md:flex-1">
+            <div className="hidden md:flex md:flex-1 py-1 md:py-0">
                 <FilterSelectItem label="Bedrooms">
                     <Select onValueChange={setBedrooms} value={bedrooms}>
-                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0 focus:ring-offset-0">
                             <SelectValue placeholder="Any" />
                         </SelectTrigger>
                         <SelectContent className="bg-background border-border text-white">
@@ -219,12 +218,13 @@ const PropertySearchFilter = () => {
                 </FilterSelectItem>
             </div>
             
-            <Separator orientation="vertical" className="h-12 bg-white/20" />
-            
-            <div className="w-full md:flex-1">
+            <Separator orientation="vertical" className="hidden md:block h-12 bg-white/20" />
+            <Separator orientation="horizontal" className="w-full h-[1px] bg-white/20 md:hidden" />
+
+            <div className="hidden md:flex md:flex-1 py-1 md:py-0">
                 <FilterSelectItem label="Price">
                     <Select onValueChange={setPrice} value={price}>
-                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0">
+                        <SelectTrigger className="w-full bg-transparent border-none text-white text-sm font-bold p-0 h-auto focus:ring-0 focus:ring-offset-0">
                             <SelectValue placeholder="Any" />
                         </SelectTrigger>
                         <SelectContent className="bg-background border-border text-white">
@@ -236,11 +236,10 @@ const PropertySearchFilter = () => {
                 </FilterSelectItem>
             </div>
             
-            <div className="flex-1 px-1 flex gap-2 items-center">
+            <div className="w-full md:flex-1 px-1 flex flex-col md:flex-row gap-2 items-center justify-center pt-2 md:pt-0 pb-2 md:pb-0">
                 <Button onClick={applyFilters} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-4 h-auto">
                     SHOW ALL RESULTS
                 </Button>
-                {/* Clear Filters Button - Appears if any filter is active or search was initiated */}
                 {(location !== 'All locations' || propertyType !== 'Any' || bedrooms !== 'Any' || price !== 'Any' || searchInitiated) && (
                     <Button
                         onClick={clearFilters}
@@ -257,14 +256,13 @@ const PropertySearchFilter = () => {
         </div>
       </div>
 
-      {/* Search Results Section - Now conditional on searchInitiated and has white background */}
       {searchInitiated && (
-          <div className="bg-white mt-2 py-8 rounded-lg shadow-lg"> {/* White background applied here */}
+          <div className="bg-white mt-5 py-8 rounded-lg shadow-lg">
             <h2 className="text-2xl md:text-3xl font-bold text-black text-center mb-6">
                 {filteredResults.length > 0 ? `Found ${filteredResults.length} ${filteredResults.length > 1 ? 'Properties' : 'Property'}` : 'No Properties Found'}
             </h2>
             {filteredResults.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4"> {/* Added px-4 for padding */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4">
                 {filteredResults.map(property => (
                     <div key={property.name} className="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
                         <div className="relative w-full h-48 bg-gray-100">
@@ -280,20 +278,6 @@ const PropertySearchFilter = () => {
                             <h3 className="text-xl font-semibold text-black mb-2 line-clamp-2">{property.name}</h3>
                             <p className="text-gray-700 text-sm mb-1">{property.location}</p>
                             <p className="text-gray-600 text-sm mb-4">{property.summary.propertyType}</p>
-                            {/* <div className="mt-auto flex justify-between items-center text-sm text-gray-800">
-                                {property.summary.typology && (
-                                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
-                                        {property.summary.typology}
-                                    </span>
-                                )}
-                                {property.summary.saleStatus && (
-                                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                                        property.summary.saleStatus.toLowerCase().includes('sold out') ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'
-                                    }`}>
-                                        {property.summary.saleStatus}
-                                    </span>
-                                )}
-                            </div> */}
                             <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`} className="mt-4 w-full">
                                 <Button className="w-full bg-primary text-white hover:bg-primary/90">
                                     View Details

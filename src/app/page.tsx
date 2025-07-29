@@ -16,7 +16,7 @@ export default function Home() {
         <FeaturedProperties />
         <AboutUs />
         <Locations />
-        <div className="w-full bg-white h-[145px] border-b border-border flex items-center justify-center">
+        <div className="w-full bg-white flex items-center justify-center">
           <Stats />
         </div>
         <DiscoverProperties />
