@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { properties } from '@/lib/properties';
 import Image from 'next/image';
 import Link from 'next/link';
-import { XCircle } from 'lucide-react';
+import { XCircle, Search } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 
 interface Property {
@@ -57,6 +57,7 @@ const PropertySearchFilter = () => {
   const [propertyType, setPropertyType] = useState('Any');
   const [bedrooms, setBedrooms] = useState('Any');
   const [price, setPrice] = useState('Any');
+  const [searchTerm, setSearchTerm] = useState(''); // New state for mobile search input
 
   const [filteredResults, setFilteredResults] = useState<Property[]>([]);
   const [searchInitiated, setSearchInitiated] = useState(false);
@@ -70,83 +71,96 @@ const PropertySearchFilter = () => {
   const applyFilters = () => {
     setSearchInitiated(true); 
 
-    const isDefaultState = location === 'All locations' && propertyType === 'Any' && bedrooms === 'Any' && price === 'Any';
-    if (isDefaultState) {
-        setFilteredResults([]); 
-        return; 
-    }
-
     let currentFiltered = [...properties];
 
-    if (location !== 'All locations') {
-      currentFiltered = currentFiltered.filter(p => p.location === location);
-    }
+    if (searchTerm.trim() !== '') {
+      const lowerCaseSearchTerm = searchTerm.toLowerCase();
+      currentFiltered = currentFiltered.filter(p =>
+          p.name.toLowerCase().includes(lowerCaseSearchTerm) ||
+          p.location.toLowerCase().includes(lowerCaseSearchTerm) ||
+          p.summary.propertyType.toLowerCase().includes(lowerCaseSearchTerm) ||
+          (p.summary.project && p.summary.project.toLowerCase().includes(lowerCaseSearchTerm)) ||
+          (p.tag && p.tag.toLowerCase().includes(lowerCaseSearchTerm))
+      );
+    } 
+    // Logic for desktop dropdown filters
+    else {
+      const isDefaultState = location === 'All locations' && propertyType === 'Any' && bedrooms === 'Any' && price === 'Any';
+      if (isDefaultState) {
+          setFilteredResults([]); 
+          return; 
+      }
 
-    if (propertyType !== 'Any') {
-      currentFiltered = currentFiltered.filter(p => p.summary.propertyType === propertyType);
-    }
+      if (location !== 'All locations') {
+        currentFiltered = currentFiltered.filter(p => p.location === location);
+      }
 
-    if (bedrooms !== 'Any') {
-      currentFiltered = currentFiltered.filter(p => {
-        const targetBedrooms = bedrooms === '5+' ? 5 : parseInt(bedrooms);
+      if (propertyType !== 'Any') {
+        currentFiltered = currentFiltered.filter(p => p.summary.propertyType === propertyType);
+      }
 
-        if (p.summary.typology) {
-          const typologyBedroomsMatch = p.summary.typology.match(/(\d)-Bedroom/);
-          if (typologyBedroomsMatch) {
-            const numBedrooms = parseInt(typologyBedroomsMatch[1]);
-            if (bedrooms === '5+') {
-              if (numBedrooms >= targetBedrooms) return true;
-            } else {
-              if (numBedrooms === targetBedrooms) return true;
-            }
-          }
-        }
-        if (p.availableUnits) {
-          return p.availableUnits.some(unit => {
-            if (unit.type) {
-              const unitBedroomsMatch = unit.type.match(/(\d)-Bedroom/);
-              if (unitBedroomsMatch) {
-                const unitNumBedrooms = parseInt(unitBedroomsMatch[1]);
-                if (bedrooms === '5+') {
-                  return unitNumBedrooms >= targetBedrooms;
-                }
-                return unitNumBedrooms === targetBedrooms;
+      if (bedrooms !== 'Any') {
+        currentFiltered = currentFiltered.filter(p => {
+          const targetBedrooms = bedrooms === '5+' ? 5 : parseInt(bedrooms);
+
+          if (p.summary.typology) {
+            const typologyBedroomsMatch = p.summary.typology.match(/(\d)-Bedroom/);
+            if (typologyBedroomsMatch) {
+              const numBedrooms = parseInt(typologyBedroomsMatch[1]);
+              if (bedrooms === '5+') {
+                if (numBedrooms >= targetBedrooms) return true;
+              } else {
+                if (numBedrooms === targetBedrooms) return true;
               }
             }
-            return false;
-          });
-        }
-        return false; 
-      });
-    }
+          }
+          if (p.availableUnits) {
+            return p.availableUnits.some(unit => {
+              if (unit.type) {
+                const unitBedroomsMatch = unit.type.match(/(\d)-Bedroom/);
+                if (unitBedroomsMatch) {
+                  const unitNumBedrooms = parseInt(unitBedroomsMatch[1]);
+                  if (bedrooms === '5+') {
+                    return unitNumBedrooms >= targetBedrooms;
+                  }
+                  return unitNumBedrooms === targetBedrooms;
+                }
+              }
+              return false;
+            });
+          }
+          return false; 
+        });
+      }
 
-    if (price !== 'Any') {
-      currentFiltered = currentFiltered.filter(p => {
-        if (!p.availableUnits || p.availableUnits.length === 0) return false;
+      if (price !== 'Any') {
+        currentFiltered = currentFiltered.filter(p => {
+          if (!p.availableUnits || p.availableUnits.length === 0) return false;
 
-        const unitPrices = p.availableUnits
-          .map(unit => {
-            if (unit.price && unit.price !== "Not Available") {
-              const cleanedPrice = unit.price.replace(/[₦,]/g, '');
-              return parseInt(cleanedPrice, 10);
-            }
-            return null;
-          })
-          .filter(Boolean) as number[];
+          const unitPrices = p.availableUnits
+            .map(unit => {
+              if (unit.price && unit.price !== "Not Available") {
+                const cleanedPrice = unit.price.replace(/[₦,]/g, '');
+                return parseInt(cleanedPrice, 10);
+              }
+              return null;
+            })
+            .filter(Boolean) as number[];
 
-        if (unitPrices.length === 0) return false;
+          if (unitPrices.length === 0) return false;
 
-        switch (price) {
-          case "Under ₦50M":
-            return unitPrices.some(unitPrice => unitPrice < 50_000_000);
-          case "₦50M - ₦100M":
-            return unitPrices.some(unitPrice => unitPrice >= 50_000_000 && unitPrice <= 100_000_000);
-          case "₦100M - ₦200M":
-            return unitPrices.some(unitPrice => unitPrice >= 100_000_000 && unitPrice <= 200_000_000);
-          default:
-            return unitPrices.some(unitPrice => unitPrice > 200_000_000);
-        }
-      });
+          switch (price) {
+            case "Under ₦50M":
+              return unitPrices.some(unitPrice => unitPrice < 50_000_000);
+            case "₦50M - ₦100M":
+              return unitPrices.some(unitPrice => unitPrice >= 50_000_000 && unitPrice <= 100_000_000);
+            case "₦100M - ₦200M":
+              return unitPrices.some(unitPrice => unitPrice >= 100_000_000 && unitPrice <= 200_000_000);
+            default:
+              return unitPrices.some(unitPrice => unitPrice > 200_000_000);
+          }
+        });
+      }
     }
 
     setFilteredResults(currentFiltered);
@@ -157,13 +171,15 @@ const PropertySearchFilter = () => {
     setPropertyType('Any');
     setBedrooms('Any');
     setPrice('Any');
+    setSearchTerm(''); // Clear mobile search term
     setFilteredResults([]);
-    setSearchInitiated(false);
+    setSearchInitiated(false); // Hide the results section
   };
 
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-2 py-0 sticky top-20 z-40"> {/* Added sticky positioning here */}
-      <div className="mx-auto pl-1 bg-black/60 backdrop-blur-sm rounded-lg md:rounded-full w-full max-w-[758px] lg:max-w-[1440px] border border-white/20 relative mb-0">
+    <div className="mx-auto px-4 sm:px-6 lg:px-2 py-0 sticky top-20 z-40">
+      {/* Desktop Filter UI */}
+      <div className="hidden md:block mx-auto pl-1 bg-black/30 backdrop-blur-xs rounded-full w-full max-w-[758px] lg:max-w-[1440px] border border-white/20 relative mb-0">
         <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between w-full p-2 md:p-0">
             <div className="w-full md:flex-1 py-1 md:py-0">
                 <FilterSelectItem label="Search by Location">
@@ -236,8 +252,8 @@ const PropertySearchFilter = () => {
                 </FilterSelectItem>
             </div>
             
-            <div className="w-full md:flex-1 px-1 flex flex-col md:flex-row gap-2 items-center justify-center pt-2 md:pt-0 pb-2 md:pb-0">
-                <Button onClick={applyFilters} className="w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-4 h-auto">
+            <div className="w-full md:flex-1 px-1 flex flex-row md:flex-row gap-2 items-center justify-end md:justify-center pt-2 md:pt-0 pb-2 md:pb-0">
+                <Button onClick={applyFilters} className="hidden md:block w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-4 h-auto">
                     SHOW ALL RESULTS
                 </Button>
                 {(location !== 'All locations' || propertyType !== 'Any' || bedrooms !== 'Any' || price !== 'Any' || searchInitiated) && (
@@ -245,7 +261,7 @@ const PropertySearchFilter = () => {
                         onClick={clearFilters}
                         variant="ghost"
                         size="icon"
-                        className="text-white hover:bg-white/10 hover:text-white"
+                        className="hidden md:block text-white hover:bg-white/10 hover:text-white"
                         title="Clear Search"
                     >
                         <XCircle className="h-6 w-6" />
@@ -253,6 +269,39 @@ const PropertySearchFilter = () => {
                     </Button>
                 )}
             </div>
+        </div>
+      </div>
+
+      <div className="md:hidden mx-auto bg-black/30 backdrop-blur-xs rounded-full w-full border border-white/20 relative mb-0">
+        <div className="flex items-center w-full px-2 py-2">
+            <input
+                type="text"
+                placeholder="Search by City, Community or Project"
+                className="flex-grow pl-3 pr-20 py-2 bg-transparent text-white placeholder-gray-300 outline-none rounded-full"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        applyFilters();
+                    }
+                }}
+            />
+            {searchTerm && (
+                <button
+                    onClick={clearFilters} 
+                    className="absolute right-12 top-1/2 -translate-y-1/2 text-white p-1 rounded-full hover:bg-white/20 z-10"
+                    aria-label="Clear search"
+                >
+                    <XCircle className="h-4 w-4" /> 
+                </button>
+            )}
+            <button
+                onClick={applyFilters}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-white p-2 rounded-full hover:bg-white/20"
+                aria-label="Search"
+            >
+                <Search className="h-5 w-5" />
+            </button>
         </div>
       </div>
 

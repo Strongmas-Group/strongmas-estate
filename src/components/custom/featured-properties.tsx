@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -95,21 +94,20 @@ const FeaturedProperties = () => {
                     className="object-cover brightness-50"
                     data-ai-hint={property.hint}
                   />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-                    <p className="text-3xl font-sans mb-5 text-white uppercase">FEATURED PROPERTIES</p>
-                    <h2 className="text-4xl md:text-6xl font-bold font-headline mb-4">
-                      {property.name}
-                    </h2>
-                    <p className="text-2xl md:text-2xl text-[#EFC59D] font-bold font-headline mb-4">({property.tag})</p>
-                    <p className="text-lg text-center max-w-md md:max-w-2xl mb-8">
-                      {property.description}
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="absolute inset-8 mt-28 flex flex-col items-center justify-between text-center text-white p-4">
+                    <div className="flex flex-col items-center">
+                      <p className="text-xl sm:text-2xl md:text-3xl font-sans mb-5 text-white uppercase">FEATURED PROPERTIES</p>
+                      <h2 className="text-4xl md:text-6xl font-bold font-headline mb-4">
+                        {property.name}
+                      </h2>
+                      <p className="text-lg sm:text-xl md:text-2xl text-[#EFC59D] font-bold font-headline mb-4">({property.tag})</p>
+                      <p className="hidden md:block text-lg text-center max-w-md md:max-w-2xl mb-8">
+                        {property.description}
+                      </p>
+                    </div>
+                    <div className="flex justify-center"> {/* Use flex and justify-center to horizontally center the single button */}
                       <Button asChild size="lg" variant="secondary" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
                         <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`}>VIEW PROPERTY</Link>
-                      </Button>
-                      <Button asChild size="lg" variant="secondary" className="bg-[#EFC59D] hover:bg-accent/90 text-accent-foreground font-bold">
-                        <Link href="/#featured">VIEW ALL</Link>
                       </Button>
                     </div>
                   </div>

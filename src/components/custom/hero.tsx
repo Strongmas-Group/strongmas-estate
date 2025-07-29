@@ -1,4 +1,3 @@
-
 "use client";
 
 import PropertySearchFilter from "./property-search-filter";
@@ -8,8 +7,17 @@ const Hero = () => {
     <section className="relative w-full h-screen overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <video
-          className="absolute top-1/2 left-1/2 w-full h-full min-w-[177.77vh] min-h-[100vh] object-cover -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 hidden md:block"
           src="/background.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        
+        <video
+          className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 block md:hidden"
+          src="/background-mobile.mp4"
           autoPlay
           loop
           muted

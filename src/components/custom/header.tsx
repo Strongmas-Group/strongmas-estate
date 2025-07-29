@@ -53,7 +53,6 @@ const BrowseDropdown = () => {
           <DropdownMenuLabel className="font-bold text-white text-base">
             Completed Projects
           </DropdownMenuLabel>
-          {/* <DropdownMenuSeparator className="bg-white" /> */}
           <div className="space-y-1">
             {completedProjects.map(property => (
               <DropdownMenuItem
@@ -73,7 +72,6 @@ const BrowseDropdown = () => {
           <DropdownMenuLabel className="font-bold text-white text-base">
             Ongoing Projects
           </DropdownMenuLabel>
-          {/* <DropdownMenuSeparator className="bg-white" /> */}
           <div className="space-y-1">
             {ongoingProjects.map(property => (
               <DropdownMenuItem
@@ -130,7 +128,7 @@ const Header = () => {
               alt="Strongmas Residence Logo"
               width={200}
               height={44}
-              className="h-auto w-auto"
+              className="w-[150px] h-[33px] md:w-[200px] md:h-[44px]"
               priority
             />
           </Link>
@@ -175,9 +173,9 @@ const Header = () => {
                   <Image
                     src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
                     alt="Strongmas Residence Logo"
-                    width={180}
-                    height={40}
-                    className="h-auto w-auto"
+                    width={100} 
+                    height={13}
+                    className="h-auto w-auto" // Corrected class name
                   />
                 </Link>
               </SheetHeader>
