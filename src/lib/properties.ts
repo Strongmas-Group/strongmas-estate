@@ -6,10 +6,10 @@ export const properties = [
     "location": "Lekki Phase 1",
     "tag": "SOLD OUT & DELIVERED",
     "images": [
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026216/pvmg9daexhbr6bp6bsvv.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026275/etfedgsz0kzyboyomgk1.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026366/i0qjp9ouhvee1cvyf5gt.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026386/rvhuegrcdi6lvcaynjcn.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850576/sx9rjn23frkgfjxtxdrj.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850615/pyh2ti7qqmyoodjwnww9.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850632/uwotk9taz6wemn3ii9cg.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850651/tkgsgpbbtsyobegyjnah.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026421/gyg79oiyshhrpsdrztxt.jpg"
     ],
     "summary": {
@@ -101,10 +101,10 @@ export const properties = [
     "images": [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056216/iuoevz8kfmhn4hosx9i0.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056247/n0nz8lf2pkgnhrvk96r7.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386554/my6f05peyyomueijs6rg.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg"
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg"
     ],
     "summary": {
       "project": "Residential",
