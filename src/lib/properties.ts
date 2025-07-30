@@ -99,12 +99,12 @@ export const properties = [
     "location": "Abraham Adesanya",
     "tag": "SOLD OUT & DELIVERED",
     "images": [
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056216/iuoevz8kfmhn4hosx9i0.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056247/n0nz8lf2pkgnhrvk96r7.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386554/my6f05peyyomueijs6rg.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg"
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880550/k6bnbwjc6jihrzg5lfby.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880571/hh6dijwgkoyesuljtpnt.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880595/ppc6oog5uenqkbmai0op.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg",
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg"
     ],
     "summary": {
       "project": "Residential",
