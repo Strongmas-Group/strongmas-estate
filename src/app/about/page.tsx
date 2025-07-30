@@ -35,7 +35,7 @@ const leadershipTeam = [
     name: "KIKELOMO WILLIAMS",
     role: "Executive Director",
     imageUrl:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280272/nln9cxrfh1zva14ix4eu.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753849235/f43limj8fg6cybfa2ofz.png",
     description:
       "Kikelomo Williams is a seasoned strategic leader whose professional journey spans over a decade across both local and multinational environments. Prior to joining Strongmas, she successfully led several revenue transformation initiatives — building high-performing sales teams, driving consistent year-on-year profit growth, and repositioning brands for long-term success. Her impact has been particularly strong in the real estate sector, where she implemented innovative sales and marketing systems that delivered measurable results to the bottom line.\n\n" +
       "She holds a degree in History and International Relations from Lagos State University, as well as a diploma in Mass Communication from the University of Lagos. Kikelomo also holds certifications from Curtin University and PRCAN and is a proud member of the International Management Consultants (IMC).\n\n" +
