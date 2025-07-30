@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -22,7 +23,7 @@ const leadershipTeam = [
     name: "MICHEAL SHOBUKOLA",
     role: "Founder & Managing Director",
     imageUrl:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280071/umjzpb7cx3msnnemrltz.png",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848860/ayobv1jvnitrqc6gry0v.jpg",
     description:
       "Micheal Shobukola is the visionary Founder and Managing Director of Strongmas Group — a dynamic entrepreneur whose influence spans over a decade of building impactful, future-forward businesses in Nigeria’s evolving real estate landscape.\n\n" +
       "With a B.Sc. in Computer and Information Science from Lead City University and a Master’s degree from the University of East Anglia, Micheal combines technical insight with business acumen to lead Strongmas with precision, innovation, and purpose.\n\n" +
@@ -83,7 +84,7 @@ export default function AboutPage() {
       <main className="flex-grow pt-20">
         <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
-            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753027544/fidzpkzef7eoigoonzc1.jpg"
+            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753380962/nvojeyyxcnracxrw1zyb.png"
             alt="About us background"
             fill
             className="object-cover opacity-70"
@@ -303,3 +304,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+    
