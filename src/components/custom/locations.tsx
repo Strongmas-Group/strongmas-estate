@@ -5,35 +5,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { properties } from "@/lib/properties";
-import { motion, Variants } from "framer-motion";
-
-const fadeInUp = (index: number): Variants => ({
-  hidden: {
-    opacity: 0,
-    y: 50,
-    x: index % 2 === 0 ? -30 : 30,
-    scale: 0.95,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    x: 0,
-    scale: 1,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut",
-    },
-  },
-});
-
-const containerVariants: Variants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
 
 const Locations = () => {
   return (
@@ -49,16 +20,10 @@ const Locations = () => {
         </div>
       </div>
 
-      <motion.div
-        className="w-full"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={containerVariants}
-      >
+      <div className="w-full">
        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
           {properties.slice(0, 7).map((property, index) => (
-            <motion.div key={property.name} variants={fadeInUp(index)}>
+            <div key={property.name}>
               <Link
                 href={`/properties/${property.name
                   .toLowerCase()
@@ -97,10 +62,10 @@ const Locations = () => {
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
