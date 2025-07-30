@@ -22,14 +22,14 @@ export default function PropertyPage() {
   );
 
   const [mainImage, setMainImage] = React.useState(
-    property?.images?.[0] || ""
+    ""
   );
 
   React.useEffect(() => {
-    if (property?.images && mainImage === "") {
+    if (property?.images?.[0]) {
       setMainImage(property.images[0]);
     }
-  }, [property, mainImage]);
+  }, [property]);
 
   if (!property) {
     return notFound();
@@ -174,7 +174,7 @@ export default function PropertyPage() {
                                 <div key={index} className="p-4 border rounded-lg">
                                     <h4 className="font-bold text-lg">{item.floor}</h4>
                                     <p className="text-gray-600">{item.use}</p>
-                                </div>
+                                d</div>
                             ))}
                          </div>
                     </TabsContent>
