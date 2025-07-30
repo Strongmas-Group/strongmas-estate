@@ -21,15 +21,13 @@ export default function PropertyPage() {
     (p) => p.name.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
-  const [mainImage, setMainImage] = React.useState(
-    ""
-  );
+  const [mainImage, setMainImage] = React.useState(property?.images?.[0] || "");
 
   React.useEffect(() => {
-    if (property?.images?.[0]) {
+    if (property?.images?.[0] && !mainImage) {
       setMainImage(property.images[0]);
     }
-  }, [property]);
+  }, [property, mainImage]);
 
   if (!property) {
     return notFound();
@@ -174,7 +172,7 @@ export default function PropertyPage() {
                                 <div key={index} className="p-4 border rounded-lg">
                                     <h4 className="font-bold text-lg">{item.floor}</h4>
                                     <p className="text-gray-600">{item.use}</p>
-                                d</div>
+                                </div>
                             ))}
                          </div>
                     </TabsContent>
