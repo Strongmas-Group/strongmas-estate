@@ -237,7 +237,7 @@ export const properties = [
     "location": "Lagos Island",
      "tag": "DONE, to be Handed Over",
     "images": [
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848600/evnjetrougfsbkbwwnhi.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753881276/ltfmjf89hjoe500o59zh.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848624/foosncctwowrhve9e6aj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848644/pk6xbtrtpwtunhaj1iau.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848666/cxbtpv13yrxrhgwyaagz.jpg",
