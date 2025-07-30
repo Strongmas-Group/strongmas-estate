@@ -231,41 +231,46 @@ export const properties = [
       "MisKay Boutique"
     ]
   },
-  // {
-  //   "name": "OLIVE MALL",
-  //   "status": "COMPLETED",
-  //   "location": "Lagos Island",
-  //    "tag": "DONE, to be Handed Over",
-  //   "images": [
-  //     "https://res.cloudinary.com/dbczzmftw/image/upload/v1753289052/placeholder.png"
-  //   ],
-  //   "description": "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
-  //   "summary": {
-  //     "address": "Adeniji Road, opposite Massey Children's Hospital",
-  //     "propertyType": "Commercial",
-  //     "typology": "Commercial Mall"
-  //   },
-  //   "floorPlan": [
-  //     {
-  //       "floor": "Ground Floor",
-  //       "use": "Supermarket · Boutique · Restaurant · Cafe · Bakery · General Payment Area"
-  //     },
-  //     {
-  //       "floor": "First Floor",
-  //       "use": "Pharmacy · Boutique · Pharmacy Manager’s Office · Supervisor’s Office · Payment Area"
-  //     },
-  //     {
-  //       "floor": "Second Floor",
-  //       "use": "Office Spaces · Storage Units"
-  //     }
-  //   ],
-  //   "safetyAndSecurity": [
-  //     "CCTV Surveillance",
-  //     "24-Hour Security",
-  //     "Fire-Alarm & Smoke Detection System",
-  //     "Secure Intercom System"
-  //   ]
-  // },
+  {
+    "name": "OLIVE MALL",
+    "status": "COMPLETED",
+    "location": "Lagos Island",
+     "tag": "DONE, to be Handed Over",
+    "images": [
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848600/evnjetrougfsbkbwwnhi.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848624/foosncctwowrhve9e6aj.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848644/pk6xbtrtpwtunhaj1iau.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848666/cxbtpv13yrxrhgwyaagz.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848685/hwwi9vxgecsmxztnkmmt.jpg"
+    ],
+    "description": "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
+    "summary": {
+      "address": "Adeniji Road, opposite Massey Children's Hospital",
+      "propertyType": "Commercial",
+      "typology": "Commercial Mall",
+      "saleStatus": "Available"
+    },
+    "floorPlan": [
+      {
+        "floor": "Ground Floor",
+        "use": "Supermarket · Boutique · Restaurant · Cafe · Bakery · General Payment Area"
+      },
+      {
+        "floor": "First Floor",
+        "use": "Pharmacy · Boutique · Pharmacy Manager’s Office · Supervisor’s Office · Payment Area"
+      },
+      {
+        "floor": "Second Floor",
+        "use": "Office Spaces · Storage Units"
+      }
+    ],
+    "safetyAndSecurity": [
+      "CCTV Surveillance",
+      "24-Hour Security",
+      "Fire-Alarm & Smoke Detection System",
+      "Secure Intercom System"
+    ]
+  },
   {
     "name": "THE ELYSIAN RISE",
     "status": "ONGOING",
