@@ -3,7 +3,6 @@
 
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import BookInspectionModal from "@/components/custom/book-inspection-modal";
 
 export default function RootLayout({
   children,
@@ -32,7 +31,6 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased bg-background text-foreground">
         {children}
-        <BookInspectionModal />
         <Toaster />
       </body>
     </html>

@@ -1,3 +1,4 @@
+
 "use client";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,8 +17,6 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
     DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuGroup,
 } from "@/components/ui/dropdown-menu";
 import {
   Accordion,
@@ -26,7 +25,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { properties } from "@/lib/properties";
-import { useModal } from "@/hooks/use-modal";
 
 const NavLink = ({
   href,
@@ -117,7 +115,6 @@ const BrowseAccordion = () => (
 );
 
 const Header = () => {
-  const { onOpen } = useModal();
   return (
     <header className="fixed top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline h-20 flex items-center">
       <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8 text-white">
@@ -175,7 +172,7 @@ const Header = () => {
                     alt="Strongmas Residence Logo"
                     width={100} 
                     height={13}
-                    className="h-auto w-auto" // Corrected class name
+                    className="h-auto w-auto"
                   />
                 </Link>
               </SheetHeader>
@@ -189,10 +186,10 @@ const Header = () => {
                   <NavLink href="/contact">Contact</NavLink>
                 </nav>
                 <Button
-                  onClick={onOpen}
+                  asChild
                   className="mt-auto bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px]"
                 >
-                  Book A Tour
+                  <a href="mailto:hello@strongmasng.com">Book A Tour</a>
                 </Button>
               </div>
             </SheetContent>
@@ -202,10 +199,10 @@ const Header = () => {
 
       <div className="hidden md:block absolute right-[30px] top-1/2 -translate-y-1/2">
         <Button
-          onClick={onOpen}
+          asChild
           className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0"
         >
-          Book A Tour
+          <a href="mailto:hello@strongmasng.com">Book A Tour</a>
         </Button>
       </div>
     </header>
