@@ -47,7 +47,8 @@ export const properties = [
       "address": "Dele Adedeji, Lekki Phase 1, Lagos",
       "typology": "Apartments (1-Bed, 2-Bed & 3-Bed Penthouse)",
       "units": 17,
-      "saleStatus": "Sold Out"
+      "saleStatus": "Sold Out",
+      "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753998942/x0wvlg8pcuporvujw0wt.pdf"
     },
     "description": "A 5-story multifamily premium apartments complex that embodies elegance and contemporary design. It features smart home automations with artificial intelligence and oversized west-facing windows.",
     "features": [
@@ -211,7 +212,8 @@ export const properties = [
       "typology": "Terrace Duplexes, Semi-Detached Units, Pent Apartments",
       "carSpacePerUnit": 2,
       "availableUnits": 8,
-      "saleStatus": "Limited Availability"
+      "saleStatus": "Limited Availability",
+      "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753994996/xnqpwcj035wasbnnktom.pdf"
     },
     "description": "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
     "features": [
@@ -237,7 +239,7 @@ export const properties = [
     "location": "Lagos Island",
      "tag": "DONE, to be Handed Over",
     "images": [
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753881276/ltfmjf89hjoe500o59zh.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848600/evnjetrougfsbkbwwnhi.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848624/foosncctwowrhve9e6aj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848644/pk6xbtrtpwtunhaj1iau.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848666/cxbtpv13yrxrhgwyaagz.jpg",
@@ -289,7 +291,8 @@ export const properties = [
       "height": "13-Floor Highrise",
       "carSpace": "Ground & First Floor Dedicated Parking",
       "typology": "30 Units (2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse)",
-      "saleStatus": "For Sale (Limited Units Available)"
+      "saleStatus": "For Sale (Limited Units Available)",
+      "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753996029/akupdvjqnlg4eamnea01.pdf"
     },
     "description": "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
     "availableUnits": [

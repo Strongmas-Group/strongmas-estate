@@ -24,10 +24,10 @@ export default function PropertyPage() {
   const [mainImage, setMainImage] = React.useState(property?.images?.[0] || "");
 
   React.useEffect(() => {
-    if (property?.images?.[0] && !mainImage) {
+    if (property) {
       setMainImage(property.images[0]);
     }
-  }, [property, mainImage]);
+  }, [property]);
 
   if (!property) {
     return notFound();
@@ -108,6 +108,7 @@ export default function PropertyPage() {
               <h2 className="text-2xl font-bold font-headline mb-6 text-black">Property Summary</h2>
               <div className="space-y-4 text-sm">
                  {Object.entries(property.summary).map(([key, value]) => {
+                     if (key === 'brochureUrl') return null;
                      const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
                      return (
                         <div className="flex justify-between" key={key}>
@@ -117,9 +118,13 @@ export default function PropertyPage() {
                      )
                  })}
               </div>
-              <Button size="lg" className="w-full mt-8 bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline">
-                DOWNLOAD BROCHURE
-              </Button>
+              {property.summary.brochureUrl && (
+                 <Button asChild size="lg" className="w-full mt-8 bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline">
+                    <Link href={property.summary.brochureUrl} target="_blank" rel="noopener noreferrer">
+                        DOWNLOAD BROCHURE
+                    </Link>
+                 </Button>
+              )}
             </div>
           </div>
 
