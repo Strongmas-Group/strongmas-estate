@@ -3,6 +3,7 @@
 
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { ModalProvider } from "@/providers/modal-provider";
 
 export default function RootLayout({
   children,
@@ -30,6 +31,7 @@ export default function RootLayout({
         </style>
       </head>
       <body className="font-body antialiased bg-background text-foreground">
+        <ModalProvider />
         {children}
         <Toaster />
       </body>

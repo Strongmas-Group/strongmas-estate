@@ -25,16 +25,20 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { properties } from "@/lib/properties";
+import { useModal } from "@/hooks/use-modal";
 
 const NavLink = ({
   href,
   children,
+  onClick
 }: {
   href: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }) => (
   <Link
     href={href}
+    onClick={onClick}
     className="transition-colors hover:text-white/80 block py-2"
   >
     {children}
@@ -115,6 +119,7 @@ const BrowseAccordion = () => (
 );
 
 const Header = () => {
+    const { onOpen } = useModal();
   return (
     <header className="fixed top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline h-20 flex items-center">
       <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8 text-white">
@@ -186,10 +191,10 @@ const Header = () => {
                   <NavLink href="/contact">Contact</NavLink>
                 </nav>
                 <Button
-                  asChild
+                  onClick={() => onOpen('bookInspection')}
                   className="mt-auto bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px]"
                 >
-                  <a href="mailto:hello@strongmasng.com">Book A Tour</a>
+                  Book A Tour
                 </Button>
               </div>
             </SheetContent>
@@ -199,10 +204,10 @@ const Header = () => {
 
       <div className="hidden md:block absolute right-[30px] top-1/2 -translate-y-1/2">
         <Button
-          asChild
+          onClick={() => onOpen('bookInspection')}
           className="bg-[#142B54] text-white hover:bg-[#142B54]/90 rounded-[6px] h-[50px] px-[30px] flex-shrink-0"
         >
-          <a href="mailto:hello@strongmasng.com">Book A Tour</a>
+          Book A Tour
         </Button>
       </div>
     </header>
