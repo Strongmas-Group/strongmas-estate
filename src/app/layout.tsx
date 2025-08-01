@@ -15,6 +15,7 @@ export default function RootLayout({
       <head>
         <title>Strongmas Residence</title>
         <meta name="description" content="Luxury Real Estate" />
+        <link rel="icon" href="https://res.cloudinary.com/dbczzmftw/image/upload/v1754055166/hogt7ycsjcm6fcof7cah.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
