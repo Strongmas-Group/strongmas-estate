@@ -7,24 +7,15 @@ const Hero = () => {
     <section className="relative w-full h-screen overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <video
-          className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 hidden md:block"
+          className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2"
           src="/background.mp4"
           autoPlay
           loop
           muted
           playsInline
         />
-        
-        <video
-          className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 block md:hidden"
-          src="/background-mobile.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
       </div>
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative z-10 flex flex-col items-center justify-end h-full text-center text-white p-4">
         <div className="w-full pb-0">
             <PropertySearchFilter />
