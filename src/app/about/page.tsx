@@ -23,7 +23,7 @@ const leadershipTeam = [
     name: "MICHEAL SHOBUKOLA",
     role: "Founder & Managing Director",
     imageUrl:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848860/ayobv1jvnitrqc6gry0v.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1754042888/qshq9iixkiatl1dlln03.jpg",
     description:
       "Micheal Shobukola is the visionary Founder and Managing Director of Strongmas Group — a dynamic entrepreneur whose influence spans over a decade of building impactful, future-forward businesses in Nigeria’s evolving real estate landscape.\n\n" +
       "With a B.Sc. in Computer and Information Science from Lead City University and a Master’s degree from the University of East Anglia, Micheal combines technical insight with business acumen to lead Strongmas with precision, innovation, and purpose.\n\n" +
@@ -304,5 +304,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-    
