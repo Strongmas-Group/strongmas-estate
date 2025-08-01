@@ -5,10 +5,14 @@ import * as React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { format } from "date-fns";
+import { Calendar as CalendarIcon } from "lucide-react";
 
 import { useModal } from "@/hooks/use-modal";
 import { useToast } from "@/hooks/use-toast";
 import { sendEmail, type SendEmailInput } from "@/ai/flows/send-email-flow";
+import { cn } from "@/lib/utils";
+import { properties } from "@/lib/properties";
 
 import {
   Dialog,
@@ -27,14 +31,23 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { properties } from "@/lib/properties";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Calendar } from "@/components/ui/calendar";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email." }),
   phone: z.string().min(10, { message: "Please enter a valid phone number." }),
   property: z.string().min(1, { message: "Please select a property." }),
+  date: z.date({ required_error: "A date is required." }),
+  time: z.string().min(1, { message: "Please select a time." }),
 });
 
 export default function BookInspectionModal() {
@@ -51,13 +64,18 @@ export default function BookInspectionModal() {
       email: "",
       phone: "",
       property: "",
+      time: "",
     },
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-        setIsSubmitting(true);
-      await sendEmail(values);
+      setIsSubmitting(true);
+      const submissionData: SendEmailInput = {
+        ...values,
+        date: format(values.date, "PPP"),
+      };
+      await sendEmail(submissionData);
       toast({
         title: "Request Sent!",
         description: "Thank you for your interest. We will get back to you shortly.",
@@ -72,7 +90,7 @@ export default function BookInspectionModal() {
         description: "There was a problem with your request. Please try again.",
       });
     } finally {
-        setIsSubmitting(false);
+      setIsSubmitting(false);
     }
   };
 
@@ -82,83 +100,148 @@ export default function BookInspectionModal() {
     onClose();
   };
 
+  const timeSlots = [
+    "09:00 AM", "10:00 AM", "11:00 AM", "12:00 PM",
+    "01:00 PM", "02:00 PM", "03:00 PM", "04:00 PM", "05:00 PM"
+  ];
+
   return (
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
-      <DialogContent className="sm:max-w-[425px]">
-        <DialogHeader>
-          <DialogTitle>Book a Tour</DialogTitle>
-          <DialogDescription>
-            Fill out the form below to schedule a tour of one of our properties.
+      <DialogContent className="bg-white text-black p-8 max-w-lg">
+        <DialogHeader className="text-left">
+          <DialogTitle className="text-3xl font-bold font-headline">
+            BOOK A TOUR
+          </DialogTitle>
+          <DialogDescription className="text-muted-foreground text-base font-sans">
+            Schedule An Appointment With Us
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 mt-4">
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder="Full Name" {...field} className="bg-gray-100 border-none outline-none h-12" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email Address</FormLabel>
-                  <FormControl>
-                    <Input placeholder="john.doe@example.com" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="phone"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Phone Number</FormLabel>
-                  <FormControl>
-                    <Input placeholder="+1 234 567 890" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <FormField
                 control={form.control}
-                name="property"
+                name="email"
                 render={({ field }) => (
-                    <FormItem>
-                        <FormLabel>Property of Interest</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <FormControl>
-                                <SelectTrigger>
-                                    <SelectValue placeholder="Select a property" />
-                                </SelectTrigger>
-                                </FormControl>
-                                <SelectContent>
-                                    {properties.map((property) => (
-                                        <SelectItem key={property.name} value={property.name}>
-                                            {property.name}
-                                        </SelectItem>
-                                    ))}
-                                </SelectContent>
-                            </Select>
-                        <FormMessage />
-                    </FormItem>
+                  <FormItem>
+                    <FormControl>
+                      <Input type="email" placeholder="Email Address" {...field} className="bg-gray-100 outline-none border-none h-12" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
                 )}
+              />
+              <FormField
+                control={form.control}
+                name="phone"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input type="tel" placeholder="Phone Number" {...field} className="bg-gray-100 outline-none border-none h-12" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+            <FormField
+              control={form.control}
+              name="property"
+              render={({ field }) => (
+                <FormItem>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger className="w-full bg-gray-100 border-none h-12">
+                        <SelectValue placeholder="Interested Property" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      {properties.map((property) => (
+                        <SelectItem key={property.name} value={property.name}>
+                          {property.name}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
             />
-
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
-              {isSubmitting ? "Submitting..." : "Book Tour"}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <FormField
+                control={form.control}
+                name="date"
+                render={({ field }) => (
+                  <FormItem className="flex flex-col">
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <FormControl>
+                          <Button
+                            variant={"outline"}
+                            className={cn(
+                              "w-full justify-start text-left font-normal bg-gray-100 border-none h-12",
+                              !field.value && "text-muted-foreground"
+                            )}
+                          >
+                            <CalendarIcon className="mr-2 h-4 w-4" />
+                            {field.value ? (
+                              format(field.value, "PPP")
+                            ) : (
+                              <span>Select Date</span>
+                            )}
+                          </Button>
+                        </FormControl>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-auto p-0" align="start">
+                        <Calendar
+                          mode="single"
+                          selected={field.value}
+                          onSelect={field.onChange}
+                          disabled={(date) => date < new Date() || date < new Date("1900-01-01")}
+                          initialFocus
+                        />
+                      </PopoverContent>
+                    </Popover>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="time"
+                render={({ field }) => (
+                  <FormItem>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className="w-full bg-gray-100 border-none h-12">
+                          <SelectValue placeholder="Select Time" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {timeSlots.map((slot) => (
+                          <SelectItem key={slot} value={slot}>{slot}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+            <Button type="submit" size="lg" className="w-full bg-primary text-white hover:bg-primary/90 font-headline h-12" disabled={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "SUBMIT APPOINTMENT"}
             </Button>
           </form>
         </Form>

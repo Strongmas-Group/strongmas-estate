@@ -16,6 +16,8 @@ const SendEmailInputSchema = z.object({
   email: z.string().email().describe("The user's email address."),
   phone: z.string().describe("The user's phone number."),
   property: z.string().describe("The property the user is interested in."),
+  date: z.string().describe("The requested tour date."),
+  time: z.string().describe("The requested tour time."),
 });
 export type SendEmailInput = z.infer<typeof SendEmailInputSchema>;
 
@@ -44,6 +46,8 @@ const sendEmailFlow = ai.defineFlow(
         Name: ${input.name}
         Email: ${input.email}
         Phone: ${input.phone}
+        Requested Date: ${input.date}
+        Requested Time: ${input.time}
 
         Please follow up with them shortly.
       `,
