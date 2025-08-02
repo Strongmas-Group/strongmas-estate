@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 const properties = [
   {
     name: "STRONGMAS RESIDENCE",
-    "location": "Lekki Phase 1",
+    location: "Lekki Phase 1",
     tag: "SOLD OUT & DELIVERED",
     image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026386/rvhuegrcdi6lvcaynjcn.jpg",
     description: "A bespoke 4-bedroom smart terrace duplexes, sculpted for the refined homeowner. This property offers timeless architectural design, eco-friendly materials, and smart home automation.",

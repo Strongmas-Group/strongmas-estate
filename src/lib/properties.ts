@@ -95,7 +95,7 @@ export const properties = [
     ]
   },
   {
-    "name": "AVION COURT 1",
+    "name": "AVIONS COURT 1",
     "status": "COMPLETED",
     "location": "Abraham Adesanya",
     "tag": "SOLD OUT & DELIVERED",
@@ -194,7 +194,7 @@ export const properties = [
     ]
   },
   {
-    "name": "AVION COURT 2",
+    "name": "AVIONS COURT 2",
     "status": "ONGOING",
     "location": "Ikota G.R.A.",
     "tag": "SOLD OUT, 90% Completed",
