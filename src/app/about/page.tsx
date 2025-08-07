@@ -23,7 +23,7 @@ const leadershipTeam = [
     name: "MICHEAL SHOBUKOLA",
     role: "Founder & Managing Director",
     imageUrl:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1754042888/qshq9iixkiatl1dlln03.jpg",
+      "/md.png",
     description:
       "Micheal Shobukola is the visionary Founder and Managing Director of Strongmas Group — a dynamic entrepreneur whose influence spans over a decade of building impactful, future-forward businesses in Nigeria’s evolving real estate landscape.\n\n" +
       "With a B.Sc. in Computer and Information Science from Lead City University and a Master’s degree from the University of East Anglia, Micheal combines technical insight with business acumen to lead Strongmas with precision, innovation, and purpose.\n\n" +
@@ -35,7 +35,7 @@ const leadershipTeam = [
     name: "KIKELOMO WILLIAMS",
     role: "Executive Director",
     imageUrl:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753849235/f43limj8fg6cybfa2ofz.png",
+      "/mk.png",
     description:
       "Kikelomo Williams is a seasoned strategic leader whose professional journey spans over a decade across both local and multinational environments. Prior to joining Strongmas, she successfully led several revenue transformation initiatives — building high-performing sales teams, driving consistent year-on-year profit growth, and repositioning brands for long-term success. Her impact has been particularly strong in the real estate sector, where she implemented innovative sales and marketing systems that delivered measurable results to the bottom line.\n\n" +
       "She holds a degree in History and International Relations from Lagos State University, as well as a diploma in Mass Communication from the University of Lagos. Kikelomo also holds certifications from Curtin University and PRCAN and is a proud member of the International Management Consultants (IMC).\n\n" +
@@ -46,7 +46,7 @@ const leadershipTeam = [
     name: "DOHARE PAUL",
     role: "Chief Financial Controller",
     imageUrl:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280434/xxzpxto1gcdcrbycvas1.jpg",
+      "/dohare.png",
     description:
       "Dohare Paul is an accomplished finance executive with over 11 years of cross-industry experience in accounting, financial reporting, data analytics, treasury, and business advisory.\n\n" +
       "Since joining Strongmas in 2023, he has significantly strengthened the company’s financial architecture and operational controls. Known for his integrity and attention to detail, Dohare champions sound financial governance, strict compliance, and ethical conduct. His expertise ensures that Strongmas maintains fiscal discipline while scaling its portfolio of luxury developments with confidence and credibility.",
@@ -56,7 +56,7 @@ const leadershipTeam = [
     name: "IBRAHIM SULE OMOYEMI",
     role: "Senior Project Manager",
     imageUrl:
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753280511/oebojjok8bb0gdxri0nc.jpg",
+      "/ibrahim.png",
     description:
       "Ibrahim Sule Omoyemi is a seasoned civil engineering professional with a distinguished track record in delivering high-impact infrastructure and real estate developments across Nigeria. A registered member of the Council for the Regulation of Engineering in Nigeria (COREN), Ibrahim combines technical expertise with strong project leadership.\n\n" +
       "He holds an HND in Civil Engineering Technology from the Federal Polytechnic, Auchi, and both a Postgraduate Diploma (PGD) and an MBA from Ladoke Akintola University of Technology (LAUTECH), Ogbomoso.\n\n" +

@@ -6,11 +6,11 @@ export const properties = [
     "location": "Lekki Phase 1",
     "tag": "SOLD OUT & DELIVERED",
     "images": [
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026421/gyg79oiyshhrpsdrztxt.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850576/sx9rjn23frkgfjxtxdrj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850615/pyh2ti7qqmyoodjwnww9.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850632/uwotk9taz6wemn3ii9cg.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850651/tkgsgpbbtsyobegyjnah.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026421/gyg79oiyshhrpsdrztxt.jpg"
     ],
     "summary": {
       "address": "Dele Adedeji, Lekki Phase 1, Lagos",
@@ -100,11 +100,11 @@ export const properties = [
     "location": "Abraham Adesanya",
     "tag": "SOLD OUT & DELIVERED",
     "images": [
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880550/k6bnbwjc6jihrzg5lfby.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880571/hh6dijwgkoyesuljtpnt.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880595/ppc6oog5uenqkbmai0op.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg",
         "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg"
     ],
     "summary": {
@@ -239,7 +239,7 @@ export const properties = [
     "location": "Lagos Island",
      "tag": "DONE, to be Handed Over",
     "images": [
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848600/evnjetrougfsbkbwwnhi.jpg",
+      "/Olivemall2.jpeg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848624/foosncctwowrhve9e6aj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848644/pk6xbtrtpwtunhaj1iau.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848666/cxbtpv13yrxrhgwyaagz.jpg",
