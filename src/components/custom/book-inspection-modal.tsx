@@ -1,4 +1,4 @@
-
+// UPDATE: src/components/custom/book-inspection-modal.tsx
 "use client";
 
 import * as React from "react";
@@ -10,7 +10,6 @@ import { Calendar as CalendarIcon } from "lucide-react";
 
 import { useModal } from "@/hooks/use-modal";
 import { useToast } from "@/hooks/use-toast";
-import { sendEmail, type SendEmailInput } from "@/ai/flows/send-email-flow";
 import { cn } from "@/lib/utils";
 import { properties } from "@/lib/properties";
 
@@ -26,7 +25,6 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -68,14 +66,36 @@ export default function BookInspectionModal() {
     },
   });
 
+  const encode = (data: Record<string, string>) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       setIsSubmitting(true);
-      const submissionData: SendEmailInput = {
-        ...values,
+      
+      const formData = {
+        "form-name": "property-tour-booking",
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        property: values.property,
         date: format(values.date, "PPP"),
+        time: values.time,
       };
-      await sendEmail(submissionData);
+
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       toast({
         title: "Request Sent!",
         description: "Thank you for your interest. We will get back to you shortly.",
@@ -83,7 +103,7 @@ export default function BookInspectionModal() {
       form.reset();
       onClose();
     } catch (error) {
-      console.error("Failed to send email:", error);
+      console.error("Failed to send form:", error);
       toast({
         variant: "destructive",
         title: "Uh oh! Something went wrong.",
@@ -116,6 +136,17 @@ export default function BookInspectionModal() {
             Schedule An Appointment With Us
           </DialogDescription>
         </DialogHeader>
+        
+        {/* Hidden Netlify form for detection - IMPORTANT! */}
+        <form name="property-tour-booking" netlify="true" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <input type="tel" name="phone" />
+          <input type="text" name="property" />
+          <input type="text" name="date" />
+          <input type="text" name="time" />
+        </form>
+
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 mt-4">
             <FormField
