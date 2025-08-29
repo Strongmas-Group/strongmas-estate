@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -10,7 +9,6 @@ import { Calendar as CalendarIcon } from "lucide-react";
 
 import { useModal } from "@/hooks/use-modal";
 import { useToast } from "@/hooks/use-toast";
-import { sendEmail, type SendEmailInput } from "@/ai/flows/send-email-flow";
 import { cn } from "@/lib/utils";
 import { properties } from "@/lib/properties";
 
@@ -26,7 +24,6 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -68,36 +65,21 @@ export default function BookInspectionModal() {
     },
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    try {
-      setIsSubmitting(true);
-      const submissionData: SendEmailInput = {
-        ...values,
-        date: format(values.date, "PPP"),
-      };
-      await sendEmail(submissionData);
-      toast({
-        title: "Request Sent!",
-        description: "Thank you for your interest. We will get back to you shortly.",
-      });
-      form.reset();
-      onClose();
-    } catch (error) {
-      console.error("Failed to send email:", error);
-      toast({
-        variant: "destructive",
-        title: "Uh oh! Something went wrong.",
-        description: "There was a problem with your request. Please try again.",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   const handleClose = () => {
     if (isSubmitting) return;
     form.reset();
     onClose();
+  };
+
+  const onSubmit = async () => {
+    setIsSubmitting(true);
+    toast({
+      title: "Request Sent!",
+      description: "Thank you for your interest. We will get back to you shortly.",
+    });
+    form.reset();
+    onClose();
+    setIsSubmitting(false);
   };
 
   const timeSlots = [
@@ -116,20 +98,38 @@ export default function BookInspectionModal() {
             Schedule An Appointment With Us
           </DialogDescription>
         </DialogHeader>
+
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 mt-4">
+          <form
+            name="book-inspection"
+            method="POST"
+            data-netlify="true"
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-6 mt-4"
+          >
+            {/* Required hidden field for Netlify */}
+            <input type="hidden" name="form-name" value="book-inspection" />
+
+            {/* Name */}
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="Full Name" {...field} className="bg-gray-100 border-none outline-none h-12" />
+                    <Input
+                      placeholder="Full Name"
+                      {...field}
+                      name="name"
+                      className="bg-gray-100 border-none outline-none h-12"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
+            {/* Email + Phone */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <FormField
                 control={form.control}
@@ -137,7 +137,13 @@ export default function BookInspectionModal() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input type="email" placeholder="Email Address" {...field} className="bg-gray-100 outline-none border-none h-12" />
+                      <Input
+                        type="email"
+                        placeholder="Email Address"
+                        {...field}
+                        name="email"
+                        className="bg-gray-100 outline-none border-none h-12"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -149,19 +155,30 @@ export default function BookInspectionModal() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input type="tel" placeholder="Phone Number" {...field} className="bg-gray-100 outline-none border-none h-12" />
+                      <Input
+                        type="tel"
+                        placeholder="Phone Number"
+                        {...field}
+                        name="phone"
+                        className="bg-gray-100 outline-none border-none h-12"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
             </div>
+
+            {/* Property */}
             <FormField
               control={form.control}
               name="property"
               render={({ field }) => (
                 <FormItem>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
                     <FormControl>
                       <SelectTrigger className="w-full bg-gray-100 border-none h-12">
                         <SelectValue placeholder="Interested Property" />
@@ -169,38 +186,42 @@ export default function BookInspectionModal() {
                     </FormControl>
                     <SelectContent>
                       {properties.map((property) => (
-                        <SelectItem key={property.name} value={property.name}>
+                        <SelectItem
+                          key={property.name}
+                          value={property.name}
+                          onClick={() => form.setValue("property", property.name)}
+                        >
                           {property.name}
                         </SelectItem>
                       ))}
                     </SelectContent>
                   </Select>
+                  {/* hidden input for Netlify */}
+                  <input type="hidden" name="property" value={field.value} />
                   <FormMessage />
                 </FormItem>
               )}
             />
+
+            {/* Date + Time */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <FormField
                 control={form.control}
                 name="date"
                 render={({ field }) => (
-                  <FormItem className="flex flex-col">
+                  <FormItem>
                     <Popover>
                       <PopoverTrigger asChild>
                         <FormControl>
                           <Button
-                            variant={"outline"}
+                            variant="outline"
                             className={cn(
                               "w-full justify-start text-left font-normal bg-gray-100 border-none h-12",
                               !field.value && "text-muted-foreground"
                             )}
                           >
                             <CalendarIcon className="mr-2 h-4 w-4" />
-                            {field.value ? (
-                              format(field.value, "PPP")
-                            ) : (
-                              <span>Select Date</span>
-                            )}
+                            {field.value ? format(field.value, "PPP") : "Select Date"}
                           </Button>
                         </FormControl>
                       </PopoverTrigger>
@@ -209,11 +230,17 @@ export default function BookInspectionModal() {
                           mode="single"
                           selected={field.value}
                           onSelect={field.onChange}
-                          disabled={(date) => date < new Date() || date < new Date("1900-01-01")}
+                          disabled={(date) => date < new Date()}
                           initialFocus
                         />
                       </PopoverContent>
                     </Popover>
+                    {/* hidden field so Netlify gets the value */}
+                    <input
+                      type="hidden"
+                      name="date"
+                      value={field.value ? format(field.value, "PPP") : ""}
+                    />
                     <FormMessage />
                   </FormItem>
                 )}
@@ -223,7 +250,10 @@ export default function BookInspectionModal() {
                 name="time"
                 render={({ field }) => (
                   <FormItem>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
                       <FormControl>
                         <SelectTrigger className="w-full bg-gray-100 border-none h-12">
                           <SelectValue placeholder="Select Time" />
@@ -231,16 +261,26 @@ export default function BookInspectionModal() {
                       </FormControl>
                       <SelectContent>
                         {timeSlots.map((slot) => (
-                          <SelectItem key={slot} value={slot}>{slot}</SelectItem>
+                          <SelectItem key={slot} value={slot}>
+                            {slot}
+                          </SelectItem>
                         ))}
                       </SelectContent>
                     </Select>
+                    <input type="hidden" name="time" value={field.value} />
                     <FormMessage />
                   </FormItem>
                 )}
               />
             </div>
-            <Button type="submit" size="lg" className="w-full bg-primary text-white hover:bg-primary/90 font-headline h-12" disabled={isSubmitting}>
+
+            {/* Submit */}
+            <Button
+              type="submit"
+              size="lg"
+              className="w-full bg-primary text-white hover:bg-primary/90 font-headline h-12"
+              disabled={isSubmitting}
+            >
               {isSubmitting ? "Submitting..." : "SUBMIT APPOINTMENT"}
             </Button>
           </form>
