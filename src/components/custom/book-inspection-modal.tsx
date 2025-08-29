@@ -88,7 +88,7 @@ export default function BookInspectionModal() {
       });
 
       toast({
-        title: "Request Sent!",
+        title: "Tochi, Request Sent!",
         description: "Thank you for your interest. We will get back to you shortly.",
       });
       form.reset();
