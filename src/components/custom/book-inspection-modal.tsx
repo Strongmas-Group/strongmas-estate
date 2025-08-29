@@ -138,7 +138,8 @@ export default function BookInspectionModal() {
         </DialogHeader>
         
         {/* Hidden Netlify form for detection - IMPORTANT! */}
-        <form name="property-tour-booking" netlify="true" hidden>
+        <form name="property-tour-booking" netlify hidden>
+
           <input type="text" name="name" />
           <input type="email" name="email" />
           <input type="tel" name="phone" />
