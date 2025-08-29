@@ -59,3 +59,4 @@ const sendEmailFlow = ai.defineFlow(
     console.log('Email sending process simulated for:', input);
   }
 );
+
