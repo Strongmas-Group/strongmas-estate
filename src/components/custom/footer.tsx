@@ -122,12 +122,15 @@ const Footer = () => {
   data-netlify="true"
   className="flex flex-col gap-2 w-full max-w-xs"
 >
+  <input type="hidden" name="form-name" value="newsletter" />
+
   <div className="relative">
     <Input
       type="email"
       name="email"
       placeholder="Email"
       className="bg-secondary border-muted-foreground/50 rounded-full pr-28 text-foreground placeholder:text-muted-foreground"
+      required
     />
     <Button
       type="submit"
@@ -137,12 +140,6 @@ const Footer = () => {
       SUBMIT
     </Button>
   </div>
-  <p className="text-sm text-foreground">
-    By signing up you accept our{" "}
-    <Link href="#" className="underline hover:text-foreground/80">
-      terms and conditions
-    </Link>
-  </p>
 </form>
 
           </div>
