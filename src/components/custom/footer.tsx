@@ -116,39 +116,17 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 font-headline text-white">
               Sign Up For Our Exclusive Newsletter
             </h4>
-            <form
-        name="newsletter"
-        method="POST"
-        data-netlify="true"
-        className="flex flex-col gap-2 w-full max-w-xs"
-      >
-        {/* Required hidden input to match the Netlify form name */}
-        <input type="hidden" name="form-name" value="newsletter" />
-
-        <div className="relative">
-          <Input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-            className="bg-secondary border-muted-foreground/50 rounded-full pr-28 text-foreground placeholder:text-muted-foreground"
-          />
-          <Button
-            type="submit"
-            variant="default"
-            className="absolute right-1 top-1/2 -translate-y-1/2 h-8 rounded-full bg-[#EFC59D] text-accent-foreground hover:bg-accent/90"
-          >
-            SUBMIT
-          </Button>
-        </div>
-
-        <p className="text-sm text-foreground">
-          By signing up you accept our{" "}
-          <Link href="#" className="underline hover:text-foreground/80">
-            terms and conditions
-          </Link>
-        </p>
-      </form>
+            <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
           </div>
         </div>
       </div>
