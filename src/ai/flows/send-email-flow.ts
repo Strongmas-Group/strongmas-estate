@@ -1,62 +1,36 @@
-
-'use server';
-
-/**
- * @fileOverview A flow for sending an email with tour booking details.
- *
- * - sendEmail - A function that handles the email sending process.
- * - SendEmailInput - The input type for the sendEmail function.
- */
-
-import { ai } from '@/ai/genkit';
-import { z } from 'genkit';
-
-const SendEmailInputSchema = z.object({
-  name: z.string().describe("The user's full name."),
-  email: z.string().email().describe("The user's email address."),
-  phone: z.string().describe("The user's phone number."),
-  property: z.string().describe("The property the user is interested in."),
-  date: z.string().describe("The requested tour date."),
-  time: z.string().describe("The requested tour time."),
-});
-export type SendEmailInput = z.infer<typeof SendEmailInputSchema>;
-
-
-export async function sendEmail(input: SendEmailInput): Promise<void> {
-  return sendEmailFlow(input);
+export interface SendEmailInput {
+  name: string;
+  email: string;
+  phone: string;
+  property: string;
+  date: string;
+  time: string;
 }
 
-const sendEmailFlow = ai.defineFlow(
-  {
-    name: 'sendEmailFlow',
-    inputSchema: SendEmailInputSchema,
-    outputSchema: z.void(),
-  },
-  async (input) => {
-    await ai.generate({
-      prompt: `
-        You are a helpful assistant. A new tour has been booked.
-        Send an email to hello@strongmasng.com with the following details.
-        The email subject should be: "New Property Tour Request: ${input.property}"
-
-        Email Body:
-        A new tour request has been submitted.
-
-        Property: ${input.property}
-        Name: ${input.name}
-        Email: ${input.email}
-        Phone: ${input.phone}
-        Requested Date: ${input.date}
-        Requested Time: ${input.time}
-
-        Please follow up with them shortly.
-      `,
-      // This is a mock-up. In a real scenario, you'd use a tool
-      // to integrate with an actual email service like SendGrid or Mailgun.
-      // For this example, we are just logging the action.
+export async function sendEmail(data: SendEmailInput): Promise<void> {
+  try {
+    const response = await fetch('/api/book-inspection', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
     });
 
-    console.log('Email sending process simulated for:', input);
-  }
-);
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
+    }
 
+    const result = await response.json();
+    
+    if (!result.success) {
+      throw new Error(result.error || 'Failed to process booking');
+    }
+
+    console.log('Booking processed successfully:', result);
+  } catch (error) {
+    console.error('Error sending booking:', error);
+    throw error;
+  }
+}
