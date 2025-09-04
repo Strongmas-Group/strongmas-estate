@@ -116,7 +116,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 font-headline text-white">
               Sign Up For Our Exclusive Newsletter
             </h4>
-            <form className="flex flex-col gap-2 w-full max-w-xs">
+            <form className="flex flex-col gap-2 w-full max-w-xs" name="newsletter" data-netlify>
               <div className="relative">
                 <Input
                   type="email"
