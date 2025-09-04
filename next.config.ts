@@ -1,7 +1,6 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -23,6 +22,14 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       }
     ],
+  },
+  experimental: {
+    ...( {
+      netlify: {
+        forms: true,   // set to false if not using Netlify Forms
+        images: true,
+      }
+    } as any ), // 👈 override typing here
   },
 };
 
