@@ -23,13 +23,13 @@ const nextConfig: NextConfig = {
       }
     ],
   },
-  experimental: {
-    ...( {
-      netlify: {
-        forms: true,   // set to false if not using Netlify Forms
-        images: true,
-      }
-    } as any ), // 👈 override typing here
+};
+
+// ✅ Safely add Netlify config without TS complaints
+(nextConfig as any).experimental = {
+  netlify: {
+    forms: true,   // Set to false if you don't use Netlify Forms
+    images: true,
   },
 };
 
