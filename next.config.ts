@@ -1,6 +1,7 @@
-import type { NextConfig } from 'next';
+import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
+  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -22,14 +23,6 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       }
     ],
-  },
-};
-
-// ✅ Safely add Netlify config without TS complaints
-(nextConfig as any).experimental = {
-  netlify: {
-    forms: true,   // Set to false if you don't use Netlify Forms
-    images: true,
   },
 };
 
