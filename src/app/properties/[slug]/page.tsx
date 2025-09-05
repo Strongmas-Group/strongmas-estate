@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -134,6 +133,7 @@ export default function PropertyPage() {
                 <TabsTrigger value="description">Description</TabsTrigger>
                 {property.availableUnits && <TabsTrigger value="units">Available Units</TabsTrigger>}
                 {property.proximities && <TabsTrigger value="proximities">Proximities</TabsTrigger>}
+                {property.virtualtour && <TabsTrigger value="virtualtour">Virtual Tour</TabsTrigger>}
                 {property.floorPlan && <TabsTrigger value="floor-plan">Floor Plan</TabsTrigger>}
               </TabsList>
               <TabsContent value="description" className="pt-8">
@@ -170,6 +170,41 @@ export default function PropertyPage() {
                          </div>
                     </TabsContent>
                 )}
+                {property.virtualtour && (
+                    <TabsContent value="virtualtour" className="pt-8">
+                        <div className="w-full">
+                            <h3 className="text-2xl font-bold mb-4 text-center">Virtual Tour Experience</h3>
+                            <p className="text-gray-600 mb-6 text-center">
+                                Take an immersive virtual tour of this property. Use your mouse or touch to navigate and explore every corner.
+                            </p>
+                            <div className="w-full bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                                <iframe 
+                                    id="evrFrame" 
+                                    width="100%" 
+                                    height="640" 
+                                    style={{
+                                        width: '100%', 
+                                        height: '640px', 
+                                        border: 'none', 
+                                        maxWidth: '100%'
+                                    }}
+                                    allowvr="yes" 
+                                    allow="xr-spatial-tracking;vr;gyroscope;accelerometer;fullscreen;" 
+                                    scrolling="no" 
+                                    allowFullScreen={true}
+                                    frameBorder="0" 
+                                    src="https://webobook.com/public/657ec87ae751de5ce461daa2,en?ap=true&si=true&sm=false&sp=true&sfr=false&sl=true&sop=false&"
+                                    title="Virtual Tour"
+                                />
+                            </div>
+                            <div className="mt-4 text-center">
+                                <p className="text-sm text-gray-500">
+                                    For the best experience, use fullscreen mode and ensure your device supports VR capabilities.
+                                </p>
+                            </div>
+                        </div>
+                    </TabsContent>
+                )}
                  {property.floorPlan && (
                     <TabsContent value="floor-plan" className="pt-8">
                          <div className="space-y-4">
@@ -203,7 +238,6 @@ export default function PropertyPage() {
                 </div>
             </section>
         )}
-
 
       </main>
       <Footer />
