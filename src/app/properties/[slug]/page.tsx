@@ -129,12 +129,12 @@ export default function PropertyPage() {
 
           <div className="py-12 md:py-16">
             <Tabs defaultValue="description" className="w-full">
-              <TabsList className="bg-gray-100 text-black">
-                <TabsTrigger value="description">Description</TabsTrigger>
-                {property.availableUnits && <TabsTrigger value="units">Available Units</TabsTrigger>}
-                {property.proximities && <TabsTrigger value="proximities">Proximities</TabsTrigger>}
-                {property.virtualtour && <TabsTrigger value="virtualtour">Virtual Tour</TabsTrigger>}
-                {property.floorPlan && <TabsTrigger value="floor-plan">Floor Plan</TabsTrigger>}
+              <TabsList className="bg-gray-100 text-black w-full h-auto flex-wrap justify-start gap-1 p-1">
+                <TabsTrigger value="description" className="flex-shrink-0 text-xs sm:text-sm">Description</TabsTrigger>
+                {property.availableUnits && <TabsTrigger value="units" className="flex-shrink-0 text-xs sm:text-sm">Available Units</TabsTrigger>}
+                {property.proximities && <TabsTrigger value="proximities" className="flex-shrink-0 text-xs sm:text-sm">Proximities</TabsTrigger>}
+                {property.virtualtour && <TabsTrigger value="virtualtour" className="flex-shrink-0 text-xs sm:text-sm">Virtual Tour</TabsTrigger>}
+                {property.floorPlan && <TabsTrigger value="floor-plan" className="flex-shrink-0 text-xs sm:text-sm">Floor Plan</TabsTrigger>}
               </TabsList>
               <TabsContent value="description" className="pt-8">
                 <p className="text-gray-600 leading-relaxed max-w-4xl">
@@ -173,34 +173,43 @@ export default function PropertyPage() {
                 {property.virtualtour && (
                     <TabsContent value="virtualtour" className="pt-8">
                         <div className="w-full">
-                            <h3 className="text-2xl font-bold mb-4 text-center">Virtual Tour Experience</h3>
-                            <p className="text-gray-600 mb-6 text-center">
+                            <h3 className="text-xl md:text-2xl font-bold mb-4 text-center">Virtual Tour Experience</h3>
+                            <p className="text-gray-600 mb-6 text-center text-sm md:text-base">
                                 Take an immersive virtual tour of this property. Use your mouse or touch to navigate and explore every corner.
                             </p>
                             <div className="w-full bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                                <iframe 
-                                    id="evrFrame" 
-                                    width="100%" 
-                                    height="640" 
-                                    style={{
-                                        width: '100%', 
-                                        height: '640px', 
-                                        border: 'none', 
-                                        maxWidth: '100%'
-                                    }}
-                                    allowvr="yes" 
-                                    allow="xr-spatial-tracking;vr;gyroscope;accelerometer;fullscreen;" 
-                                    scrolling="no" 
-                                    allowFullScreen={true}
-                                    frameBorder="0" 
-                                    src="https://webobook.com/public/657ec87ae751de5ce461daa2,en?ap=true&si=true&sm=false&sp=true&sfr=false&sl=true&sop=false&"
-                                    title="Virtual Tour"
-                                />
+                                {/* Responsive iframe container */}
+                                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                                    <iframe 
+                                        id="evrFrame" 
+                                        className="absolute top-0 left-0 w-full h-full"
+                                        style={{
+                                            border: 'none',
+                                            minHeight: '300px'
+                                        }}
+                                        allowvr="yes" 
+                                        allow="xr-spatial-tracking;vr;gyroscope;accelerometer;fullscreen;" 
+                                        scrolling="no" 
+                                        allowFullScreen={true}
+                                        frameBorder="0" 
+                                        src="https://webobook.com/public/657ec87ae751de5ce461daa2,en?ap=true&si=true&sm=false&sp=true&sfr=false&sl=true&sop=false&"
+                                        title="Virtual Tour"
+                                    />
+                                </div>
                             </div>
                             <div className="mt-4 text-center">
-                                <p className="text-sm text-gray-500">
-                                    For the best experience, use fullscreen mode and ensure your device supports VR capabilities.
+                                <p className="text-xs md:text-sm text-gray-500">
+                                    For the best experience, use fullscreen mode. On mobile, rotate to landscape for optimal viewing.
                                 </p>
+                            </div>
+                            {/* Mobile-specific instructions */}
+                            <div className="mt-4 md:hidden bg-blue-50 p-4 rounded-lg">
+                                <h4 className="font-semibold text-sm mb-2">Mobile Viewing Tips:</h4>
+                                <ul className="text-xs text-gray-600 space-y-1">
+                                    <li>• Rotate your device to landscape mode</li>
+                                    <li>• Tap the fullscreen button for better experience</li>
+                                    <li>• Use pinch and swipe gestures to navigate</li>
+                                </ul>
                             </div>
                         </div>
                     </TabsContent>
