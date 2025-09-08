@@ -44,7 +44,7 @@ export const properties = [
     "summary": {
       "project": "Residential",
       "propertyType": "Apartment",
-      "address": "Dele Adedeji, Lekki Phase 1, Lagos",
+      "address": "Akin Leigh Crescent, Lekki Phase 1, Lagos",
       "typology": "Apartments (1-Bed, 2-Bed & 3-Bed Penthouse)",
       "units": 17,
       "saleStatus": "Sold Out",

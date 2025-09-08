@@ -129,12 +129,12 @@ export default function PropertyPage() {
 
           <div className="py-12 md:py-16">
             <Tabs defaultValue="description" className="w-full">
-              <TabsList className="bg-gray-100 text-black w-full h-auto flex-wrap justify-start gap-1 p-1">
-                <TabsTrigger value="description" className="flex-shrink-0 text-xs sm:text-sm">Description</TabsTrigger>
-                {property.availableUnits && <TabsTrigger value="units" className="flex-shrink-0 text-xs sm:text-sm">Available Units</TabsTrigger>}
-                {property.proximities && <TabsTrigger value="proximities" className="flex-shrink-0 text-xs sm:text-sm">Proximities</TabsTrigger>}
-                {property.virtualtour && <TabsTrigger value="virtualtour" className="flex-shrink-0 text-xs sm:text-sm">Virtual Tour</TabsTrigger>}
-                {property.floorPlan && <TabsTrigger value="floor-plan" className="flex-shrink-0 text-xs sm:text-sm">Floor Plan</TabsTrigger>}
+              <TabsList className="bg-gray-100 text-black h-auto flex-wrap justify-start gap-1 p-2 rounded-lg inline-flex">
+                <TabsTrigger value="description" className="flex-shrink-0 text-xs sm:text-sm data-[state=active]:bg-white data-[state=active]:text-black">Description</TabsTrigger>
+                {property.availableUnits && <TabsTrigger value="units" className="flex-shrink-0 text-xs sm:text-sm data-[state=active]:bg-white data-[state=active]:text-black">Available Units</TabsTrigger>}
+                {property.proximities && <TabsTrigger value="proximities" className="flex-shrink-0 text-xs sm:text-sm data-[state=active]:bg-white data-[state=active]:text-black">Proximities</TabsTrigger>}
+                {property.virtualtour && <TabsTrigger value="virtualtour" className="flex-shrink-0 text-xs sm:text-sm data-[state=active]:bg-white data-[state=active]:text-black">Virtual Tour</TabsTrigger>}
+                {property.floorPlan && <TabsTrigger value="floor-plan" className="flex-shrink-0 text-xs sm:text-sm data-[state=active]:bg-white data-[state=active]:text-black">Floor Plan</TabsTrigger>}
               </TabsList>
               <TabsContent value="description" className="pt-8">
                 <p className="text-gray-600 leading-relaxed max-w-4xl">
