@@ -1,8 +1,8 @@
+export {};
+
 declare global {
-    interface Window {
-      hj?: (...args: any[]) => void;
-    }
+  interface Window {
+    hj?: (...args: any[]) => void;
+    gtag?: (...args: any[]) => void;
   }
-  
-  export {};
-  
+}

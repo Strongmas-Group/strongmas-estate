@@ -3,14 +3,22 @@
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ModalProvider } from "@/providers/modal-provider";
-import { useHotjar } from "@/lib/hotjar";  // Import the Hotjar hook
+import { useHotjar } from "@/lib/hotjar";
+import useAnalytics from "@/lib/use-analytics";
+import Script from "next/script";
+import { Suspense } from "react";
+
+function AnalyticsWrapper() {
+  useAnalytics();
+  return null;
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  useHotjar(); // Initialize Hotjar and track page changes
+  useHotjar();
 
   return (
     <html lang="en">
@@ -42,9 +50,30 @@ export default function RootLayout({
             }
           `}
         </style>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-EKX1W7G2KJ"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-EKX1W7G2KJ', { send_page_view: false });
+            `,
+          }}
+        />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
         <ModalProvider />
+        <Suspense>
+          <AnalyticsWrapper />
+        </Suspense>
         {children}
         <Toaster />
       </body>
