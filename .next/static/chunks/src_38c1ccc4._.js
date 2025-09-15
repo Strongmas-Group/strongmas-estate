@@ -656,7 +656,7 @@ const properties = [
             "propertyType": "Terrace Duplex",
             "typology": "4 Bedroom Terrace Duplex",
             "garage": 2,
-            "totalUnits": 5,
+            // "totalUnits": 5,
             "saleStatus": "Sold Out"
         },
         "description": "A bespoke 4-bedroom smart terrace duplexes, sculpted for the refined homeowner. This property offers timeless architectural design, eco-friendly materials, and smart home automation.",
@@ -684,8 +684,8 @@ const properties = [
             "project": "Residential",
             "propertyType": "Apartment",
             "address": "Akin Leigh Crescent, Lekki Phase 1, Lagos",
-            "typology": "Apartments (1-Bed, 2-Bed & 3-Bed Penthouse)",
-            "units": 17,
+            "typology": "1-Bed, 2-Bed & 3-Bed Penthouse",
+            // "units": 17,
             "saleStatus": "Sold Out",
             "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753998942/x0wvlg8pcuporvujw0wt.pdf"
         },
@@ -752,8 +752,7 @@ const properties = [
             "address": "Urban Prime 2, Abraham Adesanya, Ajah, Lagos",
             "typology": "3-Bedroom Terrace Duplex",
             "carSpacePerUnit": 2,
-            "saleStatus": "Sold Out",
-            "totalUnits": 6
+            "saleStatus": "Sold Out"
         },
         "description": "It’s a refined collection of contemporary terrace duplexes, thoughtfully built within a sustainable estate in the serene heart of Abraham Adesanya, Ajah.",
         "features": [
@@ -781,13 +780,11 @@ const properties = [
         ],
         "summary": {
             "project": "Residential",
-            "propertyType": "Apartment",
+            "propertyType": "Luxury Apartments & Penthouse",
             "address": "Fatai Idowu, Admiralty Road, Lekki phase 1",
-            "typology": "Luxury Apartments & Penthouse",
-            "units": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
+            "typology": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
             "carSpacePerUnit": 2,
-            "saleStatus": "Sold Out",
-            "totalUnits": 10
+            "saleStatus": "Sold Out"
         },
         "availableUnits": [
             {
@@ -850,8 +847,8 @@ const properties = [
             "address": "Block 16, Plot 7 & 8, Ikota GRA, Lagos",
             "typology": "Terrace Duplexes, Semi-Detached Units, Pent Apartments",
             "carSpacePerUnit": 2,
-            "availableUnits": 8,
-            "saleStatus": "Limited Availability",
+            // "availableUnits": 8,
+            "saleStatus": "Limited Units Available",
             "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753994996/xnqpwcj035wasbnnktom.pdf"
         },
         "description": "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
@@ -929,8 +926,8 @@ const properties = [
             "propertyType": "High-Rise Apartments, Maisonettes & Penthouse",
             "height": "13-Floor Highrise",
             "carSpace": "Ground & First Floor Dedicated Parking",
-            "typology": "30 Units (2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse)",
-            "saleStatus": "For Sale (Limited Units Available)",
+            "typology": "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
+            "saleStatus": "Limited Units Available",
             "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753996029/akupdvjqnlg4eamnea01.pdf"
         },
         "description": "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
