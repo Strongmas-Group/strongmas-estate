@@ -433,6 +433,10 @@ body {
   visibility: hidden;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1555,10 +1559,6 @@ body {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity, 1));
-}
-
-.bg-black\/10 {
-  background-color: rgba(0, 0, 0, .1);
 }
 
 .bg-black\/20 {

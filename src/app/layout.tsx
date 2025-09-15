@@ -25,20 +25,29 @@ export default function RootLayout({
       <head>
         <title>Strongmas Residence</title>
         <meta name="description" content="Luxury Real Estate" />
+
+        {/* Fav Icon */}
         <link
           rel="icon"
           href="https://res.cloudinary.com/dbczzmftw/image/upload/v1754055166/hogt7ycsjcm6fcof7cah.png"
         />
+
+        {/* Preconnect & Preload Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap"
           rel="stylesheet"
+          media="print"
+          onLoad={(event) => (event.currentTarget.media = 'all')}
         />
+
+        {/* Cero Pro Font with swap for better LCP */}
         <style>
           {`
             @font-face {
@@ -47,11 +56,15 @@ export default function RootLayout({
                   url('/fonts/CeroPro-Regular.woff') format('woff');
               font-weight: 400;
               font-style: normal;
+              font-display: swap; /* Ensures text shows immediately */
             }
           `}
         </style>
 
-        {/* Google Analytics */}
+        {/* Preload Hero Poster for Better LCP */}
+        <link rel="preload" as="image" href="/background-poster.jpg" />
+
+        {/* Google Analytics: Load after interaction */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EKX1W7G2KJ"
           strategy="afterInteractive"
@@ -65,6 +78,24 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-EKX1W7G2KJ', { send_page_view: false });
+            `,
+          }}
+        />
+
+        {/* Hotjar: Load after interaction */}
+        <Script
+          id="hotjar"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(h,o,t,j,a,r){
+                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                  h._hjSettings={hjid:6516561,hjsv:6};
+                  a=o.getElementsByTagName('head')[0];
+                  r=o.createElement('script');r.async=1;
+                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                  a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
             `,
           }}
         />
