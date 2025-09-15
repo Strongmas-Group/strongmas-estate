@@ -25,32 +25,37 @@ const Footer = () => {
               commitment to excellence.
             </p>
             <div className="flex gap-2 justify-start">
-              {[
-                {
-                  Icon: Facebook,
-                  href: "https://www.facebook.com/share/14HGgmE8vPu/?mibextid=wwXIfr",
-                },
-                { Icon: Twitter, href: "https://x.com/Strongmasres" },
-                {
-                  Icon: Instagram,
-                  href: "https://www.instagram.com/strongmasresidences?igsh=MWF6YXByN3RiNmxwZQ==",
-                },
-                {
-                  Icon: Linkedin,
-                  href: "https://www.linkedin.com/company/strongmasresidence/",
-                },
-              ].map(({ Icon, href }, index) => (
-                <Link
-                  key={index}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80"
-                >
-                  <Icon className="h-4 w-4" />
-                </Link>
-              ))}
-            </div>
+  {[
+    {
+      Icon: Facebook,
+      href: "https://www.facebook.com/share/14HGgmE8vPu/?mibextid=wwXIfr",
+      label: "Visit our Facebook page",
+    },
+    { Icon: Twitter, href: "https://x.com/Strongmasres", label: "Visit our Twitter page" },
+    {
+      Icon: Instagram,
+      href: "https://www.instagram.com/strongmasresidences?igsh=MWF6YXByN3RiNmxwZQ==",
+      label: "Visit our Instagram page",
+    },
+    {
+      Icon: Linkedin,
+      href: "https://www.linkedin.com/company/strongmasresidence/",
+      label: "Visit our LinkedIn page",
+    },
+  ].map(({ Icon, href, label }, index) => (
+    <Link
+      key={index}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label} // Accessibility fix
+      className="w-9 h-9 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80"
+    >
+      <Icon className="h-4 w-4" />
+    </Link>
+  ))}
+</div>
+
           </div>
           <div className="text-left">
             <h4 className="font-semibold mb-4 font-headline text-white">
