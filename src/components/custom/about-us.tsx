@@ -40,7 +40,7 @@ const AboutUs = () => {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 cursor-pointer"
               >
-                <Link href="/about">LEARN MORE</Link>
+                  <Link href="/about">Learn more about Strongmas Residence</Link>
               </Button>
             </div>
 
