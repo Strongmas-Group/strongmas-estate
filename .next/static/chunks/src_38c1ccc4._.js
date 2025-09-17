@@ -1951,7 +1951,7 @@ const PropertySearchFilter = ()=>{
                 currentFiltered = currentFiltered.filter((p)=>{
                     if (!p.availableUnits || p.availableUnits.length === 0) return false;
                     const unitPrices = p.availableUnits.map((unit)=>{
-                        if (unit.price && unit.price !== "Not Available") {
+                        if ('price' in unit && unit.price !== "Not Available") {
                             const cleanedPrice = unit.price.replace(/[₦,]/g, '');
                             return parseInt(cleanedPrice, 10);
                         }
@@ -2539,9 +2539,9 @@ const Hero = ()=>{
         className: "relative w-full h-screen overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute top-0 left-0 w-full h-full",
+                className: "absolute inset-0",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
-                    className: "absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2",
+                    className: "w-full h-full object-contain md:object-cover bg-black",
                     src: "/background.mp4",
                     autoPlay: true,
                     loop: true,

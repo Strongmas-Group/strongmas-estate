@@ -1720,6 +1720,10 @@ body {
   object-fit: cover;
 }
 
+.object-center {
+  object-position: center;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -3408,6 +3412,10 @@ body {
     border-radius: var(--radius);
   }
 
+  .sm\:object-contain {
+    object-fit: contain;
+  }
+
   .sm\:px-0 {
     padding-left: 0;
     padding-right: 0;
@@ -3586,6 +3594,10 @@ body {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:object-cover {
+    object-fit: cover;
   }
 
   .md\:p-0 {

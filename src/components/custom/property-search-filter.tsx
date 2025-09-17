@@ -139,7 +139,7 @@ const PropertySearchFilter = () => {
 
           const unitPrices = p.availableUnits
             .map(unit => {
-              if (unit.price && unit.price !== "Not Available") {
+              if ('price' in unit && unit.price !== "Not Available") {
                 const cleanedPrice = unit.price.replace(/[₦,]/g, '');
                 return parseInt(cleanedPrice, 10);
               }
@@ -163,7 +163,7 @@ const PropertySearchFilter = () => {
       }
     }
 
-    setFilteredResults(currentFiltered);
+    setFilteredResults(currentFiltered as Property[]);
   };
 
   const clearFilters = () => {
