@@ -62,7 +62,7 @@ export default function RootLayout({
         </style>
 
         {/* Preload Hero Poster for Better LCP */}
-        <link rel="preload" as="image" href="/background-poster.jpg" />
+        {/* <link rel="preload" as="image" href="/background-poster.jpg" /> */}
 
         {/* Google Analytics: Load after interaction */}
         <Script

@@ -30,7 +30,7 @@
     --chart-5: 340 75% 55%;
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 0 0% 8.2%;
     --foreground: 0 0% 98%;
@@ -68,6 +68,7 @@
   }
 }
 
+/* Utility classes */
 .p-unset {
   padding-left: unset !important;
 }
@@ -82,4 +83,41 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+/* ========================================
+   Responsive Video for Hero Section
+   ======================================== */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Always fill container */
+  object-position: center;
+  background: #000;       /* Fallback if video fails to load */
+}
+
+/* Adjustments for different mobile sizes */
+@media (max-width: 430px) {
+  video {
+    object-position: center;
+  }
+}
+
+@media (max-width: 414px) {
+  video {
+    object-position: top;
+  }
+}
+
+@media (max-width: 375px) {
+  video {
+    object-position: center;
+  }
+}
+
+@media (max-width: 360px) {
+  video {
+    transform: scale(1.1); /* Slight zoom to avoid black bars */
+    object-position: center;
+  }
 }

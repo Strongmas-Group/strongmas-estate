@@ -590,6 +590,10 @@ body {
   z-index: 20;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -1720,10 +1724,6 @@ body {
   object-fit: cover;
 }
 
-.object-center {
-  object-position: center;
-}
-
 .p-0 {
   padding: 0;
 }
@@ -2411,6 +2411,10 @@ body {
   transition-duration: .5s;
 }
 
+.duration-700 {
+  transition-duration: .7s;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
@@ -2463,6 +2467,10 @@ body {
   animation-duration: .5s;
 }
 
+.duration-700 {
+  animation-duration: .7s;
+}
+
 .ease-in-out {
   animation-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
@@ -2485,6 +2493,39 @@ body {
   padding: 0;
   position: absolute;
   overflow: hidden;
+}
+
+video {
+  object-fit: cover;
+  object-position: center;
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 430px) {
+  video {
+    object-position: center;
+  }
+}
+
+@media (max-width: 414px) {
+  video {
+    object-position: top;
+  }
+}
+
+@media (max-width: 375px) {
+  video {
+    object-position: center;
+  }
+}
+
+@media (max-width: 360px) {
+  video {
+    object-position: center;
+    transform: scale(1.1);
+  }
 }
 
 .file\:border-0::-webkit-file-upload-button {
@@ -3412,10 +3453,6 @@ body {
     border-radius: var(--radius);
   }
 
-  .sm\:object-contain {
-    object-fit: contain;
-  }
-
   .sm\:px-0 {
     padding-left: 0;
     padding-right: 0;
@@ -3594,10 +3631,6 @@ body {
 
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:object-cover {
-    object-fit: cover;
   }
 
   .md\:p-0 {
