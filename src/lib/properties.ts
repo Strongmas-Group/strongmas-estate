@@ -146,7 +146,7 @@ export const properties = [
       "address": "Fatai Idowu, Admiralty Road, Lekki phase 1",
       "typology": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
       "carSpacePerUnit": 2,
-      "saleStatus": "Sold Out",
+      "saleStatus": "Limited Units Available",
       // "totalUnits": 10
     },
     "availableUnits": [
