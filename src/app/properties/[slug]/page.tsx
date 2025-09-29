@@ -117,13 +117,13 @@ export default function PropertyPage() {
                      )
                  })}
               </div>
-              {/* {property.summary.brochureUrl && (
+              {property.summary.brochureUrl && (
                  <Button asChild size="lg" className="w-full mt-8 bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline">
                     <Link href={property.summary.brochureUrl} target="_blank" rel="noopener noreferrer">
                         DOWNLOAD BROCHURE
                     </Link>
                  </Button>
-              )} */}
+              )}
             </div>
           </div>
 
