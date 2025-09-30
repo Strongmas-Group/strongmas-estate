@@ -2,9 +2,6 @@ import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import Image from "next/image";
 import Link from "next/link";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export default function ContactPage() {
@@ -12,6 +9,7 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow pt-20">
+        {/* Hero Section */}
         <section className="relative h-[40vh] md:h-[50vh] bg-black">
           <Image
             src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg"
@@ -31,9 +29,11 @@ export default function ContactPage() {
           </div>
         </section>
 
+        {/* Contact Section */}
         <section className="py-16 sm:py-24 bg-white text-black font-sans">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Left Contact Info */}
               <div className="flex flex-col gap-8">
                 <div>
                   <h2 className="text-3xl font-bold font-headline mb-4">REACH OUT TO US</h2>
@@ -73,24 +73,27 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
+
+              {/* Zoho Form Embed */}
               <div className="bg-gray-50 p-6 md:p-8 rounded-lg">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <Input placeholder="Full Name" className="bg-white" />
-                    <Input placeholder="Email Address" className="bg-white" />
-                  </div>
-                  <Input placeholder="Phone Number" className="bg-white" />
-                  <Input placeholder="Subject" className="bg-white" />
-                  <Textarea placeholder="Write Message" rows={5} className="bg-white" />
-                  <Button type="submit" size="lg" className="w-full bg-[#142B54] text-white hover:bg-[#142B54]/90 font-headline">
-                    CONTACT US
-                  </Button>
-                </form>
+                <iframe
+                  src="https://forms.zohopublic.com/strongmas1/form/ContactUsForm/formperma/u10aYjJMk0M4z_kSfB08rtnDTSiVrcN6jRPiZkWJ-Mc"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  className="rounded-lg"
+                  allowFullScreen
+                >
+                  Loading…
+                </iframe>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Map Section */}
         <section className="w-full h-[300px] md:h-[500px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!m12!1m3!1d63435.789871376786!2d3.4902400631003414!3d6.427842004237196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKm%2049%2C%20Olokonla%20Bus%20Stop%2C%20Lekki%20-%20Epe%20Expressway%2C%20Beside%20Petrocam%20Filling%20Station%2C%20Ajah%2C%20Lagos%20-%20Nigeria.!5e0!3m2!1sen!2sng!4v1753022482341!5m2!1sen!2sng"
