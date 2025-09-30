@@ -296,7 +296,7 @@ const properties = [
             "carSpace": "Ground & First Floor Dedicated Parking",
             "typology": "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
             "saleStatus": "Limited Units Available",
-            "brochureUrl": "https://cdn.filestackcontent.com/DOYKwAUCT6ysSXVdB4QU"
+            "brochureUrl": "https://cdn.filestackcontent.com/nXFM1wGWRWao5yAa3ne1"
         },
         "description": "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
         "availableUnits": [
