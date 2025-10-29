@@ -86,7 +86,7 @@ const FeaturedProperties = () => {
           <CarouselContent>
             {properties.map((property, index) => (
               <CarouselItem key={index}>
-                <div className="relative w-full h-[90vh] border-t border-t-2 border-white">
+                <div className="relative w-full h-[90vh] border-t-2 border-white">
                   <Image
                     src={property.image}
                     alt={property.name}

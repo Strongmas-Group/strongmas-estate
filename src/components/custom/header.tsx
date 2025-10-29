@@ -153,6 +153,7 @@ const Header = () => {
             <NavLink href="/#locations">Insight</NavLink>
             <NavLink href="/about">About us</NavLink>
             <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="/blog">Blog</NavLink>
           </nav>
         </div>
 
@@ -189,6 +190,7 @@ const Header = () => {
                   <NavLink href="/#locations">Insight</NavLink>
                   <NavLink href="/about">About us</NavLink>
                   <NavLink href="/contact">Contact</NavLink>
+                  <NavLink href="/blog">Blog</NavLink>
                 </nav>
                 <Button
                   onClick={() => onOpen('bookInspection')}
