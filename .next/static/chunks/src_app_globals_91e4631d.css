@@ -913,6 +913,10 @@ body {
   height: 50vh;
 }
 
+.h-\[85vh\] {
+  height: 85vh;
+}
+
 .h-\[90vh\] {
   height: 90vh;
 }
@@ -3656,6 +3660,10 @@ video {
 
   .md\:h-\[650px\] {
     height: 650px;
+  }
+
+  .md\:h-\[90vh\] {
+    height: 90vh;
   }
 
   .md\:w-\[200px\] {
