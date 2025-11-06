@@ -806,7 +806,7 @@ const properties = [
             "carSpace": "Ground & First Floor Dedicated Parking",
             "typology": "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
             "saleStatus": "Limited Units Available",
-            "brochureUrl": "https://cdn.filestackcontent.com/qZS1EvsRSEaezvfXFRxt"
+            "brochureUrl": "https://cdn.filestackcontent.com/qET7dTcyRFeL3AEcvZ53"
         },
         "description": "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
         "availableUnits": [
@@ -1857,19 +1857,56 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$custom$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$custom$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/custom/footer.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/script.js [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
 ;
 ;
+;
 function BookInspectionPage() {
+    // Function to trigger conversion event
+    const handleConversion = ()=>{
+        if (typeof window.gtag !== "undefined") {
+            window.gtag("event", "conversion", {
+                send_to: "AW-10936399778/H5BXCNrwiLsbEKLv8N4o",
+                event_callback: ()=>{
+                    console.log("Google Ads conversion recorded.");
+                }
+            });
+        } else {
+            console.warn("gtag not defined");
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col min-h-screen",
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                id: "google-conversion-snippet",
+                strategy: "afterInteractive",
+                children: `
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+              'send_to': 'AW-10936399778/H5BXCNrwiLsbEKLv8N4o',
+              'event_callback': callback
+            });
+            return false;
+          }
+        `
+            }, void 0, false, {
+                fileName: "[project]/src/app/book-inspection/page.tsx",
+                lineNumber: 28,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$custom$2f$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/book-inspection/page.tsx",
-                lineNumber: 12,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1886,14 +1923,14 @@ function BookInspectionPage() {
                                 "data-ai-hint": "luxury real estate exterior"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/book-inspection/page.tsx",
-                                lineNumber: 17,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute inset-0 bg-gradient-to-t from-black/20 to-black/50"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/book-inspection/page.tsx",
-                                lineNumber: 24,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1904,7 +1941,7 @@ function BookInspectionPage() {
                                         children: "BOOK A TOUR"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/book-inspection/page.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 59,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1916,7 +1953,7 @@ function BookInspectionPage() {
                                                 children: "Home"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/book-inspection/page.tsx",
-                                                lineNumber: 30,
+                                                lineNumber: 63,
                                                 columnNumber: 15
                                             }, this),
                                             " ",
@@ -1924,70 +1961,82 @@ function BookInspectionPage() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/book-inspection/page.tsx",
-                                        lineNumber: 29,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/book-inspection/page.tsx",
-                                lineNumber: 25,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/book-inspection/page.tsx",
-                        lineNumber: 16,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                         className: "py-16 sm:py-24 bg-white text-black font-sans",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "container mx-auto px-4 sm:px-6 lg:px-8",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "max-w-5xl mx-auto shadow-lg border border-gray-200 rounded-2xl overflow-hidden h-[85vh] md:h-[90vh]",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                                    src: "https://forms.zohopublic.com/strongmas1/form/BookATour/formperma/MMee_AahBlWQ_1veM5wwNc5TrcIkVWXWncFb2ULX8FE?zf_rszfm=1",
-                                    style: {
-                                        width: "100%",
-                                        height: "100%",
-                                        border: "none"
-                                    },
-                                    title: "Book a Tour"
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "max-w-5xl mx-auto shadow-lg border border-gray-200 rounded-2xl overflow-hidden h-[85vh] md:h-[90vh]",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                                        src: "https://forms.zohopublic.com/strongmas1/form/BookATour/formperma/MMee_AahBlWQ_1veM5wwNc5TrcIkVWXWncFb2ULX8FE?zf_rszfm=1",
+                                        style: {
+                                            width: "100%",
+                                            height: "100%",
+                                            border: "none"
+                                        },
+                                        title: "Book a Tour",
+                                        onLoad: ()=>{
+                                            console.log("Zoho form loaded");
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/book-inspection/page.tsx",
+                                        lineNumber: 79,
+                                        columnNumber: 15
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/book-inspection/page.tsx",
-                                    lineNumber: 42,
-                                    columnNumber: 15
+                                    lineNumber: 74,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-center mt-6"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/book-inspection/page.tsx",
+                                    lineNumber: 90,
+                                    columnNumber: 13
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/book-inspection/page.tsx",
-                                lineNumber: 41,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/src/app/book-inspection/page.tsx",
-                            lineNumber: 40,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/book-inspection/page.tsx",
-                        lineNumber: 39,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/book-inspection/page.tsx",
-                lineNumber: 14,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$custom$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/book-inspection/page.tsx",
-                lineNumber: 52,
+                lineNumber: 102,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/book-inspection/page.tsx",
-        lineNumber: 11,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }

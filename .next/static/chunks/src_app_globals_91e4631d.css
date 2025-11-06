@@ -2729,6 +2729,11 @@ video {
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-gray-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-muted\/50:hover {
   background-color: hsl(var(--muted) / .5);
 }

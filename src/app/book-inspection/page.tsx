@@ -88,12 +88,12 @@ export default function BookInspectionPage() {
 
             {/* Example: Conversion trigger button (if needed) */}
             <div className="text-center mt-6">
-              <button
+              {/* <button
                 onClick={handleConversion}
                 className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800"
               >
                 Test Conversion Trigger
-              </button>
+              </button> */}
             </div>
           </div>
         </section>
