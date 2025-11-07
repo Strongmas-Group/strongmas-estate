@@ -934,15 +934,17 @@ const properties = [
         "availableUnits": [
             {
                 "type": "2-Bedroom Apartment + BQ",
-                "price": "450,000,000"
+                "price": "550,000,000",
+                "units available": 1
             },
             {
                 "type": "3-Bedroom Apartment + BQ",
-                "price": "550,000,000"
+                "price": "650,000,000",
+                "units available": 10
             },
             {
                 "type": "4-Bedroom Maisonette + BQ",
-                "price": "900,000,000"
+                "price": "Sold Out"
             },
             {
                 "type": "5-Bedroom Penthouse + BQ (with private elevator access)",
