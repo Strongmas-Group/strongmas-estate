@@ -103,6 +103,12 @@ const Footer = () => {
                   className="hover:text-foreground/80"
                 >
                   +234 901 077 7777
+                </a>, 
+                <a
+                  href="tel:+2348028940857"
+                  className="hover:text-foreground/80"
+                >
+                   +234 802 894 0857
                 </a>
               </p>
               <p>
