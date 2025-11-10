@@ -784,7 +784,7 @@ const properties = [
             "address": "Fatai Idowu, Admiralty Road, Lekki phase 1",
             "typology": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
             "carSpacePerUnit": 2,
-            "saleStatus": "Limited Units Available"
+            "saleStatus": "Sold Out"
         },
         "availableUnits": [
             {
@@ -808,7 +808,7 @@ const properties = [
                     "Panoramic View"
                 ],
                 "carSpace": 2,
-                "saleStatus": "Available"
+                "saleStatus": "Sold out"
             }
         ],
         "features": [
@@ -934,12 +934,12 @@ const properties = [
         "availableUnits": [
             {
                 "type": "2-Bedroom Apartment + BQ",
-                "price": "550,000,000",
+                "price": "NGN 550,000,000",
                 "units available": 1
             },
             {
                 "type": "3-Bedroom Apartment + BQ",
-                "price": "650,000,000",
+                "price": "NGN 650,000,000",
                 "units available": 10
             },
             {
