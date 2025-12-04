@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://https://strongmasresidence.com
+
+# Sitemaps
+Sitemap: https://https://strongmasresidence.com/sitemap.xml

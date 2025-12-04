@@ -1,10 +1,14 @@
 {
   "/favicon.ico/route": "/favicon.ico",
   "/_not-found/page": "/_not-found",
-  "/faq/page": "/faq",
-  "/contact/page": "/contact",
-  "/page": "/",
   "/about/page": "/about",
+  "/blog/page": "/blog",
+  "/book-inspection/page": "/book-inspection",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/contact/page": "/contact",
+  "/faq/page": "/faq",
+  "/kyc/page": "/kyc",
+  "/page": "/",
   "/properties/[slug]/page": "/properties/[slug]",
   "/services/page": "/services"
 }

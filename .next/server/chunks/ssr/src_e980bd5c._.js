@@ -662,7 +662,7 @@ const properties = [
             "address": "Fatai Idowu, Admiralty Road, Lekki phase 1",
             "typology": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
             "carSpacePerUnit": 2,
-            "saleStatus": "Limited Units Available"
+            "saleStatus": "Sold Out"
         },
         "availableUnits": [
             {
@@ -686,7 +686,7 @@ const properties = [
                     "Panoramic View"
                 ],
                 "carSpace": 2,
-                "saleStatus": "Available"
+                "saleStatus": "Sold out"
             }
         ],
         "features": [
@@ -806,19 +806,19 @@ const properties = [
             "carSpace": "Ground & First Floor Dedicated Parking",
             "typology": "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
             "saleStatus": "Limited Units Available",
-            "brochureUrl": "https://cdn.filestackcontent.com/qET7dTcyRFeL3AEcvZ53"
+            "brochureUrl": "https://cdn.filestackcontent.com/9BYKtknQTayWLIrpWNUf"
         },
         "description": "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
         "availableUnits": [
             {
                 "type": "2-Bedroom Apartment + BQ",
-                "price": "550,000,000",
-                "units available": 1
+                "price": "40% Initial Deposit",
+                "units available": 4
             },
             {
                 "type": "3-Bedroom Apartment + BQ",
-                "price": "650,000,000",
-                "units available": 10
+                "price": "40% Initial Deposit",
+                "units available": 11
             },
             {
                 "type": "4-Bedroom Maisonette + BQ",
@@ -826,7 +826,7 @@ const properties = [
             },
             {
                 "type": "5-Bedroom Penthouse + BQ (with private elevator access)",
-                "price": "Not Available"
+                "price": "Sold Out"
             }
         ],
         "signatureAmenities": [
@@ -1642,6 +1642,16 @@ const Footer = ()=>{
                                                     fileName: "[project]/src/components/custom/footer.tsx",
                                                     lineNumber: 101,
                                                     columnNumber: 17
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                ",",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "tel:+2348028940857",
+                                                    className: "hover:text-foreground/80",
+                                                    children: "+234 802 894 0857"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/custom/footer.tsx",
+                                                    lineNumber: 107,
+                                                    columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
@@ -1659,13 +1669,13 @@ const Footer = ()=>{
                                                     children: "hello@strongmasng.com"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 116,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/footer.tsx",
-                                            lineNumber: 108,
+                                            lineNumber: 114,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
@@ -1688,7 +1698,7 @@ const Footer = ()=>{
                                     children: "Sign Up For Our Exclusive Newsletter"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 126,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1703,7 +1713,7 @@ const Footer = ()=>{
                                                     className: "bg-secondary border-muted-foreground/50 rounded-full pr-28 text-foreground placeholder:text-muted-foreground"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 131,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1713,13 +1723,13 @@ const Footer = ()=>{
                                                     children: "SUBMIT"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                                    lineNumber: 130,
+                                                    lineNumber: 136,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/footer.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 130,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1733,25 +1743,25 @@ const Footer = ()=>{
                                                     children: "terms and conditions"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 146,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/footer.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 144,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/custom/footer.tsx",
-                            lineNumber: 119,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -1779,7 +1789,7 @@ const Footer = ()=>{
                                     children: "Terms and Conditions"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1788,7 +1798,7 @@ const Footer = ()=>{
                                     children: "Cookie Policy"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 160,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1797,7 +1807,7 @@ const Footer = ()=>{
                                     children: "Privacy Policy"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 163,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1806,13 +1816,13 @@ const Footer = ()=>{
                                     children: "Corporate Communications Policy"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/footer.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 166,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/custom/footer.tsx",
-                            lineNumber: 150,
+                            lineNumber: 156,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1824,18 +1834,18 @@ const Footer = ()=>{
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/custom/footer.tsx",
-                            lineNumber: 164,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/custom/footer.tsx",
-                    lineNumber: 149,
+                    lineNumber: 155,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/footer.tsx",
-                lineNumber: 148,
+                lineNumber: 154,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
