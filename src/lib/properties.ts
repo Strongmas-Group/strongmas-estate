@@ -297,13 +297,13 @@ export const properties = [
     "availableUnits": [
       {
         "type": "2-Bedroom Apartment + BQ",
-        "price": "NGN 550,000,000",
-        "units available": 1
+        "price": "40% Initial Deposit",
+        "units available": 4
       },
       {
         "type": "3-Bedroom Apartment + BQ",
-        "price": "NGN 650,000,000",
-        "units available": 10
+        "price": "40% Initial Deposit",
+        "units available": 11
       },
       {
         "type": "4-Bedroom Maisonette + BQ",
@@ -312,7 +312,7 @@ export const properties = [
       },
       {
         "type": "5-Bedroom Penthouse + BQ (with private elevator access)",
-        "price": "Not Available"
+        "price": "Sold Out"
       }
     ],
     "signatureAmenities": [
