@@ -2,13 +2,13 @@
   "/favicon.ico/route": "/favicon.ico",
   "/_not-found/page": "/_not-found",
   "/blog/[slug]/page": "/blog/[slug]",
+  "/about/page": "/about",
   "/blog/page": "/blog",
   "/book-inspection/page": "/book-inspection",
-  "/kyc/page": "/kyc",
-  "/faq/page": "/faq",
-  "/about/page": "/about",
   "/contact/page": "/contact",
-  "/page": "/",
+  "/faq/page": "/faq",
+  "/kyc/page": "/kyc",
+  "/properties/[slug]/page": "/properties/[slug]",
   "/services/page": "/services",
-  "/properties/[slug]/page": "/properties/[slug]"
+  "/page": "/"
 }
