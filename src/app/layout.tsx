@@ -34,7 +34,7 @@ export default function RootLayout({
 
         {/* Preconnect & Preload Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="prepreconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="preload"
           as="style"
@@ -47,7 +47,7 @@ export default function RootLayout({
           onLoad={(event) => (event.currentTarget.media = 'all')}
         />
 
-        {/* Cero Pro Font with swap for better LCP */}
+        {/* Cero Pro Font */}
         <style>
           {`
             @font-face {
@@ -56,15 +56,12 @@ export default function RootLayout({
                   url('/fonts/CeroPro-Regular.woff') format('woff');
               font-weight: 400;
               font-style: normal;
-              font-display: swap; /* Ensures text shows immediately */
+              font-display: swap;
             }
           `}
         </style>
 
-        {/* Preload Hero Poster for Better LCP */}
-        {/* <link rel="preload" as="image" href="/background-poster.jpg" /> */}
-
-        {/* Google Analytics: Load after interaction */}
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EKX1W7G2KJ"
           strategy="afterInteractive"
@@ -74,15 +71,15 @@ export default function RootLayout({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-EKX1W7G2KJ', { send_page_view: false });
-            `,
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EKX1W7G2KJ', { send_page_view: false });
+          `,
           }}
         />
 
-        {/* Hotjar: Load after interaction */}
+        {/* Hotjar */}
         <Script
           id="hotjar"
           strategy="afterInteractive"
@@ -99,7 +96,33 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* META PIXEL */}
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1163500775997386');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1163500775997386&ev=PageView&noscript=1"
+          />
+        </noscript>
       </head>
+
       <body className="font-body antialiased bg-background text-foreground">
         <ModalProvider />
         <Suspense>
