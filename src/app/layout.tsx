@@ -34,7 +34,11 @@ export default function RootLayout({
 
         {/* Preconnect & Preload Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="prepreconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           rel="preload"
           as="style"
@@ -44,7 +48,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap"
           rel="stylesheet"
           media="print"
-          onLoad={(event) => (event.currentTarget.media = 'all')}
+          onLoad={(event) => (event.currentTarget.media = "all")}
         />
 
         {/* Cero Pro Font */}
@@ -71,11 +75,11 @@ export default function RootLayout({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-EKX1W7G2KJ', { send_page_view: false });
-          `,
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-EKX1W7G2KJ', { send_page_view: false });
+            `,
           }}
         />
 
@@ -108,7 +112,7 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1163500775997386');
+            fbq('init', '26707431632192307');
             fbq('track', 'PageView');
           `}
         </Script>
@@ -118,7 +122,7 @@ export default function RootLayout({
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1163500775997386&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=26707431632192307&ev=PageView&noscript=1"
           />
         </noscript>
       </head>
