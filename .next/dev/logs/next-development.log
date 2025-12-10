@@ -1,24 +1,8 @@
-[00:00:05.782] Server  LOG      ✓ Ready in 4.8s
-[00:00:14.387] Server  LOG      ○ Compiling / ...
-[00:00:21.663] Server  WARN     ⚠ Cross origin request detected from 10.126.83.82 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:05.068] Server  LOG      ✓ Ready in 4s
+[00:00:18.162] Server  LOG      ○ Compiling / ...
+[00:00:25.550] Server  WARN     ⚠ Cross origin request detected from 10.126.83.82 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:21.788] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:25.049] Server  LOG      ○ Compiling /_not-found/page ...
-[00:00:25.083] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
-[00:00:25.526] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:26.475] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:28.922] Server  ERROR   TimeoutError: The operation was aborted due to timeout
-[00:00:31.924] Server  LOG      ○ Compiling /_error ...
-[00:00:49.024] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026421/gyg79oiyshhrpsdrztxt.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:49.354] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850651/tkgsgpbbtsyobegyjnah.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:49.354] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850615/pyh2ti7qqmyoodjwnww9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:49.354] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850576/sx9rjn23frkgfjxtxdrj.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:49.709] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850632/uwotk9taz6wemn3ii9cg.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:56.553] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:56.553] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:56.742] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:57.244] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:57.719] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:08.872] Browser WARN    Image with src "/md.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:20.409] Browser WARN    Image with src "https://res.cloudinary.com/dbtqditjh/image/upload/v1761658131/ely2_t3kf0b.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:25.888] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:27.452] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:27.691] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
+[00:00:27.862] Server  LOG      ○ Compiling /_not-found/page ...
