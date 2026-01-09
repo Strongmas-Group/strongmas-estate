@@ -56,9 +56,7 @@ export default function BookInspectionPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
           <div className="relative z-10 h-full flex flex-col justify-center items-start text-white container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl md:text-5xl font-bold font-headline">
-              BOOK A TOUR
-            </h1>
+            <h1 className="text-3xl md:text-5xl font-bold font-headline">BOOK A TOUR</h1>
             <p className="mt-2 text-sm font-sans">
               <Link href="/" className="hover:underline">
                 Home

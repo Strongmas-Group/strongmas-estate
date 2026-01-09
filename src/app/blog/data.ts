@@ -1,21 +1,21 @@
 export const blogPosts = [
-    {
-      slug: "elysian-rise-in-victoria-island",
-      title: "Elysian Rise in Victoria Island: Why Off-Plan Buyers Stand to Gain the Most",
-      author: "Strongmas Residence Team",
-      date: "October 28, 2025",
-      image: "https://res.cloudinary.com/dbtqditjh/image/upload/v1761658137/rooftop_kc1unb.png",
-      metaDescription:
-        "Invest early in Elysian Rise by Strongmas Residence, Victoria Island’s signature high-rise. Enjoy 10–15% annual ROI, 25–45% value growth, and flexible payment options that guarantee future capital appreciation.",
-      tags: [
-        "Elysian Rise",
-        "Strongmas Residence",
-        "Victoria Island Real Estate",
-        "Off-plan Property Lagos",
-        "Luxury Apartments Victoria Island",
-        "Property Investment Nigeria",
-      ],
-      content: `
+  {
+    slug: "elysian-rise-in-victoria-island",
+    title: "Elysian Rise in Victoria Island: Why Off-Plan Buyers Stand to Gain the Most",
+    author: "Strongmas Residence Team",
+    date: "October 28, 2025",
+    image: "https://res.cloudinary.com/dbtqditjh/image/upload/v1761658137/rooftop_kc1unb.png",
+    metaDescription:
+      "Invest early in Elysian Rise by Strongmas Residence, Victoria Island’s signature high-rise. Enjoy 10–15% annual ROI, 25–45% value growth, and flexible payment options that guarantee future capital appreciation.",
+    tags: [
+      "Elysian Rise",
+      "Strongmas Residence",
+      "Victoria Island Real Estate",
+      "Off-plan Property Lagos",
+      "Luxury Apartments Victoria Island",
+      "Property Investment Nigeria",
+    ],
+    content: `
   <p>In Lagos’ competitive luxury real estate market, good timing determines returns. The most successful investors understand that maximum ROI lie not in waiting for property completion, but in identifying value before the market does. Rising prominently on 3A Musa Yar’Adua Street, Victoria Island, <strong>Elysian Rise</strong> by Strongmas Residence stands as a 13-floor architectural masterpiece — a seamless blend of smart innovation, modern design, and wealth-building potential.</p>
   
   <h2>Appreciation that Outperforms the Market</h2>
@@ -42,6 +42,5 @@ export const blogPosts = [
   
   <p><em>Call +234 802 894 0857, +234 901 077 7777 or visit <a href="https://www.strongmasresidence.com/elysianrise" target="_blank">www.strongmasresidence.com/elysianrise</a> to book a private or virtual property tour.</em></p>
       `,
-    },
-  ];
-  
+  },
+];

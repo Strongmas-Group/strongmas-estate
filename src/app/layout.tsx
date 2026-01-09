@@ -44,7 +44,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@24..96,400;24..96,700&family=Montserrat:wght@400;700&display=swap"
           rel="stylesheet"
           media="print"
-          onLoad={(event) => (event.currentTarget.media = 'all')}
+          onLoad={(event) => (event.currentTarget.media = "all")}
         />
 
         {/* Cero Pro Font */}

@@ -8,10 +8,7 @@ import { properties } from "@/lib/properties";
 
 const Locations = () => {
   return (
-    <section
-      id="locations"
-      className="py-10 sm:py-14 bg-white text-black px-4 sm:px-6 lg:px-8"
-    >
+    <section id="locations" className="py-10 sm:py-14 bg-white text-black px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold font-headline uppercase tracking-widest">
@@ -21,13 +18,11 @@ const Locations = () => {
       </div>
 
       <div className="w-full">
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
           {properties.slice(0, 7).map((property, index) => (
             <div key={property.name}>
               <Link
-                href={`/properties/${property.name
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
+                href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}
                 className="group relative overflow-hidden col-span-1 row-span-1 rounded-md"
               >
                 <div className="relative w-full h-full rounded-md overflow-hidden">
@@ -56,9 +51,7 @@ const Locations = () => {
                         </div>
                       )}
                     </div>
-                    <p className="mt-1 text-sm text-white/80">
-                      {property.location}
-                    </p>
+                    <p className="mt-1 text-sm text-white/80">{property.location}</p>
                   </div>
                 </div>
               </Link>

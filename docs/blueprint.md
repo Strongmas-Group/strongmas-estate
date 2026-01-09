@@ -5,10 +5,10 @@
 - Image Carousel: Display a rotating carousel of property images with descriptions on the homepage.
 - Property Search Filter: Implement a property search filter on the homepage to allow users to filter properties based on location, property type, bedrooms and price.
 - Key Statistics Display: Display key statistics of the real estate company in an infographic style. The stats are:
- *Satisfied Clients
- *In planning and progress
- *Homes delivered
- *Locations
+  *Satisfied Clients
+  *In planning and progress
+  *Homes delivered
+  *Locations
 - Featured Property Display: Featured property section showcasing the image of each listed property along with brief details and a link to the detail.
 - Locations Display: Our Locations section showcases several properties, and enables navigation.
 

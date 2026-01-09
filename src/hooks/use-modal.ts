@@ -1,23 +1,23 @@
-import { create } from 'zustand';
+import { create } from "zustand";
 
-export type ModalType = 'bookInspection';
+export type ModalType = "bookInspection";
 
 interface ModalData {
-    propertyName?: string;
+  propertyName?: string;
 }
 
 interface ModalStore {
-    type: ModalType | null;
-    data: ModalData;
-    isOpen: boolean;
-    onOpen: (type: ModalType, data?: ModalData) => void;
-    onClose: () => void;
+  type: ModalType | null;
+  data: ModalData;
+  isOpen: boolean;
+  onOpen: (type: ModalType, data?: ModalData) => void;
+  onClose: () => void;
 }
 
 export const useModal = create<ModalStore>((set) => ({
-    type: null,
-    data: {},
-    isOpen: false,
-    onOpen: (type, data = {}) => set({ isOpen: true, type, data }),
-    onClose: () => set({ type: null, isOpen: false }),
+  type: null,
+  data: {},
+  isOpen: false,
+  onOpen: (type, data = {}) => set({ isOpen: true, type, data }),
+  onClose: () => set({ type: null, isOpen: false }),
 }));

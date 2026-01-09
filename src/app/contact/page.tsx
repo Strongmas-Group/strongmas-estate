@@ -20,11 +20,12 @@ export default function ContactPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
           <div className="relative z-10 h-full flex flex-col justify-center items-start text-white container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl md:text-5xl font-bold font-headline">
-              CONTACT US
-            </h1>
+            <h1 className="text-3xl md:text-5xl font-bold font-headline">CONTACT US</h1>
             <p className="mt-2 text-sm font-sans">
-              <Link href="/" className="hover:underline">Home</Link> / Contact Us
+              <Link href="/" className="hover:underline">
+                Home
+              </Link>{" "}
+              / Contact Us
             </p>
           </div>
         </section>
@@ -38,13 +39,15 @@ export default function ContactPage() {
                 <div>
                   <h2 className="text-3xl font-bold font-headline mb-4">REACH OUT TO US</h2>
                   <p className="text-muted-foreground">
-                    Interested in the services we offer? Get in touch with our team to discuss your needs.
+                    Interested in the services we offer? Get in touch with our team to discuss your
+                    needs.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-bold font-headline text-lg mb-2">Visit Our Office</h3>
                   <p className="text-muted-foreground">
-                    Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside Petrocam Filling Station, Ajah, Lagos - Nigeria.
+                    Km 49, Olokonla Bus Stop, Lekki - Epe Expressway, Beside Petrocam Filling
+                    Station, Ajah, Lagos - Nigeria.
                   </p>
                 </div>
                 <div>
@@ -58,16 +61,28 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-bold font-headline text-lg mb-2">Find us on Social Media:</h3>
                   <div className="flex gap-4">
-                    <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <Link
+                      href="#"
+                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    >
                       <Facebook className="h-5 w-5" />
                     </Link>
-                    <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <Link
+                      href="#"
+                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    >
                       <Twitter className="h-5 w-5" />
                     </Link>
-                    <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <Link
+                      href="#"
+                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    >
                       <Instagram className="h-5 w-5" />
                     </Link>
-                    <Link href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">
+                    <Link
+                      href="#"
+                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    >
                       <Linkedin className="h-5 w-5" />
                     </Link>
                   </div>

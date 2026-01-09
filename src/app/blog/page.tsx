@@ -12,8 +12,7 @@ const blogs = [
     title: "Elysian Rise in Victoria Island: Why Off-Plan Buyers Stand to Gain the Most",
     excerpt:
       "Invest early in Elysian Rise by Strongmas Residence, Victoria Island’s signature high-rise. Enjoy 10–15% annual ROI, 25–45% value growth, and flexible payment options that guarantee future capital appreciation.",
-    image:
-      "https://res.cloudinary.com/dbtqditjh/image/upload/v1761658131/ely2_t3kf0b.jpg",
+    image: "https://res.cloudinary.com/dbtqditjh/image/upload/v1761658131/ely2_t3kf0b.jpg",
     date: "October 2025",
     author: "Strongmas Residence",
   },
@@ -35,9 +34,7 @@ export default function BlogPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-black/50" />
           <div className="relative z-10 h-full flex flex-col justify-center items-start text-white container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl md:text-5xl font-bold font-headline">
-              OUR BLOG
-            </h1>
+            <h1 className="text-3xl md:text-5xl font-bold font-headline">OUR BLOG</h1>
             <p className="mt-2 text-sm font-sans">
               <Link href="/" className="hover:underline">
                 Home
@@ -54,8 +51,8 @@ export default function BlogPage() {
               Insights, Updates & Investment Opportunities
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Explore our latest articles on luxury real estate, market trends, and
-              investment strategies from Strongmas Residence.
+              Explore our latest articles on luxury real estate, market trends, and investment
+              strategies from Strongmas Residence.
             </p>
           </div>
         </section>
@@ -69,12 +66,7 @@ export default function BlogPage() {
                 className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform hover:scale-[1.02]"
               >
                 <div className="relative w-full h-60">
-                  <Image
-                    src={blog.image}
-                    alt={blog.title}
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src={blog.image} alt={blog.title} fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <p className="text-sm text-gray-500 mb-2">

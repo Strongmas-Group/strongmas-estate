@@ -9,6 +9,9 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "lint": "next lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:fix": "next lint --fix",
     "typecheck": "tsc --noEmit",
     "postbuild": "next-sitemap"
   },
@@ -43,6 +46,7 @@
     "date-fns": "^3.6.0",
     "embla-carousel-autoplay": "^8.1.1",
     "embla-carousel-react": "^8.6.0",
+    "eslint-plugin-prettier": "^5.5.4",
     "firebase": "^11.9.1",
     "framer-motion": "^12.23.6",
     "genkit": "^1.13.0",

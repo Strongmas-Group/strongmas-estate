@@ -20,103 +20,79 @@ const Footer = () => {
               />
             </Link>
             <p className="text-foreground mb-4 text-sm max-w-xs">
-              With over 30 satisfied clients and the delivery of 50+
-              state-of-the-art apartments and duplexes, we proudly showcase our
-              commitment to excellence.
+              With over 30 satisfied clients and the delivery of 50+ state-of-the-art apartments and
+              duplexes, we proudly showcase our commitment to excellence.
             </p>
             <div className="flex gap-2 justify-start">
-  {[
-    {
-      Icon: Facebook,
-      href: "https://www.facebook.com/share/14HGgmE8vPu/?mibextid=wwXIfr",
-      label: "Visit our Facebook page",
-    },
-    { Icon: Twitter, href: "https://x.com/Strongmasres", label: "Visit our Twitter page" },
-    {
-      Icon: Instagram,
-      href: "https://www.instagram.com/strongmasresidences?igsh=MWF6YXByN3RiNmxwZQ==",
-      label: "Visit our Instagram page",
-    },
-    {
-      Icon: Linkedin,
-      href: "https://www.linkedin.com/company/strongmasresidence/",
-      label: "Visit our LinkedIn page",
-    },
-  ].map(({ Icon, href, label }, index) => (
-    <Link
-      key={index}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={label} // Accessibility fix
-      className="w-9 h-9 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80"
-    >
-      <Icon className="h-4 w-4" />
-    </Link>
-  ))}
-</div>
-
+              {[
+                {
+                  Icon: Facebook,
+                  href: "https://www.facebook.com/share/14HGgmE8vPu/?mibextid=wwXIfr",
+                  label: "Visit our Facebook page",
+                },
+                {
+                  Icon: Twitter,
+                  href: "https://x.com/Strongmasres",
+                  label: "Visit our Twitter page",
+                },
+                {
+                  Icon: Instagram,
+                  href: "https://www.instagram.com/strongmasresidences?igsh=MWF6YXByN3RiNmxwZQ==",
+                  label: "Visit our Instagram page",
+                },
+                {
+                  Icon: Linkedin,
+                  href: "https://www.linkedin.com/company/strongmasresidence/",
+                  label: "Visit our LinkedIn page",
+                },
+              ].map(({ Icon, href, label }, index) => (
+                <Link
+                  key={index}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label} // Accessibility fix
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                >
+                  <Icon className="h-4 w-4" />
+                </Link>
+              ))}
+            </div>
           </div>
           <div className="text-left">
-            <h4 className="font-semibold mb-4 font-headline text-white">
-              Useful Link
-            </h4>
+            <h4 className="font-semibold mb-4 font-headline text-white">Useful Link</h4>
             <nav className="flex flex-col gap-2 text-sm">
-              <Link
-                href="/faq"
-                className="text-foreground hover:text-foreground/80"
-              >
+              <Link href="/faq" className="text-foreground hover:text-foreground/80">
                 FAQ
               </Link>
-              <Link
-                href="/services"
-                className="text-foreground hover:text-foreground/80"
-              >
+              <Link href="/services" className="text-foreground hover:text-foreground/80">
                 Services
               </Link>
-              <Link
-                href="/contact"
-                className="text-foreground hover:text-foreground/80"
-              >
+              <Link href="/contact" className="text-foreground hover:text-foreground/80">
                 Contact
               </Link>
-              <Link
-                href="/about"
-                className="text-foreground hover:text-foreground/80"
-              >
+              <Link href="/about" className="text-foreground hover:text-foreground/80">
                 About us
               </Link>
             </nav>
           </div>
           <div className="text-left">
-            <h4 className="font-semibold mb-4 font-headline text-white">
-              Address & Contact Info
-            </h4>
+            <h4 className="font-semibold mb-4 font-headline text-white">Address & Contact Info</h4>
             <address className="space-y-2 text-foreground not-italic text-sm">
-              <p>
-              Adjacent Lagos Business School, Lekki - Epe Expressway, Lagos - Nigeria.
-              </p>
+              <p>Adjacent Lagos Business School, Lekki - Epe Expressway, Lagos - Nigeria.</p>
               <p>
                 Phone:{" "}
-                <a
-                  href="tel:+2349010777777"
-                  className="hover:text-foreground/80"
-                >
+                <a href="tel:+2349010777777" className="hover:text-foreground/80">
                   +234 901 077 7777
-                </a>, 
-                <a
-                  href="tel:+2348028940857"
-                  className="hover:text-foreground/80"
-                >
-                   +234 802 894 0857
+                </a>
+                ,
+                <a href="tel:+2348028940857" className="hover:text-foreground/80">
+                  +234 802 894 0857
                 </a>
               </p>
               <p>
                 Email:{" "}
-                <a
-                  href="mailto:hello@strongmasng.com"
-                  className="hover:text-foreground/80"
-                >
+                <a href="mailto:hello@strongmasng.com" className="hover:text-foreground/80">
                   hello@strongmasng.com
                 </a>
               </p>
@@ -168,8 +144,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-center md:text-right w-full md:w-auto">
-            &copy; {new Date().getFullYear()} Strongmas Properties. All Rights
-            Reserved.
+            &copy; {new Date().getFullYear()} Strongmas Properties. All Rights Reserved.
           </p>
         </div>
       </div>

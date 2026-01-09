@@ -2,13 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
@@ -34,11 +28,7 @@ const NavLink = ({
   children: React.ReactNode;
   onClick?: () => void;
 }) => (
-  <Link
-    href={href}
-    onClick={onClick}
-    className="transition-colors hover:text-white/80 block py-2"
-  >
+  <Link href={href} onClick={onClick} className="transition-colors hover:text-white/80 block py-2">
     {children}
   </Link>
 );
@@ -64,11 +54,7 @@ const BrowseDropdown = () => {
               asChild
               className="hover:bg-[#EFC59D] text-base text-white"
             >
-              <Link
-                href={`/properties/${property.name
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
-              >
+              <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}>
                 {property.name}
               </Link>
             </DropdownMenuItem>
@@ -87,11 +73,7 @@ const BrowseDropdown = () => {
               asChild
               className="hover:bg-[#EFC59D] text-base text-white"
             >
-              <Link
-                href={`/properties/${property.name
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
-              >
+              <Link href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}>
                 {property.name}
               </Link>
             </DropdownMenuItem>
@@ -114,9 +96,7 @@ const BrowseAccordion = () => (
           {properties.map((property) => (
             <NavLink
               key={property.name}
-              href={`/properties/${property.name
-                .toLowerCase()
-                .replace(/\s+/g, "-")}`}
+              href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}
             >
               {property.name}
             </NavLink>
@@ -130,69 +110,68 @@ const BrowseAccordion = () => (
 const Header = () => {
   return (
     <header className="fixed top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline h-20 flex items-center">
-    <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 text-white relative">
-  
-      {/* Logo */}
-      <div className="flex items-center flex-shrink-0">
-        <Link href="/" className="flex-shrink-0">
-          <Image
-            src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
-            alt="Strongmas Residence Logo"
-            width={200}
-            height={44}
-            className="w-[140px] h-[30px] md:w-[180px] md:h-[40px] lg:w-[200px] lg:h-[44px] object-contain"
-            priority
-          />
-        </Link>
-      </div>
-  
-      {/* Desktop Navigation */}
-      <div className="hidden lg:flex justify-center flex-1">
-        <nav className="flex items-center gap-5 xl:gap-6 text-sm font-medium whitespace-nowrap">
-          <NavLink href="/">Home</NavLink>
-  
-          <DropdownMenu>
-            <DropdownMenuTrigger className="flex items-center gap-1 transition-colors hover:text-white/80 outline-none">
-              Our Properties <ChevronDown className="h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent
-              align="start"
-              className="bg-background text-white border-border p-4 min-w-[500px] mt-4"
-            >
-              <BrowseDropdown />
-            </DropdownMenuContent>
-          </DropdownMenu>
-  
-          <NavLink href="/services">Services</NavLink>
-          <NavLink href="/#locations">Insight</NavLink>
-          <NavLink href="/about">About us</NavLink>
-          <NavLink href="/contact">Contact</NavLink>
-          <NavLink href="/blog">Blog</NavLink>
-        </nav>
-      </div>
-  
-      {/* Desktop Button */}
-      <div className="hidden lg:flex ml-auto pl-4">
-        <Link href="/book-inspection">
-          <Button className="bg-[#142B54] text-white hover:bg-[#1b3a72] rounded-xl h-[45px] px-6 flex-shrink-0 shadow-md">
-            Book A Tour
-          </Button>
-        </Link>
-      </div>
-  
-      {/* Mobile / Tablet Menu */}
-      <div className="flex lg:hidden items-center ml-auto">
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="text-white">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
+      <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 text-white relative">
+        {/* Logo */}
+        <div className="flex items-center flex-shrink-0">
+          <Link href="/" className="flex-shrink-0">
+            <Image
+              src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
+              alt="Strongmas Residence Logo"
+              width={200}
+              height={44}
+              className="w-[140px] h-[30px] md:w-[180px] md:h-[40px] lg:w-[200px] lg:h-[44px] object-contain"
+              priority
+            />
+          </Link>
+        </div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex justify-center flex-1">
+          <nav className="flex items-center gap-5 xl:gap-6 text-sm font-medium whitespace-nowrap">
+            <NavLink href="/">Home</NavLink>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 transition-colors hover:text-white/80 outline-none">
+                Our Properties <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                align="start"
+                className="bg-background text-white border-border p-4 min-w-[500px] mt-4"
+              >
+                <BrowseDropdown />
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <NavLink href="/services">Services</NavLink>
+            <NavLink href="/#locations">Insight</NavLink>
+            <NavLink href="/about">About us</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="/blog">Blog</NavLink>
+          </nav>
+        </div>
+
+        {/* Desktop Button */}
+        <div className="hidden lg:flex ml-auto pl-4">
+          <Link href="/book-inspection">
+            <Button className="bg-[#142B54] text-white hover:bg-[#1b3a72] rounded-xl h-[45px] px-6 flex-shrink-0 shadow-md">
+              Book A Tour
             </Button>
-          </SheetTrigger>
-  
-          <SheetContent
-            side="right"
-            className="
+          </Link>
+        </div>
+
+        {/* Mobile / Tablet Menu */}
+        <div className="flex lg:hidden items-center ml-auto">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="text-white">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+
+            <SheetContent
+              side="right"
+              className="
               bg-background text-white
               w-[280px] sm:w-[320px]
               p-0
@@ -202,41 +181,39 @@ const Header = () => {
               data-[state=open]:slide-in-from-right
               duration-300
             "
-          >
-  
-            {/* Sheet Header */}
-            <SheetHeader className="p-6 border-b border-border">
-              <Link href="/" className="flex-shrink-0">
-                <Image
-                  src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
-                  alt="Strongmas Residence Logo"
-                  width={120}
-                  height={28}
-                  className="h-auto w-auto"
-                />
-              </Link>
-            </SheetHeader>
-  
-            {/* Sheet Body */}
-            <div className="flex flex-col h-[calc(100vh-88px)] px-6 pb-4 overflow-hidden">
-  
-              {/* Scrollable Nav */}
-              <nav className="flex-1 overflow-y-auto flex flex-col gap-3 text-base mt-2 pr-2">
-                <NavLink href="/">Home</NavLink>
-                <BrowseAccordion />
-                <NavLink href="/services">Services</NavLink>
-                <NavLink href="/#locations">Insight</NavLink>
-                <NavLink href="/about">About us</NavLink>
-                <NavLink href="/contact">Contact</NavLink>
-                <NavLink href="/blog">Blog</NavLink>
-              </nav>
-  
-              {/* Sticky Button Area */}
-              <div className="sticky bottom-0 bg-background pt-4 pb-2">
-                <div className="h-px bg-white/10 mb-4" />
-                <Link href="/book-inspection">
-                  <Button
-                    className="
+            >
+              {/* Sheet Header */}
+              <SheetHeader className="p-6 border-b border-border">
+                <Link href="/" className="flex-shrink-0">
+                  <Image
+                    src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
+                    alt="Strongmas Residence Logo"
+                    width={120}
+                    height={28}
+                    className="h-auto w-auto"
+                  />
+                </Link>
+              </SheetHeader>
+
+              {/* Sheet Body */}
+              <div className="flex flex-col h-[calc(100vh-88px)] px-6 pb-4 overflow-hidden">
+                {/* Scrollable Nav */}
+                <nav className="flex-1 overflow-y-auto flex flex-col gap-3 text-base mt-2 pr-2">
+                  <NavLink href="/">Home</NavLink>
+                  <BrowseAccordion />
+                  <NavLink href="/services">Services</NavLink>
+                  <NavLink href="/#locations">Insight</NavLink>
+                  <NavLink href="/about">About us</NavLink>
+                  <NavLink href="/contact">Contact</NavLink>
+                  <NavLink href="/blog">Blog</NavLink>
+                </nav>
+
+                {/* Sticky Button Area */}
+                <div className="sticky bottom-0 bg-background pt-4 pb-2">
+                  <div className="h-px bg-white/10 mb-4" />
+                  <Link href="/book-inspection">
+                    <Button
+                      className="
                       w-full 
                       bg-[#142B54] 
                       text-white 
@@ -246,21 +223,17 @@ const Header = () => {
                       text-lg
                       shadow-lg
                     "
-                  >
-                    Book A Tour
-                  </Button>
-                </Link>
+                    >
+                      Book A Tour
+                    </Button>
+                  </Link>
+                </div>
               </div>
-  
-            </div>
-          </SheetContent>
-        </Sheet>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
-  
-    </div>
-  </header>
-  
-
+    </header>
   );
 };
 

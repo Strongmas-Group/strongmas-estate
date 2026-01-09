@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import Hotjar from "@hotjar/browser";
 import { usePathname } from "next/navigation";
 
-const siteId = 6516561;   // Your Hotjar site ID
-const hotjarVersion = 6;  // Keep as 6 unless Hotjar changes this
+const siteId = 6516561; // Your Hotjar site ID
+const hotjarVersion = 6; // Keep as 6 unless Hotjar changes this
 
 export function useHotjar() {
   const pathname = usePathname();

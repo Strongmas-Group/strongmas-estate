@@ -9,8 +9,7 @@ import { notFound } from "next/navigation";
 
 const blog = {
   slug: "elysian-rise-victoria-island",
-  title:
-    "Elysian Rise in Victoria Island: Why Off-Plan Buyers Stand to Gain the Most",
+  title: "Elysian Rise in Victoria Island: Why Off-Plan Buyers Stand to Gain the Most",
   author: "Strongmas Residence Team",
   date: "October 28, 2025",
   heroImage:
@@ -18,8 +17,7 @@ const blog = {
   images: {
     rooftop:
       "https://res.cloudinary.com/dbtqditjh/image/upload/v1761665070/living_Scene_1.Denoiser_copy_ueza51.jpg",
-    night:
-      "https://res.cloudinary.com/dbtqditjh/image/upload/v1761658137/rooftop_kc1unb.png",
+    night: "https://res.cloudinary.com/dbtqditjh/image/upload/v1761658137/rooftop_kc1unb.png",
   },
   content: [
     {
@@ -65,11 +63,7 @@ const blog = {
   ],
 };
 
-export default function BlogPostPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = React.use(params);
   if (slug !== blog.slug) notFound();
 
@@ -115,13 +109,11 @@ export default function BlogPostPage({
         <section className="py-16 container mx-auto px-6 lg:px-12 text-gray-800 space-y-16">
           {blog.content.map((section, i) => (
             <div key={i} className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-                {section.heading}
-              </h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{section.heading}</h2>
               <p
-  className="whitespace-pre-line leading-relaxed text-gray-700"
-  dangerouslySetInnerHTML={{ __html: section.text }}
-/>
+                className="whitespace-pre-line leading-relaxed text-gray-700"
+                dangerouslySetInnerHTML={{ __html: section.text }}
+              />
 
               {section.image && (
                 <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden mt-6">

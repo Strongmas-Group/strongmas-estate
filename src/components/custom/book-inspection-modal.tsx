@@ -1,13 +1,8 @@
-
 "use client";
 
 import * as React from "react";
 import { useModal } from "@/hooks/use-modal";
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 const BookInspectionModal = () => {
   const { isOpen, onClose, type } = useModal();

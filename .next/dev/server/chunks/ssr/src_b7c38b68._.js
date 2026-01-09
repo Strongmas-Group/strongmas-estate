@@ -52,7 +52,7 @@ const Button = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$nod
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/button.tsx",
-        lineNumber: 46,
+        lineNumber: 42,
         columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
@@ -128,7 +128,7 @@ const SheetContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SheetOverlay, {}, void 0, false, {
                 fileName: "[project]/src/components/ui/sheet.tsx",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"], {
@@ -146,7 +146,7 @@ const SheetContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d
                                 className: "h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/sheet.tsx",
-                                lineNumber: 69,
+                                lineNumber: 66,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -154,25 +154,25 @@ const SheetContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d
                                 children: "Close"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/sheet.tsx",
-                                lineNumber: 70,
+                                lineNumber: 67,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ui/sheet.tsx",
-                        lineNumber: 68,
+                        lineNumber: 65,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/sheet.tsx",
-                lineNumber: 62,
+                lineNumber: 63,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/sheet.tsx",
-        lineNumber: 60,
+        lineNumber: 61,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SheetContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"].displayName;
@@ -181,7 +181,7 @@ const SheetHeader = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__im
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/sheet.tsx",
-        lineNumber: 81,
+        lineNumber: 75,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 SheetHeader.displayName = "SheetHeader";
@@ -190,7 +190,7 @@ const SheetFooter = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__im
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/sheet.tsx",
-        lineNumber: 95,
+        lineNumber: 80,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 SheetFooter.displayName = "SheetFooter";
@@ -200,7 +200,7 @@ const SheetTitle = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/sheet.tsx",
-        lineNumber: 109,
+        lineNumber: 91,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SheetTitle.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Title"].displayName;
@@ -210,7 +210,7 @@ const SheetDescription = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$projec
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/sheet.tsx",
-        lineNumber: 121,
+        lineNumber: 103,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SheetDescription.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Description"].displayName;
@@ -296,7 +296,7 @@ const DropdownMenuSubContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 47,
+        lineNumber: 46,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 DropdownMenuSubContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SubContent"].displayName;
@@ -308,12 +308,12 @@ const DropdownMenuContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$pro
             ...props
         }, void 0, false, {
             fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-            lineNumber: 64,
+            lineNumber: 62,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 63,
+        lineNumber: 61,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 DropdownMenuContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"].displayName;
@@ -323,7 +323,7 @@ const DropdownMenuItem = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$projec
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 83,
+        lineNumber: 81,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 DropdownMenuItem.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Item"].displayName;
@@ -340,24 +340,24 @@ const DropdownMenuCheckboxItem = /*#__PURE__*/ __TURBOPACK__imported__module__$5
                         className: "h-4 w-4"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-                        lineNumber: 110,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-                    lineNumber: 109,
+                    lineNumber: 107,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-                lineNumber: 108,
+                lineNumber: 106,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             children
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 99,
+        lineNumber: 97,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 DropdownMenuCheckboxItem.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CheckboxItem"].displayName;
@@ -373,24 +373,24 @@ const DropdownMenuRadioItem = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$p
                         className: "h-2 w-2 fill-current"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-                        lineNumber: 133,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-                    lineNumber: 132,
+                    lineNumber: 129,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-                lineNumber: 131,
+                lineNumber: 128,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             children
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 123,
+        lineNumber: 120,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 DropdownMenuRadioItem.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RadioItem"].displayName;
@@ -400,7 +400,7 @@ const DropdownMenuLabel = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$proje
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 147,
+        lineNumber: 144,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 DropdownMenuLabel.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"].displayName;
@@ -410,7 +410,7 @@ const DropdownMenuSeparator = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$p
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 163,
+        lineNumber: 156,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 DropdownMenuSeparator.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"].displayName;
@@ -420,7 +420,7 @@ const DropdownMenuShortcut = ({ className, ...props })=>{
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/dropdown-menu.tsx",
-        lineNumber: 176,
+        lineNumber: 166,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -474,18 +474,18 @@ const AccordionTrigger = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$projec
                     className: "h-4 w-4 shrink-0 transition-transform duration-200"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/accordion.tsx",
-                    lineNumber: 37,
+                    lineNumber: 33,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ui/accordion.tsx",
-            lineNumber: 28,
+            lineNumber: 24,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/accordion.tsx",
-        lineNumber: 27,
+        lineNumber: 23,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 AccordionTrigger.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$accordion$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Trigger"].displayName;
@@ -498,12 +498,12 @@ const AccordionContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$projec
             children: children
         }, void 0, false, {
             fileName: "[project]/src/components/ui/accordion.tsx",
-            lineNumber: 52,
+            lineNumber: 48,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/accordion.tsx",
-        lineNumber: 47,
+        lineNumber: 43,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 AccordionContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$accordion$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"].displayName;
@@ -518,27 +518,27 @@ __turbopack_context__.s([
 ]);
 const properties = [
     {
-        "name": "STRONGMAS RESIDENCE",
-        "status": "COMPLETED",
-        "location": "Lekki Phase 1",
-        "tag": "SOLD OUT & DELIVERED",
-        "images": [
+        name: "STRONGMAS RESIDENCE",
+        status: "COMPLETED",
+        location: "Lekki Phase 1",
+        tag: "SOLD OUT & DELIVERED",
+        images: [
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026421/gyg79oiyshhrpsdrztxt.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850576/sx9rjn23frkgfjxtxdrj.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850615/pyh2ti7qqmyoodjwnww9.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850632/uwotk9taz6wemn3ii9cg.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850651/tkgsgpbbtsyobegyjnah.jpg"
         ],
-        "summary": {
-            "address": "Dele Adedeji, Lekki Phase 1, Lagos",
-            "propertyType": "Terrace Duplex",
-            "typology": "4 Bedroom Terrace Duplex",
-            "garage": 2,
+        summary: {
+            address: "Dele Adedeji, Lekki Phase 1, Lagos",
+            propertyType: "Terrace Duplex",
+            typology: "4 Bedroom Terrace Duplex",
+            garage: 2,
             // "totalUnits": 5,
-            "saleStatus": "Sold Out"
+            saleStatus: "Sold Out"
         },
-        "description": "A bespoke 4-bedroom smart terrace duplexes, sculpted for the refined homeowner. This property offers timeless architectural design, eco-friendly materials, and smart home automation.",
-        "keyFeatures": [
+        description: "A bespoke 4-bedroom smart terrace duplexes, sculpted for the refined homeowner. This property offers timeless architectural design, eco-friendly materials, and smart home automation.",
+        keyFeatures: [
             "Full smart automation – voice control, motion sensors, smart lighting",
             "Secure smart door access for effortless entry",
             "Contemporary fully fitted kitchens",
@@ -548,27 +548,27 @@ const properties = [
         ]
     },
     {
-        "name": "THE OMINI",
-        "status": "COMPLETED",
-        "location": "Lekki Phase 1",
-        "tag": "SOLD OUT & DELIVERED",
-        "images": [
+        name: "THE OMINI",
+        status: "COMPLETED",
+        location: "Lekki Phase 1",
+        tag: "SOLD OUT & DELIVERED",
+        images: [
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218706/blpm4hgkijma5ywj611f.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027395/ke9fjj8qi7xs0vp5kvzz.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027544/fidzpkzef7eoigoonzc1.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027728/lpffnelemh8hfbr1b3ei.jpg"
         ],
-        "summary": {
-            "project": "Residential",
-            "propertyType": "Apartment",
-            "address": "Akin Leigh Crescent, Lekki Phase 1, Lagos",
-            "typology": "1-Bed, 2-Bed & 3-Bed Penthouse",
+        summary: {
+            project: "Residential",
+            propertyType: "Apartment",
+            address: "Akin Leigh Crescent, Lekki Phase 1, Lagos",
+            typology: "1-Bed, 2-Bed & 3-Bed Penthouse",
             // "units": 17,
-            "saleStatus": "Sold Out",
-            "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753998942/x0wvlg8pcuporvujw0wt.pdf"
+            saleStatus: "Sold Out",
+            brochureUrl: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753998942/x0wvlg8pcuporvujw0wt.pdf"
         },
-        "description": "A 5-story multifamily premium apartments complex that embodies elegance and contemporary design. It features smart home automations with artificial intelligence and oversized west-facing windows.",
-        "features": [
+        description: "A 5-story multifamily premium apartments complex that embodies elegance and contemporary design. It features smart home automations with artificial intelligence and oversized west-facing windows.",
+        features: [
             "Fully Serviced Smart Apartments",
             "Home Automation & Smart Lights",
             "Smart Doors & CCTV Surveillance",
@@ -580,30 +580,30 @@ const properties = [
             "Fully Fitted Kitchens (Wet & Dry in Penthouse)",
             "Waterfront View"
         ],
-        "availableUnits": [
+        availableUnits: [
             {
-                "type": "1-Bedroom Apartment",
-                "bathrooms": 1.5,
-                "carSpace": 1,
-                "saleStatus": "Sold Out"
+                type: "1-Bedroom Apartment",
+                bathrooms: 1.5,
+                carSpace: 1,
+                saleStatus: "Sold Out"
             },
             {
-                "type": "2-Bedroom Apartment",
-                "bathrooms": 2.5,
-                "carSpace": 2,
-                "saleStatus": "Sold Out"
+                type: "2-Bedroom Apartment",
+                bathrooms: 2.5,
+                carSpace: 2,
+                saleStatus: "Sold Out"
             },
             {
-                "type": "3-Bedroom Penthouse",
-                "bathrooms": 3.5,
-                "cinemaRoom": true,
-                "serviceQuarters": 1,
-                "kitchens": 2,
-                "carSpace": 2,
-                "saleStatus": "Sold Out"
+                type: "3-Bedroom Penthouse",
+                bathrooms: 3.5,
+                cinemaRoom: true,
+                serviceQuarters: 1,
+                kitchens: 2,
+                carSpace: 2,
+                saleStatus: "Sold Out"
             }
         ],
-        "proximities": [
+        proximities: [
             "Dolphin Swim School",
             "Upbeat Recreational Center",
             "Mindscapes Children’s Museum",
@@ -612,11 +612,11 @@ const properties = [
         ]
     },
     {
-        "name": "AVIONS COURT 1",
-        "status": "COMPLETED",
-        "location": "Abraham Adesanya",
-        "tag": "SOLD OUT & DELIVERED",
-        "images": [
+        name: "AVIONS COURT 1",
+        status: "COMPLETED",
+        location: "Abraham Adesanya",
+        tag: "SOLD OUT & DELIVERED",
+        images: [
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880550/k6bnbwjc6jihrzg5lfby.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880571/hh6dijwgkoyesuljtpnt.jpg",
@@ -624,16 +624,16 @@ const properties = [
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg"
         ],
-        "summary": {
-            "project": "Residential",
-            "propertyType": "Terrace Duplex",
-            "address": "Urban Prime 2, Abraham Adesanya, Ajah, Lagos",
-            "typology": "3-Bedroom Terrace Duplex",
-            "carSpacePerUnit": 2,
-            "saleStatus": "Sold Out"
+        summary: {
+            project: "Residential",
+            propertyType: "Terrace Duplex",
+            address: "Urban Prime 2, Abraham Adesanya, Ajah, Lagos",
+            typology: "3-Bedroom Terrace Duplex",
+            carSpacePerUnit: 2,
+            saleStatus: "Sold Out"
         },
-        "description": "It’s a refined collection of contemporary terrace duplexes, thoughtfully built within a sustainable estate in the serene heart of Abraham Adesanya, Ajah.",
-        "features": [
+        description: "It’s a refined collection of contemporary terrace duplexes, thoughtfully built within a sustainable estate in the serene heart of Abraham Adesanya, Ajah.",
+        features: [
             "24-Hour Power Supply",
             "24-Hour Security",
             "Smart Access Control",
@@ -644,52 +644,52 @@ const properties = [
         ]
     },
     {
-        "name": "KESBEL COURT",
-        "status": "Ongoing",
-        "tag": "SOLD OUT, Roofing in Progress",
-        "location": "Lekki Phase 1",
-        "description": "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse — a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
-        "images": [
+        name: "KESBEL COURT",
+        status: "Ongoing",
+        tag: "SOLD OUT, Roofing in Progress",
+        location: "Lekki Phase 1",
+        description: "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse — a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
+        images: [
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218667/xrejwu3vdhtmo3zy5gdj.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055801/w25u6veyaj3l0laxdt4c.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055829/nmhclllutnwnghxem3xj.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055852/lozzbmgnajaasahct71s.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055871/tqkav1fixijqcqkyygls.jpg"
         ],
-        "summary": {
-            "project": "Residential",
-            "propertyType": "Luxury Apartments & Penthouse",
-            "address": "Fatai Idowu, Admiralty Road, Lekki phase 1",
-            "typology": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
-            "carSpacePerUnit": 2,
-            "saleStatus": "Sold Out"
+        summary: {
+            project: "Residential",
+            propertyType: "Luxury Apartments & Penthouse",
+            address: "Fatai Idowu, Admiralty Road, Lekki phase 1",
+            typology: "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
+            carSpacePerUnit: 2,
+            saleStatus: "Sold Out"
         },
-        "availableUnits": [
+        availableUnits: [
             {
-                "type": "2-Bedroom Apartment",
-                "bathrooms": 2.5,
-                "carSpace": 2,
-                "saleStatus": "Sold Out"
+                type: "2-Bedroom Apartment",
+                bathrooms: 2.5,
+                carSpace: 2,
+                saleStatus: "Sold Out"
             },
             {
-                "type": "3-Bedroom Apartment with BQ",
-                "bathrooms": 3.5,
-                "serviceQuarters": 1,
-                "carSpace": 2,
-                "saleStatus": "Sold Out"
+                type: "3-Bedroom Apartment with BQ",
+                bathrooms: 3.5,
+                serviceQuarters: 1,
+                carSpace: 2,
+                saleStatus: "Sold Out"
             },
             {
-                "type": "4-Bedroom Penthouse",
-                "features": [
+                type: "4-Bedroom Penthouse",
+                features: [
                     "Private Elevator",
                     "Smart Features",
                     "Panoramic View"
                 ],
-                "carSpace": 2,
-                "saleStatus": "Sold out"
+                carSpace: 2,
+                saleStatus: "Sold out"
             }
         ],
-        "features": [
+        features: [
             "Private Elevator (Penthouse)",
             "24-Hour Security",
             "Smart Access Control and Lighting System",
@@ -700,7 +700,7 @@ const properties = [
             "180-Degree Panoramic View",
             "Spacious Parking (2 Spaces per Unit)"
         ],
-        "proximities": [
+        proximities: [
             "Circa",
             "Upbeat Recreational Center",
             "Admiralty Mall",
@@ -708,29 +708,29 @@ const properties = [
         ]
     },
     {
-        "name": "AVIONS COURT 2",
-        "status": "ONGOING",
-        "location": "Ikota G.R.A.",
-        "tag": "SOLD OUT, 90% Completed",
-        "images": [
+        name: "AVIONS COURT 2",
+        status: "ONGOING",
+        location: "Ikota G.R.A.",
+        tag: "SOLD OUT, 90% Completed",
+        images: [
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218426/meknlmuj93frd5d54pys.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056439/snjplfembn14nspgaqme.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056457/tuq5iwb686tmdqgdn8to.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056478/efstkkzjreakhg9j72ga.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056494/kr7z1kpn8yevzorpp7ye.jpg"
         ],
-        "summary": {
-            "project": "Residential",
-            "propertyType": "Mixed-use",
-            "address": "Block 16, Plot 7 & 8, Ikota GRA, Lagos",
-            "typology": "Terrace Duplexes, Semi-Detached Units, Pent Apartments",
-            "carSpacePerUnit": 2,
+        summary: {
+            project: "Residential",
+            propertyType: "Mixed-use",
+            address: "Block 16, Plot 7 & 8, Ikota GRA, Lagos",
+            typology: "Terrace Duplexes, Semi-Detached Units, Pent Apartments",
+            carSpacePerUnit: 2,
             // "availableUnits": 8,
-            "saleStatus": "Limited Units Available",
-            "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753994996/xnqpwcj035wasbnnktom.pdf"
+            saleStatus: "Limited Units Available",
+            brochureUrl: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753994996/xnqpwcj035wasbnnktom.pdf"
         },
-        "description": "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
-        "features": [
+        description: "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
+        features: [
             "Integrated Sound System",
             "Flood, Smoke & Gas Detection System",
             "Gated Estate with Controlled Access",
@@ -739,7 +739,7 @@ const properties = [
             "Treated Water Supply",
             "Two Dedicated Parking Spaces per Unit"
         ],
-        "proximities": [
+        proximities: [
             "Mega Chicken",
             "Blackbell",
             "VGC",
@@ -748,39 +748,39 @@ const properties = [
         ]
     },
     {
-        "name": "OLIVE MALL",
-        "status": "COMPLETED",
-        "location": "Lagos Island",
-        "tag": "DONE, to be Handed Over",
-        "images": [
+        name: "OLIVE MALL",
+        status: "COMPLETED",
+        location: "Lagos Island",
+        tag: "DONE, to be Handed Over",
+        images: [
             "/Olivemall2.jpeg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848624/foosncctwowrhve9e6aj.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848644/pk6xbtrtpwtunhaj1iau.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848666/cxbtpv13yrxrhgwyaagz.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848685/hwwi9vxgecsmxztnkmmt.jpg"
         ],
-        "description": "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
-        "summary": {
-            "address": "Adeniji Road, opposite Massey Children's Hospital",
-            "propertyType": "Commercial",
-            "typology": "Commercial Mall",
-            "saleStatus": "Available"
+        description: "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
+        summary: {
+            address: "Adeniji Road, opposite Massey Children's Hospital",
+            propertyType: "Commercial",
+            typology: "Commercial Mall",
+            saleStatus: "Available"
         },
-        "floorPlan": [
+        floorPlan: [
             {
-                "floor": "Ground Floor",
-                "use": "Supermarket · Boutique · Restaurant · Cafe · Bakery · General Payment Area"
+                floor: "Ground Floor",
+                use: "Supermarket · Boutique · Restaurant · Cafe · Bakery · General Payment Area"
             },
             {
-                "floor": "First Floor",
-                "use": "Pharmacy · Boutique · Pharmacy Manager’s Office · Supervisor’s Office · Payment Area"
+                floor: "First Floor",
+                use: "Pharmacy · Boutique · Pharmacy Manager’s Office · Supervisor’s Office · Payment Area"
             },
             {
-                "floor": "Second Floor",
-                "use": "Office Spaces · Storage Units"
+                floor: "Second Floor",
+                use: "Office Spaces · Storage Units"
             }
         ],
-        "safetyAndSecurity": [
+        safetyAndSecurity: [
             "CCTV Surveillance",
             "24-Hour Security",
             "Fire-Alarm & Smoke Detection System",
@@ -788,48 +788,48 @@ const properties = [
         ]
     },
     {
-        "name": "THE ELYSIAN RISE",
-        "status": "ONGOING",
-        "location": "Victoria Island",
-        "tag": "Piling In Progress",
-        "images": [
+        name: "THE ELYSIAN RISE",
+        status: "ONGOING",
+        location: "Victoria Island",
+        tag: "Piling In Progress",
+        images: [
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg",
             "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg"
         ],
-        "summary": {
-            "address": "3A, Musa Yar 'Adua Street, Victoria Island, Lagos",
-            "propertyType": "High-Rise Apartments, Maisonettes & Penthouse",
-            "height": "13-Floor Highrise",
-            "carSpace": "Ground & First Floor Dedicated Parking",
-            "typology": "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
-            "saleStatus": "Limited Units Available",
-            "brochureUrl": "https://cdn.filestackcontent.com/9BYKtknQTayWLIrpWNUf"
+        summary: {
+            address: "3A, Musa Yar 'Adua Street, Victoria Island, Lagos",
+            propertyType: "High-Rise Apartments, Maisonettes & Penthouse",
+            height: "13-Floor Highrise",
+            carSpace: "Ground & First Floor Dedicated Parking",
+            typology: "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
+            saleStatus: "Limited Units Available",
+            brochureUrl: "https://cdn.filestackcontent.com/RnJBWnAZRHauaCx60GTK"
         },
-        "description": "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
-        "availableUnits": [
+        description: "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
+        availableUnits: [
             {
-                "type": "2-Bedroom Apartment + BQ",
-                "price": "40% Initial Deposit",
+                type: "2-Bedroom Apartment + BQ",
+                price: "40% Initial Deposit",
                 "units available": 4
             },
             {
-                "type": "3-Bedroom Apartment + BQ",
-                "price": "40% Initial Deposit",
+                type: "3-Bedroom Apartment + BQ",
+                price: "40% Initial Deposit",
                 "units available": 11
             },
             {
-                "type": "4-Bedroom Maisonette + BQ",
-                "price": "Sold Out"
+                type: "4-Bedroom Maisonette + BQ",
+                price: "Sold Out"
             },
             {
-                "type": "5-Bedroom Penthouse + BQ (with private elevator access)",
-                "price": "Sold Out"
+                type: "5-Bedroom Penthouse + BQ (with private elevator access)",
+                price: "Sold Out"
             }
         ],
-        "signatureAmenities": [
+        signatureAmenities: [
             "Private Elevator to the Penthouse",
             "Electric Car Charging Station",
             "Smart Automation",
@@ -840,7 +840,7 @@ const properties = [
             "24-Hour Security & Concierge",
             "Fully Equipped Gym house"
         ],
-        "proximities": [
+        proximities: [
             "The Eko Atlantic City",
             "SPAR",
             "Canadian Embassy",
@@ -857,7 +857,7 @@ const properties = [
             "National Museum",
             "Lekki-Ikoyi Link Bridge"
         ],
-        "virtualtour": [
+        virtualtour: [
             "https://webobook.com/public/657ec87ae751de5ce461daa2,en"
         ]
     }
@@ -897,7 +897,7 @@ const NavLink = ({ href, children, onClick })=>/*#__PURE__*/ (0, __TURBOPACK__im
         children: children
     }, void 0, false, {
         fileName: "[project]/src/components/custom/header.tsx",
-        lineNumber: 37,
+        lineNumber: 31,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const BrowseDropdown = ()=>{
@@ -914,7 +914,7 @@ const BrowseDropdown = ()=>{
                         children: "Completed Projects"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 57,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -927,23 +927,23 @@ const BrowseDropdown = ()=>{
                                     children: property.name
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/header.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 57,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, property.name, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 62,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 60,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/custom/header.tsx",
-                lineNumber: 56,
+                lineNumber: 46,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -954,7 +954,7 @@ const BrowseDropdown = ()=>{
                         children: "Ongoing Projects"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 80,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -967,29 +967,29 @@ const BrowseDropdown = ()=>{
                                     children: property.name
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/header.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 76,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, property.name, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 85,
+                                lineNumber: 71,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 83,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/custom/header.tsx",
-                lineNumber: 79,
+                lineNumber: 65,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/custom/header.tsx",
-        lineNumber: 55,
+        lineNumber: 45,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1006,7 +1006,7 @@ const BrowseAccordion = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b
                     children: "Our Properties"
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/header.tsx",
-                    lineNumber: 108,
+                    lineNumber: 90,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$accordion$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AccordionContent"], {
@@ -1019,7 +1019,7 @@ const BrowseAccordion = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b
                                 children: "All Properties"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 113,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$properties$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["properties"].map((property)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
@@ -1027,29 +1027,29 @@ const BrowseAccordion = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b
                                     children: property.name
                                 }, property.name, false, {
                                     fileName: "[project]/src/components/custom/header.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 97,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 112,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/header.tsx",
-                    lineNumber: 111,
+                    lineNumber: 93,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/custom/header.tsx",
-            lineNumber: 107,
+            lineNumber: 89,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/custom/header.tsx",
-        lineNumber: 106,
+        lineNumber: 88,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const Header = ()=>{
@@ -1072,18 +1072,18 @@ const Header = ()=>{
                             priority: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/header.tsx",
-                            lineNumber: 138,
-                            columnNumber: 11
+                            lineNumber: 117,
+                            columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 137,
-                        columnNumber: 9
+                        lineNumber: 116,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/header.tsx",
-                    lineNumber: 136,
-                    columnNumber: 7
+                    lineNumber: 115,
+                    columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "hidden lg:flex justify-center flex-1",
@@ -1095,8 +1095,8 @@ const Header = ()=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 152,
-                                columnNumber: 11
+                                lineNumber: 131,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenu"], {
                                 children: [
@@ -1108,84 +1108,84 @@ const Header = ()=>{
                                                 className: "h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/header.tsx",
-                                                lineNumber: 156,
-                                                columnNumber: 30
+                                                lineNumber: 135,
+                                                columnNumber: 32
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/header.tsx",
-                                        lineNumber: 155,
-                                        columnNumber: 13
+                                        lineNumber: 134,
+                                        columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
                                         align: "start",
                                         className: "bg-background text-white border-border p-4 min-w-[500px] mt-4",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(BrowseDropdown, {}, void 0, false, {
                                             fileName: "[project]/src/components/custom/header.tsx",
-                                            lineNumber: 162,
-                                            columnNumber: 15
+                                            lineNumber: 141,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/header.tsx",
-                                        lineNumber: 158,
-                                        columnNumber: 13
+                                        lineNumber: 137,
+                                        columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 154,
-                                columnNumber: 11
+                                lineNumber: 133,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                 href: "/services",
                                 children: "Services"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 166,
-                                columnNumber: 11
+                                lineNumber: 145,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                 href: "/#locations",
                                 children: "Insight"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 167,
-                                columnNumber: 11
+                                lineNumber: 146,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                 href: "/about",
                                 children: "About us"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 168,
-                                columnNumber: 11
+                                lineNumber: 147,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                 href: "/contact",
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 169,
-                                columnNumber: 11
+                                lineNumber: 148,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                 href: "/blog",
                                 children: "Blog"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 170,
-                                columnNumber: 11
+                                lineNumber: 149,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 151,
-                        columnNumber: 9
+                        lineNumber: 130,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/header.tsx",
-                    lineNumber: 150,
-                    columnNumber: 7
+                    lineNumber: 129,
+                    columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "hidden lg:flex ml-auto pl-4",
@@ -1196,18 +1196,18 @@ const Header = ()=>{
                             children: "Book A Tour"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/header.tsx",
-                            lineNumber: 177,
-                            columnNumber: 11
+                            lineNumber: 156,
+                            columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 176,
-                        columnNumber: 9
+                        lineNumber: 155,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/header.tsx",
-                    lineNumber: 175,
-                    columnNumber: 7
+                    lineNumber: 154,
+                    columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex lg:hidden items-center ml-auto",
@@ -1224,27 +1224,27 @@ const Header = ()=>{
                                             className: "h-6 w-6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/header.tsx",
-                                            lineNumber: 188,
-                                            columnNumber: 15
+                                            lineNumber: 167,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "sr-only",
                                             children: "Open menu"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/header.tsx",
-                                            lineNumber: 189,
-                                            columnNumber: 15
+                                            lineNumber: 168,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/header.tsx",
-                                    lineNumber: 187,
-                                    columnNumber: 13
+                                    lineNumber: 166,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 186,
-                                columnNumber: 11
+                                lineNumber: 165,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sheet$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SheetContent"], {
                                 side: "right",
@@ -1263,18 +1263,18 @@ const Header = ()=>{
                                                 className: "h-auto w-auto"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/header.tsx",
-                                                lineNumber: 210,
-                                                columnNumber: 17
+                                                lineNumber: 188,
+                                                columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/header.tsx",
-                                            lineNumber: 209,
-                                            columnNumber: 15
+                                            lineNumber: 187,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/header.tsx",
-                                        lineNumber: 208,
-                                        columnNumber: 13
+                                        lineNumber: 186,
+                                        columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex flex-col h-[calc(100vh-88px)] px-6 pb-4 overflow-hidden",
@@ -1287,59 +1287,59 @@ const Header = ()=>{
                                                         children: "Home"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 225,
-                                                        columnNumber: 17
+                                                        lineNumber: 202,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(BrowseAccordion, {}, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 226,
-                                                        columnNumber: 17
+                                                        lineNumber: 203,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                                         href: "/services",
                                                         children: "Services"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 227,
-                                                        columnNumber: 17
+                                                        lineNumber: 204,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                                         href: "/#locations",
                                                         children: "Insight"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 228,
-                                                        columnNumber: 17
+                                                        lineNumber: 205,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                                         href: "/about",
                                                         children: "About us"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 229,
-                                                        columnNumber: 17
+                                                        lineNumber: 206,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                                         href: "/contact",
                                                         children: "Contact"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 230,
-                                                        columnNumber: 17
+                                                        lineNumber: 207,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(NavLink, {
                                                         href: "/blog",
                                                         children: "Blog"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 231,
-                                                        columnNumber: 17
+                                                        lineNumber: 208,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/custom/header.tsx",
-                                                lineNumber: 224,
-                                                columnNumber: 15
+                                                lineNumber: 201,
+                                                columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "sticky bottom-0 bg-background pt-4 pb-2",
@@ -1348,8 +1348,8 @@ const Header = ()=>{
                                                         className: "h-px bg-white/10 mb-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 236,
-                                                        columnNumber: 17
+                                                        lineNumber: 213,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                         href: "/book-inspection",
@@ -1358,52 +1358,52 @@ const Header = ()=>{
                                                             children: "Book A Tour"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/custom/header.tsx",
-                                                            lineNumber: 238,
-                                                            columnNumber: 19
+                                                            lineNumber: 215,
+                                                            columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/custom/header.tsx",
-                                                        lineNumber: 237,
-                                                        columnNumber: 17
+                                                        lineNumber: 214,
+                                                        columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/custom/header.tsx",
-                                                lineNumber: 235,
-                                                columnNumber: 15
+                                                lineNumber: 212,
+                                                columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/header.tsx",
-                                        lineNumber: 221,
-                                        columnNumber: 13
+                                        lineNumber: 199,
+                                        columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/custom/header.tsx",
-                                lineNumber: 193,
-                                columnNumber: 11
+                                lineNumber: 172,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/custom/header.tsx",
-                        lineNumber: 185,
-                        columnNumber: 9
+                        lineNumber: 164,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/header.tsx",
-                    lineNumber: 184,
-                    columnNumber: 7
+                    lineNumber: 163,
+                    columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/custom/header.tsx",
-            lineNumber: 133,
-            columnNumber: 5
+            lineNumber: 113,
+            columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/custom/header.tsx",
-        lineNumber: 132,
+        lineNumber: 112,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1485,7 +1485,7 @@ const SelectScrollUpButton = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$pr
             className: "h-4 w-4"
         }, void 0, false, {
             fileName: "[project]/src/components/ui/select.tsx",
-            lineNumber: 47,
+            lineNumber: 44,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
@@ -1502,12 +1502,12 @@ const SelectScrollDownButton = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$
             className: "h-4 w-4"
         }, void 0, false, {
             fileName: "[project]/src/components/ui/select.tsx",
-            lineNumber: 64,
+            lineNumber: 58,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/select.tsx",
-        lineNumber: 56,
+        lineNumber: 53,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SelectScrollDownButton.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollDownButton"].displayName;
@@ -1520,7 +1520,7 @@ const SelectContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SelectScrollUpButton, {}, void 0, false, {
                     fileName: "[project]/src/components/ui/select.tsx",
-                    lineNumber: 86,
+                    lineNumber: 79,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Viewport"], {
@@ -1528,23 +1528,23 @@ const SelectContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/select.tsx",
-                    lineNumber: 87,
+                    lineNumber: 80,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SelectScrollDownButton, {}, void 0, false, {
                     fileName: "[project]/src/components/ui/select.tsx",
-                    lineNumber: 96,
+                    lineNumber: 89,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ui/select.tsx",
-            lineNumber: 75,
+            lineNumber: 68,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/select.tsx",
-        lineNumber: 74,
+        lineNumber: 67,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SelectContent.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"].displayName;
@@ -1554,7 +1554,7 @@ const SelectLabel = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/select.tsx",
-        lineNumber: 106,
+        lineNumber: 99,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SelectLabel.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"].displayName;
@@ -1570,30 +1570,30 @@ const SelectItem = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f
                         className: "h-4 w-4"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/select.tsx",
-                        lineNumber: 128,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/select.tsx",
-                    lineNumber: 127,
+                    lineNumber: 120,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/select.tsx",
-                lineNumber: 126,
+                lineNumber: 119,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ItemText"], {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/select.tsx",
-                lineNumber: 132,
+                lineNumber: 125,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/select.tsx",
-        lineNumber: 118,
+        lineNumber: 111,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SelectItem.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Item"].displayName;
@@ -1603,7 +1603,7 @@ const SelectSeparator = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/select.tsx",
-        lineNumber: 141,
+        lineNumber: 134,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 SelectSeparator.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$select$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"].displayName;
@@ -1633,8 +1633,8 @@ const Separator = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/separator.tsx",
-        lineNumber: 16,
-        columnNumber: 5
+        lineNumber: 12,
+        columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0)));
 Separator.displayName = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$separator$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"].displayName;
 ;
@@ -1674,22 +1674,22 @@ const FilterSelectItem = ({ label, children })=>/*#__PURE__*/ (0, __TURBOPACK__i
                 children: label
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                lineNumber: 50,
-                columnNumber: 7
+                lineNumber: 55,
+                columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             children
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-        lineNumber: 49,
-        columnNumber: 5
+        lineNumber: 54,
+        columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const PropertySearchFilter = ()=>{
-    const [location, setLocation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('All locations');
-    const [propertyType, setPropertyType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('Any');
-    const [bedrooms, setBedrooms] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('Any');
-    const [price, setPrice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('Any');
-    const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(''); // New state for mobile search input
+    const [location, setLocation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("All locations");
+    const [propertyType, setPropertyType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("Any");
+    const [bedrooms, setBedrooms] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("Any");
+    const [price, setPrice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("Any");
+    const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(""); // New state for mobile search input
     const [filteredResults, setFilteredResults] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [searchInitiated, setSearchInitiated] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const locations = [
@@ -1718,29 +1718,29 @@ const PropertySearchFilter = ()=>{
         let currentFiltered = [
             ...__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$properties$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["properties"]
         ];
-        if (searchTerm.trim() !== '') {
+        if (searchTerm.trim() !== "") {
             const lowerCaseSearchTerm = searchTerm.toLowerCase();
             currentFiltered = currentFiltered.filter((p)=>p.name.toLowerCase().includes(lowerCaseSearchTerm) || p.location.toLowerCase().includes(lowerCaseSearchTerm) || p.summary.propertyType.toLowerCase().includes(lowerCaseSearchTerm) || p.summary.project && p.summary.project.toLowerCase().includes(lowerCaseSearchTerm) || p.tag && p.tag.toLowerCase().includes(lowerCaseSearchTerm));
         } else {
-            const isDefaultState = location === 'All locations' && propertyType === 'Any' && bedrooms === 'Any' && price === 'Any';
+            const isDefaultState = location === "All locations" && propertyType === "Any" && bedrooms === "Any" && price === "Any";
             if (isDefaultState) {
                 setFilteredResults([]);
                 return;
             }
-            if (location !== 'All locations') {
+            if (location !== "All locations") {
                 currentFiltered = currentFiltered.filter((p)=>p.location === location);
             }
-            if (propertyType !== 'Any') {
+            if (propertyType !== "Any") {
                 currentFiltered = currentFiltered.filter((p)=>p.summary.propertyType === propertyType);
             }
-            if (bedrooms !== 'Any') {
+            if (bedrooms !== "Any") {
                 currentFiltered = currentFiltered.filter((p)=>{
-                    const targetBedrooms = bedrooms === '5+' ? 5 : parseInt(bedrooms);
+                    const targetBedrooms = bedrooms === "5+" ? 5 : parseInt(bedrooms);
                     if (p.summary.typology) {
                         const typologyBedroomsMatch = p.summary.typology.match(/(\d)-Bedroom/);
                         if (typologyBedroomsMatch) {
                             const numBedrooms = parseInt(typologyBedroomsMatch[1]);
-                            if (bedrooms === '5+') {
+                            if (bedrooms === "5+") {
                                 if (numBedrooms >= targetBedrooms) return true;
                             } else {
                                 if (numBedrooms === targetBedrooms) return true;
@@ -1753,7 +1753,7 @@ const PropertySearchFilter = ()=>{
                                 const unitBedroomsMatch = unit.type.match(/(\d)-Bedroom/);
                                 if (unitBedroomsMatch) {
                                     const unitNumBedrooms = parseInt(unitBedroomsMatch[1]);
-                                    if (bedrooms === '5+') {
+                                    if (bedrooms === "5+") {
                                         return unitNumBedrooms >= targetBedrooms;
                                     }
                                     return unitNumBedrooms === targetBedrooms;
@@ -1765,12 +1765,12 @@ const PropertySearchFilter = ()=>{
                     return false;
                 });
             }
-            if (price !== 'Any') {
+            if (price !== "Any") {
                 currentFiltered = currentFiltered.filter((p)=>{
                     if (!p.availableUnits || p.availableUnits.length === 0) return false;
                     const unitPrices = p.availableUnits.map((unit)=>{
-                        if ('price' in unit && unit.price !== "Not Available") {
-                            const cleanedPrice = unit.price.replace(/[₦,]/g, '');
+                        if ("price" in unit && unit.price !== "Not Available") {
+                            const cleanedPrice = unit.price.replace(/[₦,]/g, "");
                             return parseInt(cleanedPrice, 10);
                         }
                         return null;
@@ -1792,11 +1792,11 @@ const PropertySearchFilter = ()=>{
         setFilteredResults(currentFiltered);
     };
     const clearFilters = ()=>{
-        setLocation('All locations');
-        setPropertyType('Any');
-        setBedrooms('Any');
-        setPrice('Any');
-        setSearchTerm(''); // Clear mobile search term
+        setLocation("All locations");
+        setPropertyType("Any");
+        setBedrooms("Any");
+        setPrice("Any");
+        setSearchTerm(""); // Clear mobile search term
         setFilteredResults([]);
         setSearchInitiated(false); // Hide the results section
     };
@@ -1822,13 +1822,13 @@ const PropertySearchFilter = ()=>{
                                                 placeholder: "All locations"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 188,
-                                                columnNumber: 29
+                                                lineNumber: 201,
+                                                columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 187,
-                                            columnNumber: 25
+                                            lineNumber: 200,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
                                             className: "bg-background border-border text-white",
@@ -1838,54 +1838,54 @@ const PropertySearchFilter = ()=>{
                                                     children: "All locations"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                    lineNumber: 191,
-                                                    columnNumber: 29
+                                                    lineNumber: 204,
+                                                    columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 locations.map((loc)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
                                                         value: loc,
                                                         children: loc
                                                     }, loc, false, {
                                                         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                        lineNumber: 193,
-                                                        columnNumber: 29
+                                                        lineNumber: 206,
+                                                        columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 190,
-                                            columnNumber: 25
+                                            lineNumber: 203,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                    lineNumber: 186,
-                                    columnNumber: 21
+                                    lineNumber: 199,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                lineNumber: 185,
-                                columnNumber: 17
+                                lineNumber: 198,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 184,
-                            columnNumber: 13
+                            lineNumber: 197,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {
                             orientation: "vertical",
                             className: "hidden md:block h-12 bg-white/20"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 200,
-                            columnNumber: 13
+                            lineNumber: 215,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {
                             orientation: "horizontal",
                             className: "w-full h-[1px] bg-white/20 md:hidden"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 201,
-                            columnNumber: 13
+                            lineNumber: 216,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "hidden md:flex md:flex-1 py-1 md:py-0",
@@ -1901,13 +1901,13 @@ const PropertySearchFilter = ()=>{
                                                 placeholder: "Any"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 207,
-                                                columnNumber: 29
+                                                lineNumber: 222,
+                                                columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 206,
-                                            columnNumber: 25
+                                            lineNumber: 221,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
                                             className: "bg-background border-border text-white",
@@ -1917,54 +1917,54 @@ const PropertySearchFilter = ()=>{
                                                     children: "Any"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                    lineNumber: 210,
-                                                    columnNumber: 29
+                                                    lineNumber: 225,
+                                                    columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 propertyTypes.map((type)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
                                                         value: type,
                                                         children: type
                                                     }, type, false, {
                                                         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                        lineNumber: 212,
-                                                        columnNumber: 29
+                                                        lineNumber: 227,
+                                                        columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 209,
-                                            columnNumber: 25
+                                            lineNumber: 224,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                    lineNumber: 205,
-                                    columnNumber: 21
+                                    lineNumber: 220,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                lineNumber: 204,
-                                columnNumber: 17
+                                lineNumber: 219,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 203,
-                            columnNumber: 13
+                            lineNumber: 218,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {
                             orientation: "vertical",
                             className: "hidden md:block h-12 bg-white/20"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 219,
-                            columnNumber: 13
+                            lineNumber: 236,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {
                             orientation: "horizontal",
                             className: "w-full h-[1px] bg-white/20 md:hidden"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 220,
-                            columnNumber: 13
+                            lineNumber: 237,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "hidden md:flex md:flex-1 py-1 md:py-0",
@@ -1980,13 +1980,13 @@ const PropertySearchFilter = ()=>{
                                                 placeholder: "Any"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 226,
-                                                columnNumber: 29
+                                                lineNumber: 243,
+                                                columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 225,
-                                            columnNumber: 25
+                                            lineNumber: 242,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
                                             className: "bg-background border-border text-white",
@@ -1995,45 +1995,45 @@ const PropertySearchFilter = ()=>{
                                                     children: opt
                                                 }, opt, false, {
                                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                    lineNumber: 230,
-                                                    columnNumber: 33
+                                                    lineNumber: 247,
+                                                    columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 228,
-                                            columnNumber: 25
+                                            lineNumber: 245,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                    lineNumber: 224,
-                                    columnNumber: 21
+                                    lineNumber: 241,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                lineNumber: 223,
-                                columnNumber: 17
+                                lineNumber: 240,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 222,
-                            columnNumber: 13
+                            lineNumber: 239,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {
                             orientation: "vertical",
                             className: "hidden md:block h-12 bg-white/20"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 237,
-                            columnNumber: 13
+                            lineNumber: 256,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {
                             orientation: "horizontal",
                             className: "w-full h-[1px] bg-white/20 md:hidden"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 238,
-                            columnNumber: 13
+                            lineNumber: 257,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "hidden md:flex md:flex-1 py-1 md:py-0",
@@ -2049,13 +2049,13 @@ const PropertySearchFilter = ()=>{
                                                 placeholder: "Any"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 244,
-                                                columnNumber: 29
+                                                lineNumber: 263,
+                                                columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 243,
-                                            columnNumber: 25
+                                            lineNumber: 262,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
                                             className: "bg-background border-border text-white",
@@ -2064,29 +2064,29 @@ const PropertySearchFilter = ()=>{
                                                     children: opt
                                                 }, opt, false, {
                                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                    lineNumber: 248,
-                                                    columnNumber: 33
+                                                    lineNumber: 267,
+                                                    columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 246,
-                                            columnNumber: 25
+                                            lineNumber: 265,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                    lineNumber: 242,
-                                    columnNumber: 21
+                                    lineNumber: 261,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                lineNumber: 241,
-                                columnNumber: 17
+                                lineNumber: 260,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 240,
-                            columnNumber: 13
+                            lineNumber: 259,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-full md:flex-1 px-1 flex flex-row md:flex-row gap-2 items-center justify-end md:justify-center pt-2 md:pt-0 pb-2 md:pb-0",
@@ -2097,10 +2097,10 @@ const PropertySearchFilter = ()=>{
                                     children: "SHOW ALL RESULTS"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                    lineNumber: 256,
-                                    columnNumber: 17
+                                    lineNumber: 277,
+                                    columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                (location !== 'All locations' || propertyType !== 'Any' || bedrooms !== 'Any' || price !== 'Any' || searchInitiated) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                (location !== "All locations" || propertyType !== "Any" || bedrooms !== "Any" || price !== "Any" || searchInitiated) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                     onClick: clearFilters,
                                     variant: "ghost",
                                     size: "icon",
@@ -2111,38 +2111,38 @@ const PropertySearchFilter = ()=>{
                                             className: "h-6 w-6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 267,
-                                            columnNumber: 25
+                                            lineNumber: 295,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "sr-only",
                                             children: "Clear search filters"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 268,
-                                            columnNumber: 25
+                                            lineNumber: 296,
+                                            columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                    lineNumber: 260,
-                                    columnNumber: 21
+                                    lineNumber: 288,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 255,
-                            columnNumber: 13
+                            lineNumber: 276,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                    lineNumber: 183,
+                    lineNumber: 196,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                lineNumber: 182,
+                lineNumber: 195,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2157,14 +2157,14 @@ const PropertySearchFilter = ()=>{
                             value: searchTerm,
                             onChange: (e)=>setSearchTerm(e.target.value),
                             onKeyDown: (e)=>{
-                                if (e.key === 'Enter') {
+                                if (e.key === "Enter") {
                                     applyFilters();
                                 }
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 277,
-                            columnNumber: 13
+                            lineNumber: 305,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         searchTerm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: clearFilters,
@@ -2174,13 +2174,13 @@ const PropertySearchFilter = ()=>{
                                 className: "h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                lineNumber: 295,
-                                columnNumber: 21
+                                lineNumber: 323,
+                                columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 290,
-                            columnNumber: 17
+                            lineNumber: 318,
+                            columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: applyFilters,
@@ -2190,23 +2190,23 @@ const PropertySearchFilter = ()=>{
                                 className: "h-5 w-5"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                lineNumber: 303,
-                                columnNumber: 17
+                                lineNumber: 331,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 298,
-                            columnNumber: 13
+                            lineNumber: 326,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                    lineNumber: 276,
+                    lineNumber: 304,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                lineNumber: 275,
+                lineNumber: 303,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             searchInitiated && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2214,11 +2214,11 @@ const PropertySearchFilter = ()=>{
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-2xl md:text-3xl font-bold text-black text-center mb-6",
-                        children: filteredResults.length > 0 ? `Found ${filteredResults.length} ${filteredResults.length > 1 ? 'Properties' : 'Property'}` : 'No Properties Found'
+                        children: filteredResults.length > 0 ? `Found ${filteredResults.length} ${filteredResults.length > 1 ? "Properties" : "Property"}` : "No Properties Found"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                        lineNumber: 310,
-                        columnNumber: 13
+                        lineNumber: 338,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     filteredResults.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4",
@@ -2228,20 +2228,20 @@ const PropertySearchFilter = ()=>{
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "relative w-full h-48 bg-gray-100",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: property.images[0] || '/placeholder-property.jpg',
+                                            src: property.images[0] || "/placeholder-property.jpg",
                                             alt: property.name,
                                             fill: true,
                                             sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
                                             className: "object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                            lineNumber: 318,
-                                            columnNumber: 29
+                                            lineNumber: 351,
+                                            columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                        lineNumber: 317,
-                                        columnNumber: 25
+                                        lineNumber: 350,
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "p-4 flex flex-col flex-grow",
@@ -2251,56 +2251,56 @@ const PropertySearchFilter = ()=>{
                                                 children: property.name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 327,
-                                                columnNumber: 29
+                                                lineNumber: 360,
+                                                columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-gray-700 text-sm mb-1",
                                                 children: property.location
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 328,
-                                                columnNumber: 29
+                                                lineNumber: 363,
+                                                columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-gray-600 text-sm mb-4",
                                                 children: property.summary.propertyType
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 329,
-                                                columnNumber: 29
+                                                lineNumber: 364,
+                                                columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                href: `/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`,
+                                                href: `/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`,
                                                 className: "mt-4 w-full",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                     className: "w-full bg-primary text-white hover:bg-primary/90",
                                                     children: "View Details"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                    lineNumber: 331,
-                                                    columnNumber: 33
+                                                    lineNumber: 369,
+                                                    columnNumber: 23
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                                lineNumber: 330,
-                                                columnNumber: 29
+                                                lineNumber: 365,
+                                                columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                        lineNumber: 326,
-                                        columnNumber: 25
+                                        lineNumber: 359,
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, property.name, true, {
                                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                                lineNumber: 316,
-                                columnNumber: 21
+                                lineNumber: 346,
+                                columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                        lineNumber: 314,
+                        lineNumber: 344,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "text-center py-10",
@@ -2309,24 +2309,24 @@ const PropertySearchFilter = ()=>{
                             children: "No properties found matching your criteria. Try adjusting your filters."
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                            lineNumber: 341,
-                            columnNumber: 17
+                            lineNumber: 379,
+                            columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                        lineNumber: 340,
+                        lineNumber: 378,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/custom/property-search-filter.tsx",
-                lineNumber: 309,
-                columnNumber: 11
+                lineNumber: 337,
+                columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/custom/property-search-filter.tsx",
-        lineNumber: 180,
+        lineNumber: 193,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -2546,39 +2546,39 @@ const Stats = ()=>{
                             className: "w-10 h-10 text-primary mb-4"
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/stats.tsx",
-                            lineNumber: 43,
-                            columnNumber: 15
+                            lineNumber: 44,
+                            columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-3xl sm:text-4xl md:text-5xl font-bold text-primary font-headline whitespace-nowrap",
                             children: stat.value
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/stats.tsx",
-                            lineNumber: 50,
-                            columnNumber: 15
+                            lineNumber: 51,
+                            columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "mt-2 text-xs sm:text-sm text-primary/70 text-center leading-tight",
                             children: stat.label
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/stats.tsx",
-                            lineNumber: 53,
-                            columnNumber: 15
+                            lineNumber: 54,
+                            columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, stat.label, true, {
                     fileName: "[project]/src/components/custom/stats.tsx",
-                    lineNumber: 39,
-                    columnNumber: 13
+                    lineNumber: 43,
+                    columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)))
         }, void 0, false, {
             fileName: "[project]/src/components/custom/stats.tsx",
-            lineNumber: 37,
-            columnNumber: 9
+            lineNumber: 41,
+            columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/custom/stats.tsx",
-        lineNumber: 36,
+        lineNumber: 40,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -2712,13 +2712,13 @@ const Carousel = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$n
             children: children
         }, void 0, false, {
             fileName: "[project]/src/components/ui/carousel.tsx",
-            lineNumber: 149,
-            columnNumber: 9
+            lineNumber: 133,
+            columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/carousel.tsx",
-        lineNumber: 133,
-        columnNumber: 7
+        lineNumber: 118,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 });
 Carousel.displayName = "Carousel";
@@ -2733,13 +2733,13 @@ const CarouselContent = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project
             ...props
         }, void 0, false, {
             fileName: "[project]/src/components/ui/carousel.tsx",
-            lineNumber: 173,
-            columnNumber: 7
+            lineNumber: 154,
+            columnNumber: 9
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/carousel.tsx",
-        lineNumber: 172,
-        columnNumber: 5
+        lineNumber: 153,
+        columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
 CarouselContent.displayName = "CarouselContent";
@@ -2753,8 +2753,8 @@ const CarouselItem = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d
         ...props
     }, void 0, false, {
         fileName: "[project]/src/components/ui/carousel.tsx",
-        lineNumber: 194,
-        columnNumber: 5
+        lineNumber: 174,
+        columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
 CarouselItem.displayName = "CarouselItem";
@@ -2773,22 +2773,22 @@ const CarouselPrevious = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$projec
                 className: "h-4 w-4"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/carousel.tsx",
-                lineNumber: 231,
-                columnNumber: 7
+                lineNumber: 210,
+                columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "sr-only",
                 children: "Previous slide"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/carousel.tsx",
-                lineNumber: 232,
-                columnNumber: 7
+                lineNumber: 211,
+                columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/carousel.tsx",
-        lineNumber: 216,
-        columnNumber: 5
+        lineNumber: 195,
+        columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
 CarouselPrevious.displayName = "CarouselPrevious";
@@ -2807,22 +2807,22 @@ const CarouselNext = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d
                 className: "h-4 w-4"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/carousel.tsx",
-                lineNumber: 260,
-                columnNumber: 7
+                lineNumber: 238,
+                columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "sr-only",
                 children: "Next slide"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/carousel.tsx",
-                lineNumber: 261,
-                columnNumber: 7
+                lineNumber: 239,
+                columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/carousel.tsx",
-        lineNumber: 245,
-        columnNumber: 5
+        lineNumber: 223,
+        columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
 CarouselNext.displayName = "CarouselNext";
@@ -2838,13 +2838,13 @@ const CarouselDots = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d
                 "aria-label": `Go to slide ${index + 1}`
             }, index, false, {
                 fileName: "[project]/src/components/ui/carousel.tsx",
-                lineNumber: 280,
-                columnNumber: 9
+                lineNumber: 253,
+                columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)))
     }, void 0, false, {
         fileName: "[project]/src/components/ui/carousel.tsx",
-        lineNumber: 274,
-        columnNumber: 5
+        lineNumber: 251,
+        columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
 CarouselDots.displayName = "CarouselDots";
@@ -2952,7 +2952,7 @@ const FeaturedProperties = ()=>{
                                             "data-ai-hint": property.hint
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 95,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2966,7 +2966,7 @@ const FeaturedProperties = ()=>{
                                                             children: "FEATURED PROPERTIES"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                            lineNumber: 99,
+                                                            lineNumber: 104,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2974,7 +2974,7 @@ const FeaturedProperties = ()=>{
                                                             children: property.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                            lineNumber: 100,
+                                                            lineNumber: 107,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2986,7 +2986,7 @@ const FeaturedProperties = ()=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                            lineNumber: 103,
+                                                            lineNumber: 110,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2994,13 +2994,13 @@ const FeaturedProperties = ()=>{
                                                             children: property.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                            lineNumber: 104,
+                                                            lineNumber: 113,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                    lineNumber: 98,
+                                                    lineNumber: 103,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3013,74 +3013,74 @@ const FeaturedProperties = ()=>{
                                                             variant: "secondary",
                                                             className: "bg-primary hover:bg-primary/90 text-primary-foreground font-bold",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                href: `/properties/${property.name.toLowerCase().replace(/\s+/g, '-')}`,
+                                                                href: `/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`,
                                                                 children: "VIEW PROPERTY"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                                lineNumber: 110,
+                                                                lineNumber: 126,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                            lineNumber: 109,
+                                                            lineNumber: 120,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                                    lineNumber: 108,
+                                                    lineNumber: 117,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                            lineNumber: 97,
+                                            lineNumber: 102,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 94,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, index, false, {
                                 fileName: "[project]/src/components/custom/featured-properties.tsx",
-                                lineNumber: 88,
+                                lineNumber: 93,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0)))
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/featured-properties.tsx",
-                        lineNumber: 86,
+                        lineNumber: 91,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CarouselPrevious"], {
                         className: "absolute left-4 md:left-12 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40 border-none"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/featured-properties.tsx",
-                        lineNumber: 118,
+                        lineNumber: 138,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CarouselNext"], {
                         className: "absolute right-4 md:right-12 top-1/2 -translate-y-1/2 text-white bg-white/20 hover:bg-white/40 border-none"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/featured-properties.tsx",
-                        lineNumber: 119,
+                        lineNumber: 139,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/custom/featured-properties.tsx",
-                lineNumber: 73,
+                lineNumber: 78,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/components/custom/featured-properties.tsx",
-            lineNumber: 72,
+            lineNumber: 77,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/custom/featured-properties.tsx",
-        lineNumber: 71,
+        lineNumber: 76,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -3121,7 +3121,7 @@ const AboutUs = ()=>{
                                     children: "WHAT IS STRONGMAS?"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/about-us.tsx",
-                                    lineNumber: 19,
+                                    lineNumber: 14,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3129,7 +3129,7 @@ const AboutUs = ()=>{
                                     children: "STRONGMAS is more than just a collection of luxury properties—it's a vision of sustainable, tech-enabled living refined. With over a decade of experience in real estate development, we’ve set new benchmarks for modern, high-performance housing in Lagos, Nigeria, and beyond."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/about-us.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 15,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3137,7 +3137,7 @@ const AboutUs = ()=>{
                                     children: "Our zero-energy consumption homes blend architectural excellence with cutting-edge smart technologies and eco-conscious design. STRONGMAS delivers livable spaces that transform lives, create lasting value, and build legacies for a discerning global clientele. With an expansion focus across Africa, we are committed to redefining how luxury and sustainability coexist in the built environment."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/about-us.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 21,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3149,18 +3149,18 @@ const AboutUs = ()=>{
                                         children: "Learn more about Strongmas Residence"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/custom/about-us.tsx",
-                                        lineNumber: 43,
-                                        columnNumber: 19
+                                        lineNumber: 29,
+                                        columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/custom/about-us.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 28,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/custom/about-us.tsx",
-                            lineNumber: 16,
+                            lineNumber: 13,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3173,33 +3173,33 @@ const AboutUs = ()=>{
                                 "data-ai-hint": "business handshake"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/about-us.tsx",
-                                lineNumber: 50,
+                                lineNumber: 34,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/components/custom/about-us.tsx",
-                            lineNumber: 47,
+                            lineNumber: 33,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/custom/about-us.tsx",
-                    lineNumber: 15,
+                    lineNumber: 12,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/about-us.tsx",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/components/custom/about-us.tsx",
-            lineNumber: 11,
+            lineNumber: 10,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/components/custom/about-us.tsx",
-        lineNumber: 10,
+        lineNumber: 9,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -3208,7 +3208,6 @@ const __TURBOPACK__default__export__ = AboutUs;
 "[project]/src/components/custom/locations.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// components/Locations.tsx
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -3217,6 +3216,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$properties$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/properties.ts [app-ssr] (ecmascript)");
+// components/Locations.tsx
 "use client";
 ;
 ;
@@ -3236,17 +3236,17 @@ const Locations = ()=>{
                         children: "Our Properties"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/locations.tsx",
-                        lineNumber: 17,
+                        lineNumber: 14,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/locations.tsx",
-                    lineNumber: 16,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/locations.tsx",
-                lineNumber: 15,
+                lineNumber: 12,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3269,7 +3269,7 @@ const Locations = ()=>{
                                             "data-ai-hint": "modern building exterior"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/custom/locations.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 29,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3283,7 +3283,7 @@ const Locations = ()=>{
                                                             children: property.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/custom/locations.tsx",
-                                                            lineNumber: 44,
+                                                            lineNumber: 39,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         property.summary?.saleStatus && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3291,13 +3291,13 @@ const Locations = ()=>{
                                                             children: property.summary.saleStatus
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/custom/locations.tsx",
-                                                            lineNumber: 48,
+                                                            lineNumber: 43,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/custom/locations.tsx",
-                                                    lineNumber: 43,
+                                                    lineNumber: 38,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3305,39 +3305,39 @@ const Locations = ()=>{
                                                     children: property.location
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/custom/locations.tsx",
-                                                    lineNumber: 59,
+                                                    lineNumber: 54,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/custom/locations.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 37,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/custom/locations.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 28,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/custom/locations.tsx",
-                                lineNumber: 27,
+                                lineNumber: 24,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         }, property.name, false, {
                             fileName: "[project]/src/components/custom/locations.tsx",
-                            lineNumber: 26,
+                            lineNumber: 23,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/src/components/custom/locations.tsx",
-                    lineNumber: 24,
-                    columnNumber: 8
+                    lineNumber: 21,
+                    columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/locations.tsx",
-                lineNumber: 23,
+                lineNumber: 20,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -3378,7 +3378,7 @@ const DiscoverProperties = ()=>{
                 "data-ai-hint": "city building sunset"
             }, void 0, false, {
                 fileName: "[project]/src/components/custom/discover-properties.tsx",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3389,7 +3389,7 @@ const DiscoverProperties = ()=>{
                         children: "Powered By STRONGMAS GROUP"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/discover-properties.tsx",
-                        lineNumber: 20,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3397,29 +3397,29 @@ const DiscoverProperties = ()=>{
                         children: "DISCOVER THE FINEST MODERN PROPERTIES"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/discover-properties.tsx",
-                        lineNumber: 23,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                        onClick: ()=>onOpen('bookInspection'),
+                        onClick: ()=>onOpen("bookInspection"),
                         size: "lg",
                         className: "bg-[#EFC59D] hover:bg-accent/90 text-accent-foreground rounded-sm font-bold px-8 md:px-10 py-5 md:py-6",
                         children: "BOOK A TOUR"
                     }, void 0, false, {
                         fileName: "[project]/src/components/custom/discover-properties.tsx",
-                        lineNumber: 26,
+                        lineNumber: 23,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/custom/discover-properties.tsx",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/custom/discover-properties.tsx",
-        lineNumber: 11,
+        lineNumber: 10,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

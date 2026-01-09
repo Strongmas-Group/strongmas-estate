@@ -1,57 +1,59 @@
-
 export const properties = [
   {
-    "name": "STRONGMAS RESIDENCE",
-    "status": "COMPLETED",
-    "location": "Lekki Phase 1",
-    "tag": "SOLD OUT & DELIVERED",
-    "images": [
+    name: "STRONGMAS RESIDENCE",
+    status: "COMPLETED",
+    location: "Lekki Phase 1",
+    tag: "SOLD OUT & DELIVERED",
+    images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753026421/gyg79oiyshhrpsdrztxt.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850576/sx9rjn23frkgfjxtxdrj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850615/pyh2ti7qqmyoodjwnww9.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850632/uwotk9taz6wemn3ii9cg.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753850651/tkgsgpbbtsyobegyjnah.jpg",
     ],
-    "summary": {
-      "address": "Dele Adedeji, Lekki Phase 1, Lagos",
-      "propertyType": "Terrace Duplex",
-      "typology": "4 Bedroom Terrace Duplex",
-      "garage": 2,
+    summary: {
+      address: "Dele Adedeji, Lekki Phase 1, Lagos",
+      propertyType: "Terrace Duplex",
+      typology: "4 Bedroom Terrace Duplex",
+      garage: 2,
       // "totalUnits": 5,
-      "saleStatus": "Sold Out"
+      saleStatus: "Sold Out",
     },
-    "description": "A bespoke 4-bedroom smart terrace duplexes, sculpted for the refined homeowner. This property offers timeless architectural design, eco-friendly materials, and smart home automation.",
-    "keyFeatures": [
+    description:
+      "A bespoke 4-bedroom smart terrace duplexes, sculpted for the refined homeowner. This property offers timeless architectural design, eco-friendly materials, and smart home automation.",
+    keyFeatures: [
       "Full smart automation – voice control, motion sensors, smart lighting",
       "Secure smart door access for effortless entry",
       "Contemporary fully fitted kitchens",
       "Private residents-only swimming pool",
       "Fully equipped gym",
-      "Two-car parking per unit"
-    ]
+      "Two-car parking per unit",
+    ],
   },
   {
-    "name": "THE OMINI",
-    "status": "COMPLETED",
-    "location": "Lekki Phase 1",
-    "tag": "SOLD OUT & DELIVERED",
-    "images": [
+    name: "THE OMINI",
+    status: "COMPLETED",
+    location: "Lekki Phase 1",
+    tag: "SOLD OUT & DELIVERED",
+    images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218706/blpm4hgkijma5ywj611f.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027395/ke9fjj8qi7xs0vp5kvzz.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027544/fidzpkzef7eoigoonzc1.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027728/lpffnelemh8hfbr1b3ei.jpg"
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753027728/lpffnelemh8hfbr1b3ei.jpg",
     ],
-    "summary": {
-      "project": "Residential",
-      "propertyType": "Apartment",
-      "address": "Akin Leigh Crescent, Lekki Phase 1, Lagos",
-      "typology": "1-Bed, 2-Bed & 3-Bed Penthouse",
+    summary: {
+      project: "Residential",
+      propertyType: "Apartment",
+      address: "Akin Leigh Crescent, Lekki Phase 1, Lagos",
+      typology: "1-Bed, 2-Bed & 3-Bed Penthouse",
       // "units": 17,
-      "saleStatus": "Sold Out",
-      "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753998942/x0wvlg8pcuporvujw0wt.pdf"
+      saleStatus: "Sold Out",
+      brochureUrl:
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753998942/x0wvlg8pcuporvujw0wt.pdf",
     },
-    "description": "A 5-story multifamily premium apartments complex that embodies elegance and contemporary design. It features smart home automations with artificial intelligence and oversized west-facing windows.",
-    "features": [
+    description:
+      "A 5-story multifamily premium apartments complex that embodies elegance and contemporary design. It features smart home automations with artificial intelligence and oversized west-facing windows.",
+    features: [
       "Fully Serviced Smart Apartments",
       "Home Automation & Smart Lights",
       "Smart Doors & CCTV Surveillance",
@@ -61,120 +63,118 @@ export const properties = [
       "Residents’ Gym",
       "Private Cinema (Penthouse)",
       "Fully Fitted Kitchens (Wet & Dry in Penthouse)",
-      "Waterfront View"
+      "Waterfront View",
     ],
-    "availableUnits": [
+    availableUnits: [
       {
-        "type": "1-Bedroom Apartment",
-        "bathrooms": 1.5,
-        "carSpace": 1,
-        "saleStatus": "Sold Out"
+        type: "1-Bedroom Apartment",
+        bathrooms: 1.5,
+        carSpace: 1,
+        saleStatus: "Sold Out",
       },
       {
-        "type": "2-Bedroom Apartment",
-        "bathrooms": 2.5,
-        "carSpace": 2,
-        "saleStatus": "Sold Out"
+        type: "2-Bedroom Apartment",
+        bathrooms: 2.5,
+        carSpace: 2,
+        saleStatus: "Sold Out",
       },
       {
-        "type": "3-Bedroom Penthouse",
-        "bathrooms": 3.5,
-        "cinemaRoom": true,
-        "serviceQuarters": 1,
-        "kitchens": 2,
-        "carSpace": 2,
-        "saleStatus": "Sold Out"
-      }
+        type: "3-Bedroom Penthouse",
+        bathrooms: 3.5,
+        cinemaRoom: true,
+        serviceQuarters: 1,
+        kitchens: 2,
+        carSpace: 2,
+        saleStatus: "Sold Out",
+      },
     ],
-    "proximities": [
+    proximities: [
       "Dolphin Swim School",
       "Upbeat Recreational Center",
       "Mindscapes Children’s Museum",
       "Admiralty Mall",
-      "Sailors Lounge"
-    ]
+      "Sailors Lounge",
+    ],
   },
   {
-    "name": "AVIONS COURT 1",
-    "status": "COMPLETED",
-    "location": "Abraham Adesanya",
-    "tag": "SOLD OUT & DELIVERED",
-    "images": [
+    name: "AVIONS COURT 1",
+    status: "COMPLETED",
+    location: "Abraham Adesanya",
+    tag: "SOLD OUT & DELIVERED",
+    images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753386645/dykwrq7mfymf7miogbn1.jpg",
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880550/k6bnbwjc6jihrzg5lfby.jpg",
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880571/hh6dijwgkoyesuljtpnt.jpg",
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880595/ppc6oog5uenqkbmai0op.jpg",
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
-        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg"
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880550/k6bnbwjc6jihrzg5lfby.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880571/hh6dijwgkoyesuljtpnt.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753880595/ppc6oog5uenqkbmai0op.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056307/g0ulm2ucr0cug3jl5ldq.jpg",
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056289/uu92ucmkyuct93tuzcrh.jpg",
     ],
-    "summary": {
-      "project": "Residential",
-      "propertyType": "Terrace Duplex",
-      "address": "Urban Prime 2, Abraham Adesanya, Ajah, Lagos",
-      "typology": "3-Bedroom Terrace Duplex",
-      "carSpacePerUnit": 2,
-      "saleStatus": "Sold Out",
+    summary: {
+      project: "Residential",
+      propertyType: "Terrace Duplex",
+      address: "Urban Prime 2, Abraham Adesanya, Ajah, Lagos",
+      typology: "3-Bedroom Terrace Duplex",
+      carSpacePerUnit: 2,
+      saleStatus: "Sold Out",
       // "totalUnits": 6
     },
-    "description": "It’s a refined collection of contemporary terrace duplexes, thoughtfully built within a sustainable estate in the serene heart of Abraham Adesanya, Ajah.",
-    "features": [
+    description:
+      "It’s a refined collection of contemporary terrace duplexes, thoughtfully built within a sustainable estate in the serene heart of Abraham Adesanya, Ajah.",
+    features: [
       "24-Hour Power Supply",
       "24-Hour Security",
       "Smart Access Control",
       "Treated Water Supply",
       "Flood, Smoke & Gas Detection System",
       "Gated Estate Environment",
-      "Ample Parking (2 Spaces Per Unit)"
-    ]
+      "Ample Parking (2 Spaces Per Unit)",
+    ],
   },
   {
-    "name": "KESBEL COURT",
-    "status": "Ongoing",
-    "tag": "SOLD OUT, Roofing in Progress",
-    "location": "Lekki Phase 1",
-    "description": "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse — a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
-    "images": [
+    name: "KESBEL COURT",
+    status: "Ongoing",
+    tag: "SOLD OUT, Roofing in Progress",
+    location: "Lekki Phase 1",
+    description:
+      "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse — a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
+    images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218667/xrejwu3vdhtmo3zy5gdj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055801/w25u6veyaj3l0laxdt4c.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055829/nmhclllutnwnghxem3xj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055852/lozzbmgnajaasahct71s.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055871/tqkav1fixijqcqkyygls.jpg"
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055871/tqkav1fixijqcqkyygls.jpg",
     ],
-    "summary": {
-      "project": "Residential",
-      "propertyType": "Luxury Apartments & Penthouse",
-      "address": "Fatai Idowu, Admiralty Road, Lekki phase 1",
-      "typology": "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
-      "carSpacePerUnit": 2,
-      "saleStatus": "Sold Out",
+    summary: {
+      project: "Residential",
+      propertyType: "Luxury Apartments & Penthouse",
+      address: "Fatai Idowu, Admiralty Road, Lekki phase 1",
+      typology: "2-Bedroom, 3-Bedroom with BQ, 4-Bedroom Penthouse",
+      carSpacePerUnit: 2,
+      saleStatus: "Sold Out",
       // "totalUnits": 10
     },
-    "availableUnits": [
+    availableUnits: [
       {
-        "type": "2-Bedroom Apartment",
-        "bathrooms": 2.5,
-        "carSpace": 2,
-        "saleStatus": "Sold Out"
+        type: "2-Bedroom Apartment",
+        bathrooms: 2.5,
+        carSpace: 2,
+        saleStatus: "Sold Out",
       },
       {
-        "type": "3-Bedroom Apartment with BQ",
-        "bathrooms": 3.5,
-        "serviceQuarters": 1,
-        "carSpace": 2,
-        "saleStatus": "Sold Out"
+        type: "3-Bedroom Apartment with BQ",
+        bathrooms: 3.5,
+        serviceQuarters: 1,
+        carSpace: 2,
+        saleStatus: "Sold Out",
       },
       {
-        "type": "4-Bedroom Penthouse",
-        "features": [
-          "Private Elevator",
-          "Smart Features",
-          "Panoramic View"
-        ],
-        "carSpace": 2,
-        "saleStatus": "Sold out"
-      }
+        type: "4-Bedroom Penthouse",
+        features: ["Private Elevator", "Smart Features", "Panoramic View"],
+        carSpace: 2,
+        saleStatus: "Sold out",
+      },
     ],
-    "features": [
+    features: [
       "Private Elevator (Penthouse)",
       "24-Hour Security",
       "Smart Access Control and Lighting System",
@@ -183,139 +183,131 @@ export const properties = [
       "Integrated Sound System",
       "Fully Equipped Residents’ Gym",
       "180-Degree Panoramic View",
-      "Spacious Parking (2 Spaces per Unit)"
+      "Spacious Parking (2 Spaces per Unit)",
     ],
-    "proximities": [
-      "Circa",
-      "Upbeat Recreational Center",
-      "Admiralty Mall",
-      "Sailors Lounge"
-    ]
+    proximities: ["Circa", "Upbeat Recreational Center", "Admiralty Mall", "Sailors Lounge"],
   },
   {
-    "name": "AVIONS COURT 2",
-    "status": "ONGOING",
-    "location": "Ikota G.R.A.",
-    "tag": "SOLD OUT, 90% Completed",
-    "images": [
+    name: "AVIONS COURT 2",
+    status: "ONGOING",
+    location: "Ikota G.R.A.",
+    tag: "SOLD OUT, 90% Completed",
+    images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218426/meknlmuj93frd5d54pys.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056439/snjplfembn14nspgaqme.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056457/tuq5iwb686tmdqgdn8to.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056478/efstkkzjreakhg9j72ga.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056494/kr7z1kpn8yevzorpp7ye.jpg"
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056494/kr7z1kpn8yevzorpp7ye.jpg",
     ],
-    "summary": {
-      "project": "Residential",
-      "propertyType": "Mixed-use",
-      "address": "Block 16, Plot 7 & 8, Ikota GRA, Lagos",
-      "typology": "Terrace Duplexes, Semi-Detached Units, Pent Apartments",
-      "carSpacePerUnit": 2,
+    summary: {
+      project: "Residential",
+      propertyType: "Mixed-use",
+      address: "Block 16, Plot 7 & 8, Ikota GRA, Lagos",
+      typology: "Terrace Duplexes, Semi-Detached Units, Pent Apartments",
+      carSpacePerUnit: 2,
       // "availableUnits": 8,
-      "saleStatus": "Limited Units Available",
-      "brochureUrl": "https://res.cloudinary.com/dbczzmftw/image/upload/v1753994996/xnqpwcj035wasbnnktom.pdf"
+      saleStatus: "Limited Units Available",
+      brochureUrl:
+        "https://res.cloudinary.com/dbczzmftw/image/upload/v1753994996/xnqpwcj035wasbnnktom.pdf",
     },
-    "description": "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
-    "features": [
+    description:
+      "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
+    features: [
       "Integrated Sound System",
       "Flood, Smoke & Gas Detection System",
       "Gated Estate with Controlled Access",
       "Attached Boys’ Quarters",
       "24-Hour Security",
       "Treated Water Supply",
-      "Two Dedicated Parking Spaces per Unit"
+      "Two Dedicated Parking Spaces per Unit",
     ],
-    "proximities": [
-      "Mega Chicken",
-      "Blackbell",
-      "VGC",
-      "Chevron",
-      "MisKay Boutique"
-    ]
+    proximities: ["Mega Chicken", "Blackbell", "VGC", "Chevron", "MisKay Boutique"],
   },
   {
-    "name": "OLIVE MALL",
-    "status": "COMPLETED",
-    "location": "Lagos Island",
-     "tag": "DONE, to be Handed Over",
-    "images": [
+    name: "OLIVE MALL",
+    status: "COMPLETED",
+    location: "Lagos Island",
+    tag: "DONE, to be Handed Over",
+    images: [
       "/Olivemall2.jpeg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848624/foosncctwowrhve9e6aj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848644/pk6xbtrtpwtunhaj1iau.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848666/cxbtpv13yrxrhgwyaagz.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848685/hwwi9vxgecsmxztnkmmt.jpg"
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848685/hwwi9vxgecsmxztnkmmt.jpg",
     ],
-    "description": "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
-    "summary": {
-      "address": "Adeniji Road, opposite Massey Children's Hospital",
-      "propertyType": "Commercial",
-      "typology": "Commercial Mall",
-      "saleStatus": "Available"
+    description:
+      "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
+    summary: {
+      address: "Adeniji Road, opposite Massey Children's Hospital",
+      propertyType: "Commercial",
+      typology: "Commercial Mall",
+      saleStatus: "Available",
     },
-    "floorPlan": [
+    floorPlan: [
       {
-        "floor": "Ground Floor",
-        "use": "Supermarket · Boutique · Restaurant · Cafe · Bakery · General Payment Area"
+        floor: "Ground Floor",
+        use: "Supermarket · Boutique · Restaurant · Cafe · Bakery · General Payment Area",
       },
       {
-        "floor": "First Floor",
-        "use": "Pharmacy · Boutique · Pharmacy Manager’s Office · Supervisor’s Office · Payment Area"
+        floor: "First Floor",
+        use: "Pharmacy · Boutique · Pharmacy Manager’s Office · Supervisor’s Office · Payment Area",
       },
       {
-        "floor": "Second Floor",
-        "use": "Office Spaces · Storage Units"
-      }
+        floor: "Second Floor",
+        use: "Office Spaces · Storage Units",
+      },
     ],
-    "safetyAndSecurity": [
+    safetyAndSecurity: [
       "CCTV Surveillance",
       "24-Hour Security",
       "Fire-Alarm & Smoke Detection System",
-      "Secure Intercom System"
-    ]
+      "Secure Intercom System",
+    ],
   },
   {
-    "name": "THE ELYSIAN RISE",
-    "status": "ONGOING",
-    "location": "Victoria Island",
-    "tag": "Piling In Progress",
-    "images": [
+    name: "THE ELYSIAN RISE",
+    status: "ONGOING",
+    location: "Victoria Island",
+    tag: "Piling In Progress",
+    images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg",
-      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg"
+      "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg",
     ],
-    "summary": {
-      "address": "3A, Musa Yar 'Adua Street, Victoria Island, Lagos",
-      "propertyType": "High-Rise Apartments, Maisonettes & Penthouse",
-      "height": "13-Floor Highrise",
-      "carSpace": "Ground & First Floor Dedicated Parking",
-      "typology": "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
-      "saleStatus": "Limited Units Available",
-      "brochureUrl": "https://cdn.filestackcontent.com/9BYKtknQTayWLIrpWNUf"
+    summary: {
+      address: "3A, Musa Yar 'Adua Street, Victoria Island, Lagos",
+      propertyType: "High-Rise Apartments, Maisonettes & Penthouse",
+      height: "13-Floor Highrise",
+      carSpace: "Ground & First Floor Dedicated Parking",
+      typology: "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
+      saleStatus: "Limited Units Available",
+      brochureUrl: "https://cdn.filestackcontent.com/RnJBWnAZRHauaCx60GTK",
     },
-    "description": "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
-    "availableUnits": [
+    description:
+      "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
+    availableUnits: [
       {
-        "type": "2-Bedroom Apartment + BQ",
-        "price": "40% Initial Deposit",
-        "units available": 4
+        type: "2-Bedroom Apartment + BQ",
+        price: "40% Initial Deposit",
+        "units available": 4,
       },
       {
-        "type": "3-Bedroom Apartment + BQ",
-        "price": "40% Initial Deposit",
-        "units available": 11
+        type: "3-Bedroom Apartment + BQ",
+        price: "40% Initial Deposit",
+        "units available": 11,
       },
       {
-        "type": "4-Bedroom Maisonette + BQ",
-        "price": "Sold Out",
-        
+        type: "4-Bedroom Maisonette + BQ",
+        price: "Sold Out",
       },
       {
-        "type": "5-Bedroom Penthouse + BQ (with private elevator access)",
-        "price": "Sold Out"
-      }
+        type: "5-Bedroom Penthouse + BQ (with private elevator access)",
+        price: "Sold Out",
+      },
     ],
-    "signatureAmenities": [
+    signatureAmenities: [
       "Private Elevator to the Penthouse",
       "Electric Car Charging Station",
       "Smart Automation",
@@ -324,9 +316,9 @@ export const properties = [
       "Lounge & Clubhouse",
       "Landscaped Recreational Area",
       "24-Hour Security & Concierge",
-      "Fully Equipped Gym house"
+      "Fully Equipped Gym house",
     ],
-    "proximities": [
+    proximities: [
       "The Eko Atlantic City",
       "SPAR",
       "Canadian Embassy",
@@ -341,10 +333,8 @@ export const properties = [
       "Mega Plaza",
       "Muri Okunola Park",
       "National Museum",
-      "Lekki-Ikoyi Link Bridge"
+      "Lekki-Ikoyi Link Bridge",
     ],
-    "virtualtour": [
-      "https://webobook.com/public/657ec87ae751de5ce461daa2,en"
-    ]
+    virtualtour: ["https://webobook.com/public/657ec87ae751de5ce461daa2,en"],
   },
-]
+];

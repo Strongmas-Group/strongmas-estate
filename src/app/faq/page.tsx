@@ -7,9 +7,7 @@ import React, { useState } from "react";
 const bgColors = ["bg-neutral-800", "bg-neutral-600", "bg-neutral-800"];
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState<{ [key: number]: number | null }>(
-    {}
-  );
+  const [openIndex, setOpenIndex] = useState<{ [key: number]: number | null }>({});
 
   const toggle = (catIdx: number, questionIdx: number) => {
     setOpenIndex((prev) => ({
@@ -133,9 +131,7 @@ const FAQ = () => {
               Yes. Buyers are required to pay:
               <ul className="list-disc list-inside mt-2 text-neutral-300">
                 <li>Legal Fees – 5% (documentation & title registration)</li>
-                <li>
-                  Infrastructure Fee – 3.5% (roads, drainage, water, etc.)
-                </li>
+                <li>Infrastructure Fee – 3.5% (roads, drainage, water, etc.)</li>
               </ul>
             </>
           ),
@@ -196,9 +192,7 @@ const FAQ = () => {
             {faqData.map((category, catIndex) => (
               <section
                 key={catIndex}
-                className={`p-6 rounded-lg shadow-lg ${
-                  bgColors[catIndex % bgColors.length]
-                }`}
+                className={`p-6 rounded-lg shadow-lg ${bgColors[catIndex % bgColors.length]}`}
               >
                 <h2 className="text-2xl font-semibold mb-6 border-b border-neutral-500 pb-2">
                   {category.category}
@@ -217,27 +211,17 @@ const FAQ = () => {
                           onClick={() => toggle(catIndex, qIndex)}
                         >
                           <span>{item.q}</span>
-                          <span
-                            className={`transition-transform ${
-                              isOpen ? "rotate-180" : ""
-                            }`}
-                          >
+                          <span className={`transition-transform ${isOpen ? "rotate-180" : ""}`}>
                             ▼
                           </span>
                         </button>
                         <div
                           className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                            isOpen
-                              ? "max-h-96 opacity-100"
-                              : "max-h-0 opacity-0"
+                            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                           } bg-neutral-900 text-neutral-300 border-t border-neutral-700 px-4`}
                         >
                           <div className="py-4">
-                            {typeof item.a === "string" ? (
-                              <p>{item.a}</p>
-                            ) : (
-                              item.a
-                            )}
+                            {typeof item.a === "string" ? <p>{item.a}</p> : item.a}
                           </div>
                         </div>
                       </div>
