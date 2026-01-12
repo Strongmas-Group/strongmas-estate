@@ -131,7 +131,7 @@ export default function RootLayout({
         {children}
         <Toaster />
 
-                {/* LiveChat Widget */}
+                {/* LiveChat Widget
                 <Script id="livechat-widget" strategy="afterInteractive">
           {`
             window.__lc = window.__lc || {};
@@ -166,6 +166,21 @@ export default function RootLayout({
               !n.__lc.asyncInit && e.init();
               n.LiveChatWidget = n.LiveChatWidget || e;
             }(window, document, [].slice));
+          `}
+        </Script> */}
+         {/* Tawk.to Chat Widget */}
+         <Script id="tawk-widget" strategy="afterInteractive">
+          {`
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function(){
+              var s1 = document.createElement("script"),
+                  s0 = document.getElementsByTagName("script")[0];
+              s1.async = true;
+              s1.src = 'https://embed.tawk.to/6964eec1895de4198b8ffe63/1jep498vj';
+              s1.charset = 'UTF-8';
+              s1.setAttribute('crossorigin','*');
+              s0.parentNode.insertBefore(s1,s0);
+            })();
           `}
         </Script>
 
