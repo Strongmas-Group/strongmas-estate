@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-# Host
+# Host  
 Host: https://strongmasresidence.com
 
 # Sitemaps

@@ -1,79 +1,44 @@
-[00:00:10.056] Server  LOG     ○ Compiling middleware ...
-[00:00:12.660] Server  LOG     ✓ Ready in 10.6s
-[00:00:29.027] Server  LOG     ○ Compiling / ...
-[00:00:34.210] Server  WARN    ⚠ Cross origin request detected from 192.168.1.105 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:05.701] Server  LOG     ✓ Ready in 4.1s
+[00:00:18.524] Server  WARN    ⚠ Cross origin request detected from 192.168.1.154 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:34.297] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:36.309] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <SegmentViewNode type="page" pagePath="page.tsx">
-      <SegmentTrieNode>
-      <Home>
-        <div className="flex flex-...">
-          <Header>
-            <header className="fixed top-...">
-              <div className="container ...">
-                <div>
-                ...
-                  <DropdownMenuTrigger className="flex items...">
-                    <MenuAnchor asChild={true} __scopeMenu={{Menu:[...], ...}}>
-                      <PopperAnchor __scopePopper={{Menu:[...], ...}} asChild={true} ref={null}>
-                        <Primitive.div asChild={true} ref={function}>
-                          <Primitive.div.Slot ref={function}>
-                            <Primitive.div.SlotClone ref={function}>
-                              <Primitive.button type="button" id="radix-_R_4..." aria-haspopup="menu" ...>
-                                <button
-                                  type="button"
-+                                 id="radix-_R_4klrilb_"
--                                 id="radix-_R_iclrilb_"
-                                  aria-haspopup="menu"
-                                  aria-expanded={false}
-                                  aria-controls={undefined}
-                                  data-state="closed"
-                                  data-disabled={undefined}
-                                  disabled={false}
-                                  className="flex items-center gap-1 transition-colors hover:text-white/80 outline-none"
-                                  onPointerDown={function handleEvent}
-                                  onKeyDown={function handleEvent}
-                                  ref={function}
-                                >
-                  ...
-                <div>
-                <div className="flex lg:hi...">
-                  <Dialog>
-                    <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                      <DialogTrigger asChild={true}>
-                        <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                          <Primitive.button.Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                            <Primitive.button.SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                              <_c variant="ghost" size="icon" className="text-white" type="button" aria-haspopup="dialog" ...>
-                                <button
-                                  className={"inline-flex cursor-pointer items-center justify-center gap-2 whitespace..."}
-                                  ref={function}
-                                  type="button"
-                                  aria-haspopup="dialog"
-                                  aria-expanded={false}
-+                                 aria-controls="radix-_R_14lrilb_"
--                                 aria-controls="radix-_R_4clrilb_"
-                                  data-state="closed"
-                                  onClick={function handleEvent}
-                                >
-                      ...
-          ...
-    ...
-
-[00:00:36.512] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:36.512] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
-[00:00:37.301] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
-[00:00:37.476] Browser ERROR   {}
+[00:00:18.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:20.946] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:20.946] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
+[00:00:20.946] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
+[00:00:22.477] Browser ERROR   {}
+[00:00:38.886] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:38.886] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:38.887] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:38.887] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:38.887] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:38.815] Server  LOG     ✓ Compiled in 67ms
+[00:05:00.302] Server  LOG     ✓ Compiled in 77ms
+[00:05:17.652] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:19.215] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
+[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:19.215] Browser ERROR   {}
+[00:05:19.215] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
+[00:56:54.103] Server  LOG     ✓ Compiled in 1274ms
+[00:57:38.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:39.720] Browser ERROR   {}
+[00:57:39.948] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
+[00:57:39.948] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
+[00:58:24.125] Server  LOG     ✓ Compiled in 216ms
+[00:58:42.741] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:58:43.729] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
+[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:58:43.729] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
+[00:58:43.729] Browser ERROR   {}
+[00:58:49.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:50.186] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
+[00:58:50.186] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
+[00:58:50.186] Browser ERROR   {}
+[00:59:03.427] Server  LOG     ✓ Compiled in 271ms
