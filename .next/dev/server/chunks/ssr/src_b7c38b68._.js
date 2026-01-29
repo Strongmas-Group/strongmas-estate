@@ -2897,7 +2897,7 @@ const properties = [
     },
     {
         name: "KESBEL COURT",
-        tag: "SOLD OUT, Roofing in Progress",
+        tag: "SOLD OUT, Furniture Finishing & Detailing",
         location: "Lekki Phase 1",
         description: "Nestled in the heart of Lekki Phase 1, Kesbel Court is a refined multi-family apartment development that reimagines urban living through timeless architecture, luxurious comfort, and breathtaking views.",
         image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055829/nmhclllutnwnghxem3xj.jpg",
@@ -2905,7 +2905,7 @@ const properties = [
     },
     {
         name: "AVIONS COURT 2",
-        tag: "SOLD OUT, 90% Completed",
+        tag: "Limited Units Available, 100% Completed",
         location: "Ikota G.R.A.",
         description: "A continuation of the distinguished Avion Court series, AVION COURT 2 is an exclusive triple-gated estate located in the prime neighborhood of Ikota G.R.A.",
         image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056390/y6gmtpbfh9oioc44ke4y.jpg",
@@ -2913,7 +2913,7 @@ const properties = [
     },
     {
         name: "THE ELYSIAN RISE",
-        tag: "Piling In Progress",
+        tag: "Current Stage: Pile Load Test",
         location: "Musa Ya’dua Street, Victoria Island",
         description: "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture.",
         image: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056625/zjuiauvxp1yuwp8swhfx.jpg",

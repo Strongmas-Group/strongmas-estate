@@ -1,44 +1,8 @@
-[00:00:05.701] Server  LOG     ✓ Ready in 4.1s
-[00:00:18.524] Server  WARN    ⚠ Cross origin request detected from 192.168.1.154 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:05.370] Server  LOG     ✓ Ready in 4.2s
+[00:45:39.608] Server  WARN    ⚠ Cross origin request detected from 192.168.1.107 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:18.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:20.946] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:20.946] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
-[00:00:20.946] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
-[00:00:22.477] Browser ERROR   {}
-[00:00:38.886] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:38.886] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:38.887] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:38.887] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:38.887] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:38.815] Server  LOG     ✓ Compiled in 67ms
-[00:05:00.302] Server  LOG     ✓ Compiled in 77ms
-[00:05:17.652] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:19.215] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
-[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:19.215] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:05:19.215] Browser ERROR   {}
-[00:05:19.215] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
-[00:56:54.103] Server  LOG     ✓ Compiled in 1274ms
-[00:57:38.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:57:39.720] Browser ERROR   {}
-[00:57:39.948] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
-[00:57:39.948] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
-[00:58:24.125] Server  LOG     ✓ Compiled in 216ms
-[00:58:42.741] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056673/ejlxfam4gkyyo9qg89il.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056691/ik57vfn2v2bhpazpghl7.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:58:43.729] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
-[00:58:43.729] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056726/ve9kcefxgof17ey1ga3i.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:58:43.729] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
-[00:58:43.729] Browser ERROR   {}
-[00:58:49.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:58:50.186] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
-[00:58:50.186] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
-[00:58:50.186] Browser ERROR   {}
-[00:59:03.427] Server  LOG     ✓ Compiled in 271ms
+[00:45:39.890] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:42.099] Browser WARN    Image with src "https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:45:42.099] Browser WARN    For security reasons, Hotjar only works over HTTPS. Learn more: https://help.hotjar.com/hc/en-us/articles/115011624047
+[00:45:42.099] Browser WARN    [Meta Pixel] - Multiple pixels with conflicting versions were detected on this page.
+[00:45:42.873] Browser ERROR   {}
