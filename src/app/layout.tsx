@@ -6,8 +6,9 @@ import { ModalProvider } from '@/providers/modal-provider';
 import { useHotjar } from '@/lib/hotjar';
 import useAnalytics from '@/lib/use-analytics';
 import Script from 'next/script';
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import MetaPixel from '@/components/custom/meta-pixel';
+import TawkChat from '@/components/tawk-chat';
 
 function AnalyticsWrapper() {
   useAnalytics();
@@ -100,37 +101,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
 
-      <body className="font-body antialiased bg-background text-foreground">
-        {/* Providers */}
+      <body className="font-body antialiased bg-[#142B54] text-foreground">
         <ModalProvider />
-
-        {/* Analytics */}
         <Suspense>
           <AnalyticsWrapper />
         </Suspense>
-
-        {/* Meta Pixel */}
         <MetaPixel />
-
-        {/* Page content */}
         {children}
         <Toaster />
-
-        {/* Tawk.to Chat Widget */}
-        <Script id="tawk-widget" strategy="afterInteractive">
-          {`
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function(){
-              var s1 = document.createElement("script"),
-                  s0 = document.getElementsByTagName("script")[0];
-              s1.async = true;
-              s1.src = 'https://embed.tawk.to/6964eec1895de4198b8ffe63/1jep498vj';
-              s1.charset = 'UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-            })();
-          `}
-        </Script>
+        <TawkChat />
       </body>
     </html>
   );
