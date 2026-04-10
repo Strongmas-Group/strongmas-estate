@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { NextRequest, NextResponse } from 'next/server';\n\nexport function middleware(req: NextRequest) {\n  const country = req.headers.get('x-nf-geo-country') || 'UNKNOWN';\n  const city = req.headers.get('x-nf-geo-city') || '';\n  const region = req.headers.get('x-nf-geo-region') || '';\n\n  const res = NextResponse.next();\n\n  res.cookies.set('geo_country', country, { path: '/' });\n  res.cookies.set('geo_city', city, { path: '/' });\n  res.cookies.set('geo_region', region, { path: '/' });\n\n  return res;\n}\n"],"names":[],"mappings":";;;;AAAA;AAAA;;AAEO,SAAS,WAAW,GAAgB;IACzC,MAAM,UAAU,IAAI,OAAO,CAAC,GAAG,CAAC,uBAAuB;IACvD,MAAM,OAAO,IAAI,OAAO,CAAC,GAAG,CAAC,oBAAoB;IACjD,MAAM,SAAS,IAAI,OAAO,CAAC,GAAG,CAAC,sBAAsB;IAErD,MAAM,MAAM,gMAAY,CAAC,IAAI;IAE7B,IAAI,OAAO,CAAC,GAAG,CAAC,eAAe,SAAS;QAAE,MAAM;IAAI;IACpD,IAAI,OAAO,CAAC,GAAG,CAAC,YAAY,MAAM;QAAE,MAAM;IAAI;IAC9C,IAAI,OAAO,CAAC,GAAG,CAAC,cAAc,QAAQ;QAAE,MAAM;IAAI;IAElD,OAAO;AACT"}}]
-}
