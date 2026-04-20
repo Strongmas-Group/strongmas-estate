@@ -335,6 +335,6 @@ export const properties = [
       "National Museum",
       "Lekki-Ikoyi Link Bridge",
     ],
-    virtualtour: ["https://webobook.com/public/657ec87ae751de5ce461daa2,en"],
+    // virtualtour: ["https://webobook.com/public/657ec87ae751de5ce461daa2,en"],
   },
 ];
