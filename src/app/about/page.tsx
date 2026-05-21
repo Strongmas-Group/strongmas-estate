@@ -34,26 +34,6 @@ const leadershipTeam = [
       "Now at Strongmas, Kikelomo brings her results-driven leadership to the Executive Team — with a clear focus on increasing revenue through strategic sales execution, brand strategy, market positioning, and operational growth. Her role is central to scaling the company’s influence, optimizing customer experience, and unlocking new revenue channels through strategic partnerships, corporate communications, and team development — all reinforcing Strongmas’ vision of becoming a household name in luxury real estate.",
     hint: "woman professional headshot",
   },
-  {
-    name: "DOHARE PAUL",
-    role: "Chief Financial Controller",
-    imageUrl: "/dohare.png",
-    description:
-      "Dohare Paul is an accomplished finance executive with over 11 years of cross-industry experience in accounting, financial reporting, data analytics, treasury, and business advisory.\n\n" +
-      "Since joining Strongmas in 2023, he has significantly strengthened the company’s financial architecture and operational controls. Known for his integrity and attention to detail, Dohare champions sound financial governance, strict compliance, and ethical conduct. His expertise ensures that Strongmas maintains fiscal discipline while scaling its portfolio of luxury developments with confidence and credibility.",
-    hint: "man professional headshot",
-  },
-  {
-    name: "IBRAHIM SULE OMOYEMI",
-    role: "Senior Project Manager",
-    imageUrl: "/ibrahim.png",
-    description:
-      "Ibrahim Sule Omoyemi is a seasoned civil engineering professional with a distinguished track record in delivering high-impact infrastructure and real estate developments across Nigeria. A registered member of the Council for the Regulation of Engineering in Nigeria (COREN), Ibrahim combines technical expertise with strong project leadership.\n\n" +
-      "He holds an HND in Civil Engineering Technology from the Federal Polytechnic, Auchi, and both a Postgraduate Diploma (PGD) and an MBA from Ladoke Akintola University of Technology (LAUTECH), Ogbomoso.\n\n" +
-      "Over the years, Ibrahim has led and contributed to the successful execution of numerous landmark projects, including: Federal Ministry of Finance Complex, Central District, Abuja (2014); Sunrise Hills Estate, Abuja (2014); Bayelsa International Airport (2018); and Niger Delta University Senate Building, Amassoma, Bayelsa (2019).\n\n" +
-      "Now serving as Senior Project Manager at Strongmas Residence, Ibrahim brings extensive experience in substructure and superstructure concrete works, structural analysis, quantity estimation, and full-cycle project delivery. His attention to detail, results-driven mindset, and unwavering commitment to quality continue to shape the delivery of Strongmas’ luxury estates — ensuring every structure meets the highest standards in design, safety, and functionality.",
-    hint: "man construction hardhat",
-  },
 ];
 
 export default function AboutPage() {
