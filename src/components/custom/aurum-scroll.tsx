@@ -27,13 +27,13 @@ const AurumScroll = () => {
     <section id="aurum" className="relative z-10 w-full h-screen overflow-hidden bg-black">
       <img
         className="absolute inset-0 h-full w-full object-cover object-bottom"
-        src="/aurum.png"
-        alt="Aurum"
+        src="/elysian.jpeg"
+        alt="Elysian Rise"
       />
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover object-bottom"
-        src="/md-version-720.mp4"
+        src="/elysian-720.mp4"
         loop
         muted
         playsInline
