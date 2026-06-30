@@ -122,21 +122,21 @@ const FeaturedPopup = () => {
                 <span className="font-medium text-gray-900">50 Distinguished Nigerians of Merit</span>{" "}
                 &middot; The Guardian, May 2026
               </p>
-              <div className="flex items-center justify-between gap-2 pt-0.5">
+              <div className="flex flex-col items-stretch gap-1.5 pt-0.5">
                 <Link
                   href={ARTICLE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={dismiss}
-                  className="inline-flex items-center gap-1 rounded-full bg-primary px-3 py-1.5 text-[11px] font-medium text-white transition-colors hover:bg-primary/90"
+                  className="inline-flex w-full items-center justify-center gap-1 whitespace-nowrap rounded-full bg-primary px-3 py-1.5 text-[11px] font-medium text-white transition-colors hover:bg-primary/90"
                 >
                   Read the full story
-                  <ArrowRight className="h-3 w-3" />
+                  <ArrowRight className="h-3 w-3 shrink-0" />
                 </Link>
                 <button
                   type="button"
                   onClick={dismiss}
-                  className="text-[11px] font-medium text-gray-400 underline-offset-4 transition-colors hover:text-gray-700 hover:underline"
+                  className="text-center text-[11px] font-medium text-gray-400 underline-offset-4 transition-colors hover:text-gray-700 hover:underline"
                 >
                   Maybe Later
                 </button>
