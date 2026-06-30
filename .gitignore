@@ -23,3 +23,4 @@ tsconfig.tsbuildinfo
 !/public/logo intro .mp4
 !/public/aurum-video.mp4
 /public/*.pdf
+/public/.orig_backup/
