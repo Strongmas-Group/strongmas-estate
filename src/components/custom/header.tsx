@@ -109,8 +109,8 @@ const BrowseAccordion = () => (
 
 const Header = () => {
   return (
-    <header className="fixed top-0 z-50 w-full bg-black/20 backdrop-blur-sm font-headline h-20 flex items-center">
-      <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 text-white relative">
+    <header className="fixed top-0 z-50 w-full flex justify-center pt-5 px-6 font-headline">
+      <div className="w-full max-w-[1240px] bg-white/10 backdrop-blur-md border border-white/25 rounded-2xl px-6 h-12 flex items-center justify-between text-white relative">
         {/* Logo */}
         <div className="flex items-center flex-shrink-0">
           <Link href="/" className="flex-shrink-0">
@@ -119,7 +119,7 @@ const Header = () => {
               alt="Strongmas Residence Logo"
               width={200}
               height={44}
-              className="w-[140px] h-[30px] md:w-[180px] md:h-[40px] lg:w-[200px] lg:h-[44px] object-contain"
+              className="w-[110px] h-[24px] md:w-[130px] md:h-[28px] lg:w-[150px] lg:h-[32px] object-contain"
               priority
             />
           </Link>
@@ -127,7 +127,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex justify-center flex-1">
-          <nav className="flex items-center gap-5 xl:gap-6 text-sm font-medium whitespace-nowrap">
+          <nav className="flex items-center gap-4 xl:gap-5 text-xs font-medium whitespace-nowrap">
             <NavLink href="/">Home</NavLink>
 
             <DropdownMenu>
@@ -153,7 +153,7 @@ const Header = () => {
         {/* Desktop Button */}
         <div className="hidden lg:flex ml-auto pl-4">
           <Link href="/book-inspection">
-            <Button className="bg-[#142B54] text-white hover:bg-[#1b3a72] rounded-xl h-[45px] px-6 flex-shrink-0 shadow-md">
+            <Button className="bg-[#142B54] text-white hover:bg-[#1b3a72] rounded-lg h-[34px] px-4 text-xs flex-shrink-0 shadow-md">
               Book A Tour
             </Button>
           </Link>

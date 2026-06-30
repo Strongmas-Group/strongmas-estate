@@ -337,4 +337,78 @@ export const properties = [
     ],
     // virtualtour: ["https://webobook.com/public/657ec87ae751de5ce461daa2,en"],
   },
+  {
+    name: "AURUM",
+    status: "ONGOING",
+    location: "Lekki Phase 1",
+    tag: "Now Selling",
+    // TODO: replace with real Aurum project renders/photos
+    images: ["/aurum.png"],
+    summary: {
+      address: "Adekola Balogun Street, Lekki, Lagos",
+      propertyType: "Residential Apartments & Penthouses",
+      typology: "16 × 2-Bedroom Apartments · 2 × 3-Bedroom Penthouses",
+      totalUnits: "18 Units (all with a balcony)",
+      saleStatus: "Now Selling",
+    },
+    description:
+      "Live Gold. Live AURUM. AURUM is a premium residential development located in the heart of Lekki Phase 1, one of Lagos’ most desirable and high-value residential destinations. Comprising 16 elegantly designed 2-bedroom apartments and 2 exclusive 3-bedroom penthouses, AURUM blends contemporary architecture, functionality, privacy, and long-term investment value into one sophisticated address. Crafted with contemporary architecture and premium finishing, AURUM is designed for discerning homeowners, upwardly mobile professionals, diaspora investors, and luxury real estate investors seeking value appreciation and elevated living.",
+    availableUnits: [
+      {
+        type: "2-Bedroom Apartment",
+        price: "₦320,000,000",
+        "initial deposit": "40% = ₦128,000,000",
+        "payment plan": "Spread balance across 12 / 18 months",
+      },
+      {
+        type: "3-Bedroom Penthouse",
+        price: "To Be Announced",
+        "initial deposit": "40%",
+      },
+    ],
+    floorPlan: [
+      {
+        floor: "Ground Floor",
+        use: "Dedicated Parking Area · Secure Access & Circulation",
+      },
+      {
+        floor: "First, Second & Third Floors",
+        use: "5 Units of 2-Bedroom Apartments per floor",
+      },
+      {
+        floor: "Pent Floor",
+        use: "2 Units of 3-Bedroom Duplex Penthouses · 1 Unit of 2-Bedroom Apartment · Curated rooftop experience (Gym & Swimming Pool)",
+      },
+    ],
+    signatureAmenities: [
+      "Smart Home Automation",
+      "Elevator Access",
+      "Children Play Area",
+      "Dedicated Concierge",
+      "Private Foyer Entrance for the Penthouses",
+      "Fully Fitted Kitchen",
+      "Gleaming Pool",
+      "24/7 Security",
+      "Dedicated Parking",
+      "CCTV Surveillance",
+      "Backup Power Supply",
+      "Treated Water System",
+      "Expansive & Elevated City Views",
+      "Modern Architectural Detailing",
+      "En-suite Bedrooms",
+      "Elegant Master Suite",
+    ],
+    proximities: [
+      "Lekki-Ikoyi Link Bridge",
+      "5 mins to Embassies",
+      "The Palms Shopping Mall",
+      "Filmhouse Cinemas",
+      "Popular Restaurants & Lounges",
+      "Top Schools & Healthcare Facilities",
+      "Beaches & Waterfront Attractions",
+      "Business Accessibility",
+      "High Rental Demand",
+      "Strong Property Appreciation",
+    ],
+  },
 ];

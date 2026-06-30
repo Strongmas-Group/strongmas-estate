@@ -80,9 +80,9 @@ export default function TawkChat() {
         visibility: visible !important;
         opacity: 1 !important;
         position: fixed !important;
-        left: 16px !important;
-        right: auto !important;
-        bottom: 280px !important;
+        right: 16px !important;
+        left: auto !important;
+        bottom: 90px !important;
         width: calc(100vw - 32px) !important;
         max-width: 350px !important;
         height: 400px !important;
@@ -97,8 +97,9 @@ export default function TawkChat() {
         iframe[title*="Tawk"],
         iframe[src*="tawk.to"],
         iframe[id*="tawk"] {
-          left: 32px !important;
-          bottom: 320px !important;
+          right: 32px !important;
+          left: auto !important;
+          bottom: 110px !important;
           width: 400px !important;
           height: 500px !important;
           max-width: 400px !important;
@@ -253,9 +254,9 @@ export default function TawkChat() {
       const el = iframe as HTMLElement;
       el.style.cssText = `
         position: fixed !important;
-        left: ${isMobile ? '16px' : '32px'} !important;
-        right: auto !important;
-        bottom: ${isMobile ? '280px' : '320px'} !important;
+        right: ${isMobile ? '16px' : '32px'} !important;
+        left: auto !important;
+        bottom: ${isMobile ? '90px' : '110px'} !important;
         width: ${isMobile ? 'calc(100vw - 32px)' : '400px'} !important;
         height: ${isMobile ? '400px' : '500px'} !important;
         max-width: ${isMobile ? '350px' : '400px'} !important;
@@ -345,7 +346,7 @@ export default function TawkChat() {
           ? 'bg-red-500 hover:bg-red-600' 
           : 'bg-[#142B54] hover:bg-[#0F1F3A]'
         }
-        left-4 bottom-48 md:left-8 md:bottom-56
+        right-4 bottom-6 md:right-8 md:bottom-8
       `}
       style={{
         boxShadow: '0 4px 14px rgba(20, 43, 84, 0.4)'

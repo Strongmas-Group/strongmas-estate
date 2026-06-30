@@ -65,6 +65,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: clip;
   }
 }
 
@@ -120,4 +121,293 @@ video {
     transform: scale(1.1); /* Slight zoom to avoid black bars */
     object-position: center;
   }
+}
+
+/* ───────── Hero "new property" peek strip ───────── */
+
+/* Smooth, eased slide-up entrance (no bounce) */
+@keyframes hero-peek-in {
+  0%   { opacity: 0; transform: translateY(34px); filter: blur(6px); }
+  100% { opacity: 1; transform: translateY(0);    filter: blur(0); }
+}
+.hero-peek {
+  animation: hero-peek-in 1100ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: transform, opacity;
+}
+
+/* Luxury "call for attention" breathing zoom + soft gold glow.
+   Lives on a dedicated wrapper so it never fights the hover scale. */
+@keyframes hero-peek-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 6px 22px rgba(0, 0, 0, 0.35));
+  }
+  50% {
+    transform: scale(1.045);
+    filter: drop-shadow(0 10px 30px rgba(239, 197, 157, 0.45));
+  }
+}
+.hero-peek-pulse {
+  animation: hero-peek-pulse 3.4s ease-in-out 1200ms infinite;
+  will-change: transform, filter;
+}
+
+/* Gentle continuous float for the chevron — soft ease, never jarring */
+@keyframes hero-peek-float {
+  0%, 100% { transform: translateY(0);   opacity: 0.85; }
+  50%      { transform: translateY(4px); opacity: 1; }
+}
+.hero-peek-float { animation: hero-peek-float 2.6s ease-in-out infinite; }
+
+/* Slow gold light sweep across the strip to draw the eye */
+@keyframes hero-peek-shine {
+  0%        { transform: translateX(-130%) skewX(-18deg); }
+  55%, 100% { transform: translateX(260%)  skewX(-18deg); }
+}
+.hero-peek-shine { animation: hero-peek-shine 5s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-peek { animation: none; opacity: 1; transform: none; filter: none; }
+  .hero-peek-float,
+  .hero-peek-shine,
+  .hero-peek-pulse { animation: none; }
+}
+
+/* ───────── Aurum (Binghatti-style) animations ───────── */
+
+/* Cinematic zoom/pan for hero & gallery images — continuous & noticeable */
+@keyframes aurum-kenburns {
+  0%   { transform: scale(1.05) translate3d(0, 0, 0); }
+  50%  { transform: scale(1.22) translate3d(-3%, -2%, 0); }
+  100% { transform: scale(1.05) translate3d(3%, 2%, 0); }
+}
+.aurum-kenburns {
+  animation: aurum-kenburns 16s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Clip + blur title reveal */
+@keyframes aurum-title-in {
+  0%   { opacity: 0; transform: translateY(28px); filter: blur(14px); letter-spacing: 0.4em; }
+  100% { opacity: 1; transform: translateY(0);    filter: blur(0);    letter-spacing: 0.18em; }
+}
+.aurum-title-in {
+  animation: aurum-title-in 1400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Gentle up/down float (scroll cues, etc.) */
+@keyframes aurum-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+.aurum-float { animation: aurum-float 2.4s ease-in-out infinite; }
+
+/* Thin line drawing in from the centre */
+@keyframes aurum-line {
+  0%   { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+.aurum-line {
+  transform-origin: center;
+  animation: aurum-line 1200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Soft fade-in for overlays */
+@keyframes aurum-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* ── Registration modal entrance ── */
+.aurum-modal-backdrop { animation: aurum-fade 220ms ease forwards; }
+.aurum-modal-panel { animation: aurum-modal-in 360ms cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+@keyframes aurum-modal-in {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Soft luxurious animated background (replaces the hero video bg) ── */
+.aurum-bg {
+  background:
+    radial-gradient(120% 120% at 50% 0%, #44331a 0%, #26200d 42%, #130d07 100%);
+}
+
+/* Slowly drifting, blurred colour orbs give a calm aurora feel */
+.aurum-bg-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.5;
+  will-change: transform;
+}
+.aurum-bg-orb--1 {
+  top: -10%;
+  left: -5%;
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(circle, rgba(176, 138, 78, 0.5), transparent 70%);
+  animation: aurum-drift-1 16s ease-in-out infinite alternate;
+}
+.aurum-bg-orb--2 {
+  bottom: -15%;
+  right: -10%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(150, 112, 58, 0.42), transparent 70%);
+  animation: aurum-drift-2 20s ease-in-out infinite alternate;
+}
+.aurum-bg-orb--3 {
+  top: 30%;
+  left: 35%;
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, rgba(190, 156, 96, 0.38), transparent 70%);
+  animation: aurum-drift-3 24s ease-in-out infinite alternate;
+}
+
+/* Faint grain so the gradients never look flat/banded */
+.aurum-bg-grain {
+  position: absolute;
+  inset: -50%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+  opacity: 0.6;
+  animation: aurum-grain 8s steps(6) infinite;
+}
+
+@keyframes aurum-drift-1 {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(8vw, 6vh, 0) scale(1.15); }
+}
+@keyframes aurum-drift-2 {
+  from { transform: translate3d(0, 0, 0) scale(1.1); }
+  to   { transform: translate3d(-7vw, -5vh, 0) scale(1); }
+}
+@keyframes aurum-drift-3 {
+  from { transform: translate3d(0, 0, 0) scale(0.95); }
+  to   { transform: translate3d(5vw, -7vh, 0) scale(1.2); }
+}
+@keyframes aurum-grain {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-5%, 3%); }
+  50%  { transform: translate(4%, -4%); }
+  75%  { transform: translate(-3%, 5%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ── Breathing corner & side glows ── */
+.aurum-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  will-change: transform, opacity;
+}
+.aurum-glow--tr {
+  top: -12%;
+  right: -8%;
+  width: 42vw;
+  height: 42vw;
+  background: radial-gradient(circle, rgba(184, 146, 80, 0.5), transparent 68%);
+  animation: aurum-breathe 7s ease-in-out infinite;
+}
+.aurum-glow--left {
+  top: 38%;
+  left: -14%;
+  width: 30vw;
+  height: 30vw;
+  background: radial-gradient(circle, rgba(162, 128, 72, 0.42), transparent 70%);
+  animation: aurum-breathe 9s ease-in-out infinite 2s;
+}
+.aurum-glow--right {
+  bottom: 12%;
+  right: -12%;
+  width: 32vw;
+  height: 32vw;
+  background: radial-gradient(circle, rgba(176, 138, 78, 0.45), transparent 70%);
+  animation: aurum-breathe 8s ease-in-out infinite 1s;
+}
+@keyframes aurum-breathe {
+  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+  50%      { transform: scale(1.25) translate(-2vw, 2vh); opacity: 0.7; }
+}
+
+/* ── Slow diagonal light sweep across the top ── */
+.aurum-sweep {
+  position: absolute;
+  top: -40%;
+  left: -30%;
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(
+    115deg,
+    transparent 40%,
+    rgba(236, 200, 120, 0.16) 50%,
+    transparent 60%
+  );
+  filter: blur(20px);
+  transform: rotate(8deg);
+  animation: aurum-sweep 10s ease-in-out infinite;
+}
+@keyframes aurum-sweep {
+  0%   { transform: translate(-20%, -10%) rotate(8deg); opacity: 0; }
+  35%  { opacity: 1; }
+  65%  { opacity: 1; }
+  100% { transform: translate(140%, 60%) rotate(8deg); opacity: 0; }
+}
+
+/* ── Floating, twinkling sparkles ── */
+.aurum-sparkles { position: absolute; inset: 0; }
+.aurum-spark {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 9999px;
+  background: rgba(255, 240, 210, 0.9);
+  box-shadow: 0 0 6px 1px rgba(214, 176, 92, 0.7);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+/* size variants */
+.aurum-spark--0 { width: 2px; height: 2px; }
+.aurum-spark--3 { width: 4px; height: 4px; }
+.aurum-spark--5 { width: 2px; height: 2px; }
+
+/* Float upward with a gentle sway + twinkle. Positions/timings spread out. */
+.aurum-spark:nth-child(1)  { left: 82%; top: 18%; animation: aurum-float-spark 2.8s ease-in-out infinite 0s; }
+.aurum-spark:nth-child(2)  { left: 90%; top: 30%; animation: aurum-float-spark 3.5s ease-in-out infinite 1.5s; }
+.aurum-spark:nth-child(3)  { left: 74%; top: 12%; animation: aurum-float-spark 2.8s ease-in-out infinite 3s; }
+.aurum-spark:nth-child(4)  { left: 96%; top: 22%; animation: aurum-float-spark 3.5s ease-in-out infinite 0.8s; }
+.aurum-spark:nth-child(5)  { left: 68%; top: 26%; animation: aurum-float-spark 2.8s ease-in-out infinite 2.2s; }
+.aurum-spark:nth-child(6)  { left: 88%; top: 8%;  animation: aurum-float-spark 3.5s ease-in-out infinite 4s; }
+.aurum-spark:nth-child(7)  { left: 4%;  top: 40%; animation: aurum-float-spark 2.8s ease-in-out infinite 1s; }
+.aurum-spark:nth-child(8)  { left: 8%;  top: 55%; animation: aurum-float-spark 3.5s ease-in-out infinite 2.6s; }
+.aurum-spark:nth-child(9)  { left: 2%;  top: 68%; animation: aurum-float-spark 2.8s ease-in-out infinite 3.4s; }
+.aurum-spark:nth-child(10) { left: 12%; top: 48%; animation: aurum-float-spark 3.5s ease-in-out infinite 0.4s; }
+.aurum-spark:nth-child(11) { left: 6%;  top: 80%; animation: aurum-float-spark 3.5s ease-in-out infinite 5s; }
+.aurum-spark:nth-child(12) { left: 94%; top: 50%; animation: aurum-float-spark 2.8s ease-in-out infinite 1.8s; }
+.aurum-spark:nth-child(13) { left: 98%; top: 62%; animation: aurum-float-spark 3.5s ease-in-out infinite 3.2s; }
+.aurum-spark:nth-child(14) { left: 90%; top: 74%; animation: aurum-float-spark 2.8s ease-in-out infinite 4.6s; }
+.aurum-spark:nth-child(15) { left: 86%; top: 42%; animation: aurum-float-spark 4.2s ease-in-out infinite 2s; }
+.aurum-spark:nth-child(16) { left: 78%; top: 60%; animation: aurum-float-spark 3.5s ease-in-out infinite 0.6s; }
+.aurum-spark:nth-child(17) { left: 50%; top: 10%; animation: aurum-float-spark 3.5s ease-in-out infinite 3.8s; }
+.aurum-spark:nth-child(18) { left: 40%; top: 6%;  animation: aurum-float-spark 2.8s ease-in-out infinite 1.2s; }
+.aurum-spark:nth-child(19) { left: 60%; top: 14%; animation: aurum-float-spark 2.8s ease-in-out infinite 4.2s; }
+.aurum-spark:nth-child(20) { left: 30%; top: 16%; animation: aurum-float-spark 3.5s ease-in-out infinite 2.8s; }
+.aurum-spark:nth-child(21) { left: 16%; top: 30%; animation: aurum-float-spark 3.5s ease-in-out infinite 0.2s; }
+.aurum-spark:nth-child(22) { left: 84%; top: 88%; animation: aurum-float-spark 3.5s ease-in-out infinite 5.4s; }
+.aurum-spark:nth-child(23) { left: 10%; top: 90%; animation: aurum-float-spark 3.5s ease-in-out infinite 3.6s; }
+.aurum-spark:nth-child(24) { left: 92%; top: 16%; animation: aurum-float-spark 2.8s ease-in-out infinite 1.4s; }
+
+@keyframes aurum-float-spark {
+  0%   { opacity: 0; transform: translate(0, 0) scale(0.6); }
+  15%  { opacity: 1; }
+  50%  { opacity: 0.9; transform: translate(-10px, -40px) scale(1); }
+  85%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(8px, -90px) scale(0.6); }
+}
+
+/* Respect users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+  .aurum-bg-orb,
+  .aurum-bg-grain,
+  .aurum-glow,
+  .aurum-sweep,
+  .aurum-spark { animation: none; }
 }
