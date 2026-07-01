@@ -20,7 +20,7 @@ const properties = [
     location: "Lekki Phase 1",
     tag: "NOW SELLING",
     image:
-      "https://res.cloudinary.com/dbtqditjh/image/upload/v1782394618/WhatsApp_Image_2026-06-25_at_2.16.51_PM_2_bksige.jpg",
+      "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736236/ChatGPT_Image_Jun_29_2026_11_36_53_AM_lwowfu.png",
     description:
       "Inspired by the timeless brilliance of gold, Aurum is a boutique collection of 18 luxury residences blending elegant architecture, AI-powered smart living, and enduring investment value in the heart of Lekki Phase 1.",
     hint: "luxury apartment exterior",
