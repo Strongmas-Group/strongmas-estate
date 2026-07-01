@@ -16,10 +16,11 @@ node_modules
 # --- review-branch additions ---
 .claude/
 tsconfig.tsbuildinfo
-# Heavy/unused source videos — keep only the 2 the site actually plays
+# Heavy/unused source videos — keep only the 3 the site actually plays
 /public/*.mp4
 !/public/elysian-720.mp4
 !/public/md-version-720.mp4
+!/public/aurum-mobile.mp4
 /public/*.pdf
 /public/.orig_backup/
 /public/Aurum video 1.mp4
