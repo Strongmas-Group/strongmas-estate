@@ -24,3 +24,4 @@ tsconfig.tsbuildinfo
 !/public/aurum-video.mp4
 /public/*.pdf
 /public/.orig_backup/
+/public/Aurum video 1.mp4
