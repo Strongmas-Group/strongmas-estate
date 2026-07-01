@@ -22,5 +22,6 @@ tsconfig.tsbuildinfo
 !/public/md-version-720.mp4
 !/public/aurum-mobile.mp4
 /public/*.pdf
+!/public/Arurum Broc-compressed.pdf
 /public/.orig_backup/
 /public/Aurum video 1.mp4

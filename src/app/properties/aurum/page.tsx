@@ -29,7 +29,7 @@ const PH = "/aurum.png";
 // TODO: replace with the real sales line / WhatsApp / brand-ambassador email.
 const PHONE = "tel:+2349010777777";
 const WHATSAPP = "https://wa.me/2349010777777";
-const BROCHURE_URL = "/Arurum%20Broc.pdf";
+const BROCHURE_URL = "/Arurum%20Broc-compressed.pdf";
 
 /* ─── Exact AURUM content (verbatim — do not alter wording) ─── */
 const OVERVIEW = [

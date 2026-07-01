@@ -24,7 +24,7 @@ const GOLD = "#B8923E";
 const PH = "/aurum.png";
 const PHONE = "tel:+2340000000000";
 const WHATSAPP = "https://wa.me/2340000000000";
-const BROCHURE_URL = "/Arurum%20Broc.pdf";
+const BROCHURE_URL = "/Arurum%20Broc-compressed.pdf";
 
 type Unit = {
   slug: string;
