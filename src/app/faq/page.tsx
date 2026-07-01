@@ -2,6 +2,7 @@
 
 import Footer from "@/components/custom/footer";
 import Header from "@/components/custom/header";
+import CldImage from "@/components/custom/cld-image";
 import React, { useState } from "react";
 
 const bgColors = ["bg-neutral-800", "bg-neutral-600", "bg-neutral-800"];
@@ -168,9 +169,12 @@ const FAQ = () => {
 
           {/* Hero */}
           <section className="relative h-[40vh] bg-black">
-            <img
+            <CldImage
               src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753027728/lpffnelemh8hfbr1b3ei.jpg"
               alt="FAQ Hero"
+              width={1920}
+              sizes="100vw"
+              loading="eager"
               className="absolute inset-0 object-cover w-full h-full opacity-60"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />

@@ -51,7 +51,7 @@ interface Property {
 }
 
 const FilterSelectItem = ({ label, children }: { label: string; children: React.ReactNode }) => (
-  <div className="flex flex-col items-start gap-1 p-2 h-full justify-center w-full">
+  <div className="flex flex-col items-start gap-0.5 px-2 py-1 h-full justify-center w-full">
     <span className="text-xs text-gray-400">{label}</span>
     {children}
   </div>
@@ -190,7 +190,7 @@ const PropertySearchFilter = () => {
   };
 
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-2 py-0 sticky top-20 z-40">
+    <div className="mx-auto px-4 sm:px-6 lg:px-2 py-0 relative z-40">
       {/* Desktop Filter UI */}
       <div className="hidden md:block mx-auto pl-1 bg-black/30 backdrop-blur-xs rounded-full w-full max-w-[758px] lg:max-w-[1440px] border border-white/20 relative mb-0">
         <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between w-full p-2 md:p-0">
@@ -212,7 +212,7 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
           </div>
 
-          <Separator orientation="vertical" className="hidden md:block h-12 bg-white/20" />
+          <Separator orientation="vertical" className="hidden md:block h-8 bg-white/20" />
           <Separator orientation="horizontal" className="w-full h-[1px] bg-white/20 md:hidden" />
 
           <div className="hidden md:flex md:flex-1 py-1 md:py-0">
@@ -233,7 +233,7 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
           </div>
 
-          <Separator orientation="vertical" className="hidden md:block h-12 bg-white/20" />
+          <Separator orientation="vertical" className="hidden md:block h-8 bg-white/20" />
           <Separator orientation="horizontal" className="w-full h-[1px] bg-white/20 md:hidden" />
 
           <div className="hidden md:flex md:flex-1 py-1 md:py-0">
@@ -253,7 +253,7 @@ const PropertySearchFilter = () => {
             </FilterSelectItem>
           </div>
 
-          <Separator orientation="vertical" className="hidden md:block h-12 bg-white/20" />
+          <Separator orientation="vertical" className="hidden md:block h-8 bg-white/20" />
           <Separator orientation="horizontal" className="w-full h-[1px] bg-white/20 md:hidden" />
 
           <div className="hidden md:flex md:flex-1 py-1 md:py-0">
@@ -276,7 +276,7 @@ const PropertySearchFilter = () => {
           <div className="w-full md:flex-1 px-1 flex flex-row md:flex-row gap-2 items-center justify-end md:justify-center pt-2 md:pt-0 pb-2 md:pb-0">
             <Button
               onClick={applyFilters}
-              className="hidden md:block w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-4 h-auto"
+              className="hidden md:block w-full bg-white text-black hover:bg-white/90 rounded-full font-bold text-xs px-4 py-2 h-auto"
             >
               SHOW ALL RESULTS
             </Button>

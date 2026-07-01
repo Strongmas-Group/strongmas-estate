@@ -19,7 +19,7 @@ const Locations = () => {
 
       <div className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[210px] gap-4">
-          {properties.slice(0, 7).map((property, index) => (
+          {properties.slice(0, 8).map((property, index) => (
             <div key={property.name}>
               <Link
                 href={`/properties/${property.name.toLowerCase().replace(/\s+/g, "-")}`}

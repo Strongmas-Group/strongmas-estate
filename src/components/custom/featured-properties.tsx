@@ -16,6 +16,16 @@ import { Button } from "@/components/ui/button";
 
 const properties = [
   {
+    name: "AURUM",
+    location: "Lekki Phase 1",
+    tag: "NOW SELLING",
+    image:
+      "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736236/ChatGPT_Image_Jun_29_2026_11_36_53_AM_lwowfu.png",
+    description:
+      "Inspired by the timeless brilliance of gold, Aurum is a boutique collection of 18 luxury residences blending elegant architecture, AI-powered smart living, and enduring investment value in the heart of Lekki Phase 1.",
+    hint: "luxury apartment exterior",
+  },
+  {
     name: "STRONGMAS RESIDENCE",
     location: "Lekki Phase 1",
     tag: "SOLD OUT & DELIVERED",
