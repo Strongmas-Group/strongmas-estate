@@ -1,20 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  // Portrait Aurum cut for phones; the wide cut frames poorly on small screens.
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 767px)");
-    const update = () => setIsMobile(mq.matches);
-    update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
-  }, []);
 
   // The hero is sticky, so it keeps decoding even after you scroll down.
   // Pause it once it's scrolled out of view so the browser isn't decoding
@@ -46,10 +36,8 @@ const Hero = () => {
       />
       <video
         ref={videoRef}
-        className={`absolute inset-0 w-full h-full ${
-          isMobile ? "object-contain object-center" : "object-cover object-bottom"
-        }`}
-        src={isMobile ? "/aurum-mobile.mp4" : "/md-version-720.mp4"}
+        className="absolute inset-0 w-full h-full object-cover object-bottom"
+        src="/md-version-720.mp4"
         autoPlay
         loop
         muted
