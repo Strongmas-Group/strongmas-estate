@@ -42,7 +42,9 @@ const AurumScroll = () => {
       />
       <video
         ref={videoRef}
-        className="absolute inset-0 h-full w-full object-cover object-bottom"
+        className={`absolute inset-0 h-full w-full ${
+          isMobile ? "object-contain object-center" : "object-cover object-bottom"
+        }`}
         src={isMobile ? "/aurum-mobile.mp4" : "/md-version-720.mp4"}
         loop
         muted
