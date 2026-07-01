@@ -46,7 +46,9 @@ const Hero = () => {
       />
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover object-bottom"
+        className={`absolute inset-0 w-full h-full ${
+          isMobile ? "object-contain object-center" : "object-cover object-bottom"
+        }`}
         src={isMobile ? "/aurum-mobile.mp4" : "/md-version-720.mp4"}
         autoPlay
         loop
