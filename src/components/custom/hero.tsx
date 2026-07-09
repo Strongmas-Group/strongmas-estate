@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const GOLD = "#EFC59D";
@@ -8,6 +8,16 @@ const GOLD = "#EFC59D";
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const peekRef = useRef<HTMLVideoElement>(null);
+  // Portrait Aurum cut for phones; the wide cut frames poorly on small screens.
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   // The hero is sticky, so it keeps decoding even after you scroll down.
   // Pause it (and the small Elysian peek) once they're scrolled out of the way so
@@ -40,8 +50,10 @@ const Hero = () => {
       />
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover object-bottom"
-        src="https://res.cloudinary.com/dbtqditjh/video/upload/q_auto:best,e_improve,e_brightness:25,e_contrast:15,e_vibrance:20/v1783595850/Md_Version-_4_kco9m1.mp4"
+        className={`absolute inset-0 w-full h-full ${
+          isMobile ? "object-contain object-center" : "object-cover object-bottom"
+        }`}
+        src={isMobile ? "/aurum-mobile.mp4" : "https://res.cloudinary.com/dbtqditjh/video/upload/q_auto:best,e_improve,e_brightness:25,e_contrast:15,e_vibrance:20/v1783595850/Md_Version-_4_kco9m1.mp4"}
         autoPlay
         loop
         muted
