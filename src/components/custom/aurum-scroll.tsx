@@ -55,7 +55,6 @@ const AurumScroll = () => {
         playsInline
         preload="auto"
       />
-      <div className="absolute inset-0 bg-black/20" />
     </section>
   );
 };
