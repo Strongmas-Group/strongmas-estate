@@ -67,7 +67,7 @@ const Hero = () => {
               <video
                 ref={peekRef}
                 className="absolute inset-0 h-full w-full object-cover object-center"
-                src="https://res.cloudinary.com/dbtqditjh/video/upload/v1783595850/Md_Version-_4_kco9m1.mp4"
+                src="https://res.cloudinary.com/dbtqditjh/video/upload/f_auto,q_100/v1783938629/Webvideo_1_ctnscg.mp4"
                 autoPlay
                 loop
                 muted
