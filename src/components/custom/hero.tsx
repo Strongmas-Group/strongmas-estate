@@ -53,7 +53,7 @@ const Hero = () => {
         className={`absolute inset-0 w-full h-full ${
           isMobile ? "object-contain object-center" : "object-cover object-bottom"
         }`}
-        src={isMobile ? "/aurum-mobile.mp4" : "https://res.cloudinary.com/dbtqditjh/video/upload/q_auto:best,e_improve,e_brightness:25,e_contrast:15,e_vibrance:20/v1783595850/Md_Version-_4_kco9m1.mp4"}
+        src={isMobile ? "/aurum-mobile.mp4" : "https://res.cloudinary.com/dbtqditjh/video/upload/f_auto,q_100/v1783938629/Webvideo_1_ctnscg.mp4"}
         autoPlay
         loop
         muted
