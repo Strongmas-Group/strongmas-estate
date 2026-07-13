@@ -49,7 +49,7 @@ const AurumScroll = () => {
         className={`absolute inset-0 h-full w-full ${
           isMobile ? "object-contain object-center" : "object-cover object-bottom"
         }`}
-        src={isMobile ? "/aurum-mobile.mp4" : "https://res.cloudinary.com/dbtqditjh/video/upload/f_auto,q_100/v1783938629/Webvideo_1_ctnscg.mp4"}
+        src={isMobile ? "/aurum-mobile.mp4" : "https://res.cloudinary.com/dbtqditjh/video/upload/f_auto,q_auto:best/v1783938629/Webvideo_1_ctnscg.mp4"}
         loop
         muted
         playsInline
