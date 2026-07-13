@@ -48,7 +48,10 @@ const Hero = () => {
         src="/aurum.png"
         alt="Aurum"
       />
+      {/* Keyed so the breakpoint swap remounts the element: changing src on a
+          <video> that already started loading does not reload it. */}
       <video
+        key={isMobile ? "mobile" : "desktop"}
         ref={videoRef}
         className={`absolute inset-0 w-full h-full ${
           isMobile ? "object-contain object-center" : "object-cover object-bottom"
