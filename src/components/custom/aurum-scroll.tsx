@@ -31,7 +31,8 @@ const AurumScroll = () => {
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+    // Re-observe after the breakpoint swap remounts the <video> element.
+  }, [isMobile]);
 
   return (
     <section id="aurum" className="relative z-10 w-full h-screen overflow-hidden bg-black">
@@ -40,7 +41,10 @@ const AurumScroll = () => {
         src="/aurum.png"
         alt="Aurum"
       />
+      {/* Keyed so the breakpoint swap remounts the element: changing src on a
+          <video> that already started loading does not reload it. */}
       <video
+        key={isMobile ? "mobile" : "desktop"}
         ref={videoRef}
         className={`absolute inset-0 h-full w-full ${
           isMobile ? "object-contain object-center" : "object-cover object-bottom"
