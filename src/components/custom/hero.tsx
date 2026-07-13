@@ -63,7 +63,6 @@ const Hero = () => {
         playsInline
         preload="auto"
       />
-      <div className="absolute inset-0 bg-black/30" />
 
       {/* ── Bottom "peek strip": a sliver of the Elysian Rise video showing there's
             another property below. Tapping it scrolls down to the full section. ── */}
