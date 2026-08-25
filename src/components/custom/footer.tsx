@@ -195,7 +195,7 @@ const Footer = () => {
             <Link href="#" className="transition-colors hover:text-white">
               Cookie Policy
             </Link>
-            <Link href="#" className="transition-colors hover:text-white">
+            <Link href="/privacy-policy" className="transition-colors hover:text-white">
               Privacy Policy
             </Link>
             <Link href="#" className="transition-colors hover:text-white">
