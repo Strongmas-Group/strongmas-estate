@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 const GOLD = "#EFC59D";
 
@@ -70,12 +69,13 @@ const Footer = () => {
           {/* Brand */}
           <div className="flex flex-col items-start lg:col-span-4">
             <Link href="/" className="mb-5 inline-block">
-              <Image
-                src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753087548/vvqvqpq20asthbcthx4b.png"
-                alt="Strongmas Residence Logo"
-                width={200}
-                height={44}
-                className="h-auto w-auto"
+              <img
+                src="/strongmas-development-logo-light.png"
+                alt="Strongmas Development"
+                width={600}
+                height={265}
+                loading="lazy"
+                className="w-[180px] h-auto"
               />
             </Link>
             <p className="mb-6 max-w-xs text-sm leading-relaxed text-foreground/80">

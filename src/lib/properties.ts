@@ -1,4 +1,45 @@
-export const properties = [
+/** Shape of one project in the portfolio. Every field beyond name, status,
+ *  location, images and summary is optional, so the project pages render a
+ *  uniform set of sections and simply fall back where data is missing. */
+export type PropertyUnit = {
+  type: string;
+  [key: string]: string | number | boolean | string[] | undefined;
+};
+
+export type PropertySummary = {
+  project?: string;
+  propertyType?: string;
+  address?: string;
+  typology?: string;
+  garage?: number;
+  carSpace?: string;
+  carSpacePerUnit?: number;
+  height?: string;
+  totalUnits?: string | number;
+  saleStatus?: string;
+  /** Public URL of the downloadable PDF brochure. */
+  brochureUrl?: string;
+};
+
+export type Property = {
+  name: string;
+  status: string;
+  location: string;
+  tag?: string;
+  images: string[];
+  description?: string;
+  summary: PropertySummary;
+  keyFeatures?: string[];
+  features?: string[];
+  safetyAndSecurity?: string[];
+  signatureAmenities?: string[];
+  availableUnits?: PropertyUnit[];
+  floorPlan?: { floor: string; use: string }[];
+  proximities?: string[];
+  virtualtour?: string[];
+};
+
+export const properties: Property[] = [
   {
     name: "STRONGMAS RESIDENCE",
     status: "COMPLETED",
@@ -136,7 +177,7 @@ export const properties = [
     tag: "SOLD OUT, Roofing in Progress",
     location: "Lekki Phase 1",
     description:
-      "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse — a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
+      "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse, a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
     images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218667/xrejwu3vdhtmo3zy5gdj.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753055801/w25u6veyaj3l0laxdt4c.jpg",
@@ -236,7 +277,7 @@ export const properties = [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753848685/hwwi9vxgecsmxztnkmmt.jpg",
     ],
     description:
-      "Olive Mall is a signature commercial offering by Strongmas Residence, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs—accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor—adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones—positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
+      "Olive Mall is a signature commercial offering by Strongmas Development, strategically located along Adeniji Road, directly opposite the newly developed Massey Children’s Hospital. Spread across 715 sqm and three functional floors, the mall is tailored for diverse commercial needs, accommodating retail stores, service-based enterprises, and light commercial activity. The design integrates vertical circulation systems, adaptable floor plans, and dedicated parking, ensuring seamless flow and tenant flexibility. Its prime location in a bustling urban corridor, adjacent to a major healthcare institution and within one of Lagos Island’s most active commercial zones, positions Olive Mall as a high-yield opportunity for forward-thinking investors. More than just a retail space, Olive Mall reflects the Strongmas vision: creating purposeful, future-ready environments in dynamic city hubs.",
     summary: {
       address: "Adeniji Road, opposite Massey Children's Hospital",
       propertyType: "Commercial",
@@ -268,7 +309,7 @@ export const properties = [
     name: "THE ELYSIAN RISE",
     status: "ONGOING",
     location: "Victoria Island",
-    tag: "Piling In Progress",
+    tag: "Eighth-Floor Slab In Progress",
     images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218466/wysvt6xz5bgajthpppw9.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056651/izgmyjnwklmrqjgzsi7l.jpg",
@@ -279,14 +320,13 @@ export const properties = [
     summary: {
       address: "3A, Musa Yar 'Adua Street, Victoria Island, Lagos",
       propertyType: "High-Rise Apartments, Maisonettes & Penthouse",
-      height: "13-Floor Highrise",
+      height: "12-Floor Highrise",
       carSpace: "Ground & First Floor Dedicated Parking",
       typology: "2-Bedroom, 3-Bedroom, 4-Bedroom Maisonettes, 5-Bedroom Penthouse",
       saleStatus: "Limited Units Available",
-      brochureUrl: "/elysian-brochureNew1.pdf",
     },
     description:
-      "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 14-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
+      "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture. Located at Musa Ya’dua Street, Victoria Island, this flagship 12-floor high-rise redefines luxury living at the intersection of elegance and innovation.",
     availableUnits: [
       {
         type: "2-Bedroom Apartment + BQ",
@@ -350,6 +390,7 @@ export const properties = [
       typology: "16 × 2-Bedroom Apartments · 2 × 3-Bedroom Penthouses",
       totalUnits: "18 Units (all with a balcony)",
       saleStatus: "Now Selling",
+      brochureUrl: "/Arurum%20Broc-compressed.pdf",
     },
     description:
       "Live Gold. Live AURUM. AURUM is a premium residential development located in the heart of Lekki Phase 1, one of Lagos’ most desirable and high-value residential destinations. Comprising 16 elegantly designed 2-bedroom apartments and 2 exclusive 3-bedroom penthouses, AURUM blends contemporary architecture, functionality, privacy, and long-term investment value into one sophisticated address. Crafted with contemporary architecture and premium finishing, AURUM is designed for discerning homeowners, upwardly mobile professionals, diaspora investors, and luxury real estate investors seeking value appreciation and elevated living.",

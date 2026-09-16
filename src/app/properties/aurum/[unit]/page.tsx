@@ -47,8 +47,9 @@ const UNITS: Record<string, Unit> = {
     price: "₦320,000,000",
     size: "Spacious 2-Bed · Private Balcony", // TODO: confirm sqft
     description:
-      "A contemporary 2-bedroom residence at AURUM, blending refined architecture, private balconies, and elevated city views in the heart of Lekki Phase 1 — one of Lagos’ most desirable and high-value destinations.",
-    payment: "₦350,000,000 — 40% initial deposit (₦128,000,000), balance spread across 12 / 18 months.",
+      "A contemporary 2-bedroom residence at AURUM, blending refined architecture, private balconies, and elevated city views in the heart of Lekki Phase 1, one of Lagos’ most desirable and high-value destinations.",
+    payment:
+      "Plan A is a 20% initial deposit (₦64,000,000), balance of ₦256,000,000 across 10 instalments. Plan B is a 40% initial deposit (₦128,000,000), balance of ₦192,000,000 across 13 instalments.",
     outright: "Outright payment: ₦320,000,000.",
     hero: "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736245/2_Bed_3_ud9lln.png",
     gallery: [
@@ -82,8 +83,8 @@ const UNITS: Record<string, Unit> = {
     price: "Price To Be Announced",
     size: "Exclusive Top-Floor Residence",
     description:
-      "An exclusive 3-bedroom duplex penthouse at AURUM, crowned by a curated rooftop experience with a gym and swimming pool — the pinnacle of premium living in Lekki Phase 1.",
-    payment: "40% initial deposit. Final pricing to be announced.",
+      "An exclusive 3-bedroom duplex penthouse at AURUM, crowned by a curated rooftop experience with a gym and swimming pool, the pinnacle of premium living in Lekki Phase 1.",
+    payment: "20% or 40% initial deposit. Final pricing to be announced.",
     hero: "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736253/3_Bed_6_c8k5ab.png",
     gallery: [
       {
@@ -199,7 +200,7 @@ export default function UnitDetailPage() {
 
   return (
     <div className="relative overflow-x-clip text-white">
-      {/* Soft, luxurious animated background — drifting aurora, corner glows & floating sparkles */}
+      {/* Soft, luxurious animated background, drifting aurora, corner glows & floating sparkles */}
       <div className="aurum-bg fixed inset-0 -z-10 overflow-hidden bg-[#0c0c0d]">
         <div className="aurum-bg-orb aurum-bg-orb--1" />
         <div className="aurum-bg-orb aurum-bg-orb--2" />
@@ -282,7 +283,7 @@ export default function UnitDetailPage() {
       {/* ── Title & location ── */}
       <div className="mx-auto max-w-6xl px-6 pb-12">
         <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-[0.12em]">Aurum</h2>
-        <p className="mt-2 text-sm tracking-[0.3em] uppercase text-white/50">Adekola Balogun Street, Lekki, Lagos</p>
+        <p className="mt-2 text-sm tracking-[0.3em] uppercase text-white/50">Adekola Balogun Street, Adjacent Pinnacle Filling Station, Lekki Phase 1, Lagos</p>
       </div>
 
       {/* ── Tabbed section: Gallery / Location / Payment / Brochure ── */}
@@ -367,7 +368,7 @@ export default function UnitDetailPage() {
             <Reveal>
               <iframe
                 title="Aurum location"
-                src="https://www.google.com/maps?q=Adekola%20Balogun%20Street%2C%20Lekki%2C%20Lagos&output=embed"
+                src="https://www.google.com/maps?q=Adekola%20Balogun%20Street%2C%20Lekki%20Phase%201%2C%20Lagos&output=embed"
                 className="h-[55vh] w-full border-0 grayscale-[0.2]"
                 loading="lazy"
               />

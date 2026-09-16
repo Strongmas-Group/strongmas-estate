@@ -18,6 +18,7 @@ module.exports = {
       { loc: "/book-inspection", changefreq: "monthly", priority: 0.9 },
       { loc: "/blog", changefreq: "weekly", priority: 0.9 },
       { loc: "/properties", changefreq: "weekly", priority: 1.0 },
+      { loc: "/properties/aurum", changefreq: "weekly", priority: 1.0 },
     ];
   },
 };

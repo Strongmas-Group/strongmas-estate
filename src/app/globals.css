@@ -217,6 +217,14 @@ video {
 
 /* ── Registration modal entrance ── */
 .aurum-modal-backdrop { animation: aurum-fade 220ms ease forwards; }
+
+/* A modal hides the animated background, so stop paying to repaint it.
+   The orbs are 45-60vw at blur(90px); compositing them behind an overlay
+   is pure cost with nothing visible to gain. */
+body.modal-open .aurum-bg-orb,
+body.modal-open .aurum-bg-grain {
+  animation-play-state: paused;
+}
 .aurum-modal-panel { animation: aurum-modal-in 360ms cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 @keyframes aurum-modal-in {
   from { opacity: 0; transform: translateY(24px) scale(0.97); }

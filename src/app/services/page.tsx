@@ -1,23 +1,25 @@
 "use client";
 
+import * as React from "react";
 import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import Image from "next/image";
 import Link from "next/link";
 import { Carousel, CarouselContent, CarouselItem, CarouselDots } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const services = [
   {
     icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375523/f3z6fxzik21xfrtbx922.svg",
     title: "Residential & Commercial Development",
     description:
-      "Strongmas Residence and Development is your premier destination for exceptional real estate solutions in the world of luxury.",
+      "Strongmas Development is your premier destination for exceptional real estate solutions in the world of luxury.",
   },
   {
     icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375592/o9zvskm3etdloupfxnxd.svg",
     title: "Joint Venture Partnership",
     description:
-      "At Strongmas Residence and Development, we have a rich history of creating exceptional real estate properties and delivering top-tier construction projects.",
+      "At Strongmas Development, we have a rich history of creating exceptional real estate properties and delivering top-tier construction projects.",
   },
   {
     icon: "https://res.cloudinary.com/dbczzmftw/image/upload/v1753375624/oszxfytad4qndbqthn5k.svg",
@@ -54,7 +56,7 @@ const testimonials = [
   {
     name: "Mr. Kunle",
     quote:
-      "After inspecting your property, I was 101% convinced to own a property with Strongmas Residence and decided to be a part of the company by purchasing a unit of thier new project site THE OMINI.",
+      "After inspecting your property, I was 101% convinced to own a property with Strongmas Development and decided to be a part of the company by purchasing a unit of thier new project site THE OMINI.",
   },
   {
     name: "Mr. Ade",
@@ -64,6 +66,12 @@ const testimonials = [
 ];
 
 export default function ServicesPage() {
+  // Testimonials advance on their own, pausing while the pointer is over them
+  // and resuming on the way out rather than stopping for good.
+  const testimonialAutoplay = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -124,6 +132,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl md:text-4xl font-bold font-headline">WHAT OUR CLIENTS SAY</h2>
             </div>
             <Carousel
+              plugins={[testimonialAutoplay.current]}
               opts={{
                 align: "start",
                 loop: true,

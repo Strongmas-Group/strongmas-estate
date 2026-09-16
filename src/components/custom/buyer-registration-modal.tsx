@@ -90,9 +90,11 @@ export default function BuyerRegistrationModal() {
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    document.body.classList.add("modal-open");
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
+      document.body.classList.remove("modal-open");
     };
   }, [open]);
 
@@ -131,7 +133,7 @@ export default function BuyerRegistrationModal() {
 
   return (
     <div
-      className="aurum-modal-backdrop fixed inset-0 z-[60] flex items-start justify-center overflow-y-auto bg-black/70 p-4 backdrop-blur-sm md:p-8"
+      className="aurum-modal-backdrop fixed inset-0 z-[60] flex items-start justify-center overflow-y-auto bg-black/80 p-4 md:p-8"
       onClick={() => setOpen(false)}
     >
       <div
@@ -155,13 +157,13 @@ export default function BuyerRegistrationModal() {
           </h2>
         </div>
         <p className="mx-auto mt-8 max-w-2xl text-center text-white/65 leading-relaxed">
-          Thank you for your interest in Aurum by Strongmas Residence. Kindly complete this form to
+          Thank you for your interest in Aurum by Strongmas Development. Kindly complete this form to
           enjoy priority access to available residences and exclusive ownership opportunities.
         </p>
 
         {sent ? (
           <p className="mt-16 text-center text-lg text-white/80">
-            Thank you — your registration has been received. Our team will be in touch shortly.
+            Thank you, your registration has been received. Our team will be in touch shortly.
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="mt-12 space-y-14">
@@ -228,7 +230,7 @@ export default function BuyerRegistrationModal() {
               <div>
                 <label className="text-xs tracking-[0.2em] uppercase text-white/60">Other</label>
                 <input
-                  name="How did you hear — Other"
+                  name="How did you hear, Other"
                   className="mt-2 w-full border-b border-white/40 bg-transparent py-2 outline-none focus:border-white"
                 />
               </div>
@@ -243,7 +245,7 @@ export default function BuyerRegistrationModal() {
                   className="mt-1 h-4 w-4 flex-shrink-0 accent-[#B8923E]"
                 />
                 I would like to receive priority access to new releases, exclusive pricing,
-                investment opportunities and private Strongmas Residence events.
+                investment opportunities and private Strongmas Development events.
               </label>
             </FormGroup>
 
