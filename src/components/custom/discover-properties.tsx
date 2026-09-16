@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import MediaImage from "@/components/custom/media-image";
 import { Button } from "@/components/ui/button";
 import { useModal } from "@/hooks/use-modal";
 
@@ -8,10 +8,9 @@ const DiscoverProperties = () => {
   const { onOpen } = useModal();
   return (
     <section className="relative w-full h-[360px] flex items-center justify-center">
-      <Image
+      <MediaImage
         src="https://res.cloudinary.com/dbczzmftw/image/upload/v1753017068/hciwh8gaajm8y9zk5dnh.png"
         alt="Cityscape"
-        fill
         className="absolute inset-0 object-cover brightness-50"
         data-ai-hint="city building sunset"
       />

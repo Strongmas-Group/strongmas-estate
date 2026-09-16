@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
+import MediaImage from "@/components/custom/media-image";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -72,7 +72,7 @@ const properties = [
   },
   {
     name: "THE ELYSIAN RISE",
-    tag: "Current Stage: Pile Load Test",
+    tag: "Current Stage: Eighth-Floor Slab",
     location: "Musa Ya’dua Street, Victoria Island",
     description:
       "Inspired by the ideology of heroism and the iconic craftsmanship of the Rolls-Royce Boat Tail, The Elysian Rise is a bold expression of opulence, intelligence, and timeless architecture.",
@@ -102,10 +102,9 @@ const FeaturedProperties = () => {
             {properties.map((property, index) => (
               <CarouselItem key={index}>
                 <div className="relative w-full h-[90vh] border-t-2 border-white">
-                  <Image
+                  <MediaImage
                     src={property.image}
                     alt={property.name}
-                    fill
                     className="object-cover brightness-50"
                     data-ai-hint={property.hint}
                   />

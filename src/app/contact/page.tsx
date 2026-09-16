@@ -31,11 +31,11 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-16 sm:py-24 bg-white text-black font-sans">
-          <div className="container mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <section className="py-16 sm:py-24 lg:py-28 bg-white text-black font-sans">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
               {/* Left Contact Info */}
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-10">
                 <div>
                   <h2 className="text-3xl font-bold font-headline mb-4">REACH OUT TO US</h2>
                   <p className="text-muted-foreground">
@@ -90,7 +90,7 @@ export default function ContactPage() {
               </div>
 
               {/* Zoho Form Embed */}
-              <div className="bg-gray-50 p-6 md:p-8 rounded-lg">
+              <div className="bg-gray-50 p-6 sm:p-8 md:p-10 rounded-lg">
                 <iframe
                   src="https://forms.zohopublic.com/strongmas1/form/ContactUsForm/formperma/u10aYjJMk0M4z_kSfB08rtnDTSiVrcN6jRPiZkWJ-Mc"
                   width="100%"
@@ -109,7 +109,7 @@ export default function ContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="w-full h-[300px] md:h-[500px]">
+        <section className="w-full h-[300px] md:h-[500px] border-t border-gray-200">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!m12!1m3!1d63435.789871376786!2d3.4902400631003414!3d6.427842004237196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKm%2049%2C%20Olokonla%20Bus%20Stop%2C%20Lekki%20-%20Epe%20Expressway%2C%20Beside%20Petrocam%20Filling%20Station%2C%20Ajah%2C%20Lagos%20-%20Nigeria.!5e0!3m2!1sen!2sng!4v1753022482341!5m2!1sen!2sng"
             width="100%"

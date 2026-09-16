@@ -18,10 +18,10 @@ const leadershipTeam = [
     role: "Founder & Managing Director",
     imageUrl: "/md.png",
     description:
-      "Micheal Shobukola is the visionary Founder and Managing Director of Strongmas Group — a dynamic entrepreneur whose influence spans over a decade of building impactful, future-forward businesses in Nigeria’s evolving real estate landscape.\n\n" +
+      "Micheal Shobukola is the visionary Founder and Managing Director of Strongmas Group, a dynamic entrepreneur whose influence spans over a decade of building impactful, future-forward businesses in Nigeria’s evolving real estate landscape.\n\n" +
       "With a B.Sc. in Computer and Information Science from Lead City University and a Master’s degree from the University of East Anglia, Micheal combines technical insight with business acumen to lead Strongmas with precision, innovation, and purpose.\n\n" +
-      "He has been the architect of the company’s transformation — from a single idea into a diversified group — overseeing the conceptualization, development, construction, and management of some of the most sophisticated premium housing estates and smart gated communities in Nigeria. His strategic leadership and exceptional ability to mobilize capital have been instrumental to the exponential growth of Strongmas.\n\n" +
-      "Today, the company stands as a symbol of modern living, innovation, and lifestyle excellence — a vision Micheal continues to expand with bold thinking and an unrelenting drive for quality. Micheal is widely travelled and highly respected in the real estate and business sector.",
+      "He has been the architect of the company’s transformation, from a single idea into a diversified group, overseeing the conceptualization, development, construction, and management of some of the most sophisticated premium housing estates and smart gated communities in Nigeria. His strategic leadership and exceptional ability to mobilize capital have been instrumental to the exponential growth of Strongmas.\n\n" +
+      "Today, the company stands as a symbol of modern living, innovation, and lifestyle excellence, a vision Micheal continues to expand with bold thinking and an unrelenting drive for quality. Micheal is widely travelled and highly respected in the real estate and business sector.",
     hint: "man smiling suit",
   },
   {
@@ -29,9 +29,9 @@ const leadershipTeam = [
     role: "Executive Director",
     imageUrl: "/mk.png",
     description:
-      "Kikelomo Williams is a seasoned strategic leader whose professional journey spans over a decade across both local and multinational environments. Prior to joining Strongmas, she successfully led several revenue transformation initiatives — building high-performing sales teams, driving consistent year-on-year profit growth, and repositioning brands for long-term success. Her impact has been particularly strong in the real estate sector, where she implemented innovative sales and marketing systems that delivered measurable results to the bottom line.\n\n" +
+      "Kikelomo Williams is a seasoned strategic leader whose professional journey spans over a decade across both local and multinational environments. Prior to joining Strongmas, she successfully led several revenue transformation initiatives, building high-performing sales teams, driving consistent year-on-year profit growth, and repositioning brands for long-term success. Her impact has been particularly strong in the real estate sector, where she implemented innovative sales and marketing systems that delivered measurable results to the bottom line.\n\n" +
       "She holds a degree in History and International Relations from Lagos State University, as well as a diploma in Mass Communication from the University of Lagos. Kikelomo also holds certifications from Curtin University and PRCAN and is a proud member of the International Management Consultants (IMC).\n\n" +
-      "Now at Strongmas, Kikelomo brings her results-driven leadership to the Executive Team — with a clear focus on increasing revenue through strategic sales execution, brand strategy, market positioning, and operational growth. Her role is central to scaling the company’s influence, optimizing customer experience, and unlocking new revenue channels through strategic partnerships, corporate communications, and team development — all reinforcing Strongmas’ vision of becoming a household name in luxury real estate.",
+      "Now at Strongmas, Kikelomo brings her results-driven leadership to the Executive Team, with a clear focus on increasing revenue through strategic sales execution, brand strategy, market positioning, and operational growth. Her role is central to scaling the company’s influence, optimizing customer experience, and unlocking new revenue channels through strategic partnerships, corporate communications, and team development, all reinforcing Strongmas’ vision of becoming a household name in luxury real estate.",
     hint: "woman professional headshot",
   },
 ];
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <div className="text-white order-first lg:order-last px-4 sm:px-0">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline mb-6">STRONGMAS!</h2>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  STRONGMAS is more than just a collection of luxury properties—it's a vision of
+                  STRONGMAS is more than just a collection of luxury properties, it's a vision of
                   sustainable, tech-enabled living refined. With over a decade of experience in real
                   estate development, we’ve set new benchmarks for modern, high-performance housing
                   in Lagos, Nigeria, and beyond.
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 <Target className="h-12 w-12 text-primary mb-4" /> {/* Mission Icon */}
                 <h3 className="text-2xl font-bold font-headline text-gray-900 mb-4">OUR MISSION</h3>
                 <p className="text-lg leading-relaxed text-gray-700">
-                  At Strongmas, we craft luxurious and intelligent living experiences—designed to
+                  At Strongmas, we craft luxurious and intelligent living experiences, designed to
                   inspire, built with precision, and tailored to elevate the lives of our clientele.
                 </p>
               </div>
@@ -143,28 +143,28 @@ export default function AboutPage() {
                     OUR GUIDING PRINCIPLES (BTCUP)
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <div className="bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
+                <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-8">
+                  <div className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
                     <Handshake className="h-12 w-12 text-accent mb-4" />
                     <h3 className="text-xl font-semibold font-headline mb-2 text-white">
                       Business Integrity
                     </h3>
                     <p className="text-gray-200 leading-relaxed">
-                      We uphold the highest standards of honesty, transparency, and ethical
-                      conduct—delivering consistent and trustworthy service to all our stakeholders.
+                      We uphold the highest standards of honesty, transparency, and ethical conduct,
+                      delivering consistent and trustworthy service to all our stakeholders.
                     </p>
                   </div>
-                  <div className="bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
+                  <div className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
                     <Timer className="h-12 w-12 text-accent mb-4" />
                     <h3 className="text-xl font-semibold font-headline mb-2 text-white">
                       Timely Precision
                     </h3>
                     <p className="text-gray-200 leading-relaxed">
                       We are committed to delivering premium homes and services within agreed
-                      timelines—combining speed with uncompromising quality.
+                      timelines, combining speed with uncompromising quality.
                     </p>
                   </div>
-                  <div className="bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
+                  <div className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
                     <Heart className="h-12 w-12 text-accent mb-4" /> {/* Icon color adjusted */}
                     <h3 className="text-xl font-semibold font-headline mb-2 text-white">
                       Client Devotion
@@ -174,25 +174,25 @@ export default function AboutPage() {
                       personalized experiences that reflect care, clarity, and excellence.
                     </p>
                   </div>
-                  <div className="bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
+                  <div className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
                     <Award className="h-12 w-12 text-accent mb-4" /> {/* Icon color adjusted */}
                     <h3 className="text-xl font-semibold font-headline mb-2 text-white">
                       Uncompromising Quality
                     </h3>
                     <p className="text-gray-200 leading-relaxed">
                       We exceed expectations by delivering functional, reliable, and beautifully
-                      crafted homes—without compromise.
+                      crafted homes, without compromise.
                     </p>
                   </div>
-                  <div className="bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
+                  <div className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)] bg-white/10 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col items-center text-center backdrop-blur-sm">
                     <Users className="h-12 w-12 text-accent mb-4" /> {/* Icon color adjusted */}
                     <h3 className="text-xl font-semibold font-headline mb-2 text-white">
                       People First
                     </h3>
                     <p className="text-gray-200 leading-relaxed">
-                      We invest in a professional, passionate, and competent team—fostering a
+                      We invest in a professional, passionate, and competent team, fostering a
                       culture of growth, collaboration, and purpose. We believe our people are our
-                      greatest assets—because building legacies begins with empowering talent.
+                      greatest assets, because building legacies begins with empowering talent.
                     </p>
                   </div>
                 </div>

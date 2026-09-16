@@ -9,6 +9,8 @@ import Locations from "@/components/custom/locations";
 import Footer from "@/components/custom/footer";
 import DiscoverProperties from "@/components/custom/discover-properties";
 import FeaturedPopup from "@/components/custom/featured-popup";
+import Insights from "@/components/custom/insights";
+import FormsCta from "@/components/custom/forms-cta";
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
         <div className="relative">
           <Hero />
           <AurumScroll />
-          {/* Sticky search bar — Aurum video shows through its translucent
+          {/* Sticky search bar, Aurum video shows through its translucent
               background as you scroll past the hero. */}
           <div className="sticky bottom-2 z-20 -mt-24">
             <PropertySearchFilter />
@@ -33,6 +35,8 @@ export default function Home() {
           <Stats />
         </div>
         <DiscoverProperties />
+        <Insights />
+        <FormsCta />
       </main>
       <Footer />
       <FeaturedPopup />

@@ -2,7 +2,7 @@
 
 "use client";
 
-import Image from "next/image";
+import MediaImage from "@/components/custom/media-image";
 import Link from "next/link";
 import { properties } from "@/lib/properties";
 
@@ -26,13 +26,12 @@ const Locations = () => {
                 className="group relative overflow-hidden col-span-1 row-span-1 rounded-md"
               >
                 <div className="relative w-full h-full rounded-md overflow-hidden">
-                  <Image
+                  <MediaImage
                     src={property.images[0]}
                     alt={property.name}
                     width={800}
-                    height={1000}
-                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105 brightness-90 rounded-md"
-                    data-ai-hint="modern building exterior"
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    className="transition-transform duration-500 ease-in-out group-hover:scale-105 brightness-90 rounded-md"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/50 backdrop-blur-sm rounded-b-md">
                     <div className="flex justify-between">

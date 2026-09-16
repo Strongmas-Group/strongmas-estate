@@ -23,7 +23,7 @@ const FAQ = () => {
       questions: [
         {
           q: "What stage is Elysian Rise currently at?",
-          a: "Elysian Rise is currently at the piling stage, the substructure work is actively underway. This marks a strategic window for off-plan investors to secure units at the most favorable entry pricing.",
+          a: "Elysian Rise is currently at the eighth-floor slab, with superstructure work actively underway. This marks a strategic window for off-plan investors to secure units at the most favorable entry pricing.",
         },
         {
           q: "What is the depth of piling for Elysian Rise?",
@@ -31,7 +31,7 @@ const FAQ = () => {
         },
         {
           q: "When is the estimated completion date?",
-          a: "Elysian Rise is projected for completion within 36 months—comprising 24 months dedicated to structural construction and an additional 12 months for luxury interior finishes and final handover.",
+          a: "Elysian Rise is projected for completion within 36 months, comprising 24 months dedicated to structural construction and an additional 12 months for luxury interior finishes and final handover.",
         },
         {
           q: "What type of cement is used for construction?",
@@ -66,7 +66,7 @@ const FAQ = () => {
         },
         {
           q: "Where is Elysian Rise located?",
-          a: "Elysian Rise is strategically located in Victoria Island, Lagos — a high-demand district known for luxury living, waterfront views, and vibrant urban energy.",
+          a: "Elysian Rise is strategically located in Victoria Island, Lagos, a high-demand district known for luxury living, waterfront views, and vibrant urban energy.",
         },
         {
           q: "Are Strongmas homes smart-enabled?",
@@ -151,7 +151,7 @@ const FAQ = () => {
         },
         {
           q: "Do you offer property management or rental services?",
-          a: "Yes. Strongmas Residence Maison Ltd offers Airbnb hosting, long-term leasing, and rental yield optimization services.",
+          a: "Yes. Strongmas Development Maison Ltd offers Airbnb hosting, long-term leasing, and rental yield optimization services.",
         },
       ],
     },

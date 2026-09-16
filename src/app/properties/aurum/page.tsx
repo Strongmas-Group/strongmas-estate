@@ -20,23 +20,33 @@ import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import { cld, cldSrcSet } from "@/lib/cld";
 import BuyerRegistrationModal, { openRegister } from "@/components/custom/buyer-registration-modal";
+import ProjectInsights from "@/components/custom/project-insights";
 
 const GOLD = "#B8923E";
 
 // TODO: replace placeholders with the real Aurum renders/photos when supplied.
 const PH = "/aurum.png";
 
-// TODO: replace with the real sales line / WhatsApp / brand-ambassador email.
 const PHONE = "tel:+2349010777777";
+const PRESENTATION_PHONE = "tel:+2348028940857";
 const WHATSAPP = "https://wa.me/2349010777777";
 const BROCHURE_URL = "/Arurum%20Broc-compressed.pdf";
 
-/* ─── Exact AURUM content (verbatim — do not alter wording) ─── */
+/* ─── Exact AURUM content (verbatim, do not alter wording) ─── */
+const POSITIONING =
+  "A private collection of luxury residences in Lekki Phase 1, Lagos, designed around contemporary architecture, intelligent home technology, premium amenities and effortless urban living.";
+
 const OVERVIEW = [
-  "Aurum is derived from the Latin word for gold, symbolising prestige, prosperity and enduring value. Aurum is an exclusive luxury residential development in Lekki Phase I, offering elegantly designed 2-bedroom residences and 3-bedroom penthouses that redefine contemporary urban living.",
+  "Aurum is derived from the Latin word for gold, symbolising prestige, prosperity and enduring value. Aurum is a luxury residential development in Lekki Phase 1, offering elegantly designed 2-bedroom apartments and 3-bedroom penthouses, premium apartments in Lekki Phase 1 built around contemporary urban living.",
+  "As a luxury residential development in Lagos, Aurum brings together apartments for sale in Lekki Phase 1 with intelligent home technology, premium amenities and a connected address.",
 ];
 
-const TYPOLOGY = ["16 Units of 2-Bedroom Apartments", "2 Exclusive 3-Bedroom Penthouses"];
+/* Count split from label for display only, the wording is unchanged:
+   "16" + "Units of 2-Bedroom Apartments" reads as the original line. */
+const TYPOLOGY = [
+  { count: "16", label: "Units of 2-Bedroom Apartments" },
+  { count: "2", label: "Exclusive 3-Bedroom Penthouses" },
+];
 const TOTAL_UNITS = "Total units: 18, all with a balcony";
 
 const PRICING = [
@@ -44,12 +54,37 @@ const PRICING = [
     title: "2-Bedroom Apartments",
     lines: [
       "Outright: ₦320,000,000",
-      "Installment: ₦350,000,000",
-      "Initial Deposit: 40% = #128,000,000",
-      "Spread Balance Across: 12/18 months",
+      "Plan A: 20% Initial Deposit of ₦64,000,000",
+      "Plan A Balance: ₦256,000,000 across 10 instalments",
+      "Plan B: 40% Initial Deposit of ₦128,000,000",
+      "Plan B Balance: ₦192,000,000 across 13 instalments",
     ],
   },
-  { title: "3-Bedroom Penthouses", lines: ["Pricing: To Be Announced", "Initial Deposit: 40%"] },
+  { title: "3-Bedroom Penthouses", lines: ["Pricing: To Be Announced", "Initial Deposit: 20% or 40%"] },
+];
+
+/* 6. AI-Enabled Smart Living, the concrete functions the system integrates. */
+const SMART_LIVING = [
+  {
+    title: "Intelligent lighting control",
+    body: "Automate and control lighting throughout the home.",
+  },
+  {
+    title: "Smart climate control",
+    body: "Manage your indoor environment for greater comfort and efficiency.",
+  },
+  {
+    title: "AI-enabled security monitoring",
+    body: "Integrated surveillance and security features for enhanced protection.",
+  },
+  {
+    title: "Smart access control",
+    body: "Secure and convenient entry management.",
+  },
+  {
+    title: "Automated safety alerts",
+    body: "Integrated smoke, gas and flood detection with real-time alerts.",
+  },
 ];
 
 const FLOOR_DIST = [
@@ -105,6 +140,12 @@ const FLOOR_IMAGES = [
   "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736212/WhatsApp_Image_2026-06-29_at_1.10.49_PM_1_agiuwr.jpg",
 ];
 
+/* The three-quarter corner render carries both the front and the side elevation,
+   with the penthouse level visibly set back on top, so it doubles as the
+   typology visual. */
+const EXTERIOR_CORNER =
+  "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736236/ChatGPT_Image_Jun_29_2026_11_36_53_AM_lwowfu.png";
+
 const galleryTabs = [
   {
     label: "Bedroom",
@@ -128,7 +169,7 @@ const galleryTabs = [
     label: "Exterior",
     imgs: [
       "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736232/ChatGPT_Image_Jun_29_2026_11_18_27_AM_f7jwh8.png",
-      "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736236/ChatGPT_Image_Jun_29_2026_11_36_53_AM_lwowfu.png",
+      EXTERIOR_CORNER,
       "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736240/ChatGPT_Image_Jun_29_2026_11_31_50_AM_dr2rok.png",
     ],
   },
@@ -137,11 +178,11 @@ const galleryTabs = [
 const faqs = [
   {
     q: "Why Aurum?",
-    a: "Inspired by the timeless brilliance of gold, Aurum is a boutique collection of luxury residences that blends elegant architecture, AI-powered smart living, and enduring investment value in one of Lagos' most prestigious neighbourhoods.",
+    a: "Inspired by the timeless brilliance of gold, Aurum is a boutique collection of luxury residences that blends elegant architecture, AI-enabled smart living, and enduring investment value in one of Lagos' most prestigious neighbourhoods.",
   },
   {
     q: "Where is Aurum located?",
-    a: "Aurum enjoys a prestigious address at 4 Balogun Street, Off Jide Sawyer Drive, Lekki Phase I—placing residents minutes from Lagos' finest business, leisure and lifestyle destinations.\n\nNearby Landmarks\n• Civic Centre – 6 mins\n• Lagos-Calabar Coastal Highway – 8 mins\n• Canadian High Commission – 8 mins\n• EbonyLife Cinema – 10 mins\n• Fine dining, luxury retail, international schools and premium healthcare.",
+    a: "Aurum is located on Adekola Balogun Street, Adjacent Pinnacle Filling Station, Lekki Phase 1, Lagos. It is conveniently located within easy reach of key diplomatic, commercial and lifestyle destinations in Lekki Phase 1.\n\nNearby Landmarks\n• Civic Centre – 6 mins\n• Lagos-Calabar Coastal Highway – 8 mins\n• Canadian Embassy – 8 mins\n• EbonyLife Cinema – 10 mins\n• Fine dining, luxury retail, international schools and premium healthcare.",
   },
   {
     q: "What makes Aurum exclusive?",
@@ -149,7 +190,7 @@ const faqs = [
   },
   {
     q: "What types of residences are available?",
-    a: "Every residence is thoughtfully crafted with contemporary architecture, premium finishes, spacious interiors, and AI-powered Smart Home technology, delivering a refined living experience in the heart of Lekki Phase I.",
+    a: "Every residence is thoughtfully crafted with contemporary architecture, premium finishes, spacious interiors, and AI-enabled smart home technology, delivering a refined living experience in the heart of Lekki Phase 1.",
   },
   {
     q: "What is the building configuration?",
@@ -157,11 +198,11 @@ const faqs = [
   },
   {
     q: "What lifestyle amenities are available?",
-    a: "Residents enjoy access to:\n• Rooftop Swimming Pool\n• Fully Equipped Gym\n• Children's Play Area\n• Concierge Services\n• AI-Powered Smart Home Technology\n• High-Speed Elevators\n• 24-Hour CCTV & Access Control\n• Standby Power\n• Treated Water\n• Dedicated Resident Parking",
+    a: "Residents enjoy access to:\n• Rooftop Swimming Pool\n• Fully Equipped Gym\n• Children's Play Area\n• Concierge Services\n• AI-Enabled Smart Living\n• High-Speed Elevators\n• 24-Hour CCTV & Access Control\n• Standby Power\n• Treated Water\n• Dedicated Resident Parking",
   },
   {
     q: "Why invest in Aurum?",
-    a: "Aurum combines luxury living with exceptional investment potential.\n\nInvestment Highlights:\n• Prime Lekki Phase I Address\n• Only 18 Exclusive Residences\n• AI-Powered Smart Homes\n• Projected Rental Yield of 7–10%\n• Strong Capital Appreciation Potential\n• High Demand from Professionals, Expatriates and Diaspora Investors\n• Developed by an experienced luxury developer",
+    a: "Rental Demand Potential\nAurum is positioned within an established premium residential market in Lekki Phase 1, offering potential rental demand from residents seeking well-connected, amenity-rich homes.\n\nPositioned Within an Established Premium Residential Market\nAurum is located in Lekki Phase 1, an established premium residential district with access to major business, lifestyle, retail and leisure destinations across Lagos.\n\nAlso Consider:\n• Only 18 Residences\n• AI-Enabled Smart Living\n• Premium apartments in Lekki Phase 1, an established residential district",
   },
   {
     q: "When will Aurum be completed?",
@@ -173,11 +214,11 @@ const faqs = [
   },
   {
     q: "Who is developing Aurum?",
-    a: "Strongmas Residence is a leading luxury real estate developer delivering premium residences defined by innovative architecture, intelligent living and exceptional craftsmanship.\n\nIts growing portfolio includes Strongmas Residence, Avions Court I & II, The Omini and Kesbel Court, while its flagship project, Elysian Rise in Victoria Island, is currently under construction.",
+    a: "Strongmas Development is a premium real estate development company focused on creating thoughtfully designed residential properties in Lagos.\n\nIts growing portfolio includes Strongmas Residence, Avions Court I & II, The Omini and Kesbel Court, while its flagship project, Elysian Rise in Victoria Island, is currently under construction.",
   },
   {
-    q: "About Strongmas Residence",
-    a: "Strongmas Residence creates exceptional homes where luxury, innovation and intelligent living converge. Every development is thoughtfully designed to deliver timeless architecture, premium finishes and enduring investment value.\n\nWith a proven portfolio in Lagos' most desirable locations, Strongmas Residence continues to set new standards in luxury residential development.",
+    q: "About Strongmas Development",
+    a: "Strongmas Development creates exceptional homes where luxury, innovation and intelligent living converge. Every development is thoughtfully designed to deliver timeless architecture, premium finishes and enduring investment value.\n\nWith a proven portfolio in Lagos' most desirable locations, Strongmas Development continues to set new standards in luxury residential development.",
   },
 ];
 
@@ -276,6 +317,15 @@ const RegisterButton = ({ filled = false }: { filled?: boolean }) =>
     </button>
   );
 
+const PresentationButton = () => (
+  <a
+    href={PRESENTATION_PHONE}
+    className="inline-block border border-white/40 bg-transparent px-12 py-4 text-center text-xs tracking-[0.3em] uppercase text-white transition-colors hover:border-white hover:bg-white/10"
+  >
+    Book a Private Presentation
+  </a>
+);
+
 export default function AurumPage() {
   const [planTab, setPlanTab] = useState(0);
   const [galTab, setGalTab] = useState(0);
@@ -299,7 +349,7 @@ export default function AurumPage() {
 
   return (
     <div className="relative overflow-x-clip text-white">
-      {/* Soft, luxurious animated background — drifting aurora, corner glows & floating sparkles */}
+      {/* Soft, luxurious animated background, drifting aurora, corner glows & floating sparkles */}
       <div className="aurum-bg fixed inset-0 -z-10 overflow-hidden bg-[#1a1309]">
         <div className="aurum-bg-orb aurum-bg-orb--1" />
         <div className="aurum-bg-orb aurum-bg-orb--2" />
@@ -353,17 +403,40 @@ export default function AurumPage() {
         <img
           className="aurum-kenburns absolute inset-0 h-full w-full object-cover"
           src="/WhatsApp%20Image%202026-06-25%20at%203.45.33%20PM.jpeg"
-          alt="Aurum"
+          alt="Aurum by Strongmas Development, luxury apartment building on Adekola Balogun Street, Lekki Phase 1, Lagos"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/15 to-black/75" />
 
-        {/* Bottom stack — register button above the info bar (no overlap) */}
+        {/* Bottom stack, register button above the info bar (no overlap) */}
+        {/* Positioning statement, primary h1 for the page */}
+        <div className="absolute inset-x-0 top-1/2 z-10 -translate-y-1/2 px-6 text-center">
+          <h1
+            className="font-light uppercase text-white"
+            style={{ opacity: 0, animation: "aurum-fade 900ms ease forwards 500ms" }}
+          >
+            <span className="block text-4xl tracking-[0.35em] sm:text-5xl md:text-6xl">AURUM</span>
+            <span className="mt-4 block text-sm tracking-[0.3em] text-white/80 sm:text-base md:text-lg">
+              The New Standard
+            </span>
+            <span className="sr-only">
+             , Luxury Apartments in Lekki Phase 1, Lagos
+            </span>
+          </h1>
+          <p
+            className="mx-auto mt-7 max-w-2xl text-sm leading-relaxed text-white/75 sm:text-base"
+            style={{ opacity: 0, animation: "aurum-fade 900ms ease forwards 800ms" }}
+          >
+            {POSITIONING}
+          </p>
+        </div>
+
         <div className="absolute bottom-0 left-0 right-0 z-10">
           <div
-            className="flex justify-center px-6 pb-6"
+            className="flex flex-col items-center justify-center gap-3 px-6 pb-6 sm:flex-row"
             style={{ opacity: 0, animation: "aurum-fade 900ms ease forwards 1000ms" }}
           >
             <RegisterButton />
+            <PresentationButton />
           </div>
           <div
             className="flex flex-col gap-1.5 px-6 pb-7 text-[10px] tracking-[0.2em] uppercase sm:text-xs sm:tracking-[0.22em] md:flex-row md:items-center md:justify-between md:gap-2 md:px-12"
@@ -371,7 +444,7 @@ export default function AurumPage() {
           >
             <span className="font-semibold">Available</span>
             <span>Lekki Phase 1</span>
-            <span>2 BR Apartment | 3 BR Penthouse</span>
+            <span>2 Bedroom Apartment | 3 Bedroom Penthouse</span>
             <span className="text-white/70">
               From <span className="font-semibold text-white">₦320,000,000</span>
             </span>
@@ -397,23 +470,66 @@ export default function AurumPage() {
             </div>
           </Reveal>
 
-          {/* Typology */}
-          <Reveal className="mt-16">
+        </div>
+
+        {/* Typology, composed as one card with the render so the building and the
+            unit mix read as a single statement rather than a list. */}
+        <div className="mx-auto mt-20 max-w-5xl px-6">
+          <Reveal className="text-center">
             <h3 className="text-sm tracking-[0.3em] uppercase" style={{ color: GOLD }}>
               Typology
             </h3>
-            <ul className="mx-auto mt-6 max-w-xl space-y-3 text-white/80">
-              {TYPOLOGY.map((t) => (
-                <li key={t} className="flex items-center justify-center gap-3">
-                  <span className="h-1.5 w-1.5 rounded-full" style={{ background: GOLD }} />
-                  {t}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-6 text-white/60">{TOTAL_UNITS}</p>
-            <div className="mt-12">
-              <RegisterButton filled />
+          </Reveal>
+
+          <Reveal className="mt-10">
+            <div className="overflow-hidden border border-white/15">
+              <figure className="relative">
+                <img
+                  src={cld(EXTERIOR_CORNER, 1440)}
+                  srcSet={cldSrcSet(EXTERIOR_CORNER)}
+                  sizes="(min-width: 1024px) 1024px, 100vw"
+                  alt="Three-quarter view of Aurum in Lekki Phase 1, showing the front and side elevations with private balconies on every floor and the penthouse level set back on top"
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[4/3] w-full object-cover sm:aspect-[16/9]"
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent px-6 pb-5 pt-16 text-[11px] tracking-[0.3em] uppercase text-white/75">
+                  Aurum &middot; Lekki Phase 1, Lagos
+                </figcaption>
+              </figure>
+
+              {/* gap-px over a light parent draws the hairline rules between cells */}
+              <div className="grid gap-px bg-white/15 sm:grid-cols-2">
+                {TYPOLOGY.map((t) => (
+                  <div
+                    key={t.label}
+                    className="flex items-baseline gap-5 bg-[#17120a] p-6 sm:p-8"
+                  >
+                    <span
+                      className="text-5xl font-light leading-none md:text-6xl"
+                      style={{ color: GOLD }}
+                    >
+                      {t.count}
+                    </span>
+                    <span className="text-sm leading-snug text-white/75 sm:text-base">
+                      {t.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="flex items-center justify-center gap-3 border-t border-white/15 bg-[#17120a] px-6 py-4 text-sm text-white/60">
+                <span
+                  className="h-1.5 w-1.5 flex-shrink-0 rounded-full"
+                  style={{ background: GOLD }}
+                />
+                {TOTAL_UNITS}
+              </p>
             </div>
+          </Reveal>
+
+          <Reveal className="mt-12 text-center">
+            <RegisterButton filled />
           </Reveal>
         </div>
       </section>
@@ -660,6 +776,33 @@ export default function AurumPage() {
         </div>
       </section>
 
+      {/* ─────────── AI-Enabled Smart Living ─────────── */}
+      <section id="smart-living" className="border-t border-white/10 py-10 md:py-14 scroll-mt-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <Reveal>
+            <SectionHeading first="AI-ENABLED" rest="Smart Living" />
+          </Reveal>
+          <Reveal>
+            <p className="mx-auto mt-10 max-w-3xl text-center text-lg leading-relaxed text-white/70">
+              Aurum integrates intelligent home technology designed to make everyday living more
+              convenient, secure and responsive, smart homes in Lagos, built around how residents
+              actually live.
+            </p>
+          </Reveal>
+          <div className="mt-16 grid grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            {SMART_LIVING.map((item, i) => (
+              <Reveal key={item.title} delay={(i % 3) * 80}>
+                <div className="h-full border-t border-white/15 pt-6">
+                  <div className="h-px w-8" style={{ background: GOLD }} />
+                  <h3 className="mt-5 text-base text-white/90">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/55">{item.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─────────── FAQ ─────────── */}
       <section className="border-t border-white/10 py-10 md:py-14">
         <div className="mx-auto max-w-4xl px-6">
@@ -704,14 +847,16 @@ export default function AurumPage() {
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <p className="font-bold">AURUM</p>
-                    <p className="mt-1 text-sm text-gray-600">Adekola Balogun Street, Lekki, Lagos</p>
+                    <p className="mt-1 text-sm text-gray-600">
+                      Adekola Balogun Street, Adjacent Pinnacle Filling Station, Lekki Phase 1, Lagos
+                    </p>
                   </div>
                   <ExternalLink className="h-4 w-4 text-gray-500" />
                 </div>
               </div>
               <iframe
                 title="Aurum location"
-                src="https://www.google.com/maps?q=Adekola%20Balogun%20Street%2C%20Lekki%2C%20Lagos&output=embed"
+                src="https://www.google.com/maps?q=Adekola%20Balogun%20Street%2C%20Lekki%20Phase%201%2C%20Lagos&output=embed"
                 className="h-[60vh] w-full border-0 grayscale-[0.2]"
                 loading="lazy"
               />
@@ -739,6 +884,9 @@ export default function AurumPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* News & Insights, shared across every project page */}
+      <ProjectInsights projectSlug="aurum" projectName="Aurum" theme="dark" limit={6} />
 
       <BuyerRegistrationModal />
 

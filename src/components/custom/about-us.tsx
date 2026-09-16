@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import MediaImage from "@/components/custom/media-image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ const AboutUs = () => {
             <div className="text-white space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold font-headline">WHAT IS STRONGMAS?</h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                STRONGMAS is more than just a collection of luxury properties—it's a vision of
+                STRONGMAS is more than just a collection of luxury properties, it's a vision of
                 sustainable, tech-enabled living refined. With over a decade of experience in real
                 estate development, we’ve set new benchmarks for modern, high-performance housing in
                 Lagos, Nigeria, and beyond.
@@ -26,15 +26,14 @@ const AboutUs = () => {
                 luxury and sustainability coexist in the built environment.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 cursor-pointer">
-                <Link href="/about">Learn more about Strongmas Residence</Link>
+                <Link href="/about">Learn more about Strongmas Development</Link>
               </Button>
             </div>
 
             <div className="relative h-[400px] md:h-[650px] w-full">
-              <Image
+              <MediaImage
                 src="https://res.cloudinary.com/dbczzmftw/image/upload/v1752970206/f7po08vfgnluvu3wv4l9.png"
                 alt="Business handshake"
-                fill
                 className="object-cover rounded-lg"
                 data-ai-hint="business handshake"
               />

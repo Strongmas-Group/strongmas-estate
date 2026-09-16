@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { properties } from "@/lib/properties";
-import Image from "next/image";
+import MediaImage from "@/components/custom/media-image";
 import Link from "next/link";
 import { XCircle, Search } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
@@ -68,7 +68,11 @@ const PropertySearchFilter = () => {
   const [searchInitiated, setSearchInitiated] = useState(false);
 
   const locations = [...new Set(properties.map((p) => p.location).filter(Boolean))];
-  const propertyTypes = [...new Set(properties.map((p) => p.summary.propertyType).filter(Boolean))];
+  const propertyTypes = [
+    ...new Set(
+      properties.map((p) => p.summary.propertyType).filter((t): t is string => Boolean(t))
+    ),
+  ];
   const bedroomOptions = ["Any", "1", "2", "3", "4", "5+"];
   const priceOptions = ["Any", "Under ₦50M", "₦50M - ₦100M", "₦100M - ₦200M", "Over ₦200M"];
 
@@ -83,7 +87,7 @@ const PropertySearchFilter = () => {
         (p) =>
           p.name.toLowerCase().includes(lowerCaseSearchTerm) ||
           p.location.toLowerCase().includes(lowerCaseSearchTerm) ||
-          p.summary.propertyType.toLowerCase().includes(lowerCaseSearchTerm) ||
+          (p.summary.propertyType?.toLowerCase().includes(lowerCaseSearchTerm) ?? false) ||
           (p.summary.project && p.summary.project.toLowerCase().includes(lowerCaseSearchTerm)) ||
           (p.tag && p.tag.toLowerCase().includes(lowerCaseSearchTerm))
       );
@@ -148,7 +152,7 @@ const PropertySearchFilter = () => {
 
           const unitPrices = p.availableUnits
             .map((unit) => {
-              if ("price" in unit && unit.price !== "Not Available") {
+              if (typeof unit.price === "string" && unit.price !== "Not Available") {
                 const cleanedPrice = unit.price.replace(/[₦,]/g, "");
                 return parseInt(cleanedPrice, 10);
               }
@@ -348,10 +352,9 @@ const PropertySearchFilter = () => {
                   className="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
                 >
                   <div className="relative w-full h-48 bg-gray-100">
-                    <Image
+                    <MediaImage
                       src={property.images[0] || "/placeholder-property.jpg"}
                       alt={property.name}
-                      fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover"
                     />

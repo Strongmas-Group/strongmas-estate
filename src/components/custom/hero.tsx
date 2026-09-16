@@ -42,11 +42,12 @@ const Hero = () => {
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover object-bottom"
         src="/elysian-720.mp4"
+        poster="/elysian.jpeg"
         autoPlay
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
       />
       <div className="absolute inset-0 bg-black/30" />
 
@@ -60,7 +61,7 @@ const Hero = () => {
           <div className="hero-peek-pulse">
           <button
             onClick={scrollToAurum}
-            aria-label="New property: Aurum — scroll down to explore"
+            aria-label="New property: Aurum, scroll down to explore"
             className="group relative w-full overflow-hidden rounded-xl border border-white/20 bg-black/30 shadow-2xl backdrop-blur-sm transition-all duration-500 ease-out hover:scale-[1.015] hover:border-white/40 hover:shadow-[0_8px_40px_rgba(0,0,0,0.45)]"
           >
             <div className="relative h-20 w-full sm:h-24">
@@ -103,7 +104,7 @@ const Hero = () => {
                       AURUM &middot; Lekki Phase 1
                     </p>
                     <p className="truncate text-[10px] text-white/75 sm:text-xs">
-                      Our newest development — tap to explore
+                      Our newest development, tap to explore
                     </p>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
+import MediaImage from "@/components/custom/media-image";
 import Link from "next/link";
 import { ArrowRight, X } from "lucide-react";
 
@@ -20,13 +20,13 @@ const FeaturedPopup = () => {
   const [open, setOpen] = React.useState(false);
   const [docked, setDocked] = React.useState(false);
 
-  // Decide whether to show — once per browser session.
+  // Decide whether to show, once per browser session.
   React.useEffect(() => {
     let dismissed = false;
     try {
       dismissed = sessionStorage.getItem(STORAGE_KEY) === "1";
     } catch {
-      // Private mode / storage disabled — fail open (show once, no persistence).
+      // Private mode / storage disabled, fail open (show once, no persistence).
     }
     if (dismissed) return;
 
@@ -104,10 +104,9 @@ const FeaturedPopup = () => {
               rel="noopener noreferrer"
               className="group relative aspect-[16/7] w-full overflow-hidden"
             >
-              <Image
+              <MediaImage
                 src="/mdp.jpeg"
                 alt="Michael Shobukola featured in The Guardian Nigeria"
-                fill
                 sizes="(max-width: 640px) 100vw, 190px"
                 className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               />

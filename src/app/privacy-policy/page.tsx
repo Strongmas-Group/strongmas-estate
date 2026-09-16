@@ -4,9 +4,9 @@ import Footer from "@/components/custom/footer";
 import CldImage from "@/components/custom/cld-image";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Strongmas Residence",
+  title: "Privacy Policy | Strongmas Development",
   description:
-    "How Strongmas Residence and Development Limited collects, uses, and protects your personal information, and the choices you have over it.",
+    "How Strongmas Development Limited collects, uses, and protects your personal information, and the choices you have over it.",
   alternates: { canonical: "/privacy-policy" },
 };
 
@@ -134,7 +134,7 @@ const PrivacyPolicy = () => {
             </p>
 
             <p className="mt-6 text-neutral-300 leading-relaxed">
-              Strongmas Residence and Development Limited is committed to safeguarding your privacy.
+              Strongmas Development Limited is committed to safeguarding your privacy.
               This Privacy Policy outlines the types of information we collect, how we use and
               protect it, and your rights regarding your personal information. By using our website
               and services, you consent to the practices described in this policy.

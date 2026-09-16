@@ -13,11 +13,11 @@ module.exports = {
       { loc: "/services", changefreq: "monthly", priority: 0.8 },
       { loc: "/contact", changefreq: "monthly", priority: 0.7 },
       { loc: "/faq", changefreq: "monthly", priority: 0.7 },
-      { loc: "/kyc", changefreq: "yearly", priority: 0.6 },
       { loc: "/privacy-policy", changefreq: "yearly", priority: 0.4 },
       { loc: "/book-inspection", changefreq: "monthly", priority: 0.9 },
       { loc: "/blog", changefreq: "weekly", priority: 0.9 },
       { loc: "/properties", changefreq: "weekly", priority: 1.0 },
+      { loc: "/properties/aurum", changefreq: "weekly", priority: 1.0 },
     ];
   },
 };
