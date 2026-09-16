@@ -398,8 +398,8 @@ export const properties: Property[] = [
       {
         type: "2-Bedroom Apartment",
         price: "₦320,000,000",
-        "initial deposit": "40% = ₦128,000,000",
-        "payment plan": "Spread balance across 12 / 18 months",
+        "initial deposit": "20% = ₦64,000,000 or 40% = ₦128,000,000",
+        "payment plan": "Balance across 10 or 13 instalments",
       },
       {
         type: "3-Bedroom Penthouse",

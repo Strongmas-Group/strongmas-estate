@@ -636,8 +636,8 @@ export const posts: Post[] = [
         heading: "Pricing and payment",
         body: [
           "Two-bedroom apartments are priced at ₦320,000,000 outright. Two structured plans are available:",
-          "<strong>Plan A:</strong> 20% initial deposit of ₦64,000,000, with the ₦256,000,000 balance across 10 instalments.",
-          "<strong>Plan B:</strong> 40% initial deposit of ₦128,000,000, with the ₦192,000,000 balance across 13 instalments.",
+          "<strong>Plan A:</strong> 20% initial deposit of ₦64,000,000, with the ₦256,000,000 balance across either 10 instalments of ₦25,600,000 or 13 of ₦19,692,308.",
+          "<strong>Plan B:</strong> 40% initial deposit of ₦128,000,000, with the ₦192,000,000 balance across either 10 instalments of ₦19,200,000 or 13 of ₦14,769,231.",
           "Pricing for the three-bedroom penthouses is to be announced. Completion is scheduled for Q4 2028, with handover immediately upon completion.",
         ],
       },
@@ -905,7 +905,7 @@ export const posts: Post[] = [
         heading: "The deposit sets the terms",
         body: [
           "Almost every off-plan purchase begins with an initial deposit, typically expressed as a percentage of the purchase price, with the balance spread across the construction period. A larger deposit usually buys a shorter spread or a better price; a smaller one preserves liquidity.",
-          "Across Strongmas Development the structures are published rather than negotiated case by case. Aurum, in Lekki Phase 1, prices 2-bedroom apartments at ₦320,000,000 outright, with Plan A at a 20% deposit of ₦64,000,000 and a ₦256,000,000 balance across 10 instalments, or Plan B at a 40% deposit of ₦128,000,000 and a ₦192,000,000 balance across 13 instalments. Elysian Rise, in Victoria Island, is structured around a 40% initial deposit with the balance across 12 to 18 months.",
+          "Across Strongmas Development the structures are published rather than negotiated case by case. Aurum, in Lekki Phase 1, prices 2-bedroom apartments at ₦320,000,000 outright, with Plan A at a 20% deposit of ₦64,000,000 and a ₦256,000,000 balance across 10 or 13 instalments, or Plan B at a 40% deposit of ₦128,000,000 and a ₦192,000,000 balance across 10 or 13 instalments. Elysian Rise, in Victoria Island, is structured around a 40% initial deposit with the balance across 12 to 18 months.",
         ],
       },
       {

@@ -49,19 +49,39 @@ const TYPOLOGY = [
 ];
 const TOTAL_UNITS = "Total units: 18, all with a balcony";
 
-const PRICING = [
-  {
-    title: "2-Bedroom Apartments",
-    lines: [
-      "Outright: ₦320,000,000",
-      "Plan A: 20% Initial Deposit of ₦64,000,000",
-      "Plan A Balance: ₦256,000,000 across 10 instalments",
-      "Plan B: 40% Initial Deposit of ₦128,000,000",
-      "Plan B Balance: ₦192,000,000 across 13 instalments",
-    ],
-  },
-  { title: "3-Bedroom Penthouses", lines: ["Pricing: To Be Announced", "Initial Deposit: 20% or 40%"] },
-];
+/* Pricing as supplied by the client. The 13-instalment figures are rounded up
+   to the naira, so they total ~3-4 naira over the balance. */
+const PRICE_2BED = {
+  title: "2-Bedroom Apartment",
+  purchasePrice: "₦320,000,000",
+  outright: "₦320,000,000",
+  plans: [
+    {
+      label: "20% Initial Deposit",
+      deposit: "₦64,000,000",
+      balance: "₦256,000,000",
+      options: [
+        { count: "10", each: "₦25,600,000" },
+        { count: "13", each: "₦19,692,308" },
+      ],
+    },
+    {
+      label: "40% Initial Deposit",
+      deposit: "₦128,000,000",
+      balance: "₦192,000,000",
+      options: [
+        { count: "10", each: "₦19,200,000" },
+        { count: "13", each: "₦14,769,231" },
+      ],
+    },
+  ],
+  note: "Instalments can be structured according to the agreed payment schedule",
+};
+
+const PRICE_3BED = {
+  title: "3-Bedroom Penthouse",
+  lines: ["Pricing: To Be Announced", "Initial Deposit: 20% or 40%"],
+};
 
 /* 6. AI-Enabled Smart Living, the concrete functions the system integrates. */
 const SMART_LIVING = [
@@ -737,23 +757,104 @@ export default function AurumPage() {
           <Reveal>
             <SectionHeading first="PRICING" rest="" />
           </Reveal>
-          <div className="mt-16 grid gap-8 md:grid-cols-2">
-            {PRICING.map((p, i) => (
-              <Reveal key={p.title} variant={i === 0 ? "left" : "right"} delay={i * 120}>
-                <div className="h-full border border-white/15 p-10">
-                  <h3 className="text-2xl font-light">{p.title}</h3>
-                  <ul className="mt-8 space-y-4 text-white/75">
-                    {p.lines.map((l) => (
-                      <li key={l} className="flex gap-3 border-t border-white/10 pt-4">
-                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full" style={{ background: GOLD }} />
-                        {l}
-                      </li>
+
+          {/* Headline price, then the three ways to pay for it */}
+          <Reveal className="mt-16">
+            <div className="border border-white/15 p-8 text-center md:p-10">
+              <p className="text-[11px] tracking-[0.3em] uppercase text-white/45">
+                {PRICE_2BED.title} &middot; Purchase Price
+              </p>
+              <p className="mt-4 text-4xl font-light md:text-5xl" style={{ color: GOLD }}>
+                {PRICE_2BED.purchasePrice}
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal className="mt-8">
+            <div className="flex flex-col items-center gap-4 border border-white/15 p-6 sm:flex-row sm:justify-between sm:p-8">
+              <div>
+                <p className="text-[11px] tracking-[0.3em] uppercase text-white/45">Option 1</p>
+                <p className="mt-2 text-lg text-white/90">Outright Purchase</p>
+                <p className="mt-1 text-sm text-white/50">Paid in full, no instalments</p>
+              </div>
+              <p className="text-2xl font-light md:text-3xl" style={{ color: GOLD }}>
+                {PRICE_2BED.outright}
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-2">
+            {PRICE_2BED.plans.map((plan, i) => (
+              <Reveal key={plan.label} variant={i === 0 ? "left" : "right"} delay={i * 120}>
+                <div className="flex h-full flex-col border border-white/15 p-6 sm:p-8">
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-white/45">
+                    Option {i + 2}
+                  </p>
+                  <h3 className="mt-2 text-xl font-light md:text-2xl">{plan.label}</h3>
+
+                  {/* What you pay up front, and what is left to spread */}
+                  <dl className="mt-6 space-y-3">
+                    <div className="flex items-baseline justify-between gap-4 border-t border-white/10 pt-3">
+                      <dt className="text-sm text-white/55">Initial Deposit</dt>
+                      <dd className="text-lg" style={{ color: GOLD }}>{plan.deposit}</dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-4 border-t border-white/10 pt-3">
+                      <dt className="text-sm text-white/55">Balance</dt>
+                      <dd className="text-lg text-white/90">{plan.balance}</dd>
+                    </div>
+                  </dl>
+
+                  {/* The balance, spread two ways, so the per-payment figure is explicit */}
+                  <p className="mt-8 text-[11px] tracking-[0.25em] uppercase text-white/45">
+                    Spread the balance
+                  </p>
+                  <div className="mt-4 grid gap-px bg-white/15">
+                    {plan.options.map((o) => (
+                      <div
+                        key={o.count}
+                        className="flex items-baseline justify-between gap-4 bg-[#17120a] px-5 py-4"
+                      >
+                        <span className="text-sm text-white/70">
+                          <span className="text-2xl font-light" style={{ color: GOLD }}>
+                            {o.count}
+                          </span>{" "}
+                          instalments
+                        </span>
+                        <span className="text-right text-base text-white/90 sm:text-lg">
+                          {o.each}
+                          <span className="block text-[11px] tracking-wider text-white/40">
+                            per instalment
+                          </span>
+                        </span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               </Reveal>
             ))}
           </div>
+
+          <Reveal className="mt-6">
+            <p className="text-center text-sm leading-relaxed text-white/50">{PRICE_2BED.note}</p>
+          </Reveal>
+
+          {/* Penthouse pricing is not published yet */}
+          <Reveal className="mt-12">
+            <div className="border border-white/15 p-6 text-center sm:p-8">
+              <h3 className="text-xl font-light md:text-2xl">{PRICE_3BED.title}</h3>
+              <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-8">
+                {PRICE_3BED.lines.map((l) => (
+                  <p key={l} className="flex items-center gap-3 text-white/70">
+                    <span
+                      className="h-1.5 w-1.5 flex-shrink-0 rounded-full"
+                      style={{ background: GOLD }}
+                    />
+                    {l}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

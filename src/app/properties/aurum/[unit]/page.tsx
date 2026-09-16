@@ -49,7 +49,7 @@ const UNITS: Record<string, Unit> = {
     description:
       "A contemporary 2-bedroom residence at AURUM, blending refined architecture, private balconies, and elevated city views in the heart of Lekki Phase 1, one of Lagos’ most desirable and high-value destinations.",
     payment:
-      "Plan A is a 20% initial deposit (₦64,000,000), balance of ₦256,000,000 across 10 instalments. Plan B is a 40% initial deposit (₦128,000,000), balance of ₦192,000,000 across 13 instalments.",
+      "Plan A is a 20% initial deposit (₦64,000,000), with the ₦256,000,000 balance across either 10 instalments of ₦25,600,000 or 13 of ₦19,692,308. Plan B is a 40% initial deposit (₦128,000,000), with the ₦192,000,000 balance across either 10 instalments of ₦19,200,000 or 13 of ₦14,769,231. Instalments can be structured according to the agreed payment schedule.",
     outright: "Outright payment: ₦320,000,000.",
     hero: "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736245/2_Bed_3_ud9lln.png",
     gallery: [
