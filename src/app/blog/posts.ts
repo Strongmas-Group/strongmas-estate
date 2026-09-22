@@ -63,6 +63,8 @@ const AURUM_CTA = {
 
 const IMG = {
   aurumExterior: "/WhatsApp%20Image%202026-06-25%20at%203.45.33%20PM.jpeg",
+  aurumLiving:
+    "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736233/2_Bed_1_xwly3c.png",
   aurumStreet: "/WhatsApp%20Image%202026-06-25%20at%203.22.43%20PM%20(3).jpeg",
   aurumTwoBed:
     "https://res.cloudinary.com/dbtqditjh/image/upload/v1782393700/ChatGPT_Image_Jun_5_2026_03_44_53_PM_eiidb5.png",
@@ -110,8 +112,8 @@ export const posts: Post[] = [
     author: "Strongmas Development",
     date: "2026-05-28",
     displayDate: "28 May 2026",
-    heroImage: IMG.aurumExterior,
-    heroAlt: "Aurum, luxury apartments in Lekki Phase 1, Lagos",
+    heroImage: IMG.aurumLiving,
+    heroAlt: "Living room of a luxury two-bedroom apartment at Aurum, Lekki Phase 1, Lagos",
     tags: [
       "Luxury Apartments in Lekki Phase 1",
       "Lekki Phase 1 Real Estate",
@@ -1165,8 +1167,8 @@ export const externalFeatures: ExternalFeature[] = [
     excerpt:
       "\"Your home should be a joy to live in and a pleasure to own.\" Michael Shobukola is recognised among 50 Distinguished Nigerians of Merit by The Guardian for redefining residential experiences through smart technology and thoughtful design.",
     image: "/mdp.jpeg",
-    displayDate: "1 May 2026",
-    date: "2026-05-01",
+    displayDate: "30 May 2026",
+    date: "2026-05-30",
     author: "The Guardian Nigeria",
     badge: "As Featured In The Guardian",
     externalUrl:
