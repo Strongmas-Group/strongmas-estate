@@ -108,8 +108,8 @@ export const posts: Post[] = [
     metaDescription:
       "A practical buyer's guide to luxury apartments in Lekki Phase 1, Lagos: what defines the market, how to assess a development, and what to ask before you buy.",
     author: "Strongmas Development",
-    date: "2025-12-04",
-    displayDate: "December 2025",
+    date: "2026-05-28",
+    displayDate: "28 May 2026",
     heroImage: IMG.aurumExterior,
     heroAlt: "Aurum, luxury apartments in Lekki Phase 1, Lagos",
     tags: [
@@ -188,8 +188,8 @@ export const posts: Post[] = [
     metaDescription:
       "Why 2-bedroom apartments in Lekki Phase 1 remain the most in-demand format in premium Lagos property, and how to assess layout, light and storage before buying.",
     author: "Strongmas Development",
-    date: "2026-01-22",
-    displayDate: "January 2026",
+    date: "2026-06-09",
+    displayDate: "9 June 2026",
     heroImage: IMG.aurumTwoBed,
     heroAlt: "Living area of a two-bedroom luxury apartment in Lekki Phase 1, Lagos",
     tags: [
@@ -253,8 +253,8 @@ export const posts: Post[] = [
     metaDescription:
       "What smart homes in Lagos actually offer: which automation genuinely matters in a Nigerian apartment, and the questions to ask a developer before you buy.",
     author: "Strongmas Development",
-    date: "2026-06-11",
-    displayDate: "June 2026",
+    date: "2026-07-28",
+    displayDate: "28 July 2026",
     heroImage: IMG.strongmasResidence,
     heroAlt: "Smart terrace duplexes by Strongmas Development in Lekki Phase 1, Lagos",
     tags: [
@@ -320,8 +320,8 @@ export const posts: Post[] = [
     metaDescription:
       "Why Lekki Phase 1 remains one of Lagos' most sought-after residential locations: planning, infrastructure, proximity and a mature property market.",
     author: "Strongmas Development",
-    date: "2025-06-17",
-    displayDate: "June 2025",
+    date: "2026-07-02",
+    displayDate: "2 July 2026",
     heroImage: IMG.kesbel,
     heroAlt: "Kesbel Court, a residential development in Lekki Phase 1, Lagos",
     tags: [
@@ -390,8 +390,8 @@ export const posts: Post[] = [
     metaDescription:
       "Living in Lekki Phase 1: a practical look at lifestyle, connectivity, schools, retail, dining and the daily realities of one of Lagos' premier districts.",
     author: "Strongmas Development",
-    date: "2025-07-10",
-    displayDate: "July 2025",
+    date: "2026-08-06",
+    displayDate: "6 August 2026",
     heroImage: IMG.omini,
     heroAlt: "The Omini apartments on Akin Leigh Crescent, Lekki Phase 1, Lagos",
     tags: [
@@ -453,8 +453,8 @@ export const posts: Post[] = [
     metaDescription:
       "How rental yield works when buying property in Lagos: gross vs net, how to calculate it, and what published 2026 market data reports for Nigeria and Lekki.",
     author: "Strongmas Development",
-    date: "2025-11-13",
-    displayDate: "November 2025",
+    date: "2026-09-08",
+    displayDate: "8 September 2026",
     heroImage: IMG.kesbelInterior,
     heroAlt: "Interior of a premium apartment in Lekki Phase 1, Lagos",
     tags: [
@@ -520,8 +520,8 @@ export const posts: Post[] = [
     metaDescription:
       "What influences property value in Lekki Phase 1: street position, title, building quality, unit mix, service charge and infrastructure explained for buyers.",
     author: "Strongmas Development",
-    date: "2025-09-16",
-    displayDate: "September 2025",
+    date: "2026-08-27",
+    displayDate: "27 August 2026",
     heroImage: IMG.strongmasInterior,
     heroAlt: "Interior of a delivered Strongmas Development home in Lekki Phase 1, Lagos",
     tags: [
@@ -596,8 +596,8 @@ export const posts: Post[] = [
     metaDescription:
       "Introducing Aurum, a luxury residential development in Lekki Phase 1: 18 residences, 2-bedroom apartments and 3-bedroom penthouses from ₦320,000,000.",
     author: "Strongmas Development",
-    date: "2026-07-07",
-    displayDate: "July 2026",
+    date: "2026-05-14",
+    displayDate: "14 May 2026",
     heroImage: IMG.aurumStreet,
     heroAlt: "Aurum on Adekola Balogun Street, Lekki Phase 1, Lagos",
     tags: [
@@ -669,8 +669,8 @@ export const posts: Post[] = [
     metaDescription:
       "Inside Aurum's smart home system: intelligent lighting, climate control, AI-enabled security monitoring, smart access control and automated safety alerts.",
     author: "Strongmas Development",
-    date: "2026-09-10",
-    displayDate: "September 2026",
+    date: "2026-07-14",
+    displayDate: "14 July 2026",
     heroImage: IMG.ominiInterior,
     heroAlt: "Smart home enabled apartment interior in Lekki Phase 1, Lagos",
     tags: [
@@ -740,8 +740,8 @@ export const posts: Post[] = [
     metaDescription:
       "Aurum's amenities in Lekki Phase 1: rooftop pool and gym, concierge, standby power, treated water, secure parking and 24-hour access control explained.",
     author: "Strongmas Development",
-    date: "2026-08-20",
-    displayDate: "August 2026",
+    date: "2026-06-23",
+    displayDate: "23 June 2026",
     heroImage: IMG.aurumPenthouse,
     heroAlt: "Penthouse level at Aurum, Lekki Phase 1, Lagos",
     tags: [
@@ -816,7 +816,7 @@ export const posts: Post[] = [
       "Elysian Rise, Victoria Island: why buying off-plan in Lagos' premium market offers construction-stage value growth and flexible payment leverage.",
     author: "Strongmas Development",
     date: "2025-10-28",
-    displayDate: "October 2025",
+    displayDate: "28 October 2025",
     heroImage: IMG.elysian,
     heroAlt: "Elysian Rise high-rise facade, Victoria Island, Lagos",
     tags: [
@@ -884,8 +884,8 @@ export const posts: Post[] = [
     metaDescription:
       "How buying off-plan property in Lagos works: deposit structures, payment milestones, construction risk, and the questions to ask before committing.",
     author: "Strongmas Development",
-    date: "2026-04-09",
-    displayDate: "April 2026",
+    date: "2026-09-17",
+    displayDate: "17 September 2026",
     heroImage: IMG.elysianTower,
     heroAlt: "High-rise residential development under construction in Lagos",
     tags: [
@@ -956,8 +956,8 @@ export const posts: Post[] = [
     metaDescription:
       "Lekki Phase 1 vs Victoria Island: a practical comparison of Lagos' two premium residential districts on price, space, access and who each one suits.",
     author: "Strongmas Development",
-    date: "2025-08-21",
-    displayDate: "August 2025",
+    date: "2026-08-18",
+    displayDate: "18 August 2026",
     heroImage: IMG.elysianNight,
     heroAlt: "Elysian Rise at night, Victoria Island, Lagos",
     tags: [
@@ -1028,8 +1028,8 @@ export const posts: Post[] = [
     metaDescription:
       "A property guide to Ikota G.R.A. and Abraham Adesanya on the Lekki-Epe axis, why these Lagos corridors offer more space per naira than the premium core.",
     author: "Strongmas Development",
-    date: "2026-02-11",
-    displayDate: "February 2026",
+    date: "2026-02-17",
+    displayDate: "17 February 2026",
     heroImage: IMG.avions,
     heroAlt: "Terrace duplex development in Ikota G.R.A., Lagos",
     tags: [
@@ -1093,8 +1093,8 @@ export const posts: Post[] = [
     metaDescription:
       "How to assess a Lagos property developer: what a delivered portfolio proves, which questions to ask, and why completed buildings matter more than renders.",
     author: "Strongmas Development",
-    date: "2026-03-24",
-    displayDate: "March 2026",
+    date: "2026-03-19",
+    displayDate: "19 March 2026",
     heroImage: IMG.oliveMall,
     heroAlt: "Olive Mall on Adeniji Road, Lagos Island",
     tags: [
@@ -1165,7 +1165,7 @@ export const externalFeatures: ExternalFeature[] = [
     excerpt:
       "\"Your home should be a joy to live in and a pleasure to own.\" Michael Shobukola is recognised among 50 Distinguished Nigerians of Merit by The Guardian for redefining residential experiences through smart technology and thoughtful design.",
     image: "/mdp.jpeg",
-    displayDate: "May 2026",
+    displayDate: "1 May 2026",
     date: "2026-05-01",
     author: "The Guardian Nigeria",
     badge: "As Featured In The Guardian",
