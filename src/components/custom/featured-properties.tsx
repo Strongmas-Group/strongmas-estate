@@ -54,7 +54,7 @@ const properties = [
   },
   {
     name: "KESBEL COURT",
-    tag: "SOLD OUT, Furniture Finishing & Detailing",
+    tag: "SOLD OUT & DELIVERED",
     location: "Lekki Phase 1",
     description:
       "Nestled in the heart of Lekki Phase 1, Kesbel Court is a refined multi-family apartment development that reimagines urban living through timeless architecture, luxurious comfort, and breathtaking views.",

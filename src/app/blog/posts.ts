@@ -914,7 +914,7 @@ export const posts: Post[] = [
         heading: "Milestones matter more than dates",
         body: [
           "A completion date on its own tells you very little. What tells you something is the current construction stage, and whether progress can be independently observed.",
-          "Elysian Rise is at eighth-floor slab. Kesbel Court, on Fatai Idowu Arobieke Street off Admiralty Road, is at roofing stage. Avions Court 2 in Ikota G.R.A. is approximately 90% complete. Aurum is scheduled for completion in Q4 2028. Ask for the stage, not just the date, and ask whether you can visit the site.",
+          "Elysian Rise is at eighth-floor slab. Kesbel Court, on Fatai Idowu Arobieke Street off Admiralty Road, is completed. Avions Court 2 in Ikota G.R.A. is completed. Aurum is scheduled for completion in Q4 2028. Ask for the stage, not just the date, and ask whether you can visit the site.",
         ],
         image: IMG.elysianRooftop,
         imageAlt: "Interior of a completed luxury residence in Lagos",
@@ -1052,7 +1052,7 @@ export const posts: Post[] = [
         heading: "What the format looks like out here",
         body: [
           "Land economics change the product. Where the premium core builds apartments upward, these corridors build outward, terrace duplexes, semi-detached houses and low-rise developments with private parking per unit.",
-          "Avions Court 2, at Block 16, Plot 7 & 8 in Ikota G.R.A., is a mixed development of terrace duplexes, semi-detached units and pent apartments with two car spaces per unit, currently around 90% complete. Avions Court 1, at Abraham Adesanya, is a delivered scheme in the same family.",
+          "Avions Court 2, at Block 16, Plot 7 & 8 in Ikota G.R.A., is a mixed development of terrace duplexes, semi-detached units and pent apartments with two car spaces per unit, now completed. Avions Court 1, at Abraham Adesanya, is a delivered scheme in the same family.",
         ],
         image: IMG.avionsOne,
         imageAlt: "Completed residential development at Abraham Adesanya, Lagos",
@@ -1080,7 +1080,7 @@ export const posts: Post[] = [
       label: "View All Developments",
       href: "/properties",
       blurb:
-        "Avions Court 1 at Abraham Adesanya is delivered; Avions Court 2 in Ikota G.R.A. is approximately 90% complete with limited units available.",
+        "Avions Court 1 at Abraham Adesanya is delivered; Avions Court 2 in Ikota G.R.A. is completed with limited units available.",
     },
   },
 
@@ -1138,7 +1138,7 @@ export const posts: Post[] = [
       {
         heading: "Watch what is under construction now",
         body: [
-          "Current sites show you present capability rather than past. Elysian Rise in Victoria Island is at eighth-floor slab, Kesbel Court in Lekki Phase 1 is at roofing stage, and Avions Court 2 in Ikota G.R.A. is approximately 90% complete.",
+          "Current sites show you present capability rather than past. Elysian Rise in Victoria Island is at eighth-floor slab, while Kesbel Court in Lekki Phase 1 and Avions Court 2 in Ikota G.R.A. have both been completed.",
           "Visit one. Fifteen minutes on an active site tells you more about a developer than an afternoon with the marketing material.",
         ],
       },

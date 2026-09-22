@@ -173,8 +173,8 @@ export const properties: Property[] = [
   },
   {
     name: "KESBEL COURT",
-    status: "Ongoing",
-    tag: "SOLD OUT, Roofing in Progress",
+    status: "COMPLETED",
+    tag: "SOLD OUT & DELIVERED",
     location: "Lekki Phase 1",
     description:
       "Kesbel Court is a refined expression of contemporary luxury, nestled on Fatai Idowu Arobieke Street, just off Admiralty Road in the prestigious enclave of Lekki Phase 1. This exclusive development features an elegant mix of 2-bedroom apartments, 3-bedroom residences, and a signature 4-bedroom penthouse with private elevator access. Designed to maximize comfort and style, each unit boasts intelligent layouts, high-spec finishes, and generous natural light. Residents are treated to expansive living spaces, fully fitted kitchens, and serene bedrooms that redefine modern urban living. The crowning jewel of the development is the penthouse, a private sanctuary offering elevated living with sweeping 180-degree sea views, grand proportions, and direct lift access. With secure parking, modern infrastructure, and a glistening swimming pool, Kesbel Court stands as a beacon of high-end residential excellence on one of Lekki Phase 1’s most sought-after corridors.",
@@ -230,9 +230,9 @@ export const properties: Property[] = [
   },
   {
     name: "AVIONS COURT 2",
-    status: "ONGOING",
+    status: "COMPLETED",
     location: "Ikota G.R.A.",
-    tag: "SOLD OUT, 90% Completed",
+    tag: "COMPLETED, Limited Units Available",
     images: [
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753218426/meknlmuj93frd5d54pys.jpg",
       "https://res.cloudinary.com/dbczzmftw/image/upload/v1753056439/snjplfembn14nspgaqme.jpg",
