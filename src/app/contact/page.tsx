@@ -2,7 +2,7 @@ import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { socials } from "@/lib/socials";
 
 export default function ContactPage() {
   return (
@@ -61,30 +61,18 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-bold font-headline text-lg mb-2">Find us on Social Media:</h3>
                   <div className="flex gap-4">
-                    <Link
-                      href="#"
-                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
-                    >
-                      <Facebook className="h-5 w-5" />
-                    </Link>
-                    <Link
-                      href="#"
-                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
-                    >
-                      <Twitter className="h-5 w-5" />
-                    </Link>
-                    <Link
-                      href="#"
-                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
-                    >
-                      <Instagram className="h-5 w-5" />
-                    </Link>
-                    <Link
-                      href="#"
-                      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
-                    >
-                      <Linkedin className="h-5 w-5" />
-                    </Link>
+                    {socials.map(({ Icon, href, label }) => (
+                      <Link
+                        key={href}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={label}
+                        className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      >
+                        <Icon className="h-5 w-5" />
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>

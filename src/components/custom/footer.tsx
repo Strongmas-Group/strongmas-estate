@@ -1,37 +1,11 @@
 import Link from "next/link";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  MapPin,
-  Phone,
-  Mail,
-  ArrowRight,
-} from "lucide-react";
+import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
+import { socials } from "@/lib/socials";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const GOLD = "#EFC59D";
 
-const socials = [
-  {
-    Icon: Facebook,
-    href: "https://www.facebook.com/share/14HGgmE8vPu/?mibextid=wwXIfr",
-    label: "Visit our Facebook page",
-  },
-  { Icon: Twitter, href: "https://x.com/Strongmasres", label: "Visit our Twitter page" },
-  {
-    Icon: Instagram,
-    href: "https://www.instagram.com/strongmasresidences?igsh=MWF6YXByN3RiNmxwZQ==",
-    label: "Visit our Instagram page",
-  },
-  {
-    Icon: Linkedin,
-    href: "https://www.linkedin.com/company/strongmasresidence/",
-    label: "Visit our LinkedIn page",
-  },
-];
 
 const usefulLinks = [
   { label: "FAQ", href: "/faq" },
