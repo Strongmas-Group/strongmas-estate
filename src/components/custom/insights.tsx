@@ -1,13 +1,15 @@
 import MediaImage from "@/components/custom/media-image";
 import Link from "next/link";
-import { posts } from "@/app/blog/posts";
+import { publishedPosts } from "@/app/blog/posts";
 
 const GOLD = "#B8923E";
 
 /** Latest three articles, surfaced on the homepage to feed the content ecosystem. */
-const latest = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+const latest = [...publishedPosts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
 
 export default function Insights() {
+  if (latest.length === 0) return null;
+
   return (
     <section id="insights" className="bg-white py-20 scroll-mt-24">
       <div className="mx-auto max-w-6xl px-6">

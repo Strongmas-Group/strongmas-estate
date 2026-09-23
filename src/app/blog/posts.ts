@@ -1178,8 +1178,20 @@ export const externalFeatures: ExternalFeature[] = [
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
 
+/**
+ * Client asked to pull every article off News & Insights, the homepage
+ * "From the Journal" strip and each project's "Reading around X" section,
+ * leaving only the Guardian feature. Individual post pages are untouched
+ * (`posts` above still backs `getPost` and `generateStaticParams`), so no
+ * existing /blog/[slug] URL 404s and nothing drops out of Google's index.
+ *
+ * To bring articles back, either restore `publishedPosts = posts` to
+ * un-hide everything, or list specific posts here to bring back a subset.
+ */
+export const publishedPosts: Post[] = [];
+
 /** Articles supporting a given project slug, newest first. */
 export const postsForProject = (projectSlug: string) =>
-  posts
+  publishedPosts
     .filter((p) => p.projects?.includes(projectSlug))
     .sort((a, b) => b.date.localeCompare(a.date));

@@ -3,7 +3,7 @@ import MediaImage from "@/components/custom/media-image";
 import Link from "next/link";
 import Header from "@/components/custom/header";
 import Footer from "@/components/custom/footer";
-import { posts, externalFeatures } from "./posts";
+import { publishedPosts, externalFeatures } from "./posts";
 
 export const metadata: Metadata = {
   title: "News & Insights | Luxury Real Estate in Lagos",
@@ -48,7 +48,7 @@ const cards: Card[] = [
     date: f.date,
     badge: f.badge,
   })),
-  ...posts.map((p) => ({
+  ...publishedPosts.map((p) => ({
     key: p.slug,
     href: `/blog/${p.slug}`,
     external: false,
