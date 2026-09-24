@@ -4,7 +4,8 @@ import * as React from "react";
 
 /**
  * Animates the numeric part of a display figure ("1,256+", "70+", "6") from
- * zero to its final value the first time it scrolls into view.
+ * zero to its final value, looping for as long as it stays in view: count up,
+ * hold on the final figure, then start again.
  *
  * The final figure is what renders on the server and on the first client
  * render, so crawlers still see the real number and the layout never shifts;
@@ -22,11 +23,14 @@ const useIsomorphicLayoutEffect =
 export default function CountUp({
   value,
   duration = 1800,
+  hold = 2500,
   className,
 }: {
   value: string;
   /** Length of the count, in milliseconds. */
   duration?: number;
+  /** How long the final figure stays up before the count restarts, in milliseconds. */
+  hold?: number;
   className?: string;
 }) {
   const parsed = React.useMemo(() => {
@@ -58,18 +62,29 @@ export default function CountUp({
     setCurrent(0);
 
     let frame = 0;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const stop = () => {
+      cancelAnimationFrame(frame);
+      clearTimeout(timer);
+    };
+
+    const run = () => {
+      const start = performance.now();
+      const step = (now: number) => {
+        const progress = Math.min((now - start) / duration, 1);
+        setCurrent(parsed.target * EASE_OUT_CUBIC(progress));
+        if (progress < 1) frame = requestAnimationFrame(step);
+        else timer = setTimeout(run, hold);
+      };
+      frame = requestAnimationFrame(step);
+    };
+
+    // Only loop while visible; leaving view pauses it, coming back restarts it.
     const observer = new IntersectionObserver(
       (entries) => {
-        if (!entries[0]?.isIntersecting) return;
-        observer.disconnect();
-
-        const start = performance.now();
-        const step = (now: number) => {
-          const progress = Math.min((now - start) / duration, 1);
-          setCurrent(parsed.target * EASE_OUT_CUBIC(progress));
-          if (progress < 1) frame = requestAnimationFrame(step);
-        };
-        frame = requestAnimationFrame(step);
+        stop();
+        if (entries[0]?.isIntersecting) run();
+        else setCurrent(0);
       },
       { threshold: 0.4 }
     );
@@ -77,9 +92,9 @@ export default function CountUp({
 
     return () => {
       observer.disconnect();
-      cancelAnimationFrame(frame);
+      stop();
     };
-  }, [parsed, duration]);
+  }, [parsed, duration, hold]);
 
   if (!parsed) return <span className={className}>{value}</span>;
 

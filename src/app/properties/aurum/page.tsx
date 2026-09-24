@@ -49,40 +49,6 @@ const TYPOLOGY = [
 ];
 const TOTAL_UNITS = "Total units: 18, all with a balcony";
 
-/* Pricing as supplied by the client. The 13-instalment figures are rounded up
-   to the naira, so they total ~3-4 naira over the balance. */
-const PRICE_2BED = {
-  title: "2-Bedroom Apartment",
-  purchasePrice: "₦320,000,000",
-  outright: "₦320,000,000",
-  plans: [
-    {
-      label: "20% Initial Deposit",
-      deposit: "₦64,000,000",
-      balance: "₦256,000,000",
-      options: [
-        { count: "10", each: "₦25,600,000" },
-        { count: "13", each: "₦19,692,308" },
-      ],
-    },
-    {
-      label: "40% Initial Deposit",
-      deposit: "₦128,000,000",
-      balance: "₦192,000,000",
-      options: [
-        { count: "10", each: "₦19,200,000" },
-        { count: "13", each: "₦14,769,231" },
-      ],
-    },
-  ],
-  note: "Instalments can be structured according to the agreed payment schedule",
-};
-
-const PRICE_3BED = {
-  title: "3-Bedroom Penthouse",
-  lines: ["Pricing: To Be Announced", "Initial Deposit: 20% or 40%"],
-};
-
 /* 6. AI-Enabled Smart Living, the concrete functions the system integrates. */
 const SMART_LIVING = [
   {
@@ -123,12 +89,12 @@ const AMENITIES = [
   "Smart Home Automation",
   "Elevator Access",
   "Children Play Area",
-  "Dedicated Concierge",
+  "Concierge",
   "Private Foyer Entrance for the penthouses",
   "Fully Fitted Kitchen",
   "Gleaming Pool",
   "24/7 Security",
-  "Dedicated Parking",
+  "Dedicated Basement Parking",
   "CCTV Surveillance",
   "Backup Power Supply",
   "Treated Water System",
@@ -148,8 +114,8 @@ const PROXIMITY = [
 ];
 
 const units = [
-  { name: "2 Bedroom", price: "Starting ₦320,000,000", meta: "16 Units · Private Balcony", img: "https://res.cloudinary.com/dbtqditjh/image/upload/v1782393700/ChatGPT_Image_Jun_5_2026_03_44_53_PM_eiidb5.png", href: "/properties/aurum/2-bedroom" },
-  { name: "3 Bedroom Penthouse", price: "Price To Be Announced", meta: "2 Exclusive Units", img: "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736253/3_Bed_6_c8k5ab.png", href: "/properties/aurum/3-bedroom-penthouse" },
+  { name: "2 Bedroom", price: "Request for Payment Plan", meta: "16 Units · Private Balcony", img: "https://res.cloudinary.com/dbtqditjh/image/upload/v1782393700/ChatGPT_Image_Jun_5_2026_03_44_53_PM_eiidb5.png", href: "/properties/aurum/2-bedroom" },
+  { name: "3 Bedroom Penthouse", price: "Request for Payment Plan", meta: "2 Exclusive Units", img: "https://res.cloudinary.com/dbtqditjh/image/upload/v1782736253/3_Bed_6_c8k5ab.png", href: "/properties/aurum/3-bedroom-penthouse" },
 ];
 
 const FLOOR_IMAGES = [
@@ -247,10 +213,13 @@ const SectionHeading = ({
   first,
   rest,
   center = true,
+  logo = false,
 }: {
   first: string;
   rest: string;
   center?: boolean;
+  /** Render `rest` as the Aurum logo (kept as screen-reader text). */
+  logo?: boolean;
 }) => (
   <div className={center ? "text-center" : ""}>
     <div
@@ -259,7 +228,19 @@ const SectionHeading = ({
     />
     <h2 className="text-3xl md:text-5xl font-light uppercase tracking-[0.12em]">
       <span className="font-bold">{first}</span>{" "}
-      <span className="text-white/55">{rest}</span>
+      {logo ? (
+        <>
+          <img
+            src="/aurum-logo.png"
+            alt=""
+            aria-hidden="true"
+            className="ml-2 inline-block h-6 w-auto align-baseline md:ml-3 md:h-9"
+          />
+          <span className="sr-only">{rest}</span>
+        </>
+      ) : (
+        <span className="text-white/55">{rest}</span>
+      )}
     </h2>
   </div>
 );
@@ -434,7 +415,13 @@ export default function AurumPage() {
             className="font-light uppercase text-white"
             style={{ opacity: 0, animation: "aurum-fade 900ms ease forwards 500ms" }}
           >
-            <span className="block text-4xl tracking-[0.35em] sm:text-5xl md:text-6xl">AURUM</span>
+            <img
+              src="/aurum-logo.png"
+              alt=""
+              aria-hidden="true"
+              className="mx-auto block h-auto w-56 sm:w-72 md:w-96"
+            />
+            <span className="sr-only">AURUM</span>
             <span className="mt-4 block text-sm tracking-[0.3em] text-white/80 sm:text-base md:text-lg">
               The New Standard
             </span>
@@ -465,9 +452,13 @@ export default function AurumPage() {
             <span className="font-semibold">Available</span>
             <span>Lekki Phase 1</span>
             <span>2 Bedroom Apartment | 3 Bedroom Penthouse</span>
-            <span className="text-white/70">
-              From <span className="font-semibold text-white">₦320,000,000</span>
-            </span>
+            <button
+              type="button"
+              onClick={openRegister}
+              className="text-left uppercase font-semibold text-white underline-offset-4 hover:underline"
+            >
+              Request for Payment Plan
+            </button>
           </div>
         </div>
 
@@ -693,8 +684,10 @@ export default function AurumPage() {
 
           {/* Floor Plan Distribution */}
           <Reveal className="mt-24">
-            <h3 className="mb-12 text-center text-xl tracking-[0.3em] uppercase text-white/70">
-              AURUM - Floor Plan Distribution
+            <h3 className="mb-12 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 text-center text-xl tracking-[0.3em] uppercase text-white/70">
+              <img src="/aurum-logo.png" alt="" aria-hidden="true" className="h-5 w-auto md:h-6" />
+              <span className="sr-only">AURUM</span>
+              <span aria-hidden="true">-</span> Floor Plan Distribution
             </h3>
             <div className="space-y-px">
               {FLOOR_DIST.map((f, i) => (
@@ -752,106 +745,40 @@ export default function AurumPage() {
       </section>
 
       {/* ─────────── Pricing ─────────── */}
-      <section className="border-t border-white/10 py-10 md:py-14">
+      <section id="pricing" className="border-t border-white/10 py-10 md:py-14 scroll-mt-24">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
             <SectionHeading first="PRICING" rest="" />
           </Reveal>
 
-          {/* Headline price, then the three ways to pay for it */}
+          {/* Pricing is shared on request rather than published */}
           <Reveal className="mt-16">
-            <div className="border border-white/15 p-8 text-center md:p-10">
+            <div className="border border-white/15 p-8 text-center md:p-12">
               <p className="text-[11px] tracking-[0.3em] uppercase text-white/45">
-                {PRICE_2BED.title} &middot; Purchase Price
+                2-Bedroom Apartments &middot; 3-Bedroom Penthouses
               </p>
-              <p className="mt-4 text-4xl font-light md:text-5xl" style={{ color: GOLD }}>
-                {PRICE_2BED.purchasePrice}
+              <p className="mt-4 text-3xl font-light md:text-4xl" style={{ color: GOLD }}>
+                Request for Payment Plan
               </p>
-            </div>
-          </Reveal>
-
-          <Reveal className="mt-8">
-            <div className="flex flex-col items-center gap-4 border border-white/15 p-6 sm:flex-row sm:justify-between sm:p-8">
-              <div>
-                <p className="text-[11px] tracking-[0.3em] uppercase text-white/45">Option 1</p>
-                <p className="mt-2 text-lg text-white/90">Outright Purchase</p>
-                <p className="mt-1 text-sm text-white/50">Paid in full, no instalments</p>
-              </div>
-              <p className="text-2xl font-light md:text-3xl" style={{ color: GOLD }}>
-                {PRICE_2BED.outright}
+              <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-white/60">
+                Tell us your preferred residence and we will share the current pricing and a
+                payment plan structured around you.
               </p>
-            </div>
-          </Reveal>
-
-          <div className="mt-8 grid gap-8 md:grid-cols-2">
-            {PRICE_2BED.plans.map((plan, i) => (
-              <Reveal key={plan.label} variant={i === 0 ? "left" : "right"} delay={i * 120}>
-                <div className="flex h-full flex-col border border-white/15 p-6 sm:p-8">
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-white/45">
-                    Option {i + 2}
-                  </p>
-                  <h3 className="mt-2 text-xl font-light md:text-2xl">{plan.label}</h3>
-
-                  {/* What you pay up front, and what is left to spread */}
-                  <dl className="mt-6 space-y-3">
-                    <div className="flex items-baseline justify-between gap-4 border-t border-white/10 pt-3">
-                      <dt className="text-sm text-white/55">Initial Deposit</dt>
-                      <dd className="text-lg" style={{ color: GOLD }}>{plan.deposit}</dd>
-                    </div>
-                    <div className="flex items-baseline justify-between gap-4 border-t border-white/10 pt-3">
-                      <dt className="text-sm text-white/55">Balance</dt>
-                      <dd className="text-lg text-white/90">{plan.balance}</dd>
-                    </div>
-                  </dl>
-
-                  {/* The balance, spread two ways, so the per-payment figure is explicit */}
-                  <p className="mt-8 text-[11px] tracking-[0.25em] uppercase text-white/45">
-                    Spread the balance
-                  </p>
-                  <div className="mt-4 grid gap-px bg-white/15">
-                    {plan.options.map((o) => (
-                      <div
-                        key={o.count}
-                        className="flex items-baseline justify-between gap-4 bg-[#17120a] px-5 py-4"
-                      >
-                        <span className="text-sm text-white/70">
-                          <span className="text-2xl font-light" style={{ color: GOLD }}>
-                            {o.count}
-                          </span>{" "}
-                          instalments
-                        </span>
-                        <span className="text-right text-base text-white/90 sm:text-lg">
-                          {o.each}
-                          <span className="block text-[11px] tracking-wider text-white/40">
-                            per instalment
-                          </span>
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-
-          <Reveal className="mt-6">
-            <p className="text-center text-sm leading-relaxed text-white/50">{PRICE_2BED.note}</p>
-          </Reveal>
-
-          {/* Penthouse pricing is not published yet */}
-          <Reveal className="mt-12">
-            <div className="border border-white/15 p-6 text-center sm:p-8">
-              <h3 className="text-xl font-light md:text-2xl">{PRICE_3BED.title}</h3>
-              <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-8">
-                {PRICE_3BED.lines.map((l) => (
-                  <p key={l} className="flex items-center gap-3 text-white/70">
-                    <span
-                      className="h-1.5 w-1.5 flex-shrink-0 rounded-full"
-                      style={{ background: GOLD }}
-                    />
-                    {l}
-                  </p>
-                ))}
+              <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                <button
+                  type="button"
+                  onClick={openRegister}
+                  className="inline-block px-12 py-4 text-xs tracking-[0.3em] uppercase text-black"
+                  style={{ background: GOLD }}
+                >
+                  Request for Payment Plan
+                </button>
+                <a
+                  href={WHATSAPP}
+                  className="inline-flex items-center gap-2 border border-white/40 px-10 py-4 text-xs tracking-[0.3em] uppercase text-white transition-colors hover:border-white hover:bg-white/10"
+                >
+                  <MessageCircle className="h-4 w-4" /> WhatsApp Us
+                </a>
               </div>
             </div>
           </Reveal>
@@ -908,7 +835,7 @@ export default function AurumPage() {
       <section className="border-t border-white/10 py-10 md:py-14">
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
-            <SectionHeading first="WHY" rest="Aurum" />
+            <SectionHeading first="WHY" rest="Aurum" logo />
           </Reveal>
           <div className="mt-16">
             {faqs.map((f, i) => (
@@ -947,7 +874,7 @@ export default function AurumPage() {
               <div className="absolute left-4 top-4 z-10 max-w-xs bg-white p-4 text-black shadow-lg">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="font-bold">AURUM</p>
+                    <img src="/aurum-logo.png" alt="AURUM" className="h-5 w-auto" />
                     <p className="mt-1 text-sm text-gray-600">
                       Adekola Balogun Street, Adjacent Pinnacle Filling Station, Lekki Phase 1, Lagos
                     </p>

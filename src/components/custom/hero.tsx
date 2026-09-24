@@ -98,10 +98,11 @@ const Hero = () => {
                   </span>
                   <div className="min-w-0 text-left leading-tight">
                     <p
-                      className="truncate text-xs font-semibold text-white sm:text-sm"
+                      className="flex items-center gap-1.5 whitespace-nowrap text-xs font-semibold text-white sm:text-sm"
                       style={{ textShadow: "0 1px 6px rgba(0,0,0,0.9)" }}
                     >
-                      AURUM &middot; Lekki Phase 1
+                      <img src="/aurum-logo.png" alt="AURUM" className="h-3 w-auto sm:h-3.5" />
+                      &middot; Lekki Phase 1
                     </p>
                     <p className="truncate text-[10px] text-white/75 sm:text-xs">
                       Our newest development, tap to explore

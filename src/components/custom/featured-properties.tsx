@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 const properties = [
   {
     name: "AURUM",
+    logo: "/aurum-logo.png",
     location: "Lekki Phase 1",
     tag: "NOW SELLING",
     image:
@@ -114,7 +115,15 @@ const FeaturedProperties = () => {
                         FEATURED PROPERTIES
                       </p>
                       <h2 className="text-4xl md:text-6xl font-bold font-headline mb-4">
-                        {property.name}
+                        {property.logo ? (
+                          <img
+                            src={property.logo}
+                            alt={property.name}
+                            className="mx-auto h-auto w-64 md:w-[28rem]"
+                          />
+                        ) : (
+                          property.name
+                        )}
                       </h2>
                       <p className="text-lg sm:text-xl md:text-2xl text-[#EFC59D] font-bold font-headline mb-4">
                         ({property.tag})
